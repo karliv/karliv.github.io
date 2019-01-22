@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Index page</title>
+<link href="./css/common.css" rel="stylesheet"><link href="./css/signUp.css" rel="stylesheet"></head>
+<body>
+<div class="wrapper">
+    <div class="container">
+        <div class="site-signup">
+            <h1>Signup</h1>
+
+            <p>Please fill out the following fields to signup:</p>
+
+            <div class="row">
+                <div class="col-lg-5">
+                    <form id="form-signup" action="/site/signup" method="post">
+                        <input type="hidden" name="_csrf-frontend" value="dUwesYIcslSVoy9DMhZyGk6-9_vhpWpflpMMtF356wgaNlPH1n39La3wfy1xdBtdB9K6yNDhBSvuzH3dKayGcg==">
+                        <div class="form-group field-signupform-username required has-error">
+                            <label class="control-label" for="signupform-username">Username</label>
+                            <input type="text" id="signupform-username" class="form-control" name="SignupForm[username]" autofocus="" aria-required="true" aria-invalid="true">
+
+                            <p class="help-block help-block-error">Username cannot be blank.</p>
+                        </div>
+                        <div class="form-group field-signupform-email required">
+                            <label class="control-label" for="signupform-email">Email</label>
+                            <input type="text" id="signupform-email" class="form-control" name="SignupForm[email]" aria-required="true">
+
+                            <p class="help-block help-block-error"></p>
+                        </div>
+                        <div class="form-group field-signupform-password required">
+                            <label class="control-label" for="signupform-password">Password</label>
+                            <input type="password" id="signupform-password" class="form-control" name="SignupForm[password]" aria-required="true">
+
+                            <p class="help-block help-block-error"></p>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary" name="signup-button">Signup</button>                </div>
+
+                    </form>        </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <p>© 2013 Perth. <span>Breeding pixels since the naughties.</span></p>
+</footer>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!--&lt;!&ndash; Placed at the end of the document so the pages load faster &ndash;&gt;-->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+<!--<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>-->
+<!--<script src="../../dist/js/bootstrap.min.js"></script>-->
+<!--&lt;!&ndash; IE10 viewport hack for Surface/desktop Windows 8 bug &ndash;&gt;-->
+<!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+<script type="text/javascript" src="js/common.js"></script><script type="text/javascript" src="js/signUp.js"></script></body>
+</html>
