@@ -1,0 +1,237 @@
+@import "vars"
+
+body
+  font-family: "Exo 2"
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  letter-spacing: normal
+  overflow-x: hidden
+  background-image: url(../img/Pattern.png)
+  min-width: 320px
+
+
+.wrapper
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%)
+  position: relative
+  min-height: 100vh
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  //display: -webkit-box
+  //display: -moz-box
+  //display: -ms-flexbox
+  //display: -webkit-flex
+  //display: flex
+  //-webkit-box-align: center
+  //-moz-box-align: center
+  //-ms-flex-align: center
+  //-webkit-align-items: center
+  //align-items: center
+  //-webkit-box-pack: center
+  //-moz-box-pack: center
+  //-ms-flex-pack: center
+  //-webkit-justify-content: center
+  //justify-content: center
+
+
+.title__h3
+  color: $color-white
+  text-align: center
+  font-size: 36px
+  font-weight: 400
+  margin: 0 0 24px
+
+
+.cards
+  display: flex
+  flex-wrap: wrap
+  align-items: flex-start
+  justify-content: center
+
+
+.cards__item
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  margin: 0 $indent $indent $indent
+
+
+.card
+  box-sizing: border-box
+  position: relative
+  margin: $card-indent-size 0 15px
+  border: $card-border-width solid $color-blue
+  border-top-width: 0
+  border-radius: 0 0 $card-border-radius $card-border-radius
+  //padding: 0 40px  $indent 50px
+  padding-left: 50px
+  width: $card-width
+  height: $card-height
+  background: $color-white-bg
+  user-select: none
+  font-family: $font-trebuchet
+  cursor: pointer
+  > div
+    pointer-events: none
+  &::before
+    content: ""
+    position: absolute
+    left: 17px
+    top: -$card-indent-size
+    display: block
+    border-top: inherit
+    border-top-width: $card-border-width
+    border-left: inherit
+    width: $card-indent-size
+    height: $card-indent-size - $card-border-width
+    background-color: inherit
+    transform: skew(-43deg)
+  &::after
+    content: ""
+    position: absolute
+    right: -$card-border-width
+    top: -$card-indent-size
+    display: block
+    border-top: inherit
+    border-top-width: $card-border-width
+    border-right: inherit
+    border-radius: 0 $card-border-radius 0 0
+    width: calc(100% - #{$card-indent-size})
+    height: $card-indent-size - $card-border-width
+    background-color: inherit
+  &:hover
+    border-color: $color-blue-hover
+    .card__weight
+      background: $color-blue-hover
+
+
+.card__text
+  z-index: 100
+  position: relative
+  top: -20px
+
+
+.card__preview
+  margin: 0
+  color: $color-grey
+  font-size: 16px
+  font-weight: 400
+
+
+.card__title
+  margin: 0 0 16px
+  color: $color-black
+  font-size: 48px
+  font-weight: 700
+  span
+    font-size: 24px
+    display: block
+
+
+.card__composition
+  margin: 0
+  color: $color-grey
+  font-size: 14px
+  font-weight: 400
+  line-height: 16px
+  span
+    font-weight: 700
+
+
+.card__weight
+  position: absolute
+  right: 11px
+  bottom: 11px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  width: 82px
+  height: 82px
+  text-align: center
+  color: $color-white
+  background: $color-blue
+  .count
+    margin: 4px 0 0
+    font-size: 42px
+    line-height: 40px
+  .dimension
+    margin: 0
+    font-size: 22px
+
+.card__img
+  position: absolute
+  left: 0
+  bottom: 0
+  width: 100%
+  height: 273px
+  background-repeat: no-repeat
+
+
+.card-description
+  margin: 0 auto
+  width: $card-width
+  font-family: $font-trebuchet
+  font-size: 13px
+  line-height: 13px
+  text-align: center
+  color: $color-white
+  text-shadow: 0 1px 0 #000000
+  user-select: none
+  p
+    margin: 0
+  .on-selected
+    display: none
+  .on-disabled
+    display: none
+    color: $color-yellow
+  span
+    display: inline-block
+    border-bottom: 1px dashed $color-blue
+    height: 13px
+    text-decoration: none
+    color: $color-blue
+    cursor: pointer
+    &:hover 
+      border-bottom: none
+
+
+.cards__item_selected
+  .card
+    border-color: $color-pink
+    .card__weight
+      background: $color-pink
+
+    
+.cards__item_selected_hover
+  .card
+    &:hover
+      border-color: $color-pink-hover
+      .card__preview
+        color: $color-pink-hover
+      .card__weight
+        background: $color-pink-hover
+
+.cards__item_disabled
+  .card
+    cursor: not-allowed
+    border-color: $color-gray-disabled
+    > div
+      opacity: 0.5
+      pointer-events: none
+    .card__preview, .card__title, .card__composition
+      color: $color-gray-disabled
+    .card__weight
+      opacity: 1
+      background-color: $color-gray-disabled
+  .card-description
+    pointer-events: none
+    p
+      color: $color-yellow
+
+
+@import "media"
