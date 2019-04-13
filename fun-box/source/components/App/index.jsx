@@ -10,7 +10,7 @@ const App = () => {
             <div className="cards">
                 <Card taste="фуа-гра" portion="10" present={1} weight="0,5" img={cat_img} isDisabled={false} />
                 <Card taste="рыбой" portion="40" present={2} weight="2" img={cat_img} isDisabled={false} />
-                <Card taste="курой" portion="100" present={5} weight="5" img={cat_img} isDisabled={false} />
+                <Card taste="курой" portion="100" present={5} weight="5" img={cat_img} isDisabled={true} />
             </div>
         </Fragment>
     )

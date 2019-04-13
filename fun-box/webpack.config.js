@@ -19,8 +19,7 @@ const PATHS = {
 const common = merge([
     {
         entry: {
-            index: PATHS.source + '/index.js',
-            //signUp: PATHS.source + '/signUp/index.jsx'
+            index: PATHS.source + '/index.js'
         },
         output: {
             path: PATHS.build,
@@ -31,18 +30,7 @@ const common = merge([
                 filename: 'index.html',
                 chunks: ['index', 'common'],
                 template: PATHS.source + '/index.html'
-            }),
-            // new HtmlWebpackPlugin({
-            //   filename: 'signUp.html',
-            //   chunks: ['signUp', 'common'],
-            //   template: PATHS.source + '/signUp/index.html'
-            // }),
-            // new webpack.ProvidePlugin({
-            //     '$': 'jquery',
-            //     'jQuery': 'jquery',
-            //     'React': 'react',
-            //     'ReactDOM': 'react-dom'
-            // })
+            })
         ]
     },
     uglifyJS(),

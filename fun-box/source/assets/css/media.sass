@@ -1,7 +1,20 @@
 @media screen and (max-width: 1200px)
+  body
+    height: 100vh
+
+  .wrapper
+    height: initial
+    min-height: 100vh
+
   .title__h3
     margin-top: 0.7em
 
 @media screen and (max-width: 410px)
   .cards__item
     margin: 0 0 40px 0
+
+@media screen and (max-width: 320px)
+  $card-width: 290px
+
+  .card, .card-description
+    width: $card-width

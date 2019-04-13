@@ -1,8 +1,7 @@
 {
   "name": "webpack-app",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": {},
+  "author": "Evdokimov Evgeny <hello@evdokimov-e.ru>",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --mode development",
@@ -47,7 +46,6 @@
   "dependencies": {
     "normalize.css": "^8.0.1",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "^4.3.1"
+    "react-dom": "^16.8.6"
   }
 }
