@@ -1,0 +1,122 @@
+<% var data = {
+title: "Заголовок | Проект",
+author: "EE"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+dgdfgfdg
+<div class="wrapper">
+    <section class="lv-1 img-wrap">
+        <div class="container direction-column justify-center">
+            <h1 class="heading-h1"><span>Lorem ipsum</span> dolor sit amet consectetur <span>adipiscing</span></h1>
+            <div class="preference">
+                <p class="preference--title">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+                <ul class="preference--list">
+                    <li class="preference--item">Totam rem aperiam eaque ipsa</li>
+                    <li class="preference--item">Sit voluptatem accusantium doloremque laudantium</li>
+                    <li class="preference--item">Sed ut perspiciatis, unde omnis iste natus error</li>
+                </ul>
+                <div class="row">
+                    <div class="btn btn-primary">Заказать</div>
+                    <div class="btn">Подробнее</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="lv-2 img-wrap">
+        <div class="container direction-column">
+            <div class="container--title">
+                <h3 class="heading-h3">Оформление &nbsp;Заказа</h3>
+                <p>Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+            </div>
+
+            <div class="advantage row justify-between">
+                <div class="icon-block">
+                    <div class="icon-d">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <p>Lorem ipsum dolor <br> sit amet</p>
+                </div>
+
+                <div class="icon-block">
+                    <div class="icon-d">
+                        <i class="fa fa-percent" aria-hidden="true"></i>
+                    </div>
+                    <p>Сonsecteturadipiscing elit</p>
+                </div>
+
+                <div class="icon-block">
+                    <div class="icon-d">
+                        <div class="icon-plus"></div>
+                        <i class="fa fa-file-text-o"></i>
+                    </div>
+                    <p>Sed do eiusmod tempor</p>
+                </div>
+
+                <div class="icon-block">
+                    <div class="icon-d">
+                        <i class="fa fa-envelope-o"></i>
+                    </div>
+                    <p>Esse cillum dolore <br> eu fugiat</p>
+                </div>
+
+                <div class="icon-block">
+                    <div class="icon-d">
+                        <img src="src/assets/img/2.png" alt="">
+                    </div>
+                    <p>Excepteur sint occaecat <br> cupidatat non proident</p>
+                </div>
+            </div>
+
+            <form>
+                <div class="input-row row justify-between">
+                    <div class="selected" data-state="">
+                        <div class="selected--title">Выберите тип системы</div>
+                        <div class="selected--wrap">
+                            <div class="selected--content">
+                                <input id="selected0" class="selected--input" type="radio" />
+                                <label for="selected0" class="selected--label"></label>
+                                <input id="selected1" class="selected--input" type="radio" />
+                                <label for="selected1" class="selected--label">Sed ut perspiciatis</label>
+                                <input id="selected2" class="selected--input" type="radio" />
+                                <label for="selected2" class="selected--label">Nemo enim ipsam</label>
+                                <input id="selected3" class="selected--input" type="radio" />
+                                <label for="selected3" class="selected--label">Et harum quidem</label>
+                                <input id="selected4" class="selected--input" type="radio" />
+                                <label for="selected4" class="selected--label">Temporibus autem</label>
+                                <input id="selected5" class="selected--input" type="radio" />
+                                <label for="selected5" class="selected--label">Itaque earum rerum</label>
+                                <input id="selected6" class="selected--input" type="radio" />
+                                <label for="selected6" class="selected--label">Itaque earum rerum</label>
+                                <input id="selected7" class="selected--input" type="radio" />
+                                <label for="selected7" class="selected--label">Itaque earum rerum</label>
+                                <input id="selected8" class="selected--input" type="radio" />
+                                <label for="selected8" class="selected--label">Itaque earum rerum</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="email" class="d-input" placeholder="Ваш e-mail">
+                    <input type="text" class="d-input" placeholder="Ваше имя">
+                </div>
+
+                <div class="range--container row justify-between align-end mb-50">
+                    <div class="range--wrap row direction-column z-10">
+                        <div class="row justify-between">
+                            <p>Sed ut perspiciatis, unde omnis iste natus</p>
+                            <p>75%</p>
+                        </div>
+                        <input type="range" value="75">
+                    </div>
+
+                    <div class="btn b-btn btn-upload"><i class="fa fa-file-text-o"></i><span>Прикрепить файл</span></div>
+                </div>
+
+                <div class="row justify-center">
+                    <div class="btn b-btn btn-primary">Отправить</div>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
