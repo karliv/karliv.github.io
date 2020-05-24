@@ -313,9 +313,13 @@ body {
   border: 5px solid #286690;
   position: relative;
   &::after {
-    content: "• • • • •";
+    content: "";
+    width: 102px;
+    height: 6px;
+    background-image: url("../img/5-layers.png");
     position: absolute;
-    right: -138px;
+    background-repeat: no-repeat;
+    right: -133px;
     letter-spacing: 4px;
     top: 39px;
     font-size: 26px;
