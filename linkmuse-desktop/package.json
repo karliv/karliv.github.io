@@ -57,7 +57,7 @@
     "libphonenumber-js": "^1.2.15",
     "liquor-tree": "^0.2.63",
     "lodash": "^4.17.10",
-    "marked": "^0.6.2",
+    "marked": "^1.2.0",
     "math-clamp": "^1.0.0",
     "moment": "^2.22.2",
     "nl2br": "0.0.3",
