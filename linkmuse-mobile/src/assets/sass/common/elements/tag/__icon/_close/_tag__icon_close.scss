@@ -1,0 +1,14 @@
+.tag__icon_close {
+	display: none;
+	box-sizing: border-box;
+	padding: $multiplicity;
+	width: 6px;
+	height: 6px;
+	margin-left: $multiplicity*2;
+	fill: $lm-white;
+	/*background: url('../src/assets/lm-close-small.svg') center center no-repeat;*/
+	-webkit-background-size: cover;
+	background-size: cover;
+	transition: all 0.15s ease-in-out;
+}
+

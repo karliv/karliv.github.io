@@ -1,0 +1,19 @@
+.section_declaration_creating_big {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: $multiplicity*12 0;
+  border-top: 1px solid $lm-gray-opacity-8;
+  &:first-child {
+    border-top: none;
+  }
+  &:only-child {
+    border-top: none;
+  }
+  .lm-dropzone {
+    margin-bottom: 0;
+  }
+}
+
+@import '_disabled/_section_declaration_creating_big_disabled.scss';

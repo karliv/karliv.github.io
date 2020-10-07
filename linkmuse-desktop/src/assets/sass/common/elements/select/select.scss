@@ -1,0 +1,8 @@
+.select {
+	&:disabled {
+		cursor: not-allowed;
+	}
+}
+@import '__label/_select__label.scss';
+
+@import '_profile-settings/_select_profile-settings.scss';

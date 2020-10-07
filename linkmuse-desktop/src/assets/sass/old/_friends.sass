@@ -1,0 +1,140 @@
+.friends-page
+  width: 100%
+  float: none
+.seach-title
+  position: absolute
+  right: 26px
+  color: $logan
+  height: 59px
+  line-height: 59px
+  i
+    cursor: pointer
+    font-size: 21px
+    display: inline-block
+    vertical-align: middle
+  input
+    width: 400px
+    display: inline-block
+    padding-left: 15px
+    color: $dark-gray
+    vertical-align: middle
+    height: 36px
+    line-height: 36px
+    margin-left: 20px
+    border-radius: 3px
+    background-color: $white
+    border: solid 1px rgba($heather-3, 0.6)
+    margin-bottom: 0
+
+.friends--list
+  margin-top: 26px
+  margin-bottom: 26px
+  .friends--item
+    text-align: center
+    margin-bottom: 26px
+    min-height: 174px
+    max-height: 174px
+    &:hover
+      &:after
+        border-radius: 2px
+        background-color: $white
+        box-shadow: 0 4px 7px 0 rgba($color-black, 0.08)
+        border: solid 1px $solitude-1
+        //content: ''
+        display: block
+        width: 217px
+        height: calc(100% + 52px)
+        margin-top: -20px
+        position: absolute
+        top: 0
+        left: calc(50% - 108.5px)
+        padding-bottom: 40px
+        box-sizing: content-box
+        z-index: 10
+      .info
+        display: block
+        span
+          font-weight: lighter
+    .info
+      position: relative
+      z-index: 11
+      display: none
+      span
+        max-height: 20px
+        overflow: hidden
+        text-overflow: ellipsis
+    img
+      width: 118px
+      height: 118px
+      border-radius: 50%
+      display: block
+      margin: 0 auto
+      margin-bottom: 7px
+      position: relative
+      z-index: 1
+    span
+      display: block
+      &.raiting
+        font-size: 15px
+        letter-spacing: .1px
+        color: $white
+        display: block
+        position: absolute
+        top: 90px
+        right: 50px
+        background: $logan-1
+        width: 33px
+        height: 33px
+        text-align: center
+        line-height: 30px;
+        -webkit-border-radius: 50%
+        border-radius: 50%
+        border: 3px solid $ghost-white
+        z-index: 1
+      &.friends--item-name
+        position: relative
+        z-index: 1
+        font-size: 15px
+        font-weight: normal
+        font-style: normal
+        font-stretch: normal
+        max-height: 22px
+        text-overflow: ellipsis
+        line-height: 22px
+        overflow: hidden
+        letter-spacing: 0.1px
+        color: $black-rock-1
+      &.friends--item-category
+        position: relative
+        z-index: 1
+        //min-height: 22px
+        font-size: 15px
+        line-height: 22px
+        color: $storm-grey
+        font-weight: lighter
+    .friends--item-add
+      font-size: 23px
+      border-radius: 50%
+      background-color: $white
+      border: 1px solid $white
+      position: absolute
+      top: 89px
+      right: 55px
+      z-index: 2
+      &.icon-plus_L
+        font-size: 12px
+        background-color: $fire-engine-red-1
+        border: solid 1px $white
+        width: 23px
+        height: 23px
+        line-height: 23px
+        color: $white
+        font-weight: bolder
+      &.icon-vk-normal
+        color: $white
+        border: 1px solid $san-marino
+        background-color: $san-marino
+      &.icon-success-full
+        color: $link-water-2
+      &.icon-Capa-full
+        color: $fire-engine-red-1

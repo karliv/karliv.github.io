@@ -1,0 +1,11 @@
+.list {}
+@import '__item/_list__item.scss';
+@import '__body/_list__body.scss';
+@import '__header/_list__header.scss';
+
+@import '_service-description/_list_service-description.scss';
+@import '_required-fields/_list_required-fields.scss';
+@import '_filters/_list_filters.scss';
+@import '_dropdown/_list_dropdown.scss';
+@import '_features/_list_features.scss';
+@import '_values/_list_values.scss';

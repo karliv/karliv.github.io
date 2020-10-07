@@ -1,0 +1,7 @@
+.page__container_mailing {
+	flex-direction: column;
+	align-items: center;
+}
+
+@import '_subscribe/_page__container_mailing_subscribe.scss';
+@import '_unsubscribe/_page__container_mailing_unsubscribe.scss';

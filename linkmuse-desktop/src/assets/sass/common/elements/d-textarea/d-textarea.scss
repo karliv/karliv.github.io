@@ -1,0 +1,8 @@
+.d-textarea {
+  margin-bottom: 0;
+  &:hover, &:focus {
+    transition: all 0.15s ease;
+    border-color: $lm-main;
+  }
+}
+@import '__field/_d-textarea__field.scss';

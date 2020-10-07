@@ -1,0 +1,12 @@
+.card__buttons_response_invitation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 12px 0;
+	border-top: 1px solid rgba(40, 42, 54, 0.08);	
+	@media screen and (min-width: $sm-breakpoint) {
+		padding: 16px 0;
+		justify-content: flex-start;
+	}
+}
+

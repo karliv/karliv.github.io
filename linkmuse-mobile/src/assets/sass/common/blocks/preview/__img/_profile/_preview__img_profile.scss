@@ -1,0 +1,13 @@
+.preview__img_profile {
+	box-sizing: border-box;
+	width: 40px;
+	height: 40px;
+	border-radius: $border-radius_8;
+	object-fit: cover;
+	margin-right: $multiplicity*3;
+	font-size: 8px;
+	flex-shrink: 0;
+	flex-grow: 0;
+}
+
+@import '_verified/_preview__img_profile_verified.scss';

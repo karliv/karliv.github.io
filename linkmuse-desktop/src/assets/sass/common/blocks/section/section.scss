@@ -1,0 +1,26 @@
+.section {
+	word-break: normal;
+	word-wrap: break-word;
+}
+@import '__address/_section__address.scss';
+@import '__body/_section__body.scss';
+@import '__button/_section__button.scss';
+@import '__column/_section__column.scss';
+@import '__container/_section__container.scss';
+@import '__description/_section__description.scss';
+@import '__header/_section__header.scss';
+@import '__img/_section__img.scss';
+@import '__label/_section__label.scss';
+@import '__tabs/_section__tabs.scss';
+@import '__title/_section__title.scss';
+@import '__tooltip/_section__tooltip.scss';
+@import '__link/_section__link.scss';
+@import '__content/_section__content.scss';
+
+@import '_profile/_section_profile.scss';
+@import '_services/_section_services.scss';
+@import '_responses/_section_responses.sass';
+@import '_studio/_section_studio.scss';
+@import '_declaration/_section_declaration.scss';
+@import '_casting/_section_casting.scss';
+@import '_specialist-parameters/_section_specialist-parameters.scss';

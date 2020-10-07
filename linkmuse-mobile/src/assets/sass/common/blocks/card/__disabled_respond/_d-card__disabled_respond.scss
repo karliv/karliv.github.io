@@ -1,0 +1,55 @@
+.d-card__disabled_respond {
+  background: $lm-gray-5;
+  border-radius: $multiplicity*2;
+  border: 1px solid $lm-gray-opacity-8;
+  padding: $multiplicity*4 $multiplicity*5;
+
+  .d-card__disabled_respond__description {
+    font-size: 12px;
+    line-height: 1.33;
+    color: $lm-gray-1;
+    letter-spacing: 0.5px;
+    span {
+      display: block;
+    }
+
+    .d-link {
+      display: block;
+      font-weight: 600;
+      font-size: 12px;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.29;
+      letter-spacing: 0.3px;
+      color: $lm-main;
+      text-decoration: none;
+      transition: all 0.15s ease-in-out;
+    }
+  }
+}
+
+.d-card__disabled_respond_big {
+  background: $lm-gray-5;
+  padding: $multiplicity*6 0;
+
+  .d-card__disabled_respond__description {
+    font-size: 14px;
+    line-height: 1.29;
+    color: $lm-gray-1;
+    letter-spacing: 0.25px;
+
+    span {
+      display: block;
+    }
+
+    .d-link {
+       display: block;
+       font-weight: 600;
+       font-size: 14px;
+       letter-spacing: 0.5px;
+       color: $lm-main;
+       text-decoration: none;
+       transition: all 0.15s ease-in-out;
+     }
+  }
+}

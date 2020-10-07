@@ -1,0 +1,19 @@
+.m-flex {
+	display: flex;
+}
+
+.m-flex_inline {
+	display: inline-flex;
+}
+
+.m-flex__justify_between {
+	display: flex;
+	justify-content: space-between;
+	//flex-wrap: wrap;
+}
+
+.m-flex__justify_end {
+	display: flex;
+	justify-content: flex-end;
+	//flex-wrap: wrap;
+}

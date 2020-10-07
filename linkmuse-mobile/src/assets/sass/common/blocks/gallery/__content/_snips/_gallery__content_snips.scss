@@ -1,0 +1,23 @@
+.gallery__content_snips {
+  @media screen and (max-width: 563px) {
+    .img_declaration_casting {
+      min-height: 174px;
+    }
+  }
+  @media screen and (min-width: 564px) {
+    &.collapse-snips {
+      a {
+        width: 164px;
+        height: 200px;
+        &:nth-child(4) {
+          margin-right: 12px;
+          margin-top: 12px;
+        }
+        &:nth-child(3n + 3) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+

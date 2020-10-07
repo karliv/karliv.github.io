@@ -1,0 +1,18 @@
+.d-textarea__field {
+	margin-bottom: 0;
+	width: 100%;
+	border: 1px solid $lm-gray-4;
+	&:hover {
+		border: 1px solid $lm-gray-3;		
+	}
+	&:focus {
+		border: 1px solid $lm-gray-4;
+		&:hover {
+			border: 1px solid $lm-gray-3;
+		}
+	}
+	&:disabled {
+		cursor: not-allowed;
+	}
+}
+

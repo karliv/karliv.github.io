@@ -1,0 +1,50 @@
+.response_casting {
+	border-radius: $border-radius_4;
+	background-color: $lm-white;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 564px;
+	padding: 0 $multiplicity*6;
+	margin-top: $multiplicity;
+	&:first-child {
+		margin-top: 0;
+	}
+	&:only-child {
+		margin-top: 0;
+	}
+	
+	@media screen and (min-width: $sm-breakpoint) {
+		max-width: 424px;
+	}
+	.section_specialist-parameters {
+		padding: 0;
+	}
+	.profile__number {
+		font-size: 14px;
+		font-weight: 600;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.29;
+		letter-spacing: 0.5px;
+		color: $lm-gray-1;
+	}
+	.profile__gender {
+		font-size: 14px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.29;
+		letter-spacing: 0.3px;
+		color: $lm-gray-1;
+	}
+	.profile__city {
+		font-size: 12px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.33;
+		letter-spacing: 0.5px;
+		color: $lm-gray-2;
+	}
+}
+

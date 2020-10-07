@@ -1,0 +1,18 @@
+.tab__content_studios {
+	box-sizing: border-box;
+	/*position: absolute;*/
+	z-index: 9;
+	top: 29px;
+	left: 0;
+	/*border-top: 2px solid $lm-gray-5;*/
+	/*padding: 8px 24px;*/
+	width: 100%;
+	max-width: 420px;
+	background-color: $lm-white;
+	/*overflow-y: auto;*/
+	/*display: none;*/
+	transition: all 0.25s ease;
+	height: calc(100% - 30px); 
+	@include webkit-scrollbar();
+}
+

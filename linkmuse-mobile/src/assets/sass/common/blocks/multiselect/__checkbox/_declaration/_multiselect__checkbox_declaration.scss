@@ -1,0 +1,48 @@
+.multiselect__checkbox_declaration {
+	width: 100%;
+	.checkbox__mark {
+		display: none;
+		transition: all 0.15s ease;
+		&:checked + .checkbox__label {
+			&::before {
+				content: '';
+				background-position: center center;
+				background-repeat: no-repeat;
+				-webkit-background-size: cover;
+				background-size: cover;
+				transition: all 0.15s ease;
+				border-color: $lm-main;
+				background-color: $lm-main;
+				background-image: url('/dist/img/icons/_declaration/checkbox__mark.svg');
+				fill: $lm-white;
+			}
+		}
+	}
+	.checkbox__label {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		width: 100%;
+		font-size: 14px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.29;
+		letter-spacing: 0.3px;
+		color: $lm-gray-2;
+		&::before {
+			content: '';
+			display: flex;
+			flex-shrink: 0;
+			align-items: center;
+			justify-content: center;
+			margin-right: 8px;
+			width: 16px;
+			height: 16px;
+			border: 1px solid $lm-gray-4;
+			border-radius: 2px;
+			background-color: transparent;
+		}
+	}
+}
+

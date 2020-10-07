@@ -1,0 +1,66 @@
+.visibility-header {
+  .page_feed {
+    min-height: calc(100vh - 48px);
+  }
+}
+.page_feed {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	max-width: 564px;
+	margin: 0 auto;
+	input, select, textarea {
+		margin-bottom: 0;
+	}
+	.lm-dropdown {
+		margin-bottom: 0;
+		&::after {
+			top: 12px;
+		}
+	}
+	.lm-dropdown-selected {
+		box-sizing: border-box;
+	}
+	.lm-dropdown-icon {
+		display: none !important;
+	}
+	.btn_filters {
+		position: fixed;
+		bottom: 24px;
+		left: 50%;
+		margin-left: -70px;
+		z-index: 50;
+	}
+	.btn_options {
+		width: 16px;
+		height: 16px;
+		padding: 0;
+		background-color: transparent;
+		min-width: auto;
+		min-height: auto;
+	}
+	.profile {
+		box-sizing: border-box;
+		display: flex;
+		width: 100vw;
+		justify-content: center;
+		align-items: center;
+		padding: $multiplicity*3 $multiplicity*4;
+		background-color: $lm-main_08;
+		@media screen and (min-width: $sm-breakpoint) {
+			padding: $multiplicity*3 $multiplicity*6;
+		}
+	}
+	.profile__name {
+		font-size: 8px;
+		font-weight: 600;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: 1px;
+		color: $lm-main;
+		text-transform: uppercase;
+	}
+}
+

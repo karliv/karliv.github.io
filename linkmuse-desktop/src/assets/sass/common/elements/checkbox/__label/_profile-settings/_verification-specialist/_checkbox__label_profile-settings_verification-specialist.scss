@@ -1,0 +1,28 @@
+.checkbox__label_profile-settings_verification-specialist {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: 0.3px;
+	color: $lm-gray-2;
+	&:before {
+		content: '';
+		display: flex;
+		box-sizing: border-box;
+		justify-content: center;
+		align-items: center;
+		width: 16px;
+		height: 16px;
+		border-radius: 1px;
+		border: 1px solid;
+		border-color: $lm-gray-4;
+		margin-right: 8px;
+		padding-top: 1.5px;
+	}
+}
+

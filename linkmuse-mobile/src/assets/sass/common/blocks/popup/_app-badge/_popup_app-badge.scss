@@ -1,0 +1,13 @@
+.popup_app-badge {
+	width: 100%;
+  bottom: -4px !important;
+  background: transparent !important;
+  .popup__content {
+    display: block;
+  }
+	.popup__img {
+		width: 100%;
+	}
+}
+
+@import '_active/_popup_app-badge_active.scss';

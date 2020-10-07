@@ -1,0 +1,8 @@
+.card__header_response_contractor {
+	padding: 12px 0;
+	border-bottom: 1px solid rgba(40, 42, 54, 0.08);	
+	@media screen and (min-width: $sm-breakpoint) {
+		padding: 16px 0;
+	}
+}
+

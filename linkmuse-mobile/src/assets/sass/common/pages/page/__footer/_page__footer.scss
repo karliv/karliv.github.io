@@ -1,0 +1,8 @@
+.page__footer {
+	flex-shrink: 0;
+	flex-grow: 0;
+}
+
+@import '_declaration/_page__footer_declaration.scss';
+@import '_response/_page__footer_response.scss';
+@import '_vs-rules/_page__footer_vs-rules.scss';

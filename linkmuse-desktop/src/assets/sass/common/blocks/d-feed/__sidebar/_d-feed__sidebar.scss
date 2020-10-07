@@ -1,0 +1,36 @@
+.d-feed__sidebar {
+	position: relative;
+	width: 100%;
+	max-width: 272px;
+	flex-shrink: 0;
+	.sidebar__content {
+		width: 100%;
+		max-width: 272px;
+		box-sizing: border-box;
+
+    .filters {
+      &.loading {
+        &:after {
+          top: 0;
+          left: 0;
+          content: '';
+          display: block;
+          height: 100%;
+          width: 100%;
+          background: #ffffff;
+          opacity: 0.3;
+          position: absolute;
+        }
+      }
+    }
+	}
+	.sidebar__content_active {
+		position: fixed;
+		top: 0;
+	}
+	.d-card_outline {
+		box-shadow: none;
+		opacity: 0.64;
+	}
+}
+

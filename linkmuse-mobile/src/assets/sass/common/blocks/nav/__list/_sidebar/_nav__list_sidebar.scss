@@ -1,0 +1,12 @@
+.nav__list_sidebar {
+	width: 100%;
+	div {
+		width: 100%;
+		padding: $multiplicity*3 0;
+		border-bottom: 1px solid $lm-gray-opacity-8;
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+}
+

@@ -1,0 +1,17 @@
+.multiselect__group_buttons_declaration {
+	box-sizing: border-box;
+	position: absolute;
+	z-index: 1000;
+	bottom: 0;
+	left: 0;
+	background-color: $lm-white;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 8px 16px;
+	//border-radius: 16px 16px 0 0;
+	border-radius: 8px;
+	box-shadow: $panes__box-shadow_top;
+	justify-content: space-between;
+}
+

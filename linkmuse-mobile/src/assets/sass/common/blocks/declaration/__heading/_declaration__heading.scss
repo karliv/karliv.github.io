@@ -1,0 +1,10 @@
+.declaration__heading {
+	max-width: 256px;
+	color: $lm-gray-1;
+	word-wrap: break-word;
+	word-break: normal;
+	&:only-child {
+		margin-bottom: 0;
+	}
+}
+

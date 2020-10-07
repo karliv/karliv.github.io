@@ -1,0 +1,1823 @@
+//@import "/node_modules/vue2-scrollbar/dist/style/vue2-scrollbar.css"
+
+[v-cloak]
+  display: none !important
+
+button, input, optgroup, select, textarea
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Arial
+
+html
+  min-height: calc(100vh + 1px)
+  min-width: 1225px
+  background-color: transparent !important
+
+.lm-loader
+  width: 100%
+  display: block
+  text-align: center
+
+*
+  outline: none
+
+body
+  overflow-x: hidden
+  background-color: #F3F4F6 !important
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Arial
+  font-size: 14px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.29
+  letter-spacing: .25px
+
+.header
+  box-shadow: 0 0px 7px 0 rgba(12,17,29,.16)
+.footer
+  z-index: 7
+
+html, body
+  width: 100vw
+
+a[href^="tel"]
+  color: inherit
+  text-decoration: none
+
+footer
+  flex: 0 0 auto
+/* endfooter */
+
+.clr
+  clear: both
+
+.separator
+  height: 1px
+  background-color: $solitude-8
+  margin-bottom: 40px
+
+ul
+  margin: 0
+  padding: 0
+
+li
+  margin: 0
+  padding: 0
+
+.pd-26
+  padding: 26px
+  &.no-bottom
+    padding-bottom: 0
+.pd-0
+  padding: 0 !important
+.this-flex
+  display: flex !important
+.flex-1-auto
+  flex: 1 auto
+.flex-space-between
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+  -webkit-flex-direction: column
+  -ms-flex-direction: column
+  flex-direction: column
+  -webkit-flex-wrap: wrap
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  -webkit-justify-content: space-between
+  -ms-flex-pack: justify
+  justify-content: space-between
+  -webkit-align-content: stretch
+  -ms-flex-line-pack: stretch
+  align-content: stretch
+  -webkit-align-items: stretch
+  -ms-flex-align: stretch
+  align-items: stretch
+
+.flex-aling-center-column
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+  -webkit-flex-direction: column
+  -ms-flex-direction: column
+  flex-direction: column
+  -webkit-flex-wrap: nowrap
+  -ms-flex-wrap: nowrap
+  flex-wrap: nowrap
+  -webkit-justify-content: center
+  -ms-flex-pack: center
+  justify-content: center
+  -webkit-align-content: stretch
+  -ms-flex-line-pack: stretch
+  align-content: stretch
+  -webkit-align-items: center
+  -ms-flex-align: center
+  align-items: center
+
+.flex-aling-center
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+  -webkit-flex-direction: row
+  -ms-flex-direction: row
+  flex-direction: row
+  -webkit-flex-wrap: nowrap
+  -ms-flex-wrap: nowrap
+  flex-wrap: nowrap
+  -webkit-justify-content: center
+  -ms-flex-pack: center
+  justify-content: center
+  -webkit-align-content: stretch
+  -ms-flex-line-pack: stretch
+  align-content: stretch
+  -webkit-align-items: center
+  -ms-flex-align: center
+  align-items: center
+
+.flex-wrap-bettwen-start
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+  -webkit-flex-direction: row
+  -ms-flex-direction: row
+  flex-direction: row
+  -webkit-flex-wrap: wrap
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  -ms-flex-pack: justify
+  -webkit-align-content: stretch
+  -ms-flex-line-pack: stretch
+  align-content: stretch
+  -webkit-align-items: flex-start
+  -ms-flex-align: start
+  align-items: flex-start
+
+.flex-beetwen
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+  -webkit-flex-direction: row
+  -ms-flex-direction: row
+  flex-direction: row
+  -webkit-flex-wrap: nowrap
+  -ms-flex-wrap: nowrap
+  flex-wrap: nowrap
+  -webkit-justify-content: space-between
+  -ms-flex-pack: justify
+  justify-content: space-between
+  -webkit-align-content: stretch
+  -ms-flex-line-pack: stretch
+  align-content: stretch
+  -webkit-align-items: flex-start
+  -ms-flex-align: start
+  align-items: flex-start
+
+.flex-start-center
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+  -webkit-flex-direction: row
+  -ms-flex-direction: row
+  flex-direction: row
+  -webkit-flex-wrap: nowrap
+  -ms-flex-wrap: nowrap
+  flex-wrap: nowrap
+  -webkit-justify-content: flex-start
+  -ms-flex-pack: start
+  justify-content: flex-start
+  -webkit-align-content: stretch
+  -ms-flex-line-pack: stretch
+  align-content: stretch
+  -webkit-align-items: center
+  -ms-flex-align: center
+  align-items: center
+
+.flex-beetwen-center
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+  -webkit-flex-direction: row
+  -ms-flex-direction: row
+  flex-direction: row
+  -webkit-flex-wrap: nowrap
+  -ms-flex-wrap: nowrap
+  flex-wrap: nowrap
+  -webkit-justify-content: space-between
+  -ms-flex-pack: justify
+  justify-content: space-between
+  -webkit-align-content: stretch
+  -ms-flex-line-pack: stretch
+  align-content: stretch
+  -webkit-align-items: center
+  -ms-flex-align: center
+  align-items: center
+
+.flex-beetwen-bottom
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+  -webkit-flex-direction: row
+  -ms-flex-direction: row
+  flex-direction: row
+  -webkit-flex-wrap: nowrap
+  -ms-flex-wrap: nowrap
+  flex-wrap: nowrap
+  -webkit-justify-content: space-between
+  -ms-flex-pack: justify
+  justify-content: space-between
+  -webkit-align-content: stretch
+  -ms-flex-line-pack: stretch
+  align-content: stretch
+  -webkit-align-items: flex-end
+  -ms-flex-align: end
+  align-items: flex-end
+
+.justify_flex-end
+  justify-content: flex-end
+
+.align-center
+  display: flex
+  align-items: center
+
+.wrapper
+  //max-width: 1156px
+  margin: 0 auto
+  //min-width: 1156px
+  position: relative
+  //padding: 0 10px
+
+.page
+  background-color: #F3F4F6
+
+.sidebar
+  width: $width-sidebar
+  float: left
+  margin-right: 16px
+  position: relative
+  .binding-users
+    margin-top: 16px
+    border-radius: 3px
+    background-color: #ffffff
+    box-shadow: 0 2px 14px 0 rgba(48, 62, 71, 0.07)
+    &.null
+      width: 272px
+      height: 196px
+      border-radius: 3px
+      display: flex
+      align-items: center
+      justify-content: center
+      padding: 75px 26px
+      a
+        font-size: 15px
+        line-height: 1.53
+        text-align: center
+        color: $lm-main
+    .list-users
+      .project-user
+        &:not(:last-child)
+          margin-bottom: 16px
+        img
+          border: 3px solid #fff
+          margin-right: 4px
+        .project-user--info
+          width: 159px
+          .project-user--name, .project-user--type
+            max-height: 22px
+            height: 22px
+            text-overflow: ellipsis
+            white-space: nowrap
+            overflow: hidden
+          .project-user--name
+            font-size: 15px
+            line-height: 1.47
+            text-align: left
+            color: #0c111d
+          .project-user--type
+            font-size: 15px
+            line-height: 1.47
+            text-align: left
+            color: #85888e
+    .title
+      margin-bottom: 12px
+      .binding-users--add
+        background-image: url('/dist/img/icon/message.svg')
+      .binding-users--edit
+        background-image: url('/dist/img/icon/edit.svg')
+      .binding-users--edit, .binding-users--add
+        font-size: 15px
+        text-align: right
+        color: #85888e
+        float: right
+        line-height: 22px
+        display: block
+        width: 16px
+        height: 16px
+        background-size: contain
+        margin-left: 10px
+        background-repeat: no-repeat
+        background-position: center
+        cursor: pointer
+      span
+        font-size: 15px
+        line-height: 1.47
+        letter-spacing: 0.1px
+        text-align: left
+        color: #0c111d
+        display: inline-block
+        vertical-align: middle
+        margin-right: 4px
+        &.count
+          margin-right: 0
+          color: #85888e
+
+.content
+  float: left
+  width: $width-content
+
+a
+  color: $storm-grey
+  text-decoration: none
+  transition: color .25s, background-color .25s, border-color .25s ease-in
+  &:hover
+    -webkit-transition: none
+    transition: none
+
+.button
+  border-radius: 8px
+  text-align: center
+  color: $white
+  height: 40px
+  display: inline-block
+  font-size: 12px
+  text-transform: uppercase
+  font-weight: 600
+  line-height: 40px
+  margin-right: 12px
+  cursor: pointer
+  &.blue
+    line-height: 42px
+    background-color: #0e70e5
+    font-size: 16px
+    font-weight: 500
+    text-align: center
+    color: #ffffff
+  &.shaddow
+    min-width: 156px
+    border: solid 1px $white-smoke
+    width: auto
+    padding: 0 20px
+    position: relative
+    vertical-align: middle
+    overflow: hidden
+.circle
+  border: solid 1px $white-smoke
+  width: 44px
+  height: 44px
+  overflow: hidden
+  display: inline-block
+  vertical-align: middle
+  margin-right: 26px
+  border-radius: 50%
+  color: $white
+  text-align: center
+  line-height: 45px
+  font-size: 23px
+  position: relative
+  @include _buildIconMessage('%23fff')
+  background-position: center 11px
+  background-repeat: no-repeat
+  background-size: 50%
+  &:before
+    display: none
+  &:hover
+    border: solid 1px $white
+    color: $white
+.button.invite
+  width: 156px
+  border: solid 1px $white-smoke
+  &:hover
+    border: 1px solid transparent
+    background-color: $zircon
+    color: $tangaroa
+  &:active, .active
+    border: 1px solid transparent
+    background-color: $zircon
+    color: $bakers-chocolate
+.button.disabled
+  background-color: transparent !important
+  border: 1px solid $solitude-7 !important
+  color: $mischka-2 !important
+  cursor: no-drop
+.button.write
+  background-color: $fire-engine-red-1
+  &:hover
+    background-color: $lm-main-hover
+  &:active, &.active
+    background-color: $fire-engine-red-2
+    box-shadow: inset 0 1px 3px 0 rgba($color-black, 0.34)
+    color: $solitude-3
+/* End Left Mini-menu */
+
+.favorite, .like, .to-card-button, .message-customer, .follow, .follow-anim, .edit
+  border: solid 1px $pattensblue
+  width: 45px
+  height: 45px
+  display: inline-block
+  vertical-align: bottom
+  margin-right: 20px
+  border-radius: 50%
+  color: $white
+  text-align: center
+  line-height: 45px
+  font-size: 23px
+  &:hover
+    border: solid 1px $white
+    color: $pattensblue
+  &:active
+    border: solid 1px $pattensblue
+    color: $solitude
+
+.follow
+  font-size: 20px
+  &:active, &.active
+    line-height: 40px
+    &:before
+      content: '\e93a'
+      font-size: 14px
+    &:hover
+      &:before
+        content: '\e94f'
+
+.favorite
+  line-height: 43px
+  &:hover, &.active
+    background: linear-gradient(to bottom, $dandelion, $pumpkin)
+    &:before
+      content: "\e90d"
+
+.like
+  line-height: 47px
+  margin-right: 26px
+  &:hover
+    border: solid 1px $solitude
+    &:before
+      content: "\e90c"
+  &.active, &:active
+    border: solid 1px $pattensblue
+
+    &:before
+      content: "\e90c"
+    &:hover
+
+      color: $zircon
+
+/* user lists avatar */
+/* Well */
+.well
+  border-radius: 2px
+  background-color: $white
+  box-shadow: 0 1px 3px 0 rgba($color-black, 0.17)
+  &.well-no-padding > div
+    padding: 0
+  &.well-no-shadow
+    box-shadow: none
+  > div
+    padding: 0 26px
+  .well--header
+    color: $valhalla-1
+    padding-top: 20px
+    padding-bottom: 20px
+    border-bottom: solid 1px $solitude-1
+    span
+      letter-spacing: 0.1px
+      color: $valhalla-1
+      font-size: 16px
+  .well--content
+    margin: 25px 0
+
+.well--footer
+  text-align: center
+  padding: 18px 0 !important
+  border-top: solid 1px $solitude-1
+  &.no-separator
+    border: 0
+  a
+    font-size: 15px
+    color: $nobel
+    &:hover, &.active
+      color: $lm-main-hover
+/* END Well */
+
+/* TABS GLOBAL */
+.nav-tabs
+  border: 0
+  padding: 0
+  position: relative
+  > li
+    float: none
+    margin-bottom: 0
+    margin-right: 31px
+    &.active
+      a
+        color: $chetwode-blue-1
+        background-color: transparent
+    a
+      border: 0 !important
+      padding: 0
+      color: $aluminium
+      font-size: 15px
+      letter-spacing: 0.1px
+      &:hover
+        //color: $crimson !important
+        color: $tangaroa !important
+        background: none
+/* END TABS GLOBAL */
+
+/* MODAL */
+.modal-message
+  .modal-dialog
+    width: 600px
+  .modal-message--action
+    text-align: right
+    .actions
+      display: inline-block
+      padding: 10px 0
+      i:not(.icon-Add)
+        opacity: 0
+        color: $link-water-2
+        font-size: 19px
+        margin-left: 20px
+        transition: all .1s ease-out
+        &:nth-child(1)
+          transition-delay: 80ms
+        &:nth-child(2)
+          transition-delay: 60ms
+        &:nth-child(3)
+          transition-delay: 40ms
+        &:nth-child(4)
+          transition-delay: 20ms
+      &:hover
+        .icon-Add
+          transform: rotate(45deg)
+        i
+          opacity: 1
+    .count
+      margin-bottom: 20px
+      color: $aluminium
+      font-size: 14px
+    i, .button
+      display: inline-block
+    i
+      transition: all .1s ease-out
+      color: $mischka-2
+      font-size: 19px
+      cursor: pointer
+      margin-left: 20px
+      position: relative
+      input
+        margin: 0
+        padding: 0
+        border: 0
+        width: 19px
+        top: 0
+        cursor: pointer
+        left: 0
+        opacity: 0
+        height: 19px
+        position: absolute
+    .button
+      color: $aluminium
+      width: 136px
+      background: transparent
+      &:hover, &.active
+        border-color: $lm-main-hover
+        color: #fff
+        background-color: $lm-main-hover
+      border: solid 1px #0063da
+      color: #0063da
+      border-radius: 23px
+      margin-left: 20px
+      line-height: 42px
+      margin-top: 0
+      transition: all .4s
+      &.writing
+        background-color: $fire-engine-red
+        color: $white
+        border: 1px solid $fire-engine-red
+        &:hover
+          background-color: $lm-main-hover
+        &:active
+          background-color: $lm-main-hover
+          box-shadow: inset 0 1px 3px 0 rgba($color-black, 0.34)
+          color: $solitude-3
+  textarea
+    width: 100%
+    min-height: 216px
+    padding: 14px
+    margin-bottom: 26px
+    font-size: 14px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: left
+    color: $tangaroa
+  .modal-message--user
+    margin-bottom: 16px
+    img
+      width: 48px
+      height: 48px
+      border-radius: 50%
+      margin-right: 14px
+    .modal-message--user-name
+      font-weight: normal
+      font-style: normal
+      font-stretch: normal
+      line-height: normal
+      letter-spacing: 0
+      color: $tangaroa
+    .modal-message--user-type
+      font-size: 14px
+      font-weight: lighter
+      font-style: normal
+      font-stretch: normal
+      line-height: normal
+      letter-spacing: 0.1px
+      color: $aluminium
+
+.modal-content
+  border-radius: 8px
+  background-color: $white
+  border: solid 1px #fff
+  box-shadow: 0 2px 8px 0 rgba(40, 42, 54, 0.03)
+  .error-wrap-modal
+    text-align: left
+    .error
+      border: 1px solid $mischka-2
+      display: block
+      margin: 0 auto
+      width: 20px
+      height: 20px
+      line-height: 20px
+      font-size: 10px
+      border-radius: 50%
+      color: $mischka-2
+      text-align: center
+      margin-right: 10px
+      float: left
+    span
+      color: $mischka-2
+      font-size: 14px
+      line-height: 20px
+      margin-bottom: 10px
+      display: block
+  #dropZoneOptionsAudio, #dropZoneOptionsAudioMessage, #dropZoneOptionsAudioPortfolio
+    padding-top: 20px
+    padding-left: 16px
+    padding-right: 26px
+    padding-bottom: 20px
+    .preview-audio
+      margin-bottom: 20px
+      &:hover
+        i.icon-close2
+          opacity: 1
+      i.icon-play-button
+        color: $link-water-2
+        font-size: 32px
+        margin-right: 12px
+      i.icon-close2
+        color: $aluminium
+        cursor: pointer
+        margin-left: 32px
+        font-size: 10px
+        opacity: 0
+      input
+        border: 0 !important
+        padding: 0
+        color: $tangaroa
+        margin-bottom: 0
+  #dropZoneOptionsAudio, #photoDropZonePhoto, #dropzoneUploadVideo, #photoDropZoneMessage, #dropZoneOptionsAudioMessage, #documentsDropZoneMessage
+    & ~ .select-album--audio-action
+      padding-top: 26px
+      text-align: center
+      span
+        cursor: pointer
+        font-size: 15px
+        font-weight: normal
+        font-style: normal
+        font-stretch: normal
+        line-height: 1.87
+        letter-spacing: 0.1px
+        text-align: center
+        color: $aluminium
+      .button
+        margin-top: 16px
+        margin-bottom: 14px
+  .photoDropZone
+    min-height: 406px
+    .button
+      margin-top: 60px
+      border: 1px solid transparent
+    span
+      display: block
+      margin: 12px 0
+      color: $storm-grey !important
+      font-size: 15px
+  .search
+    display: inline-block
+    vertical-align: middle
+    max-width: 50%
+    line-height: 32px
+    i
+      color: $mischka
+      font-size: 17px
+      cursor: pointer
+    input
+      display: none
+      margin-bottom: 0
+      height: 32px
+      line-height: 32px
+  .back
+    cursor: pointer
+    font-size: 15px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: 1.87
+    letter-spacing: 0.1px
+    color: $aluminium
+  .btn-groups
+    .button
+      display: inline-block
+  .button
+    border-style: solid
+    border-width: 1px
+    border-image-slice: 1
+    margin: 0 auto
+    display: block
+    width: 204px
+    margin-top: 20px
+    cursor: pointer
+    &.red
+      //background-image: linear-gradient(to top, $fire-engine-red-1, $crimson-2)
+      background-color: #167EFB
+      border: solid 1px #167EFB
+      line-height: 37px
+    &.cancel
+      line-height: 37px
+      border: solid 1px $link-water
+      background-color: transparent
+      color: $heather
+  .modal-body
+    padding: 0
+  .modal-header
+    padding: 0 16px 0 26px
+    border-bottom: solid 1px $solitude-1
+    .modal-title
+      letter-spacing: 0.1px
+      color: $valhalla-1
+      font-size: 16px
+      padding: 18px 0
+      display: block
+  button.close
+    position: absolute
+    top: 21px
+    right: 26px
+    opacity: 1
+    span
+      color: transparent
+      &:hover:before
+        color: $color-black
+      &:before
+        content: '\e94f'
+        display: block
+        color: $aluminium
+        font-family: 'icomoon' !important
+        font-size: 12px
+    &:hover
+      color: $color-black
+
+.modal-content
+  .dropzone
+    box-sizing: border-box
+    background-color: $solitude-18
+    border: 2px dashed $solitude-18 !important
+    border-radius: 2px
+    min-height: 265px
+    &:hover
+      background-color: $color !important
+      border: 2px dashed $solitude-18 !important
+    .dz-message
+      span
+        font-size: 14px
+        line-height: 1.57
+        letter-spacing: 0.1px
+        color: $black-rock-1
+        p
+          letter-spacing: normal
+          text-align: center
+          color: $logan
+/* END MODAL */
+
+/* Color palette */
+
+/* Text styles */
+
+=text-h-1()
+  font-size: 17px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.35
+  letter-spacing: 0.1px
+  color: $haiti
+
+=text-h-3-top()
+  font-size: 16px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  letter-spacing: 0.1px
+  color: $valhalla-1
+
+=text-h-3-disabled()
+  font-size: 15px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  letter-spacing: 0
+  color: $storm-grey
+
+=text-body()
+  font-size: 15px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.47
+  letter-spacing: 0.1px
+  color: $black-rock-1
+
+=text-small-text-messager()
+  font-size: 15px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.0
+  text-align: left
+  color: $logan-2
+
+=name-2()
+  font-size: 15px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.47
+  letter-spacing: 0.1px
+  color: $logan-2
+
+=text-link()
+  font-size: 15px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  letter-spacing: 0.1px
+  color: $black-rock-1
+
+=text-h-3()
+  font-size: 15px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  letter-spacing: 0.1px
+  color: $crimson
+
+=text-h-4()
+  font-size: 15px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  text-align: left
+  color: $light-slate-grey-1
+
+=text-name()
+  font-size: 15px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.47
+  letter-spacing: 0.1px
+  color: $black-rock-1
+
+=text-link()
+  font-size: 15px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  letter-spacing: 0.1px
+  color: $endeavour
+
+=text-name-albume-h-3()
+  font-size: 15px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  letter-spacing: 0
+  color: $white
+
+=text-name-activ()
+  font-size: 15px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.47
+  letter-spacing: 0.1px
+  color: $black-rock-1
+
+=follow()
+  font-size: 14px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.57
+  letter-spacing: 0.1px
+  color: $mulled-wine
+
+=text-style()
+  font-size: 14px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  text-align: left
+  color: $link-water-4
+
+.media-page, .notificate-page
+  width: 100%
+  .profile__worksheet--media-sub-title
+    padding: 22px 26px 0px 26px
+    border-top: solid 1px $solitude-9
+    line-height: 22px
+    color: $valhalla-1
+    font-size: 16px
+    span
+      color: $blue-bayoux
+      font-size: 15px
+      padding-left: 10px
+
+.modal__photo--wrap, .modal__video--wrap
+  min-height: 400px
+  width: 100%
+  display: flex !important
+  -webkit-box-orient: horizontal
+  -webkit-box-direction: normal
+  flex-direction: row
+  flex-wrap: nowrap
+  -webkit-box-pack: center
+  justify-content: center
+  align-content: stretch
+  -webkit-box-align: center
+  align-items: center
+.modal__photo--outer, .modal__video--outer
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  &:hover
+    .modal__photo--btn > i, .modal__video--btn > i
+      opacity: 1
+  &.modal__content_with-footer
+    .modal__photo--content, .modal__video--content
+      padding-bottom: 60px
+    .modal__photo--btn, .modal__video--btn
+      margin-top: -60px
+
+.modal__photo--content, .modal__video--content
+  position: relative
+  display: -webkit-box !important
+  display: flex !important
+  -webkit-box-orient: horizontal
+  -webkit-box-direction: normal
+  flex-direction: row
+  flex-wrap: nowrap
+  -webkit-box-pack: center
+  justify-content: center
+  align-content: stretch
+  -webkit-box-align: center
+  align-items: center
+.modal__photo--img
+  position: relative
+  max-height: 82vh
+  max-width: 82vw
+  display: block
+  top: 0
+  left: 0
+  right: 0
+  object-fit: cover
+  margin: auto
+  border-radius: 8px
+
+.modal__photo--control
+  top: 0
+  width: 50%
+  height: 100%
+  cursor: pointer
+  position: absolute
+
+.modal__photo--control-next
+  right: 0
+
+.modal__photo--control-prev
+  left: 0
+
+.modal__photo--btn, .modal__video--btn
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+  width: 40px
+  height: 40px
+  cursor: pointer
+  font-size: 21px
+  z-index: 1
+  text-align: center
+  font-weight: bold
+  opacity: 0.8
+  transition: .5s all
+  color: $lm-white
+  background-color: $lm-gray-opacity-64
+  border-radius: 8px
+  &:hover
+    opacity: 1
+  //&.modal__photo__btn--next, &.modal__video__btn--next
+
+  &.modal__video__btn--prev, &.modal__photo__btn--prev
+    span
+      transform: rotate(180deg)
+  &:after
+    content: ''
+    display: inline-block
+    height: 100%
+    vertical-align: middle
+  > i
+    vertical-align: middle
+    opacity: 0
+    font-size: 16px
+    color: $lm-white
+    background-color: $lm-gray-opacity-64
+    padding: 13px 12px
+    border-radius: 8px
+  span
+    width: 16px
+    height: 16px
+    background-repeat: no-repeat
+
+.modal__photo__btn--next, .modal__video__btn--next
+  right: 3vw
+  &:hover
+    i
+      opacity: 1
+  i
+    opacity: .8
+    margin: 0 !important
+
+.modal__photo__btn--prev, .modal__video__btn--prev
+  left: 3vw
+  &:hover
+    i
+      opacity: 1
+  i
+    opacity: .8
+    margin: 0 !important
+
+.photo__modal--close, .video__modal--close
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+  width: 40px
+  height: 40px
+  cursor: pointer
+  font-size: 21px
+  z-index: 1
+  text-align: center
+  font-weight: bold
+  opacity: 0.8
+  right: 3vw
+  top: 10px
+  transition: .5s all
+  color: #ffffff
+  background-color: rgba(40, 42, 54, 0.64)
+  border-radius: 8px
+  &:hover
+    color: $color-black
+  span
+    display: block
+    width: 16px
+    height: 16px
+    background-repeat: no-repeat
+.mt-26-fix
+  margin-top: -26px
+.modal__photo--footer, .modal__video--footer
+  display: flex
+  justify-content: center
+  height: 48px
+  line-height: 48px
+  font-size: 15px
+  letter-spacing: 0
+  position: absolute
+  width: 100%
+  bottom: 40px
+  .photo-name
+    padding-right: 19px
+    max-width: 100px
+    display: inline-block
+    overflow: hidden
+    text-overflow: ellipsis
+    vertical-align: middle
+    white-space: nowrap
+  .photo-name-album
+    display: inline-block
+    vertical-align: middle
+    max-width: 220px
+    overflow: hidden
+    height: 18px
+    white-space: nowrap
+    text-overflow: ellipsis
+  .photo-name-album:not(:empty)
+    padding-right: 19px
+  .modal__photo--media
+    max-width: 84px
+    min-width: 84px
+    margin: 0 6px
+    border-radius: 8px
+    box-sizing: content-box
+    cursor: pointer
+    &:active, &:hover, &.active
+      border: 2px solid $lm-white-opacity-64
+      margin: 0 4px
+      .LazyImage__image
+        border-radius: 6px
+    .LazyImage__image
+      border-radius: 8px
+  span
+    font-size: 15px
+    padding-right: 21px
+  > div
+    line-height: 48px
+  .modal__photo--info, .modal__video--info
+    float: left
+    > *
+      color: $storm-grey
+      vertical-align: middle
+  a
+    &.show-actions
+      .actions-item
+        bottom: 0px
+        left: -35%
+        top: inherit
+        width: 100%
+        right: inherit
+        ul
+          bottom: 25px
+          top: inherit
+          li
+            span
+              line-height: 34px
+              padding: 0
+              width: 100%
+          &:before
+            bottom: -12px
+            border-top-color: $white
+            border-bottom-color: transparent
+          &:after
+            bottom: -15px
+            border-top-color: $zircon
+            border-bottom-color: transparent
+    span
+      display: inline-block
+      vertical-align: middle
+      font
+        padding-left: 4px
+    i
+      display: inline-block
+      vertical-align: middle
+      color: rgba($link-water-10, 0.98)
+      margin-right: 8px
+      &.icon-more
+        margin-right: 0px
+        padding: 10px 0
+        font-size: 5px
+        .actions-item
+          bottom: 0px
+          right: -5px
+          top: inherit
+          ul
+            bottom: 25px
+            top: inherit
+            right: 0
+            &:before
+              bottom: -12px
+              border-top-color: $white
+              border-bottom-color: transparent
+            &:after
+              bottom: -15px
+              border-top-color: $zircon
+              border-bottom-color: transparent
+// TODO:: Поиграться с анимацией
+
+.modal__photo .loading
+  .modal__photo__btn, .modal__photo--footer, .photo__modal--close
+    display: none
+
+.photo__loading
+  position: fixed
+  width: 40px
+  height: 40px
+  padding: 10px
+  margin: auto
+  background-color: $charcoal-1
+  background-color: rgba($color-black, 0.5)
+  border-radius: 50%
+  box-sizing: border-box
+  &:after
+    content: ''
+    display: block
+    width: 20px
+    height: 20px
+    background-color: $white
+    border-radius: 50%
+    animation: photo__loading .5s ease infinite
+
+@keyframes photo__loading
+  0%
+    opacity: 0.5
+    transform: scale(.75)
+  50%
+    opacity: 1
+    transform: scale(1)
+  100%
+    opacity: 0.5
+    transform: scale(.75)
+/* END PM */
+
+/* SCROLL */
+@keyframes fadeIn
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+@keyframes fadeOut
+  from
+    opacity: 1
+  to
+    opacity: 0
+/* END SCROLL */
+
+// лоадер
+@keyframes rotate-360
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)
+// конец ошибки
+
+.md-26
+  margin: 26px
+  .no-top
+    margin-top: 0
+  .no-bottom
+    margin-bottom: 0
+
+.relative
+  position: relative
+
+.page--left
+  .nav-tabs ~ .tab-content
+    padding-top: 26px
+
+.page--left
+  width: 845px
+  border-right: solid 1px $solitude-7
+  padding: 0 !important
+  > .row
+    margin: 0
+    padding: 0
+  .well--content
+    .profile__projects--content
+      .nav
+        padding-left: 26px
+//padding-bottom: 24px
+.well .page--right
+  width: 291px
+  padding: 0 16px
+  float: left
+  padding-top: 25px
+  .page--right-head
+    line-height: 1.38
+    letter-spacing: 0
+    color: $valhalla-1
+    font-size: 16px
+  .page--right-search
+    input
+      line-height: 36px
+      height: 36px
+      padding-left: 16px
+      width: 100%
+      margin-top: 15px
+      border-radius: 3px
+      background-color: $white
+      border: solid 1px $gainsboro
+  .page--right-notifcate-list
+    .page--right-notifcate-item:first-child
+      margin-top: -4px
+    .page--right-notifcate-item
+      margin-top: 25px
+      img
+        width: 36px
+        height: 36px
+        border-radius: 50%
+        display: inline-block
+        vertical-align: top
+        object-fit: cover
+      &:hover
+        .more-action
+          display: block
+        .date
+          display: none
+    .page--right-notifcate-item-content
+      width: 215px
+      margin-left: 4px
+      vertical-align: top
+      display: inline-block
+      .name, .text
+        +text-body()
+      .more-action
+        display: none
+
+      .action, .more-action
+        font-size: 15px
+        line-height: 1.47
+        letter-spacing: 0.1px
+        color: $mariner
+      .bottom-info
+        line-height: 1.47
+        letter-spacing: 0
+        color: $aluminium
+        font-size: 15px
+input[type="password"]
+  -webkit-text-security: disc
+input, select, textarea
+  width: 100%
+  height: 40px
+  color: $lm-gray-1
+  font-size: 14px
+  border-radius: 8px
+  background-color: $white
+  border: solid 1px $lm-gray-4
+  padding-left: 15px
+  line-height: 40px
+  text-align: left !important
+  &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder
+    color: $lm-gray-opacity-32
+  &.error
+    border: solid 1px $wild-watermelon
+  &.success
+    border: solid 1px $islamicgreen-1
+  &:disabled
+    background-color: $solitude-5
+    color: $lm-gray-opacity-32
+    border: solid 1px $solitude-5
+  //&:focus, &:focus:hover
+    color: $lm-gray-opacity-32
+    border: solid 1px $storm-grey
+  //&:hover
+    border: solid 1px rgba($storm-grey, 0.7)
+    color: $lm-gray-opacity-32
+input
+  line-height: inherit
+
+.form-group
+  position: relative
+  &.error
+    input, select, textarea, .select2.select2-container .select2-selection
+      border: solid 1px $wild-watermelon
+  span.has-error
+    font-size: 9px !important
+    line-height: 18px !important
+    color: $venetian-red-2 !important
+    text-align: right !important
+    position: absolute
+    top: 0
+    right: 0
+
+.input-min-margin
+  margin-bottom: 10px !important
+
+textarea
+  height: auto
+  margin-bottom: 0
+  line-height: normal
+  resize: none
+  padding: 12px 16px
+
+.multiselect
+  &.multiselect--active
+    .multiselect__select:before
+      border-color: $mariner transparent transparent
+      color: $mariner
+    .multiselect__tags
+      border: solid 1px $mariner !important
+
+.icon-Media
+  font-size: 19px !important
+  text-align: right !important
+  padding-right: 2px !important
+.right-text
+  text-align: right
+
+.tooltip
+  opacity: 0.8
+  border-radius: 8px
+  padding: 0
+  //width: 100%
+  color: $zircon
+  font-size: 12px
+  z-index: 999999999
+  .tooltip-arrow
+    //border-left-color: $tangaroa !important
+  &.right
+    margin-left: 5px
+    .tooltip-arrow
+      left: -5px
+  &.top
+    .tooltip-inner
+      line-height: 1.33
+    .tooltip-arrow
+      bottom: -5px
+      border-left-color: transparent !important
+  &.bottom
+    margin-top: 5px
+    .tooltip-arrow
+      top: -5px
+      border-left-color: transparent !important
+    .tooltip-inner
+      line-height: 1.33
+  .tooltip-inner
+    background-color: $lm-gray-1
+    line-height: 1.33
+    padding: 0 3px
+    min-width: 100px
+    width: 100%
+    display: block
+    div
+      padding: 0
+      display: inline-block
+.tooltip_small
+  .tooltip-inner
+    div
+      width: 130px
+.modal
+  z-index: 99999
+.show-actions
+  z-index: 12 !important
+  .icon-share
+    .actions-item
+      top: 10px !important
+      li
+        span
+          padding: 8px 16px
+          display: block
+          color: $shuttle-grey
+          line-height: 18px !important
+          font-size: 12px
+          i
+            margin: 0
+
+i.icon-more, .show-actions
+  position: relative
+  cursor: pointer
+  z-index: 11
+  .actions-item
+    display: none
+    ul
+      transition: opacity 100ms linear, top 100ms linear, bottom 100ms linear, visibility 100ms linear
+      visibility: hidden
+      opacity: 0
+      span
+        display: block
+        font-family: SFNSText
+  &:hover
+    .actions-item
+      display: block
+      position: absolute
+      right: 0px
+      width: 25px
+      height: 25px
+      margin-top: 5px
+      top: 0
+      ul
+        visibility: visible
+        opacity: 1
+        font-size: 12px
+        right: 0px
+        position: absolute
+        min-width: 150px
+        max-width: 250px
+        border-radius: 3px
+        background-color: $white
+        box-shadow: 1px 0 5px 0 rgba($color-black, 0.1)
+        border: solid 1px $zircon
+        top: 10px
+        list-style: none
+        padding-top: 3px
+        padding-bottom: 3px
+        &:after
+          position: absolute
+          pointer-events: none
+          border: solid transparent
+          //content: ''
+          height: 0
+          width: 0
+          z-index: 11
+          bottom: 100%
+          right: 30.5px
+          border-width: 7px
+          margin: 0 -7px
+          border-bottom-color: $zircon
+        &:before
+          z-index: 12
+          position: absolute
+          pointer-events: none
+          border: solid transparent
+          //content: ''
+          height: 0
+          width: 0
+          bottom: 100%
+          right: 30.5px
+          border-width: 6px
+          margin: 0 -6px
+          border-bottom-color: $white
+        li
+          &:not(:first-child)
+            border-top: solid 1px $solitude-2
+          &:hover
+            //background-color: rgba($link-water, 0.21)
+            a, span
+              color: #5D697F
+          a, span
+            padding: 8px 16px
+            display: block
+            color: $shuttle-grey
+            font-family: SFNSText
+
+.calendar .cell:not(.blank):not(.disabled).day:hover, .calendar .cell:not(.blank):not(.disabled).month:hover, .calendar .cell:not(.blank):not(.disabled).year:hover
+  border: 1px solid $lm-main-hover !important
+.calendar
+  top: 35px
+  .prev, .up, .next
+    height: 30px
+    line-height: 30px
+.calendar .disabled
+  color: $lm-gray-3 !important
+.calendar .cell.selected, .calendar .cell.selected:hover
+  background: $lm-main-hover !important
+  color: $white
+
+.button.write.select-file
+  margin: 62px auto
+
+div.datepicker
+  display: block
+.datepicker
+  &:before
+    content: '\e950'
+    font-family: 'icomoon' !important
+    display: block
+    position: absolute
+    right: 9px
+    font-size: 15px
+    color: $link-water-7
+    top: 9px
+    pointer-events: none
+.fix-margin
+  margin-top: -26px
+.fix-margin-bottom
+  margin-bottom: 26px
+.profile__worksheet.fix-margin
+  position: relative
+  .create-album
+    position: absolute
+    top: 0
+    right: 0
+.companies-page .castings-head
+  background-color: $сyprus !important
+
+.catalog-talents .castings-head
+  background-color: $corn-flower-blue !important
+
+.btn-group.error
+  .select2-container.select2-container--default
+    .select2-selection
+      border: 1px solid $crimson
+      .select2-selection__placeholder
+        color: $crimson
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+      span
+        b
+          border-color: $crimson transparent transparent transparent
+select[multiple] ~ .select2
+  margin-bottom: 0 !important
+.select2 ~ .lists:not(:empty)
+  margin-top: 8px
+  padding: 0 !important
+  margin-bottom: 24px
+  span
+    background-color: rgba($zircon-1, 0.5)
+    color: $grey-chateau-1
+    padding: 8px 10px
+    border-radius: 54px
+    margin-right: 4px
+    margin-bottom: 8px
+    display: inline-block
+    line-height: 1.67
+    width: auto
+    padding-left: 20px
+    padding-right: 20px
+    position: relative
+    padding-top: 2.5px
+    padding-bottom: 2.5px
+    font-size: 15px !important
+    color: $tangaroa !important
+    i
+      display: none
+      cursor: pointer
+      font-size: 8px
+      position: absolute
+      right: 7px !important
+      top: 12px !important
+      color: $nobel-1
+    &:hover
+      i
+        display: block
+        &:hover
+          color: $night-rider
+
+select[multiple] ~ .select2
+  .select2-selection__rendered
+    padding-top: 30px
+
+.no-top
+  padding-top: 0 !important
+.no-bottom
+  padding-bottom: 0
+
+.pd26.no-padding
+.no-left
+  padding-left: 0
+.no-right
+  padding-right: 0
+[class^="col-"].no-left
+  padding-left: 4px
+.dz-preview:not(.dz-complete)
+  .dz-image
+    img
+      filter: blur(2px)
+
+.calendar header span
+  line-height: 30px
+  height: 30px
+.abuse
+  margin-top: 21px
+  display: block
+  font-size: 15px
+  color: $ghost-2
+label.required
+  span
+    color: $alizarin !important
+    line-height: normal !important
+    font-size: inherit !important
+#player
+  cursor: pointer
+.progress
+  width: 100%
+
+.ios-toggle
+  &:checked + .checkbox-ios
+    background: $chetwode-blue-1
+    border: solid 1px $chetwode-blue-1
+  &:checked + .checkbox-ios:before
+    left: calc(100% - 28px)
+
+.ff
+  .error-wrap
+    height: 356px !important
+    width: 448px !important
+    .error-text
+      bottom: 115px !important
+      button.write.dz-clickable
+        margin-bottom: 7px
+
+img.img-blur
+  filter: blur(4px)
+img.loaded
+  transition: filter .5s
+.show-actions
+  .actions-item
+    ul
+      li
+        span
+          padding: 8px 16px
+          display: block
+          color: $shuttle-grey
+          font-size: 12px
+          font-family: SFNSText
+        & > *
+
+          font-family: SFNSText
+
+body .nav > li > a:focus
+  background: transparent
+
+.questions-icon
+  &.castings-fix-icon
+    background-size: 16px
+  &.talents-list
+    width: 16px
+    height: 16px
+    position: absolute
+    right: -20px
+    display: block
+    top: 85px
+    margin: auto
+    + .tooltip
+      width: 300px
+      height: auto
+      .tooltip-inner
+        padding-top: 6px
+        padding-bottom: 6px
+        line-height: normal
+        max-width: 400px !important
+  &.create-projects
+    width: 16px
+    height: 16px
+    position: absolute
+    right: -20px
+    display: block
+    top: 0
+    bottom: 0
+    margin: auto
+    &.privacy
+      height: auto
+      top: 10px
+      + .tooltip
+          height: auto
+          width: 300px
+          .tooltip-inner
+            padding-top: 6px
+            padding-bottom: 6px
+            line-height: normal
+            max-width: 400px !important
+
+.markdown-body
+  text-align: left
+  font-size: 14px
+  line-height: 18px
+  padding-bottom: 16px
+  h1
+    text-align: left
+    padding-bottom: 16px
+    font-size: 28px
+    line-height: 36px
+    margin: 0 !important
+  h2
+    text-align: left
+    padding-bottom: 16px
+    font-size: 24px
+    line-height: 36px
+    margin: 0 !important
+  h3
+    text-align: left
+    padding-bottom: 16px
+    font-size: 18px
+    line-height: 36px
+    margin: 0 !important
+  ul
+    list-style-type: disc
+    list-style: inside
+    text-align: left
+    padding-bottom: 16px
+    margin: 0 !important
+  ol
+    padding-left: 0
+    list-style-position: inside
+    text-align: left
+    padding-bottom: 16px
+    margin: 0 !important
+  p
+    text-align: left
+    font-size: 14px
+    line-height: 18px
+    padding-bottom: 16px
+    margin: 0 !important

@@ -1,0 +1,77 @@
+.lm-m-casting--page
+    &.lm-m-response-page
+        background: transparent
+        .lm-m-response-page-user-wrap
+            background: $lm-white
+            background-color: $lm-white
+            box-sizing: border-box
+            margin: 0 auto
+            max-width: calc(1024px - 40px)
+            width: calc(100% - 40px)
+            &.talents-list
+                margin-top: 16px
+            @media (max-width: 767px)
+                margin: 0
+                width: 100%
+            .lm-m-response-page-user-item
+                position: relative
+                border-bottom: 12px solid $lm-gray-5
+                .lm-user-block
+                  display: flex
+                  width: 100%
+                  a
+                    display: flex
+                    width: 100%
+                  img
+                    min-width: 40px
+                  .lm-user-block-info
+                    @include lm-text-ellipsis
+                    flex: 1
+                    .lm-user-block-info-type, .lm-user-block-info-name
+                      @include lm-text-ellipsis
+                      width: 100%
+                .lm-m-user-item-head
+                    padding: 16px
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    max-width: 100%
+                    .left
+                      width: calc(100% - 93px)
+                      display: flex
+                      overflow: hidden
+                    .right
+                        min-width: 24px
+                        display: flex
+                        align-items: center
+                        justify-content: flex-end
+                        .icon-more
+                            width: 24px
+                            height: 24px
+                            +lm-m-backgound-normalize
+                            transform: rotate(90deg)
+                            @include lm-more('%23cbd0d8')
+                            position: relative
+                            z-index: 1
+                        .lm-response-button
+                            position: relative
+                            width: 36px
+                            height: 36px
+                            border-radius: 16px
+                            left: 0
+                            right: 0
+                            bottom: 0
+                            top: 0
+                        .lm-message-button
+                            display: block
+                            width: 16px
+                            height: 16px
+                            margin-right: 22px
+                            @include lm-message('%23babbbf')
+                            +lm-m-backgound-normalize
+                .lm-m-attach-file-wrap
+                    box-sizing: border-box
+                    padding: 24px 16px
+                    margin: 0
+                    width: 100%
+                    +lm-text-ellipsis

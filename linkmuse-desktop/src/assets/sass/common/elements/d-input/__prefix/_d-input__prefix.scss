@@ -1,0 +1,50 @@
+.d-input__prefix-wrap {
+  height: 40px;
+  display: flex;
+  position: relative;
+
+  .d-input__prefix--prefix {
+    position: relative;
+    z-index: 2;
+    line-height: 40px;
+    padding-left: 15px;
+    user-select: none;
+    color: #6C7482;
+    font-size: 14px;
+  }
+
+  .d-input__prefix--input {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 1px;
+
+    input {
+      border: 0;
+      padding-left: 0;
+      margin-top: 1px;
+      height: 38px;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .d-input__prefix--border {
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    border: solid 1px rgba(181, 185, 192, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+  }
+
+  &.error {
+    color: $lm-gray-1 !important;
+
+    .d-input__prefix--border {
+      border-color: $wild-watermelon !important;
+    }
+  }
+}

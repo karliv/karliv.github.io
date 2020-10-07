@@ -1,0 +1,36 @@
+.modal_write-all {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 0.5px;
+  color: $lm-gray-2;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 272px;
+  padding: 16px;
+  .modal__content {
+    text-align: center;
+    box-sizing: border-box;
+    background-color: $lm-white;
+    border-radius: $border-radius_16;
+    width: 100%;
+    max-width: 272px;
+    padding: $multiplicity*4;
+  }
+  .textarea__field {
+    min-height: 124px;
+    margin-bottom: 0;
+  }
+  .upload-zone__field {
+    min-height: 104px;
+    .lm-dropzone--uploader {
+      min-height: 104px;
+    }
+  }
+}
+

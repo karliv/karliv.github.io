@@ -1,0 +1,21 @@
+.d-upload-zone__field {
+  min-height: 160px;
+  .lm-dropzone--uploader {
+    min-height: 160px;
+  }
+  &.disabled {
+    cursor: not-allowed;
+    &:before {
+      background-color: #f3f4f6;
+      border: 1px dashed #f3f4f6;
+    }
+    .lm-dropzone--uploader {
+      padding: 0;
+      span {
+        color: rgba(40, 42, 54, 0.32);
+      }
+    }
+  }
+}
+
+@import '_required/_d-upload-zone__field_required.scss';

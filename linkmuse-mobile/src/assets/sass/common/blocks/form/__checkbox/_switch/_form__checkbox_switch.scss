@@ -1,0 +1,39 @@
+.form__checkbox_switch {
+	.checkbox__mark {
+		display: none;
+		&:checked + .checkbox__label {
+			background-color: $lm-main;
+			border: 1px solid $lm-main;
+			transition: all 0.25s ease;
+			&::before {
+				border: 1px solid $lm-main;
+				transform: translateX(18px);
+				transition: all 0.25s ease;
+			}
+		}
+	}
+	.checkbox__label {
+		box-sizing: border-box;
+		display: block;
+		width: 46px;
+		height: 28px;
+		background-color: $lm-gray-5;
+		border: 1px solid $lm-gray-4;
+		border-radius: 16px;
+		&::before {
+			box-sizing: border-box;
+			content: '';
+			display: block;
+			background-color: $lm-white;
+			width: 28px;
+			height: 28px;
+			border-radius: 50%;
+			position: relative;
+			left: -1px;
+			top: -1px;
+			border: 1px solid $lm-gray-4;
+			transition: all 0.25s ease-in-out;
+		}
+	}
+}
+

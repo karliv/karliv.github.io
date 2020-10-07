@@ -1,0 +1,8 @@
+.page__header {
+	flex-shrink: 0;
+	flex-grow: 0;
+}
+
+@import '_declaration/_page__header_declaration.scss';
+@import '_absolute/_page__header_absolute.scss';
+@import '_feed/_page__header_feed.scss';

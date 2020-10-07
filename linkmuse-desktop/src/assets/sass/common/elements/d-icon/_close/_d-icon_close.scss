@@ -1,0 +1,10 @@
+.d-icon_close {
+	background-color: $lm-gray-4;
+	border-radius: 50%;
+	width: 16px;
+	height: 16px;
+	padding: 2px;
+	box-sizing: border-box;
+}
+
+@import '_search/_d-icon_close_search.scss';

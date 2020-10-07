@@ -1,0 +1,401 @@
+.news-page
+  width: 1136px
+  margin: 0 auto
+
+.article-page-show
+  width: 1136px
+  margin: 0 auto
+  .article-left
+    width: 100px
+    min-width: 100px
+    transition: all .1s ease-out
+    float: left
+    position: relative
+    min-height: 1px
+    .show-actions
+      display: block
+      .icon-share
+        padding: 10px
+        padding-top: 0
+        margin: auto
+        width: 18px
+        display: block
+        height: 16px
+        box-sizing: border-box
+        background-repeat: no-repeat
+        background-position: center
+        background-size: 18px 16px
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16"><path fill="none" fill-rule="evenodd" stroke="%23B5B9C0" d="M17 7.01L10.78 0v4.003C4.555 5.005 1.89 10.01 1 15.015c2.223-3.505 5.335-5.102 9.78-5.102v4.1L17 7.01z"/></svg>')
+        .actions-item
+          margin-top: 0
+        &:before
+          display: none
+    .count-like
+      font-size: 15px
+      letter-spacing: 0
+      text-align: center
+      color: #b5b9c0
+      margin-bottom: 16px
+      display: block
+    .like-article-icon
+      i
+        display: block
+        background-repeat: no-repeat
+        background-position: center
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 23px
+        width: 46px
+        cursor: pointer
+        height: 46px
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46"><g fill="none" fill-rule="evenodd" transform="translate(-190)">  <circle cx="213" cy="23" r="22" stroke="%23B5B9C0"/><path fill="%23B5B9C0" d="M222.134 21.037c.1.497.05 1.135-.15 1.916-.4 1.632-1.285 3.027-2.657 4.186l-6.81 5.747-6.66-5.747c-1.373-1.159-2.258-2.554-2.657-4.186-.2-.78-.25-1.42-.15-1.916.125-1.466.68-2.672 1.665-3.618.985-.946 2.152-1.419 3.499-1.419.898 0 1.727.213 2.488.639a5.092 5.092 0 0 1 1.852 1.773 4.733 4.733 0 0 1 1.853-1.773A5.296 5.296 0 0 1 216.97 16c1.347 0 2.513.473 3.499 1.419.985.946 1.54 2.152 1.665 3.618zm-.86 1.739c.149-.639.199-1.183.149-1.632-.125-1.301-.605-2.365-1.44-3.193-.837-.828-1.84-1.242-3.013-1.242-.898 0-1.715.237-2.451.71a4.233 4.233 0 0 0-1.628 1.916l-.337.744-.374-.744c-.35-.828-.88-1.473-1.59-1.934a4.274 4.274 0 0 0-2.376-.692c-1.148 0-2.146.414-2.994 1.242-.848.828-1.334 1.88-1.46 3.157v.036c-.049.496 0 1.04.15 1.632.375 1.49 1.185 2.778 2.433 3.866l6.211 5.321 6.287-5.32c1.247-1.089 2.058-2.378 2.432-3.867z"/></g></svg>')
+        &:hover
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46"><g fill="none" fill-rule="evenodd"><circle cx="23" cy="23" r="22" stroke="%23EB5173"/><path fill="%23FC2E5F" d="M32.134 21.037c.1.497.05 1.135-.15 1.916-.4 1.632-1.285 3.027-2.657 4.186l-6.81 5.747-6.66-5.747c-1.373-1.159-2.258-2.554-2.657-4.186-.2-.78-.25-1.42-.15-1.916.125-1.466.68-2.672 1.665-3.618C15.7 16.473 16.867 16 18.214 16c.898 0 1.727.213 2.488.639a5.092 5.092 0 0 1 1.852 1.773 4.733 4.733 0 0 1 1.853-1.773A5.296 5.296 0 0 1 26.97 16c1.347 0 2.513.473 3.499 1.419.985.946 1.54 2.152 1.665 3.618zm-.86 1.739c.149-.639.199-1.183.149-1.632-.125-1.301-.605-2.365-1.44-3.193-.837-.828-1.84-1.242-3.013-1.242-.898 0-1.715.237-2.451.71a4.233 4.233 0 0 0-1.628 1.916l-.337.744-.374-.744c-.35-.828-.88-1.473-1.59-1.934a4.274 4.274 0 0 0-2.376-.692c-1.148 0-2.146.414-2.994 1.242-.848.828-1.334 1.88-1.46 3.157v.036c-.049.496 0 1.04.15 1.632.375 1.49 1.185 2.778 2.433 3.866l6.211 5.321 6.287-5.32c1.247-1.089 2.058-2.378 2.432-3.867z"/></g></svg>')
+        &.active
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46">  <g fill="none" fill-rule="evenodd" transform="translate(0 -460)">  <circle cx="23" cy="483" r="22" stroke="%23EB5173"/><path fill="%23FC2E5F" d="M32.134 481.037c.1.497.05 1.135-.15 1.916-.4 1.632-1.285 3.027-2.657 4.186l-6.81 5.747-6.66-5.747c-1.373-1.159-2.258-2.554-2.657-4.186-.2-.78-.25-1.42-.15-1.916.125-1.466.68-2.672 1.665-3.618.985-.946 2.152-1.419 3.499-1.419.898 0 1.727.213 2.488.639a5.092 5.092 0 0 1 1.852 1.773 4.733 4.733 0 0 1 1.853-1.773A5.296 5.296 0 0 1 26.97 476c1.347 0 2.513.473 3.499 1.419.985.946 1.54 2.152 1.665 3.618z"/></g></svg>')
+
+
+  .article-right
+    width: 900px
+    padding-right: 32px
+    float: left
+    img
+      max-width: 100% !important
+      height: auto !important
+    .text-article
+      font-size: 15px
+      color: $tangaroa
+      ul
+        list-style-position: inside
+    .article-bottom
+      padding-bottom: 50px
+    .date
+      font-size: 15px
+      text-align: left
+      color: #b5b9c0
+    .article-bottom-action
+      display: flex
+      justify-content: space-between
+      align-items: center
+      .right
+        display: flex
+        align-items: center
+        .share-block
+          .show-actions
+            display: block
+            padding: 5px
+            .icon-share
+              width: 14.3px
+              height: 13.4px
+              display: block
+              background-repeat: no-repeat
+              background-position: center
+              background-size: 14.3px 13.4px
+              background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14"><path fill="%23DADBE1" fill-opacity=".98" fill-rule="evenodd" d="M14.321 6.274L8.754 0v3.583C3.182 4.48.797 8.96 0 13.44c1.99-3.137 4.775-4.568 8.754-4.568v3.67l5.567-6.268z"/></svg>')
+              &:before
+                display: none
+        .like-block
+          .icon-Shape
+            color: #B5B9C0
+            margin-right: 10px
+            &.active
+              &:before
+                content: "\e90c"
+            &:before
+              content: "\e903"
+          > span
+            display: flex
+            align-items: center
+            margin-right: 20px
+            cursor: pointer
+            font
+              color: #b5b9c0
+              font-size: 15px
+              letter-spacing: 0
+              text-align: left
+          .count-like
+            font-size: 15px
+            letter-spacing: 0
+            text-align: left
+            color: #b5b9c0
+            display: block
+          .like-article-icon
+            margin-right: 10px
+            height: 18px
+            i
+              display: inline-block
+              vertical-align: bottom
+              background-size: 16px 15px
+              width: 16px
+              height: 15px
+              cursor: pointer
+              background-position: center
+              background-repeat: no-repeat
+              background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16"><path fill="none" fill-rule="evenodd" stroke="%23B5B9C0" d="M16.958 5.201c.084.415.042.947-.124 1.598-.333 1.361-1.072 2.525-2.216 3.491l-5.68 4.793-5.556-4.793C2.238 9.324 1.5 8.16 1.166 6.8 1 6.149.958 5.616 1.042 5.201c.104-1.223.567-2.229 1.388-3.018C3.252 1.394 4.225 1 5.35 1c.749 0 1.44.178 2.075.533.635.355 1.15.848 1.545 1.479a3.947 3.947 0 0 1 1.545-1.48A4.417 4.417 0 0 1 12.65 1c1.124 0 2.097.394 2.919 1.183.821.79 1.284 1.795 1.388 3.018z"/></svg>')
+              &:hover, &.active
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15">  <path fill="%23EB5173" fill-rule="evenodd" d="M15.958 4.201c.084.415.042.947-.124 1.598-.333 1.361-1.072 2.525-2.216 3.491l-5.68 4.793L2.382 9.29C1.238 8.324.5 7.16.166 5.8 0 5.149-.042 4.616.042 4.201.146 2.978.609 1.972 1.43 1.183 2.252.394 3.225 0 4.35 0c.749 0 1.44.178 2.075.533.635.355 1.15.848 1.545 1.479A3.947 3.947 0 0 1 9.514.532 4.417 4.417 0 0 1 11.65 0c1.124 0 2.097.394 2.919 1.183.821.79 1.284 1.795 1.388 3.018z"/></svg>')
+      .project-user
+        img
+          width: 38px
+          height: 38px
+          margin-right: 4px
+        .project-user--info
+          .project-user--name
+            line-height: 18px
+            font-size: 15px
+            letter-spacing: 0
+            text-align: left
+            color: #5d697f
+            margin-bottom: 0
+          .project-user--type
+            line-height: 18px
+            font-size: 15px
+            letter-spacing: 0
+            text-align: left
+            color: #b5b9c0
+    .sub-text
+      margin-top: 50px
+      margin-bottom: 20px
+      font-size: 18px
+      font-weight: 500
+      letter-spacing: 0px
+      text-align: left
+      color: #0c111d
+    h1
+      margin-top: 0
+      margin-bottom: 15px
+      font-size: 36px
+      line-height: 1.5
+      letter-spacing: 0
+      text-align: left
+      color: #0c111d
+    .date
+      display: inline-block
+      vertical-align: middle
+      font-size: 15px
+      letter-spacing: 0
+      text-align: left
+      color: #b5b9c0
+    .category
+      margin-right: 7px
+      font-size: 15px
+      letter-spacing: 0
+      text-align: left
+      color: #0e70e5
+      display: inline-block
+      vertical-align: middle
+  .head-article--text
+    margin-top: 30px
+  .head-article
+    height: 331px
+    margin-bottom: 30px
+    img
+      width: 100%
+      object-fit: cover
+      height: 100%
+  .breadcrumbs-article
+    padding-left: 26px
+    padding-right: 26px
+    padding-top: 14px
+    padding-bottom: 10px
+    font-size: 15px
+    line-height: 18px
+    color: #6c7482
+    > *:not(.clr)
+      float: left
+      line-height: 18px
+    i
+      color: #000000
+      font-size: 10px
+      margin-right: 14px
+    a
+      font-size: 15px
+      letter-spacing: 0
+      text-align: left
+      color: #b5b9c0
+      margin-right: 20px
+
+
+.articles-list
+  text-align: justify
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  .top-articles-list
+    width: 100%
+    margin-bottom: 50px
+    display: flex
+    justify-content: space-between
+    .article
+      margin-bottom: 0
+      width: 530px
+      .project-user
+        .project-user--info
+          width: 290px
+  .bottom-articles-list
+    width: 100%
+    .article
+      display: inline-block
+      vertical-align: top
+      &:not(:nth-child(3n))
+        margin-right: 26px
+      width: 344px
+  .article
+    position: relative
+    margin-bottom: 50px
+    padding-bottom: 65px
+    &:hover
+      img.cover
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3)
+    .article-action
+      margin-top: 19px
+      height: 46px
+      display: flex
+      justify-content: flex-end
+      align-items: center
+      > div
+        display: flex
+        justify-content: flex-end
+        align-items: flex-end
+
+      .show-actions
+        .icon-share
+          width: 16px
+          display: block
+          height: 15px
+          background-repeat: no-repeat
+          background-position: center
+          background-size: 16px 15px
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16"><path fill="none" fill-rule="evenodd" stroke="%23B5B9C0" d="M17 7.01L10.78 0v4.003C4.555 5.005 1.89 10.01 1 15.015c2.223-3.505 5.335-5.102 9.78-5.102v4.1L17 7.01z"/></svg>')
+          &:before
+            display: none
+      .likeicons
+        margin-right: 14px
+        display: flex
+        align-items: center
+        &:hover
+          .icon-Shape
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15">  <path fill="%23EB5173" fill-rule="evenodd" d="M15.958 4.201c.084.415.042.947-.124 1.598-.333 1.361-1.072 2.525-2.216 3.491l-5.68 4.793L2.382 9.29C1.238 8.324.5 7.16.166 5.8 0 5.149-.042 4.616.042 4.201.146 2.978.609 1.972 1.43 1.183 2.252.394 3.225 0 4.35 0c.749 0 1.44.178 2.075.533.635.355 1.15.848 1.545 1.479A3.947 3.947 0 0 1 9.514.532 4.417 4.417 0 0 1 11.65 0c1.124 0 2.097.394 2.919 1.183.821.79 1.284 1.795 1.388 3.018z"/></svg>')
+        span
+          width: 35px
+          font-size: 15px
+          letter-spacing: 0
+          text-align: left
+          color: #b5b9c0
+          display: inline-block
+          vertical-align: middle
+        .icon-Shape
+          display: inline-block
+          vertical-align: middle
+          margin-right: 5px
+          background-repeat: no-repeat
+          background-position: center
+          background-size: 16px 15px
+          width: 16px
+          height: 15px
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16"><path fill="none" fill-rule="evenodd" stroke="%23B5B9C0" d="M16.958 5.201c.084.415.042.947-.124 1.598-.333 1.361-1.072 2.525-2.216 3.491l-5.68 4.793-5.556-4.793C2.238 9.324 1.5 8.16 1.166 6.8 1 6.149.958 5.616 1.042 5.201c.104-1.223.567-2.229 1.388-3.018C3.252 1.394 4.225 1 5.35 1c.749 0 1.44.178 2.075.533.635.355 1.15.848 1.545 1.479a3.947 3.947 0 0 1 1.545-1.48A4.417 4.417 0 0 1 12.65 1c1.124 0 2.097.394 2.919 1.183.821.79 1.284 1.795 1.388 3.018z"/></svg>')
+          &:before
+            display: none
+          &.active
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15">  <path fill="%23EB5173" fill-rule="evenodd" d="M15.958 4.201c.084.415.042.947-.124 1.598-.333 1.361-1.072 2.525-2.216 3.491l-5.68 4.793L2.382 9.29C1.238 8.324.5 7.16.166 5.8 0 5.149-.042 4.616.042 4.201.146 2.978.609 1.972 1.43 1.183 2.252.394 3.225 0 4.35 0c.749 0 1.44.178 2.075.533.635.355 1.15.848 1.545 1.479A3.947 3.947 0 0 1 9.514.532 4.417 4.417 0 0 1 11.65 0c1.124 0 2.097.394 2.919 1.183.821.79 1.284 1.795 1.388 3.018z"/></svg>')
+
+
+    .project-user
+      margin-top: 19px
+      img
+        width: 38px
+        height: 38px
+        display: inline-block
+        vertical-align: middle
+        margin-right: 8px
+        object-fit: cover
+      .project-user--info
+        display: inline-block
+        max-width: 170px
+        vertical-align: middle
+      .project-user--name
+        display: block
+        font-size: 15px
+        letter-spacing: 0
+        text-align: left
+        color: #5d697f
+        margin-bottom: 2px
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+      .project-user-type
+        display: block
+        font-size: 15px
+        letter-spacing: 0
+        text-align: left
+        color: #b5b9c0
+    .article--info
+      .user-info
+        position: absolute
+        bottom: 0
+        width: 100%
+      .title
+        font-size: 18px
+        line-height: 24px
+        letter-spacing: 0
+        text-align: left
+        color: #0c111d
+        margin-bottom: 4px
+        max-height: 48px
+        overflow: hidden
+        height: 48px
+      .desc
+        overflow: hidden
+        max-height: 42px
+        font-size: 15px
+        line-height: 1.4
+        letter-spacing: 0
+        text-align: left
+        color: #7a7c83
+        height: 42px
+        margin-bottom: 4px
+      .article-cat-date
+        margin-bottom: 8px
+        .article-category
+          font-size: 15px
+          letter-spacing: 0
+          text-align: left
+          color: $lm-main
+          display: inline-block
+          vertical-align: middle
+        .date
+          display: inline-block
+          vertical-align: middle
+          font-size: 15px
+          letter-spacing: 0
+          text-align: left
+          color: #b5b9c0
+          margin-left: 8px
+      img.cover
+        width: 100%
+        height: 228px
+        object-fit: cover
+        margin-bottom: 16px
+.content-article
+  width: 100%
+  h1
+    margin: 0px
+    margin-bottom: 20px
+    font-size: 24px
+    line-height: 22px
+    letter-spacing: 0
+    text-align: left
+    color: #0c111d
+  .nav
+    border-bottom: solid 1px #f0eff4
+    padding-bottom: 8px
+    margin-bottom: 16px
+    overflow-y: hidden
+    overflow-x: auto
+    text-align: center
+    display: -webkit-box
+    > li
+      margin-right: 18px
+      &.active, &:hover
+        a
+          color: $lm-main

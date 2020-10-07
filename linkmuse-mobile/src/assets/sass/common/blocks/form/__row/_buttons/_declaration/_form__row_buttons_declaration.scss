@@ -1,0 +1,15 @@
+.form__row_buttons_declaration {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	padding: 8px 24px;
+	background-color: $lm-white;
+	z-index: 100;
+	max-width: 564px;
+	margin: 0 auto;
+}
+
+@import '_disabled/_form__row_buttons_declaration_disabled.scss';

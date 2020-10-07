@@ -1,0 +1,20 @@
+import state from './state'
+import getters from './getters'
+import actions from './actions'
+import mutations from './mutations'
+
+import { getField, updateField } from 'vuex-map-fields'
+
+export default {
+  namespaced: true,
+  state,
+  getters: {
+    getField,
+    ...getters
+  },
+  mutations: {
+    updateField,
+    ...mutations
+  },
+  actions
+}

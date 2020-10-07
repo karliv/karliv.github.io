@@ -1,0 +1,17 @@
+.d-input_search_feed {
+	width: 100%;
+	position: relative;
+	.d-icon_search {
+		fill: $lm-gray-3;
+		position: absolute;
+		top: 12px;
+		left: 16px;
+	}
+	.d-icon_close {
+		fill: $lm-gray-3;
+		position: absolute;
+		right: $multiplicity*4;
+		top: 12px;
+	}
+}
+

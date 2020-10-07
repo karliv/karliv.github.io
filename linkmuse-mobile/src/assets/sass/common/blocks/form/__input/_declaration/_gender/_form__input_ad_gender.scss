@@ -1,0 +1,5 @@
+.form__input_ad_gender {}
+
+// form__input_ad_gender mods
+@import '_female/_form__input_ad_gender_female.scss';
+@import '_male/_form__input_ad_gender_male.scss';

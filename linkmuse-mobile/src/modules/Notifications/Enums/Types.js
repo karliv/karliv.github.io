@@ -1,0 +1,5 @@
+export const EYE = 'eye'
+export const INFO = 'info'
+export const CHECK = 'check-circle'
+export const ALERT_WARN = 'info btn__alert-3'
+export const ALERT_DANGER = 'info btn__alert-2'

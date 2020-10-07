@@ -1,0 +1,16 @@
+.form__row_buttons_ad {
+	box-sizing: border-box;
+	display: flex;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	padding: 8px 24px;
+	box-shadow: $panes__box-shadow_top;
+	background-color: $lm-white;
+	z-index: 100;
+}
+
+@import '_disabled/_form__row_buttons_ad_disabled.scss';

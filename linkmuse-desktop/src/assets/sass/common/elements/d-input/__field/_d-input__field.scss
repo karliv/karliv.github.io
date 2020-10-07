@@ -1,0 +1,52 @@
+.d-input__field {
+	margin-bottom: 0;
+	display: flex;
+	align-items: center;
+	outline: none;
+	box-sizing: border-box;
+	border: 1px solid $lm-gray-4;
+	border-radius: $multiplicity*2;
+	height: 40px;
+	padding: $multiplicity*3 $multiplicity*4;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: 0.3px;
+	color: $lm-gray-1;
+	width: 100%;
+	transition: all 0.15s ease;
+	@include placeholder_color_lm-gray-3();
+	&:hover {
+		transition: all 0.15s ease;
+		border-color: $lm-main;
+    color: $lm-main;
+	}
+	&:focus {
+		transition: all 0.15s ease;
+		border-color: $lm-main;
+		color: $lm-gray-1;
+		&:hover {
+			border-color: $lm-main;
+      color: $lm-gray-1;
+		}
+	}
+	&:disabled {
+		cursor: not-allowed;
+		transition: all 0.15s ease;
+		border-color: $lm-gray-5;
+		background-color: $lm-gray-5;
+		@include placeholder_color_lm-gray-opacity-32();
+    &:hover {
+      color: rgba(40, 42, 54, 0.32)
+    }
+	}
+  &.error {
+    border-color: $wild-watermelon !important;
+    color: $lm-gray-1 !important;
+  }
+}
+
+@import '_required/_d-input__field_required.scss';
+@import '_search/_d-input__field_search.scss';

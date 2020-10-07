@@ -1,0 +1,44 @@
+.section_specialist-parameters_small {
+	display: flex;
+	.card__header {
+		display: flex;
+		align-items: center;
+		span {
+			font-size: 8px;
+			font-weight: 600;
+			line-height: 1.5;
+			letter-spacing: 1px;
+			color: $lm-gray-2;
+			text-transform: uppercase;
+		}
+	}
+	.card__body {
+    color: $lm-gray-1;
+    span {
+      margin-right: 2px;
+    }
+	}
+	.card_specialist-parameters_small {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-right: $multiplicity*3;
+		&:last-child {
+			margin-right: 0;
+		}
+		&:only-child {
+			margin-right: 0;
+		}
+		&:nth-child(5n) {
+			margin-right: 0;
+		}
+		&:nth-child(n + 6) {
+			margin-top: $multiplicity*3;
+		}
+	}
+	.d-icon {
+		margin-right: $multiplicity*2;
+		fill: $lm-gray-3;
+	}
+}
+

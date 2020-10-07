@@ -1,0 +1,75 @@
+.d-markdown-layout {
+	i, em {
+		font-size: 14px;
+		font-weight: normal;
+		font-style: italic;
+		font-stretch: normal;
+		line-height: 1.29;
+		letter-spacing: 0.3px;
+		color: $lm-gray-1;
+		margin-top: $multiplicity*3;
+	}
+	b, strong {
+		font-size: 14px;
+		font-weight: 600;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.29;
+		letter-spacing: 0.5px;
+		color: $lm-gray-1;
+		margin-top: $multiplicity*3;
+	}
+	s, strike {
+		font-size: 14px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.29;
+		letter-spacing: 0.3px;
+		color: $lm-gray-1;
+		margin-top: $multiplicity*3;
+	}
+	a {
+		font-size: 14px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.29;
+		letter-spacing: 0.3px;
+		display: inline-block;
+		color: $lm-main;
+		//margin-top: $multiplicity*3;
+	}
+	h1, h2, h3, h4, h5 {
+		font-size: 18px;
+		font-weight: 600;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.33;
+		letter-spacing: 0.3px;
+		color: $lm-gray-1;
+		margin-bottom: $multiplicity*3;
+	}
+	ul, ol {
+		font-size: 14px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.29;
+		letter-spacing: 0.3px;
+		color: $lm-gray-1;
+		list-style-position: inside;
+		margin: 0;
+		padding: $multiplicity*3 0 0;
+	}
+	p {
+    display: block;
+    margin: 12px 0 0 0 !important;
+  }
+}
+@import '__title/_d-markdown-layout__title.scss';
+@import '__link/_d-markdown-layout__link.scss';
+@import '__text/_d-markdown-layout__text.scss';
+@import '__list/_d-markdown-layout__list.scss';
+@import '__icon/_d-markdown-layout__icon.scss';
+

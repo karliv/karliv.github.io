@@ -1,0 +1,18 @@
+.filters__section {
+	box-sizing: border-box;
+	padding: $multiplicity*5 0;
+	border-top: 1px solid $lm-gray-opacity-8;
+	background-color: $lm-white;
+	&:first-child {
+		border-top: none;
+		padding-top: 0;
+	}
+	&:only-child {
+		border-top: none;
+		padding: 0;
+	}
+	&:last-child {
+		padding-bottom: 0;
+	}
+}
+

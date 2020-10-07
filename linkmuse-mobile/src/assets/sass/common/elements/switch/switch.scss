@@ -1,0 +1,14 @@
+.switch {
+	display: inline-flex;
+	align-items: center;
+	vertical-align: middle;
+	justify-content: space-between;
+}
+@import '__label/_switch__label.scss';
+@import '__mark/_switch__mark.scss';
+
+@import '_active/_switch_active.scss';
+@import '_btn/_switch_btn.scss';
+@import '_disable/_switch_disable.scss';
+@import '_filters/_switch_filters.scss';
+@import '_declaration/_switch_declaration.scss';

@@ -1,0 +1,17 @@
+.card__message_invitation_customer {
+	text-align: left;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.29;
+	letter-spacing: normal;
+	color: $lm-gray-1;
+	padding: 4px 0 12px;
+	margin: 0 16px;
+	border-bottom: 1px solid rgba(40, 42, 54, 0.08);
+	@media screen and (min-width: $sm-breakpoint) {
+		margin: 0 20px;
+	}
+}
+

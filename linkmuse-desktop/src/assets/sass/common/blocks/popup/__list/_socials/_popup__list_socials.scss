@@ -1,0 +1,26 @@
+.popup__list_socials {
+	.list__item {
+		font-size: 12px;
+		font-weight: 600;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.29;
+		letter-spacing: 0.5px;
+		color: $lm-gray-1;
+		text-transform: none;
+		text-decoration: none;
+		margin-bottom: $multiplicity*3;
+		transition: all 0.15s ease-in-out;
+		&:only-child {
+			margin-bottom: 0;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&:hover {
+			color: $lm-main;
+			transition: all 0.15s ease;
+		}
+	}
+}
+

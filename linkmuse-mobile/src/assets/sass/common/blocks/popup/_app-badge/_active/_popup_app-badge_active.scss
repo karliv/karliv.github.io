@@ -1,0 +1,12 @@
+.popup_app-badge_active {
+	z-index: 9999;
+	.popup__overlay {
+		opacity: 1;
+		transition: opacity 0.3s ease;
+	}
+	.popup__content {
+		transform: translateY(0);
+		transition: transform 0.3s ease;
+	}
+}
+

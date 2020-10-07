@@ -1,0 +1,25 @@
+.list_ul {
+	list-style-type: none;
+	list-style-position: inside;
+	.list__item {
+		display: flex;
+		align-items: flex-start;
+		font-size: 14px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.29;
+		letter-spacing: 0.3px;
+		color: $lm-gray-2;
+		
+		&::before {
+			content: '•';
+			display: block;
+			margin: 0 5px;
+			font-size: 1.2em;
+			line-height: 1.1;
+		}
+		
+	}
+}
+

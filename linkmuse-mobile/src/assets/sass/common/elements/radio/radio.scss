@@ -1,0 +1,18 @@
+.radio {
+	display: inline-flex;
+	cursor: pointer;
+	transition: all 0.15s ease-in-out;
+/*	&:hover {
+		transition: all 0.15s ease;
+		
+		.radio__label {
+			color: $lm-main;
+			&::before {
+				border-color: $lm-main;
+			}
+		}
+	}*/
+}
+@import '__label/_radio__label.scss';
+@import '__mark/_radio__mark.scss';
+

@@ -1,0 +1,67 @@
+image:
+  name: registry-ds1.cnt.team:35000/webapp-test:v1.4
+  username: $DOCKER_HUB_USERNAME
+  password: $DOCKER_HUB_PASSWORD
+
+pipelines:
+  default:
+      - step:
+          name: Default step
+          script:
+            - echo "Contains the pipeline definition for all branches that don't match a pipeline definition in other sections"
+  custom:
+   manual-production:
+    - step:
+        name: Production build image webapp
+        caches:
+          - node
+        script:
+         - docker login --username $DOCKER_HUB_USERNAME --password $DOCKER_HUB_PASSWORD registry-ds1.cnt.team:35000
+         - export IMAGE_NAME=registry-ds1.cnt.team:35000/linkmuse-webapp:$BITBUCKET_COMMIT
+         - cp .env.production .env
+         - npm  install
+         - npm run build
+         - docker build --pull -t ${IMAGE_NAME} .
+         - docker push $IMAGE_NAME
+        services:
+          - docker
+    - step:
+        name: Deploy production
+        deployment: production
+        trigger: manual
+        script:
+            - ssh root@134.209.88.133 BITBUCKET_COMMIT=$BITBUCKET_COMMIT bash muse-docker/production/production-deploy-webapp.sh
+
+
+  branches:
+   master:
+    - step:
+        name: Trigger to build linkmuse/certifying-specialist pipeline
+        script:
+          - ./trigger-linkmuse-pipeline.sh
+        services:
+          - docker
+   feature/*:
+    - step:
+        name: Feature build image webapp
+        caches:
+          - node
+        script:
+         - docker login --username $DOCKER_HUB_USERNAME --password $DOCKER_HUB_PASSWORD registry-ds1.cnt.team:35000
+         - export TAG=$(echo ${BITBUCKET_BRANCH}|sed 's/\//-/g')
+         - export IMAGE_NAME=registry-ds1.cnt.team:35000/linkmuse-feature-webapp:${TAG}
+         - sed -i "s/newbuild.staging.cnt.team/${TAG}.test.cnt.team/g" ./.env.kmv
+         - cp .env.kmv .env
+         - npm  install
+         - npm run build:staging
+         - docker build --pull -t ${IMAGE_NAME} .
+         - docker push $IMAGE_NAME
+        services:
+          - docker
+    - step:
+        name: Deploy Feature/* to TEST
+        deployment: test
+        trigger: manual
+        script:
+          - ssh root@staging.cnt.team BITBUCKET_BRANCH=${BITBUCKET_BRANCH} bash muse-docker/staging-server/pipeline-split-deploy.sh linkmuse-webapp
+

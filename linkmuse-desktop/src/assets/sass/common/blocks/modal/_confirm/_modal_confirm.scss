@@ -1,0 +1,28 @@
+.modal-confirm {
+  max-width: 320px;
+  background-color: $lm-white;
+  box-shadow: $box-shadow_blur_down_4;
+  border-radius: 8px;
+}
+
+.modal-confirm__header {
+  display: flex;
+  padding: 48px 53px;
+  background-color: $lm-gray-5;
+  border-radius: 8px 8px 0 0;
+  .d-icon {
+    height: 68px;
+    width: 214px;
+    fill: transparent;
+  }
+}
+
+.modal-confirm__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 36px;
+  text-align: center;
+}
+

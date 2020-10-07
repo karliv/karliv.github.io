@@ -1,0 +1,30 @@
+.status_verified {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 4px;
+	max-width: 24px;
+	max-height: 24px;
+	border-radius: 50%;
+	margin: auto;
+	position: absolute;
+	background-color: $lm-white;
+	left: calc(50% - 4px);
+	top: 90px;
+	&::after {
+		flex-shrink: 0;
+		content: '';
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		background-color: $lm-main;
+		background: $lm-main url('/dist/img/icons/customer/icon_status_verified.svg') center center no-repeat;
+		-webkit-background-size: contain;
+		background-size: contain;
+	}
+}
+

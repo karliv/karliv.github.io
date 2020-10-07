@@ -1,0 +1,396 @@
+.lm-v3
+  .header_fixed
+    position: fixed
+    z-index: 2
+    padding-top: 16px
+    width: 100%
+  .header_sticky
+    margin-bottom: 16px
+    height: 48px
+    box-shadow: $panes__box-shadow
+    z-index: 18
+    position: sticky
+    top: 0
+  .lm-wrapper
+    margin: 0 auto
+    width: 1136px
+  .header_white
+    background-color: $lm-white
+    .lm-wrapper, .lm-main-wrapper
+      .lm-v3-dropdown-action
+        &.fix-li
+          &:hover
+            svg
+              path
+                fill: $lm-main
+        &:hover
+          .lm-v3-dropdown-action-header--link
+            color: $lm-main
+          .d-icon
+            fill: $lm-main
+        .lm-v3-header-link
+          //color: $lm-main
+        .d-icon
+          fill: $lm-gray-1
+      .lm-v3-header-link, .lm-v3-dropdown-action-header--link
+        color: $lm-gray-1
+        &:hover
+          color: $lm-main
+      .lm-header-left
+        .lm-header-left-menu
+          li, .fix-li
+            &.new
+              span
+                color: $lm-support-1
+        .lm-header-logo
+          .d-icon
+            fill: $lm-main
+      .lm-header-right
+        color: $lm-main
+        .lm-v3-header-link
+          color: $lm-main
+
+  .header_blue
+    color: $lm-white
+    .lm-wrapper, .lm-main-wrapper
+      .lm-v3-dropdown-action
+        &.fix-li
+          &:hover
+            svg
+              path
+                fill: $lm-white
+        &:hover
+          .lm-v3-dropdown-action--header
+            opacity: .64
+            transition: opacity 100ms linear, top 100ms linear, visibility 100ms linear
+          .lm-v3-dropdown-action-header--link
+            color: $lm-white
+          .d-icon
+            fill: $lm-white
+        .lm-v3-header-link
+          color: $lm-gray-1
+          &:hover
+            opacity: 1
+        .d-icon
+          fill: $lm-white
+      .lm-v3-header-link, .lm-v3-dropdown-action-header--link
+        color: $lm-white
+        &:hover
+          color: $lm-white
+      .lm-v3-header-link
+        transition: opacity 100ms linear, top 100ms linear, visibility 100ms linear
+        &:hover
+          opacity: .64
+          transition: opacity 100ms linear, top 100ms linear, visibility 100ms linear
+      .lm-header-left
+        .lm-header-left-menu
+          li, .fix-li
+            &.new
+              span
+                color: $lm-support-1
+        .lm-header-logo
+          .d-icon
+            fill: $lm-white
+
+.lm-header
+  .lm-wrapper, .lm-main-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    height: 100%
+    .lm-v3-dropdown-action
+      position: relative
+      padding: 11px 20px
+      cursor: pointer
+      &.fix-li
+        svg
+          path
+            transition: fill .25s ease
+        &:hover
+          svg
+            path
+              transition: fill .25s ease-in
+              fill: $lm-main
+      .lm-v3-dropdown-action--header
+        display: flex
+        align-items: center
+        position: relative
+      .d-icon
+        width: 16px
+        height: 16px
+        margin-left: 4px
+        object-fit: contain
+        border-radius: 4px
+        transform: rotate(90deg)
+        transition: fill .25s ease
+      span
+        line-height: 28px
+      &:hover
+        z-index: 1111111
+        .lm-v3-dropdown-action-content
+          display: block
+        .lm-v3-dropdown-action-header--link
+          color: $lm-main
+        .d-icon
+          fill: $lm-main
+      .lm-v3-dropdown-action-content
+        left: 0
+        z-index: 2
+        margin: auto
+        display: none
+        padding-top: 19px
+        position: absolute
+        width: 141px
+        .lm-dropdown-indent
+          padding: 8px 0
+        ul
+          overflow: hidden
+          list-style: none
+          border-radius: 8px
+          background: $lm-white
+          box-shadow: 0 4px 16px 0 rgba(40, 42, 54, 0.16)
+          li
+            text-align: left
+            &:hover
+              transition: color .25s ease-in
+              background: $lm-main_08
+            a
+              display: block
+              font-size: 14px
+              font-weight: 600
+              line-height: 1.29
+              text-align: left
+              padding: 8px 20px
+              letter-spacing: 0.5px
+              box-sizing: content-box
+              &:hover
+                color: $lm-main !important
+    .lm-v3-header-link
+      padding: 11px 20px
+    .lm-v3-header-link, .lm-v3-dropdown-action-header--link
+      display: block
+      font-size: 14px
+      font-weight: 600
+      font-style: normal
+      font-stretch: normal
+      line-height: 1.29
+      letter-spacing: .5px
+      transition: color .25s ease-in
+      &:hover
+        color: $lm-main
+        transition: color .25s ease
+    .lm-header-left
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      .lm-header-left-menu
+        list-style: none
+        display: flex
+        align-items: center
+        justify-content: center
+        li, .fix-li
+          &.new
+            position: relative
+            span
+              color: $lm-support-1
+              position: absolute
+              top: -12px
+              font-size: 8px
+              text-transform: uppercase
+              right: 0
+              font-weight: bold
+      .lm-header-logo
+        margin-right: 18px
+        height: 40px
+        display: flex
+        align-items: center
+        .d-icon
+          width: 94px
+          height: 100%
+        img
+          height: 100%
+    .lm-header-right
+      display: flex
+      align-items: center
+      justify-content: flex-end
+      .lm-v3-header-create-btn
+        display: flex
+        cursor: pointer
+        position: relative
+        align-items: center
+        span
+          line-height: 1.29
+          font-weight: 600
+        .d-icon
+          width: 16px
+          height: 16px
+          fill: $lm-white
+          margin-right: 8px
+          flex-direction: row
+          object-fit: contain
+          border-radius: 4px
+      .create-account
+        line-height: 28px !important
+        color: $lm-white !important
+      .login-button, .create-account
+        padding: 0 24px
+        display: block
+        font-size: 12px
+        font-weight: 600
+        line-height: 16px
+        letter-spacing: 1px
+        color: #515562
+        text-transform: uppercase
+      .lm-v3-header-user
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        .lm-v3-header-user-link
+          display: flex
+          align-items: center
+          justify-content: flex-end
+        &.open
+          .lm-home-page-menu
+            fill: $lm-main
+            color: $lm-main
+            border-radius: 8px
+            background: $lm-main_08
+        .dropdown-menu
+          right: 0
+          border: 0
+          left: initial
+          padding: 6px 0
+          margin-top: 8px
+          border-radius: 8px
+          background-color: $lm-white
+          box-shadow: 0 4px 16px 0 rgba(40, 42, 54, 0.16)
+          li
+            &:hover
+              background: $lm-main_08
+            &:not(.lm-login-out)
+              &:hover
+                a
+                  span
+                    color: $lm-main
+                    transition: color .25s ease
+            &.lm-login-out
+              a
+                span
+                  color: $lm-gray-3
+            + .lm-user-line
+              border-top: 1px solid rgba(40, 42, 54, 0.08)
+            a
+              display: flex
+              padding: 8px 20px
+              align-items: center
+              justify-content: flex-start
+
+              span
+                font-size: 14px
+                text-align: left
+                font-weight: 600
+                line-height: 1.29
+                color: $lm-gray-2
+                letter-spacing: 0.5px
+                transition: color .25s ease-in
+                &.new
+                  font-size: 8px
+                  margin-left: 8px
+                  font-weight: bold
+                  text-transform: uppercase
+                  color: $lm-support-1 !important
+          .cards-base-lm-divider
+            height: 1px
+            margin: 6px 20px
+            background-color: $lm-gray-opacity-8
+        img
+          width: 20px
+          height: 20px
+          display: block
+          object-fit: cover
+          border-radius: 8px
+        .lm-profile-icon-arrow
+          width: 20px
+          height: 20px
+          display: none
+          object-fit: cover
+          border-radius: 8px
+          background-color: $lm-main
+          .d-icon
+            fill: $lm-white
+        &.open
+          .lm-profile-icon-avatar
+            display: none
+          .lm-profile-icon-arrow
+            display: block
+        i
+          margin-left: 4px
+          display: block
+          width: 16px
+          height: 16px
+          position: relative
+          svg
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            margin: auto
+            path
+              transition: fill .25s ease
+      .lm-v3-header-notification, .lm-v3-header-message
+        width: 16px
+        height: 16px
+        position: relative
+        .d-icon
+          fill: $lm-gray-2
+          transition: all 0.15s ease-in-out
+        a
+          display: block
+          position: relative
+        &.new
+          &:after
+            top: -4px
+            width: 8px
+            height: 8px
+            right: -4px
+            content: ''
+            display: block
+            position: absolute
+            border-radius: 50%
+            box-sizing: content-box
+            background-color: $lm-main
+            border: solid 2px $lm-white
+        .alert-span
+          &:after
+            content: ''
+            position: absolute
+            top: -4px
+            right: -2px
+            width: 10px
+            height: 10px
+            background-color: $lm-main
+            border-radius: 8px
+            border: 2px solid $lm-white
+      .lm-home-page-menu
+        width: 40px
+        height: 40px
+        display: flex
+        cursor: pointer
+        border-radius: 8px
+        align-items: center
+        align-content: center
+        justify-content: center
+        &:hover, &:active, &.active
+          fill: $lm-main
+          color: $lm-main
+          border-radius: 8px
+          background: $lm-main_08
+          .lm-v3-header-notification, .lm-v3-header-message
+            .d-icon
+              fill: $lm-main
+              transition: all 0.15s ease
+      .lm-home-page-menu-icon
+        margin: 0 8px
+        &:last-child
+          margin-right: 0

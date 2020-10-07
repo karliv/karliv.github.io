@@ -1,0 +1,15 @@
+.heading {
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	color: $lm-gray-1;
+	margin: 0;
+	word-break: normal;
+	word-wrap: break-word;
+}
+
+@import '_h1/_heading_h1.scss';
+@import '_h2/_heading_h2.scss';
+@import '_h3/_heading_h3.scss';
+@import '_h4/_heading_h4.scss';
+@import '_h5/_heading_h5.scss';

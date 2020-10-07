@@ -1,0 +1,99 @@
+.description_tooltip {
+  position: relative;
+  z-index: 100;
+  &:before {
+    z-index: 100;
+    content: "";
+    position: absolute;
+    top: 110px;
+    right: -15px;
+    display: block;
+    margin: 0 auto 8px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 6px 0 6px;
+    border-color: $lm-gray-1 transparent transparent transparent;
+    transform: rotate(90deg);
+  }
+  //&.bottom {
+  //  &:before {
+  //    border-width: 0 6px 6px 6px;
+  //    bottom: -14px;
+  //    margin: 0 auto;
+  //    border-color: transparent transparent #ffffff transparent;
+  //  }
+  //  .description_tooltip__wrap {
+  //    bottom: unset;
+  //    top: 14px;
+  //  }
+  //}
+  &__wrap {
+    position: absolute;
+    max-width: 354px;
+    top: -50px;
+    right: -76%;
+    z-index: 9;
+    margin-bottom: 14px;
+    box-shadow: 0 4px 16px 0 rgba(40, 42, 54, 0.16);
+    border: 2px solid $lm-gray-1;
+    border-radius: 8px;
+    background-color: $lm-gray-1;
+    overflow: hidden;
+  }
+  &__item {
+    padding: 12px 14px;
+  }
+  &__bad{
+    margin-right: 0;
+    margin-bottom: 2px;
+    background-color: #ffeef2;
+    border-radius: 8px 8px 0 0;
+    .description_tooltip__title {
+      color: #fc4570;
+    }
+  }
+  &__good {
+    background-color: $lm-main-08;
+    .description_tooltip__title {
+      color: $lm-main;
+      background-color: #ebf3fc;
+    }
+  }
+  &__descr {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.5px;
+    color: $lm-white;
+    .description_tooltip__title {
+      color: $lm-white;
+    }
+  }
+  &__title {
+    margin-bottom: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.5px;
+  }
+  &__list {
+    font-size: 12px;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.5px;
+    color: $lm-gray-1;
+  }
+  &__list-item {
+    font-weight: normal;
+    list-style-type: none;
+    line-height: 1.33;
+    span {
+      font-weight: 900;
+    }
+  }
+}

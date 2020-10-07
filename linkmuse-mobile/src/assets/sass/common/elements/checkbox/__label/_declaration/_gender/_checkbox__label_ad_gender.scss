@@ -1,0 +1,12 @@
+.checkbox__label_ad_gender {
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 40px;
+	border-radius: 16px;
+	color: $lm-gray-3;
+	background-color: $lm-gray-5;
+	transition: all .25s ease-in-out;
+	padding: 12px 24px;
+}

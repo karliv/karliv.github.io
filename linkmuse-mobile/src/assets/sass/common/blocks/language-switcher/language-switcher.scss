@@ -1,0 +1,14 @@
+.language-switcher {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: $multiplicity*2 0;
+	background-color: transparent;
+	cursor: pointer;
+	@media screen and (min-width: $sm-breakpoint) {
+		padding: $multiplicity*3 0;
+	}
+}
+@import '__label/_language-switcher__label.scss';
+

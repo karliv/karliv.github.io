@@ -1,0 +1,13 @@
+.tab__content_gallery_verification-specialist {
+	height: calc(100vh - 56px);
+	overflow: auto;
+	width: 100%;
+	max-width: 524px;
+	position: absolute;
+	left: 0;
+	background-color: #282a36;
+	display: none;
+	transition: all 0.25s ease;
+	@include webkit-scrollbar();
+}
+

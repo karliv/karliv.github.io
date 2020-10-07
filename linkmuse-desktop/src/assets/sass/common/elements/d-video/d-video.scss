@@ -1,0 +1,16 @@
+.d-video {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .d-video__icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    padding: 12px;
+    background-color: $lm-gray-opacity-64;
+    border-radius: 8px;
+  }
+}
+

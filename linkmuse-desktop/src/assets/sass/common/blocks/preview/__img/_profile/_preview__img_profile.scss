@@ -1,0 +1,11 @@
+.preview__img_profile {
+	width: 40px;
+	height: 40px;
+	border-radius: $border-radius_8;
+	margin-right: $multiplicity*3;
+	position: relative;
+	z-index: 2;
+	flex-shrink: 0;
+}
+
+@import '_verified/_preview__img_profile_verified.scss';

@@ -1,0 +1,25 @@
+.section__img_upload_verification-step {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	width: 100%;
+	max-width: 111px;
+	height: 100%;
+	min-height: 72px;
+	max-height: 72px;
+	border-radius: 10px;
+	background: url('/dist/img/verification/default3.jpg') center center no-repeat;
+	/*background: url('../src/assets/img/default3.jpg') center center no-repeat;*/
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: relative;
+	margin-top: 8px;
+	margin-right: 8px;
+	&:nth-child(-n + 3) {
+		margin-top: 0;
+	}
+	&:nth-child(3n) {
+		margin-right: 0;
+	}
+}
+

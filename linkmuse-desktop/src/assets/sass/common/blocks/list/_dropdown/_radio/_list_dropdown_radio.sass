@@ -1,0 +1,52 @@
+.list_dropdown_radio
+  .lm-radio-buttons
+    li + li
+      margin-top: 8px
+  input[type="radio"]
+    display: none
+    &:disabled
+      + label
+        color: $lm-gray-4 !important
+        &:after
+          border: 1px solid $lm-gray-4 !important
+        &:before
+          background: transparent !important
+    &:checked
+      + label
+        &:after
+          border: solid 1px $lm-main
+          background: $lm-main
+        &:before
+          content: ''
+          display: block
+          position: absolute
+          width: 8px
+          height: 8px
+          border-radius: 50%
+          background: $lm-white !important
+          left: 4px
+          top: 4px
+          bottom: unset
+          margin: auto
+          z-index: 1
+    & + label
+      padding-left: 24px
+      line-height: 1.29
+      letter-spacing: .25px
+      &:hover
+        color: $lm-main
+        &:after
+          border: solid 1px $lm-main
+        cursor: pointer
+      &:after
+        content: ''
+        display: block
+        width: 16px
+        height: 16px
+        border-radius: 50%
+        position: absolute
+        top: 0
+        left: 0
+        margin: auto
+        background-color: $lm-white
+        border: solid 1px $lm-gray-4

@@ -1,0 +1,22 @@
+.d-card__section {
+	border-top: 1px solid $lm-gray-opacity-8;
+	padding: $multiplicity*4 0;
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	z-index: 1;
+	&:first-child {
+		padding-top: 0;
+		border-top: none;
+	}
+	&:only-child {
+		padding: 0;
+		border-top: none;
+	}
+	&:last-child {
+		padding-bottom: 0;
+	}
+}
+
+@import '_vacancy/_d-card__section_vacancy.scss';

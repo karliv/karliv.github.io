@@ -1,0 +1,12 @@
+.d-input__label_required {
+	&:after {
+		content: '';
+		display: inline-flex;
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		background-color: $lm-support-1;
+		margin-left: 8px;
+	}
+}
+

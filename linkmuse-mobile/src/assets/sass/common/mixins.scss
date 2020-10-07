@@ -1,0 +1,108 @@
+/* outdated */
+
+@mixin button() {
+	box-sizing: border-box;
+	cursor: pointer;
+	border-radius: 8px;
+	background-color: $lm-main;
+	color: $lm-white;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: 1px;
+	padding: 12px 24px;
+	text-transform: uppercase;
+	transition: background-color 0.25s ease-in-out;
+	border: none;
+	outline: none;
+	min-width: 140px;
+	height: 40px;
+
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+	@media screen and (min-width: $sm-breakpoint) {
+		min-width: 164px;
+	}
+}
+
+@mixin button_cancel() {
+	box-sizing: border-box;
+	cursor: pointer;
+	border-radius: 16px;
+	background-color: transparent;
+	color: $lm-gray-3;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: 1px;
+	padding: 12px 24px;
+	text-transform: uppercase;
+	border: none;
+	outline: none;
+	min-width: 140px;
+	height: 40px;
+
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+	@media screen and (min-width: $sm-breakpoint) {
+		min-width: 164px;
+	}
+}
+
+@mixin webkit-scrollbar() {
+	&::-webkit-scrollbar {
+		width: 3px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: $lm-gray-4;
+		border-radius: 5px;
+	}
+}
+
+@mixin placeholder_color_lm-gray-3() {
+	&::-webkit-input-placeholder {
+		color: $lm-gray-3;
+	}
+
+	&::-moz-placeholder {
+		color: $lm-gray-3;
+	}
+
+	&:-moz-placeholder {
+		color: $lm-gray-3;
+	}
+
+	&:-ms-input-placeholder {
+		color: $lm-gray-3;
+	}
+}
+
+@mixin placeholder_color_lm-gray-opacity-32() {
+	&::-webkit-input-placeholder {
+		color: $lm-gray-opacity-32;
+	}
+
+	&::-moz-placeholder {
+		color: $lm-gray-opacity-32;
+	}
+
+	&:-moz-placeholder {
+		color: $lm-gray-opacity-32;
+	}
+
+	&:-ms-input-placeholder {
+		color: $lm-gray-opacity-32;
+	}
+}
+
+@mixin button_disabled() {
+	pointer-events: none;
+	cursor: default;
+	color: rgba(40, 42, 54, 0.32);
+	background-color: $lm-gray-5;
+}

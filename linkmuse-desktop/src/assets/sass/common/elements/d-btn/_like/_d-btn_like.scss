@@ -1,0 +1,10 @@
+.d-btn_like {
+	transition: all 0.25s ease-in-out;
+	&:hover {
+		transition: all 0.25s ease;
+		fill: $lm-gray-3;
+		background-color: $lm-support-1_08;
+	}
+}
+
+@import '_active/_d-btn_like_active.scss';

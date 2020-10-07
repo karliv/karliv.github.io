@@ -1,0 +1,15 @@
+.d-markdown-layout__list {
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.29;
+	letter-spacing: 0.3px;
+	color: $lm-gray-2;
+	list-style-position: inside;
+	margin: 0;
+	padding: $multiplicity*3 0 0;
+}
+
+@import '_unordered/_d-markdown-layout__list_unordered.scss';
+@import '_ordered/_d-markdown-layout__list_ordered.scss';

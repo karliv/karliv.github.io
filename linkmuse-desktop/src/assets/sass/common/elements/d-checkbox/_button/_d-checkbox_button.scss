@@ -1,0 +1,37 @@
+.d-checkbox_button {
+	.d-checkbox__mark {
+		display: none;
+		&:checked + .d-checkbox__label {
+			color: $lm-main;
+			background-color: rgba(0, 99, 218, 0.08);
+			transition: all 0.05s ease;
+		}
+	}
+	.d-checkbox__label {
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 40px;
+		border-radius: 8px;
+		color: $lm-gray-3;
+		background-color: $lm-gray-5;
+		transition: all .05s ease-in-out;
+		padding: 12px 24px;
+		text-transform: uppercase;
+		cursor: pointer;
+		font-size: 12px;
+		font-weight: 600;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: 1px;
+		word-break: normal;
+		word-wrap: break-word;
+		max-width: 100%;
+		&::before {
+			display: none;
+		}
+	}
+}
+

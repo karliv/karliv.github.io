@@ -1,0 +1,26 @@
+.nav__item_status {
+	position: relative;
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0.6rem;
+		right: 1.7rem;
+		width: 10px;
+		height: 10px;
+		background-color: $lm-white;
+		border-radius: 50%;
+	}
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: calc(0.55rem + 3px);
+		right: calc(1.7rem + 2px);
+		width: 6px;
+		height: 6px;
+		background-color: $lm-main;
+		border-radius: 50%;
+	}
+}
+

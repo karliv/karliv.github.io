@@ -1,0 +1,14 @@
+.avatar-container {
+  width: 174px;
+  height: 174px;
+  min-width: 174px;
+  .d-img {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: $box-shadow_blur_down_4;
+  }
+}
+

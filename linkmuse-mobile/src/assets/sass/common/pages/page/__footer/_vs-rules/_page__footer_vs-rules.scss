@@ -1,0 +1,15 @@
+.page__footer_vs-rules {
+	box-sizing: border-box;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	padding: $multiplicity*2 $multiplicity*6;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	.row {
+		width: 100%;
+		max-width: 376px;
+	}
+}
+

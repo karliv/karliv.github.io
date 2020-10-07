@@ -1,0 +1,7 @@
+.nav__item {
+	transition: all 0.25s ease-in-out;
+}
+
+@import '_categories/_nav__item_categories.scss';
+@import '_sidebar/_nav__item_sidebar.scss';
+@import '_status/_nav__item_status.scss';

@@ -1,0 +1,31 @@
+.lm-m-casting--list
+    display: flex
+    flex-wrap: wrap
+    margin-top: 14px
+    @media (max-width: 767px)
+        flex-direction: column
+        margin-top: 10px
+    &.lm-m-my-castings--list
+        &.null
+          .lm-m-my-castings-empty
+            position: fixed
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            text-align: center
+            width: 100%
+            .text
+              span
+                font-size: 14px
+                line-height: 18px
+                color: $lm-gray-3
+                margin-bottom: 8px
+                display: block
+            .lm-plus-icon
+              margin-top: 8px
+              @include lm-plus('%23ffffff')

@@ -1,0 +1,24 @@
+.d-text_bold {
+  font-weight: 600;
+  letter-spacing: .5px;
+  color: $lm-gray-1;
+}
+.d-text_semi-bold {
+  font-size: 12px;
+  line-height: 1.33;
+  font-weight: 600;
+  letter-spacing: .5px;
+  color: $lm-gray-1;
+}
+.d-text_normal {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: .5px;
+  color: $lm-gray-1;
+}
+.d-text_small {
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}

@@ -1,0 +1,7 @@
+.d-markdown-layout__text {
+	margin-top: $multiplicity*3;
+}
+
+@import '_strike/_d-markdown-layout__text_strike.scss';
+@import '_italic/_d-markdown-layout__text_italic.scss';
+@import '_semibold/_d-markdown-layout__text_semibold.scss';

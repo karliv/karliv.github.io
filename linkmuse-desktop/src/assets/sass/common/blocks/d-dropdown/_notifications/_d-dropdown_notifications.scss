@@ -1,0 +1,105 @@
+.d-dropdown_notifications {
+	display: flex;
+	align-items: center;
+	margin: 0 28px;
+	box-sizing: border-box;
+
+	.dropdown-menu {
+		right: 0;
+		left: auto;
+		padding: 0;
+		margin-top: $multiplicity*2;
+		border-radius: 8px;
+		box-shadow: $box-shadow_blur_down_16;
+		overflow: hidden;
+		border: none;
+	}
+	.d-dropdown__icon {
+		fill: $lm-gray-2;
+		transition: all 0.15s ease-in-out;
+		&:hover {
+			fill: $lm-main;
+			transition: all 0.15s ease;
+		}
+		&_active {
+			fill: $lm-main;
+		}
+	}
+	.d-dropdown__content {
+		background-color: $lm-white;
+		box-sizing: border-box;
+		width: 420px;
+	}
+	.d-dropdown__header {
+		box-sizing: border-box;
+		border-bottom: 1px solid $lm-gray-opacity-8;
+		padding: $multiplicity*3 $multiplicity*5;
+		font-size: 12px;
+		font-weight: 600;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.33;
+		letter-spacing: 0.5px;
+		color: $lm-gray-2;
+		.d-link {
+			font-size: 12px;
+			color: $lm-gray-3;
+			&:hover {
+				color: $lm-main;
+			}
+		}
+	}
+	.d-dropdown__body {
+		box-sizing: border-box;
+		max-height: 364px;
+		overflow: auto;
+		.d-dropdown__section {
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+			padding: 0 $multiplicity*5;
+			&:first-child {
+				.notification {
+					border-top: none;
+				}
+			}
+			&:hover {
+				background-color: $lm-main-08;
+				.notification {
+					border-color: transparent;
+				}
+			}
+			.notification {
+				border-top: 1px solid $lm-gray-opacity-8;
+				padding: $multiplicity*5 0;
+			}
+		}
+		&:empty {
+			&:before {
+				content: 'Новых уведомлений нет';
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				box-sizing: border-box;
+				padding: $multiplicity*5 0;
+				font-size: 14px;
+				font-weight: 600;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.29;
+				letter-spacing: 0.5px;
+				color: $lm-gray-3;
+			}
+		}
+	}
+	.d-dropdown__footer {
+		background-color: $lm-gray-5;
+		box-sizing: border-box;
+		border-top: 1px solid $lm-gray-opacity-8;
+		.d-btn_secondary_filled {
+			border-radius: 0;
+		}
+	}
+}
+

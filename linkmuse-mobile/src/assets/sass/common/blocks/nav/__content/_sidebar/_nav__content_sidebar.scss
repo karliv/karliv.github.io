@@ -1,0 +1,23 @@
+.nav__content_sidebar {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+	background-color: $lm-white;
+	border-top-left-radius: $border-radius_4;
+	border-bottom-left-radius: $border-radius_4;
+	padding: $multiplicity*6 $multiplicity*6 $multiplicity*4;
+	width: 100%;
+	height: 100%;
+	max-width: 214px;
+	position: relative;
+	transform: translateX(100%);
+	transition: all 0.35s ease-in-out;
+	@media screen and (min-width: $sm-breakpoint) {
+		max-width: 288px;
+		padding: $multiplicity*9 $multiplicity*9 $multiplicity*5;
+	}
+}
+
+@import '_active/_nav__content_sidebar_active.scss';

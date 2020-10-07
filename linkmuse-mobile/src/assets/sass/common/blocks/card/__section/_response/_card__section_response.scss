@@ -1,0 +1,25 @@
+.card__section_response {
+	box-sizing: border-box;
+	display: block;
+	padding: $multiplicity*3 0;
+	border-top: 1px solid $lm-gray-opacity-8;
+	font-size: 14px;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: 0.5px;
+	color: $lm-gray-2;
+	&:first-child {
+		padding: 0 0 $multiplicity*3;
+		border-top: none;
+	}
+	&:first-of-type {
+	}
+	&:only-child {
+		border-top: 1px solid $lm-gray-opacity-8;
+	}
+	&:last-child {
+		padding: $multiplicity*3 0 0;
+	}
+}
+

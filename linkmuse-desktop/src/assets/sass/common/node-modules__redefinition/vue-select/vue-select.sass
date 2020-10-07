@@ -1,0 +1,92 @@
+.style-chooser
+  &.vs--open
+    .vs__dropdown-toggle, .vs__dropdown-menu
+      transition: all 0.15s ease
+      border-color: $lm-main
+    .vs__dropdown-toggle
+      &:hover
+        .vs__selected
+          color: $lm-gray-3
+  .vs__dropdown-menu
+    border-radius: 0 0 8px 8px
+    border: none
+    padding: 8px 0
+    margin-top: 1px
+    box-shadow: 0 4px 16px 0 rgba(40, 42, 54, 0.16)
+  .vs__dropdown-toggle
+    height: 40px
+    border-radius: 8px
+    padding: 0
+    &:hover
+      transition: all 0.15s ease
+      border-color: $lm-main
+      color: $lm-main
+      .vs__selected
+        transition: all 0.15s ease
+        color: $lm-main
+    &:focus
+      transition: all 0.15s ease
+      border-color: $lm-main
+      &:hover
+        border-color: $lm-main
+        color: $lm-gray-1
+  .vs__selected-options
+    align-items: center
+    padding: 0
+  .vs__search
+    padding: 12px 16px
+    margin: 0
+    font-size: 14px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: 0.3px
+    color: $lm-gray-1
+    &:focus
+      padding: 12px 16px
+      margin: 0
+      transition: all 0.15s ease
+      color: $lm-gray-1
+    &::placeholder
+      color: $lm-gray-3
+  .vs__selected
+    position: absolute
+    width: 100%
+    padding: 12px 16px 10px
+    margin: 0
+    line-height: normal
+  .vs__actions
+    padding: 0
+    margin-right: 16px
+  .vs__clear, .vs__open-indicator
+    fill: #ced2da
+  .vs__clear
+    margin-right: 14px
+  .vs__spinner
+    margin-left: 6px
+  .lm-w-dropdown-icon
+    display: block
+    width: 16px
+    height: 16px
+    background-size: 16px
+    background-position: center
+    background-repeat: no-repeat
+  .vs__no-options
+    padding: 12px 16px
+  .vs__dropdown-option
+    color: $lm-gray-1
+    font-size: 14px
+    display: block
+    width: 100%
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    padding: 12px 16px
+    line-height: 1.29
+    letter-spacing: 0.25px
+    &:hover, &.select
+      background-color: $lm-main-8
+      color: $lm-main
+  .vs__dropdown-option--highlight
+    background-color: inherit

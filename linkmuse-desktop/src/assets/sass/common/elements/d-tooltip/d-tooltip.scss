@@ -1,0 +1,48 @@
+.d-tooltip {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	&.tooltip {
+		&.left, &.right, &.top, &.bottom {
+			opacity: 1;
+			background-color: transparent;
+		}
+	}
+	&.left {
+		margin-right: 12px;
+	}
+	&.bottom {
+		margin-top: 12px;
+	}
+	&.top {
+		margin-bottom: 12px;
+	}
+	&.right {
+		margin-left: 12px;
+	}
+	.tooltip-inner {
+		opacity: 1;
+		background-color: $lm-gray-1;
+		padding: $multiplicity*2 $multiplicity*3;
+		border-radius: $multiplicity*4;
+		font-size: 8px;
+		font-weight: 600;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.5;
+		letter-spacing: 1px;
+		color: $lm-white;
+		text-transform: uppercase;
+		div {
+			line-height: 1.5;
+		}
+	}
+	.tooltip-arrow {
+		display: none;
+	}
+}
+@import '__icon/_d-tooltip__icon.scss';
+
+@import '_vs-profile/_d-tooltip_vs-profile.scss';
+@import '_vs-list/_d-tooltip_vs-list.scss';
+@import '_declaration/_d-tooltip_declaration.scss';

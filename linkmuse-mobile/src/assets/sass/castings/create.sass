@@ -1,0 +1,100 @@
+#app
+    .lm-create-casting
+        position: fixed
+        width: 100%
+        height: 100%
+        overflow: scroll
+        top: 0
+        h1
+            +lm-subsection-header
+            padding-bottom: 48px
+            padding-top: 48px
+            text-align: center
+            @media (min-width: 767px)
+                padding-top: 72px
+                padding-bottom: 72px
+        .lm-create-casting-wrap
+            min-height: 100%
+            background: $lm-white
+            &.fix-bottom-actions
+                padding-bottom: 62px
+                box-sizing: border-box
+            .lm-m-post-register-fixed-bottom
+                position: fixed
+                bottom: 0
+                left: 0
+                display: flex
+                align-items: center
+                justify-content: space-between
+                padding: 0 16px
+                width: 100%
+                box-sizing: border-box
+                height: 62px
+                border-top: 1px solid rgba(40, 42, 54, 0.05)
+                background: $lm-white
+                @media (min-width: 767px)
+                    padding: 0 24px
+            .wrapper
+                background: $lm-white
+            .text-price
+                font-size: 8px
+                font-weight: 600
+                line-height: 12px
+                letter-spacing: 1px
+                color: $lm-gray-2
+                padding-left: 16px
+                background-size: 12px
+                background-position: left top
+                background-repeat: no-repeat
+                text-transform: uppercase
+                margin-top: 4px
+                @include lm-error('%230063da')
+            .create-casting-toogle-wrap
+                display: flex
+                align-items: center
+                justify-content: center
+                margin-bottom: 50px
+                .no, .yes
+                    font-size: 12px
+                    font-weight: 600
+                    text-transform: uppercase
+                    line-height: 18px
+                    color: $lm-gray-3
+                .yes
+                    margin-left: 26px
+                    &.active
+                        color: $lm-main
+                .no
+                    margin-right: 24px
+                    &.active
+                        color: $lm-support-1
+            .lm-separator
+                height: 2px
+                opacity: 0.05
+                background-color: $lm-gray-1
+                margin-top: 32px
+                margin-bottom: 32px
+                margin-left: -16px
+                margin-right: -16px
+                @media (min-width: 767px)
+                    margin-left: -20px
+                    margin-right: -20px
+
+            .lm-m-post-register-select-sex
+                margin-bottom: 24px
+                margin-top: 0px
+            .lm-casting-input
+                width: 272px
+                margin: 0 auto
+                .lm-input-wrap
+                    margin-bottom: 24px
+                    .lm-input
+                        box-sizing: border-box
+                    &.radio-wrap
+                        label
+                            margin-bottom: 12px
+                textarea
+                    box-sizing: border-box
+                    line-height: 20px
+                    width: 100%
+

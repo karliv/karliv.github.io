@@ -1,0 +1,17 @@
+.d-card__date_casting {
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.33;
+	letter-spacing: 0.5px;
+	color: $lm-gray-2;
+	margin-bottom: $multiplicity*2;
+	text-transform: lowercase;
+	span {
+		line-height: 1.29;
+		color: $lm-gray-2;
+		text-transform: none;
+	}
+}
+

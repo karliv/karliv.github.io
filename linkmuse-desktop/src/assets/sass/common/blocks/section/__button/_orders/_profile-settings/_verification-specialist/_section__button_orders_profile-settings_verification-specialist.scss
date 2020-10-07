@@ -1,0 +1,13 @@
+.section__button_orders_profile-settings_verification-specialist {
+	@include button;
+	min-width: 140px;
+	background-color: transparent;
+	color: $lm-main;
+	border: 1px solid $lm-main;
+	&:hover {
+		transition: none;
+		background-color: transparent;
+	}
+}
+
+@import '_disabled/_section__button_orders_profile-settings_verification-specialist_disabled.scss';

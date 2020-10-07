@@ -1,0 +1,30 @@
+.talents-list-v2
+  .talents-list-v2-filter
+    .talents-list-v2-filter-left
+      .filter-role
+        .filter-role-popup-action
+          .reset
+            &.disabled
+              opacity: .3
+              pointer-events: none
+    .talents-list-v2-filter-right
+      .all-filters
+        .all-filters-wrap
+          .all-filters-wrap-line
+            .columns-2
+              &.start
+                justify-content: start
+            .all-filters-wrap-line-wight
+              input
+                &.error
+                  border: solid 1px #FC2E5F
+      .sort-filter
+        width: 140px
+        .lm-dropdown
+          height: 35px
+          width: 140px
+          .lm-dropdown-selected
+            margin-bottom: 0
+    .scroll-height
+      height: calc(100vh - 240px)
+      max-height: calc(100vh - 240px)

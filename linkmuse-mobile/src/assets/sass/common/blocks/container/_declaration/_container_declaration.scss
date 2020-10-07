@@ -1,0 +1,15 @@
+.container_declaration {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: $lm-white;
+  border-radius: 4px;
+  box-shadow: $panes__box-shadow;
+  &:last-child {
+    box-shadow: $panes__box-shadow_top;
+  }
+}
+
+@import '_casting/_container_declaration_casting.scss';

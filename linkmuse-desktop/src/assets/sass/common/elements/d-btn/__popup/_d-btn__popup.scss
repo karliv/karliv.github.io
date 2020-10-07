@@ -1,0 +1,34 @@
+.d-btn__popup {
+	box-sizing: border-box;
+	//display: flex;
+	transition: all 0.3s ease-in-out;
+	z-index: -100;
+	opacity: 0;
+	right: 0;
+	position: absolute;
+  display: none;
+	.popup__content {
+		box-sizing: border-box;
+		background-color: $lm-white;
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+    z-index: 10;
+	}
+}
+
+.d-btn_hover {
+  &:hover {
+    .d-btn__popup {
+      display: flex;
+      transition: all 0.3s ease-in-out;
+      z-index: 10;
+      opacity: 1;
+    }
+  }
+}
+
+@import '_share/_d-btn__popup_share.scss';
+@import '_active/_d-btn__popup_active.scss';
+@import '_hover/_d-btn__popup_hover.scss';
+@import '_top/_d-btn__popup_top.scss';

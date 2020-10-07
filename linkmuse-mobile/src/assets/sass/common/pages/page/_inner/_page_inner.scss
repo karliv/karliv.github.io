@@ -1,0 +1,138 @@
+.page-inner {
+  background-color: $lm-gray-5;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: .5px;
+  color: $lm-gray-1;
+  .page-inner_bold {
+    font-weight: 600;
+    line-height: 1.29;
+  }
+  .page-inner_bold-2 {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .page-inner_semi-bold {
+    font-size: 12px;
+    line-height: 1.29;
+    font-weight: 600;
+  }
+  .m-text_normal {
+    font-size: 12px;
+  }
+  .m-text_normal-2 {
+    line-height: 1.29;
+    letter-spacing: 0.25px;
+  }
+}
+.page-inner__label-title {
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $lm-gray-2;
+}
+
+.page-inner__container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: $lm-white;
+  margin-top: 16px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  box-shadow: $panes__box-shadow;
+  &:only-child {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.page-inner__footer {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $lm-white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  min-height: 56px;
+  max-height: 56px;
+  box-sizing: border-box;
+  padding: 8px 0;
+  border-radius: 2px;
+  box-shadow: $panes__box-shadow_top;
+}
+
+.page-inner__body_declaration {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 24px;
+  max-width: 564px;
+}
+
+.avatar-container {
+  width: 86px;
+  height: 86px;
+  min-width: 86px;
+  .d-img {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+}
+
+.avatar-container_setting {
+  width: 128px;
+  height: 128px;
+}
+
+.advanced-container {
+  padding: 16px 20px;
+  border-radius: 8px;
+  border: solid 1px $lm-gray-4;
+  background-color: $lm-gray-5;
+}
+
+.section_contacts_action {
+  width: auto;
+  background-color: $lm-main_08;
+  border-radius: 8px;
+  padding: 16px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &.section_contacts-alert_action {
+    background-color: #ffeef2;
+    color: #fc2e5f;
+  }
+  span {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: 0.5px;
+    color: $lm-gray-1;
+    display: block;
+    max-width: 224px;
+    @media (max-width: 507px) {
+      margin-bottom: 16px;
+    }
+  }
+}

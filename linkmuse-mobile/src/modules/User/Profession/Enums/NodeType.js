@@ -1,0 +1,8 @@
+export const ROOT = 'root'
+export const NUMERIC = 'numeric'
+export const TEXT = 'text'
+export const DATE = 'date'
+export const SELECT = 'select'
+export const CHECKBOX = 'checkbox'
+export const BOOLEAN = 'boolean'
+export const COMPLEX = 'complex'

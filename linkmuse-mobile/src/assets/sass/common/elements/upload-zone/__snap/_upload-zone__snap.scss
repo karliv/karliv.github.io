@@ -1,0 +1,23 @@
+.upload-zone__snap {
+  min-height: 505px;
+  background-color: #f3f4f6;
+  &.lm-dropzone {
+    &.empty {
+      &:before {
+        background-color: initial;
+      }
+    }
+  }
+  &.empty {
+    background-image: url(/dist/img/snap/snap.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .lm-dropzone--uploader {
+    min-height: 505px;
+    .lm-dropzone--uploader__desc, .icon-upload {
+      display: none;
+    }
+  }
+}

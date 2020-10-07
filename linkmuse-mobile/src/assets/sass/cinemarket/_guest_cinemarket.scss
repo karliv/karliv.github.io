@@ -1,0 +1,51 @@
+.сm-m-wrap-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  .сm-m-wrap-photo-card {
+    width: 92px;
+    height: 112px;
+    display: block;
+    background-color: $cm-green-2;
+    object-fit: cover;
+    border-radius: 4px;
+    &.patner-card {
+      height: 92px;
+      object-fit: contain;
+    }
+  }
+  .cm-m-wrap-text-card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    .cm-m-name-h1-text-card {
+      font-size: 18px;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.33;
+      letter-spacing: 0.25px;
+      color: $lm-gray-1;
+      margin-bottom: 12px;
+    }
+  }
+
+  .lm-m-name-h3-text-card {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.5px;
+    color: $lm-gray-1;
+  }
+  .lm-m-name-h2-text-card {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: 0.25px;
+    color: $lm-gray-1;
+  }
+}

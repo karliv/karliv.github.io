@@ -1,0 +1,11 @@
+.form__checkbox_declaration_gender {
+	display: none;
+	&:checked + .checkbox__label_declaration_gender {
+		color: $lm-main;
+		background-color: rgba(0, 99, 218, 0.08);
+		transition: all 0.25s ease;
+	}
+}
+
+@import '_female/_form__checkbox_declaration_gender_female.scss';
+@import '_male/_form__checkbox_declaration_gender_male.scss';

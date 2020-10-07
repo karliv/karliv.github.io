@@ -1,0 +1,10 @@
+.form__section_filters {
+	display: block;
+	padding: 24px 0;
+	border-top: 1px solid rgba(40, 42, 54, 0.08);
+	
+	&:nth-child(2) {
+		border-top: none;
+	}
+}
+

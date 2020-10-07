@@ -1,0 +1,71 @@
+.declaration__card {
+	position: relative;
+	&.in-moderation {
+		padding: 12px 16px;
+		.declaration__section {
+			&:nth-child(1n + 3) {
+				padding: 12px 0;
+			}
+		}
+	}
+	&.declaration__card_nb {
+		padding-bottom: $multiplicity*3;
+		@media screen and (min-width: 560px) {
+			padding-bottom: $multiplicity*5;
+		}
+	}
+	.btn {
+		z-index: 20;
+	}
+	.btn_options {
+		&:before {
+			content: '';
+			position: absolute;
+			width: 40px;
+			height: 40px;
+		}
+	}
+	a.declaration__section, .profile-card__description {
+		&:before {
+			content: '';
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 10;
+		}
+	}
+}
+
+.declaration__card, .declaration__card_inner, .declaration__card_empty {
+	box-sizing: border-box;
+	width: 100%;
+	box-shadow: $box-shadow_blur_4;
+	margin-top: $multiplicity*2;
+	border-radius: $border-radius_4;
+	flex-shrink: 0;
+	.declaration__heading {
+		&:only-child {
+			margin: 0;
+		}
+	}
+}
+
+.declaration__card, .declaration__card_inner {
+	background-color: $lm-white;
+}
+
+.declaration__card, .declaration__card_location {
+	padding: $multiplicity*3 $multiplicity*4 0;
+	@media screen and (min-width: 560px) {
+		padding: $multiplicity*5 $multiplicity*6 0;
+	}
+}
+
+.declaration__card_location {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@import '_personal/_declaration__card_personal.scss';

@@ -1,0 +1,29 @@
+.list__body_filters {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-top: $multiplicity*3;
+	.list__item {
+		margin-top: $multiplicity*2;
+		box-sizing: border-box;
+		font-size: 14px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 0.5;
+		letter-spacing: 0.3px;
+		color: $lm-gray-2;
+		&:first-child {
+			margin-top: 0;
+		}
+		&:only-child {
+			margin-top: 0;
+		}
+	}
+	.d-link_show-all {
+		margin-top: $multiplicity*3;
+	}
+}
+

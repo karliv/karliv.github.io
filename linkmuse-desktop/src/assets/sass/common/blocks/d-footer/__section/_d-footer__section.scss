@@ -1,0 +1,17 @@
+.d-footer__section {
+	margin-left: 136px;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.33;
+	letter-spacing: 0.5px;
+	color: $lm-gray-opacity-64;
+	&:first-child {
+		margin-left: 0;		
+	}
+	&:only-child {
+		margin-left: 0;		
+	}
+}
+

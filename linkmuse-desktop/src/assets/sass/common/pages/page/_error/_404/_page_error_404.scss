@@ -1,0 +1,12 @@
+.page_error_404 {
+  background-color: $lm-white;
+  .lm-header {
+    width: 100vw;
+  }
+  .page-wrapper-main {
+    display: flex;
+    align-content: center;
+    align-items: center;
+  }
+}
+

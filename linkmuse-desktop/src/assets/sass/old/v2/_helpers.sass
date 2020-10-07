@@ -1,0 +1,1433 @@
+.lm-rating
+    font-size: 12px
+    font-weight: 600
+    text-align: center
+    height: 16px
+    border-radius: 8px
+    line-height: 16px
+    padding: 0 5px
+    display: inline-block
+    color: $lm-white !important
+    vertical-align: middle
+    &.red
+        background-color: $lm-support-1
+    &.green
+        background-color: $lm-support-2
+    &.yellow
+        background-color: $lm-support-3
+    &.gray
+        background-color: $lm-gray-1
+
+// buttons
+.lm-icon-button
+    padding-left: 45px !important
+    background-position: 20px 14px
+    background-size: 16px
+    background-repeat: no-repeat
+    &.middle
+        padding-left: 40px !important
+        background-position: 15px 10px
+        background-size: 14px
+.lm-white-button
+    line-height: 40px
+    padding-left: 24px
+    padding-right: 24px
+    border-radius: 8px
+    height: 40px
+    font-size: 12px
+    font-weight: 600
+    text-align: center
+    border: 1px solid $lm-white
+    color: #ffffff
+    display: inline-block
+    text-transform: uppercase
+    transition: color .25s, background-color .25s, border-color .25s ease
+    &.middle
+        height: 40px
+        line-height: 40px
+.lm-primary-button
+    line-height: 40px
+    padding-left: 24px
+    padding-right: 24px
+    height: 40px
+    font-size: 14px
+    font-weight: 600
+    letter-spacing: 0.5px
+    text-align: center
+    color: $lm-gray-1
+    display: inline-block
+    transition: color .25s, background-color .25s, border-color .25s ease
+    &.very-small
+        height: 28px
+        line-height: 28px
+        padding-left: 10px
+        padding-right: 10px
+    &.full
+        border-radius: 0
+        width: 100%
+        height: 64px
+        line-height: 64px
+    &.full-width
+        width: 100%
+    &.small, &.middle
+        height: 40px
+        line-height: 40px
+        padding: 0 24px
+    &:hover
+        transition: color .25s, background-color .25s, border-color .25s ease
+    &:active, &.active
+        background-color: #007bed
+    &.disabled
+        background-color: $lm-gray-5
+        color: $lm-gray-4
+        cursor: not-allowed
+        span
+            color: $lm-gray-5
+    &.ok
+        background-color: $lm-support-2
+    &.error
+        background-color: $lm-support-1
+
+.lm-outline-button
+    line-height: 40px
+    //padding-left: 24px
+    //padding-right: 24px
+    //border: 1px solid $lm-main
+    border-radius: 8px
+    background-color: transparent
+    height: 40px
+    font-size: 12px
+    font-weight: 600
+    letter-spacing: 1px
+    text-align: center
+    //color: $lm-main
+    display: inline-block
+    text-transform: uppercase
+    transition: color .25s, background-color .25s, border-color .25s ease
+    &.very-small
+        height: 28px
+        line-height: 28px
+        padding-left: 10px
+        padding-right: 10px
+    &.full
+        border-radius: 0
+        width: 100%
+        height: 64px
+        line-height: 62px
+    &.small, &.middle
+        height: 40px
+        line-height: 40px
+        padding: 0 24px
+    &:hover
+        transition: color .25s, background-color .25s, border-color .25s ease
+        background-color: #ebf3fc
+        border-color: $lm-main
+        color: $lm-main
+    &:active, &.active
+        background-color: #007bed
+        border-color: #007bed
+        color: $lm-white
+    &.disabled
+        background-color: transparent
+        border-color: $lm-gray-4
+        color: $lm-gray-4
+        cursor: not-allowed
+
+.lm-secondary-button
+    line-height: 40px
+    padding-left: 24px
+    padding-right: 24px
+    border-radius: 8px
+    background-color: $lm-gray-5
+    height: 40px
+    font-size: 12px
+    font-weight: 600
+    text-align: center
+    color: $lm-gray-3
+    letter-spacing: 1px
+    display: inline-block
+    text-transform: uppercase
+    transition: color .25s, background-color .25s, border-color .25s ease
+    &.very-small
+        height: 28px
+        line-height: 28px
+        padding-left: 10px
+        padding-right: 10px
+    &.full
+        border-radius: 0
+        width: 100%
+        height: 64px
+        line-height: 64px
+    &.small, &.middle
+        height: 36px
+        line-height: 36px
+        padding-left: 20px
+        padding-right: 20px
+    &:hover, &:active, &.active
+        color: $lm-main
+        transition: color .25s, background-color .25s, border-color .25s ease
+        background-color: #ebf3fc
+    &.disabled
+        background-color: $lm-gray-5
+        color: $lm-gray-4
+        cursor: not-allowed
+
+.lm-btn-ghost
+    line-height: 36px
+    padding-left: 24px
+    padding-right: 24px
+    border-radius: 8px
+    border: 1px solid $lm-gray-2
+    background-color: transparent
+    height: 40px
+    font-size: 12px
+    font-weight: 500
+    display: inline-block
+    text-align: center
+    text-transform: uppercase
+    letter-spacing: 1px
+    color: $lm-gray-2
+    transition: color .25s, background-color .25s, border-color .25s ease
+    &.very-small
+        height: 28px
+        line-height: 28px
+        padding-left: 10px
+        padding-right: 10px
+    &.full
+        border-radius: 0
+        width: 100%
+        height: 64px
+        line-height: 62px
+    &.small, &.middle
+        height: 36px
+        line-height: 36px
+        padding-left: 20px
+        padding-right: 20px
+    &:hover
+        transition: color .25s, background-color .25s, border-color .25s ease
+        border-color: $lm-main
+        color: $lm-gray-2
+    &:active, &.active
+        background-color: #fbfbfb
+        border-color: $lm-gray-2
+        color: $lm-gray-2
+    &.disabled
+        border-color: $lm-gray-4
+        cursor: not-allowed
+        color: $lm-gray-4
+
+.lm-link-button
+    font-weight: 600
+    letter-spacing: 1px
+    text-transform: uppercase
+    color: $lm-gray-3
+    transition: color .25s, background-color .25s, border-color .25s ease
+    &:hover
+        transition: color .25s, background-color .25s, border-color .25s ease
+        color: $lm-main
+    &:active, &.active
+        color: $lm-gray-3
+    &.disabled
+        color: $lm-gray-4 !important
+        cursor: not-allowed
+
+.lm-play-button
+    display: block
+    width: 32px
+    height: 32px
+    border-radius: 50%
+    position: relative
+    &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        border-radius: 50%
+        width: 100%
+        height: 100%
+        opacity: 0.7
+        background-color: $lm-gray-1
+    &:after
+        content: ''
+        display: block
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        margin: auto
+        width: 12.5px
+        height: 11.2px
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14"><path fill="%23FFFFFF" fill-rule="evenodd" d="M11.053 7.884l-8.97 5.074a1 1 0 0 1-1.492-.87V1.94a1 1 0 0 1 1.493-.87l8.969 5.073a1 1 0 0 1 0 1.74z"/></svg>')
+        background-repeat: no-repeat
+        background-position: 2px 0
+        background-size: 12.5px 11.2px
+    &.big
+        width: 56px
+        height: 56px
+        &:after
+            background-position: 2px 0
+            width: 21.9px
+            height: 19.5px
+            background-size: 21.9px 19.5px
+    &:hover
+        &:before
+            opacity: 0.8
+//checkbox buttons
+.lm-checkbox-buttons
+    list-style: none
+    li
+        & + li
+            margin-top: 12px
+        input[type="checkbox"]
+            display: none
+            &:disabled
+                & + label
+                    color: $lm-gray-4 !important
+                    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">  <defs>  <rect id="a" width="16" height="16" rx="2"/>  </defs>  <g fill="none" fill-rule="evenodd"><use fill="%23FFFFFF" xlink:href="%23a"/>  <rect width="15" height="15" x=".5" y=".5" stroke="%23cbd0d8" rx="2"/></g></svg>') !important
+                    cursor: not-allowed
+            &:checked
+                & + label
+                    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g fill="none" fill-rule="evenodd"><rect width="16" height="16" fill="%230063DA" rx="2"/><g stroke="%23FFF" stroke-linecap="round" stroke-width="2">  <path d="M5.071 9.048l1.908 1.908M11 6l-4 5"/></g></g></svg>') !important
+            & + label
+                cursor: pointer
+                padding-left: 32px
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">  <defs>  <rect id="a" width="16" height="16" rx="2"/>  </defs>  <g fill="none" fill-rule="evenodd"><use fill="%23FFFFFF" xlink:href="#a"/>  <rect width="15" height="15" x=".5" y=".5" stroke="%23CBD0D8" rx="2"/></g></svg>')
+                background-position: left center
+                background-repeat: no-repeat
+                font-size: 14px
+                text-align: left
+                background-size: 16px
+                color: $lm-gray-2
+                &:hover
+                    color: $lm-main
+                    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">  <defs>  <rect id="a" width="16" height="16" rx="2"/>  </defs>  <g fill="none" fill-rule="evenodd"><use fill="%23FFFFFF" xlink:href="#a"/>  <rect width="15" height="15" x=".5" y=".5" stroke="%230063da" rx="2"/></g></svg>')
+// radio buttons
+.lm-radio-buttons
+    list-style: none
+    li + li
+        margin-top: 16px
+    input[type="radio"]
+        display: none
+        &:disabled
+            + label
+                color: $lm-gray-4 !important
+                &:after
+                    border: 1px solid $lm-gray-4 !important
+                &:before
+                    background: transparent !important
+        &:checked
+            + label
+                &:before
+                    content: ''
+                    display: block
+                    position: absolute
+                    width: 10px
+                    height: 10px
+                    border-radius: 50%
+                    background: $mariner !important
+                    left: 3px
+                    top: 3px
+                    z-index: 1
+        & + label
+            padding-left: 32px
+            position: relative
+            font-size: 14px
+            display: block
+            color: $lm-gray-2
+            text-align: left
+            &:hover
+                color: $lm-main
+                &:after
+                    border: solid 1px $lm-main
+                cursor: pointer
+            &:after
+                content: ''
+                display: block
+                width: 16px
+                height: 16px
+                border-radius: 50%
+                position: absolute
+                top: 0
+                left: 0
+                margin: auto
+                background-color: $white
+                border: solid 1px $lm-gray-4
+// Toggle buttons
+.lm-toggle
+    width: 50px
+    height: 30px
+    &:hover
+        .lm-toggle--label
+            will-change: auto
+            &:before
+                will-change: auto
+    .lm-toggle--checkbox
+        display: none
+        &:checked
+            & + .lm-toggle--label
+                background-color: $lm-main
+                border: solid 1px $lm-main
+                &:before
+                    left: calc(100% - 26.5px)
+                    border: solid 1px $lm-main
+    .lm-toggle--label
+        transition: 0.5s all
+        display: block
+        width: 100%
+        height: 100%
+        border-radius: 15px
+        background-color: $lm-gray-5
+        border: solid 1px $lm-gray-4
+        position: relative
+        cursor: pointer
+        &:before
+            content: ''
+            display: block
+            position: absolute
+            border-radius: 50%
+            overflow: hidden
+            left: -1px
+            top: 0
+            bottom: 0
+            margin: auto
+            transition: 0.5s all
+            width: 27.5px
+            height: 27.5px
+            background-color: $lm-white
+            border: solid 1px $lm-gray-4
+
+// user block
+.lm-user-vertical
+    display: block
+    text-align: center
+    &.big
+        img.lm-user-vertical-avatar
+            width: 96px
+            height: 96px
+    img.lm-user-vertical-avatar
+        width: 48px
+        height: 48px
+        border-radius: 8px
+        overflow: hidden
+        display: inline-block
+        vertical-align: top
+        margin: auto
+        margin-bottom: 10px
+        object-fit: cover
+
+    .lm-user-vertical-info
+        .lm-user-vertical-info-name
+            font-size: 18px
+            font-weight: 600
+            margin-bottom: 4px
+            line-height: 24px
+            text-align: center
+            color: #282a36
+            span
+                font-weight: 600
+        .lm-user-block-vertical-type
+            span.type
+                font-size: 14px
+                line-height: 18px
+                text-align: center
+                padding-right: 8px
+                display: inline-block
+                vertical-align: middle
+                color: $lm-gray-3
+            .rating
+                font-size: 12px
+                font-weight: 600
+                text-align: center
+                color: #fff
+                padding: 0 4px
+                line-height: 16px
+                display: inline-block
+                vertical-align: middle
+                border-radius: 4px
+                background-color: $lm-support-1
+
+
+.lm-user-block
+    display: block
+    .lm-user-rate
+        padding: 0 5px
+        height: 16px
+        display: inline-block
+        line-height: 16px
+        border-radius: 4px
+        background-color: #fc2e5f
+        font-size: 12px
+        font-weight: 600
+        text-align: center
+        color: #fff
+    .lm-user-block-info-location
+        font-size: 12px
+        text-align: left
+        color: #0063da
+        padding-left: 18px
+        background-size: 12px
+        background-repeat: no-repeat
+        background-position: left center
+
+    .lm-user-block-info-links-ss
+        margin-top: 8px
+        margin-bottom: 8px
+        a
+            display: block
+            margin-bottom: 4px
+            font-size: 12px
+            .text
+                color: #282a36
+            .count
+                color: #808792
+    &.small
+        img.lm-user-block-avatar
+            width: 30px
+            height: 30px
+    img.lm-user-block-avatar
+        width: 40px
+        height: 40px
+        border-radius: 8px
+        overflow: hidden
+        display: inline-block
+        vertical-align: middle
+        margin-right: 8px
+        object-fit: cover
+    .lm-user-block-info
+        display: inline-block
+        vertical-align: middle
+        .lm-user-block-info-name
+            font-size: 14px
+            font-weight: 600
+            line-height: 1.29
+            text-align: left
+            object-fit: cover
+            color: $lm-gray-1
+            margin-bottom: 2px
+            span:not(.time)
+                font-weight: 600
+            .time
+                font-size: 14px
+                line-height: 24px
+                text-align: left
+                color: $lm-gray-3
+                margin-left: 8px
+        .lm-user-block-info-type
+            font-size: 12px
+            text-align: left
+            color: $lm-gray-3
+            font-size: 8px
+            font-weight: 600
+            font-style: normal
+            font-stretch: normal
+            line-height: 1.5
+            letter-spacing: 1px
+            color: $lm-gray-3
+            text-transform: uppercase
+        .lm-user-block-info-text
+            font-size: 14px
+            line-height: 24px
+            margin-top: 8px
+            text-align: left
+            color: #282a36
+        .lm-user-block-info-quote
+            margin-top: 8px
+            padding-left: 16px
+            border-left: solid 2px $lm-gray-4
+            font-size: 14px
+            line-height: 23px
+            letter-spacing: normal
+            text-align: left
+            color: #282a36
+            img
+                display: block
+                max-width: 100%
+                margin-bottom: 8px
+                object-fit: cover
+
+.lm-user-status
+    width: 8px
+    border-radius: 50%
+    display: inline-block
+    vertical-align: top
+    height: 8px
+    margin-left: 4px
+    &.online
+        background-color: $lm-support-2
+    &.offline
+        background-color: $lm-support-1
+
+.lm-calendar
+    .content-select-time
+        background-color: #fff
+        padding-top: 12px
+        padding-left: 24px
+        padding-right: 24px
+        padding-bottom: 24px
+        .content-select-time--line
+            & + .content-select-time--line
+                margin-top: 44px
+            .times
+                margin-bottom: 12px
+                .times-item
+                    display: inline-block
+                    vertical-align: middle
+                    margin-right: 8px
+                .lm-user-block
+                    display: inline-block
+                    vertical-align: middle
+            .day
+                margin-bottom: 12px
+            input.times-item
+                width: 80px
+                text-align: center !important
+    .lm-calendar-head
+        background-color: #fbfbfb
+        height: 80px
+        padding: 0 75px
+        display: flex
+        position: relative
+        justify-content: space-between
+        &.days
+            padding: 0 52px
+            .day
+                cursor: pointer
+                width: 76px
+                height: 80px
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-direction: column
+                position: relative
+                &.active
+                    background-color: $lm-gray-5
+                    width: 81px
+                    flex: none
+                    .number
+                        color: #282a36
+                        font-size: 28px
+                        line-height: 34px
+                    .month
+                        display: block
+                .number
+                    font-size: 24px
+                    font-weight: 600
+                    text-align: center
+                    color: $lm-gray-2
+                    margin-bottom: 2px
+                    line-height: 29px
+                .count
+                    text-align: right
+                    position: absolute
+                    right: 4px
+                    color: $lm-main
+                    font-size: 12px
+                    font-weight: 600
+                    top: 1px
+                .month
+                    display: none
+                    text-transform: uppercase
+                    margin-bottom: 2px
+                .day-week, .month
+                    line-height: 14px
+                    font-size: 12px
+                    font-weight: 600
+                    text-align: center
+                    color: $lm-gray-3
+
+        .item
+            height: 80px
+            display: flex
+            align-items: center
+            justify-content: center
+            text-align: center
+            cursor: pointer
+            flex-direction: column
+            min-width: 70px
+            .month
+                font-size: 14px
+                font-weight: 600
+                line-height: 24px
+                text-align: center
+                color: #282a36
+                margin-bottom: 8px
+            .year
+                font-size: 12px
+                font-weight: 600
+                text-align: center
+                color: $lm-gray-3
+            &.active
+                .month
+                    font-size: 24px
+                min-width: 170px
+                background-color: $lm-gray-5
+        .prev, .next
+            position: absolute
+            top: 0
+            bottom: 0
+            line-height: 80px
+            cursor: pointer
+            font-size: 16px
+            color: $lm-gray-3
+            margin: auto
+            font-weight: bold
+        .prev
+            left: 24px
+        .next
+            right: 24px
+    .lm-calendar-footer
+        background-color: #fff
+        padding-bottom: 26px
+        padding-left: 24px
+        .text-day
+            display: block
+            text-align: left
+            span
+                font-size: 12px
+                line-height: 24px
+                text-align: left
+                color: #282a36
+                display: inline-block
+                vertical-align: middle
+            &:before
+                margin-right: 12px
+                content: ''
+                display: inline-block
+                vertical-align: middle
+                width: 16px
+                height: 16px
+                background-color: rgba(0, 99, 218, 0.1)
+                border-radius: 50%
+                overflow: hidden
+    .lm-calendar-content
+        padding: 32px 12px
+        background-color: #fff
+        .cell
+            width: 32px
+            height: 32px
+            margin: 0 15px
+            margin-bottom: 12px
+            display: inline-block
+            vertical-align: middle
+            &.day-header
+                font-size: 12px
+                line-height: 32px
+                font-weight: 600
+                text-align: center
+                color: $lm-gray-3
+            &.day
+                font-size: 14px
+                font-weight: 600
+                line-height: 32px
+                cursor: pointer
+                text-align: center
+                color: #282a36
+                &:not(.disabled)
+                    &:hover
+                        background-color: #F3F4F6
+                        color: rgb(40, 42, 54)
+                        border-radius: 50%
+                &.selected
+                    background-color: rgba(0, 99, 218, 0.1)
+                    color: $lm-main
+                    border-radius: 50%
+                &.next-month, &.prev-month
+                    color: $lm-gray-3
+                &.disabled
+                    cursor: not-allowed
+                    color: $lm-gray-4
+
+.lm-file-upload
+    height: 255px
+    border-radius: 18px
+    background-color: #fbfbfb
+    border: dashed 1px $lm-gray-4
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    cursor: pointer
+    &.small
+        width: 144px
+        height: 100px
+        &.drop, &.dz-drag-hover
+            .lm-file-upload--title
+                @include icon-download-top('%230063da')
+        .lm-file-upload--title
+            &.uploading
+                height: auto
+            min-width: 20px
+            height: 20px
+            background-position: center
+            margin: 0
+    &.drop, &.dz-drag-hover
+        background-color: rgba(0, 99, 218, 0.05)
+        border: dashed 1px $lm-main
+        .lm-file-upload--title
+            background-image: none
+            padding: 0
+            color: $lm-main
+            &.upload
+                @include icon-download-top('%230063da')
+        .lm-file-upload--desc
+            color: rgba(0, 99, 218, 0.5)
+    .lm-file-upload--title
+        font-size: 12px
+        font-weight: 600
+        text-align: left
+        color: $lm-gray-2
+        margin-bottom: 18px
+        &.uploading
+            background-image: url('data:image/svg+xml;utf8,<svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#111"><g fill="none" fill-rule="evenodd"><g transform="translate(1 1)" stroke-width="2"><circle stroke-opacity=".5" cx="18" cy="18" r="18"/><path d="M36 18c0-9.94-8.06-18-18-18"><animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="1s" repeatCount="indefinite"/></path></g></g></svg>')
+            background-size: 16px
+            background-repeat: no-repeat
+            padding-left: 24px
+            background-position: left center
+            color: $lm-gray-2 !important
+        &.upload
+            @include icon-download-top('%23111111')
+            background-repeat: no-repeat
+            background-position: left center
+            background-size: 12px
+            padding-left: 20px
+        &:hover
+            &.upload
+                @include icon-download-top('%230063da')
+            color: $lm-main
+
+
+    .lm-file-upload--desc
+        font-size: 12px
+        text-align: center
+        color: $lm-gray-3
+
+// typography
+.lm-v2
+    //h1
+        text-align: left
+        font-size: 28px
+        line-height: 36px
+        margin: 0 !important
+        margin-top: 16px !important
+        margin-bottom: 16px !important
+        color: $lm-gray-1
+    //h2
+        text-align: left
+        font-size: 24px
+        line-height: 36px
+        margin: 0 !important
+        margin-top: 4px !important
+        color: $lm-gray-1
+    h3
+        text-align: left
+        font-size: 18px
+        line-height: 24px
+        margin: 0 !important
+        margin-top: 16px !important
+        margin-bottom: 16px !important
+        color: $lm-gray-1
+    p
+        text-align: left
+        font-size: 14px
+        line-height: 18px
+        margin: 0 !important
+        margin-top: 16px !important
+        margin-bottom: 16px !important
+        color: $lm-gray-1
+        b
+            font-weight: bold
+
+// cards
+.lm-card
+    border-radius: 2px
+    background-color: $lm-white
+    box-shadow: 0 2px 8px 0 rgba(40, 42, 54, 0.03)
+    &.big
+        width: 490px
+        .lm-card--body
+            width: 400px
+            padding: 24px 0
+            margin: 0 auto
+    .lm-card--header
+        padding: 16px
+        box-shadow: 0 2px 0 0 rgba(40, 42, 54, 0.03)
+        .lm-dot-steps
+            padding-left: 28px
+            padding-right: 28px
+        .lm-card--header-title
+            font-size: 18px
+            font-weight: 600
+            line-height: 24px
+            text-align: left
+            color: $lm-gray-1
+        .lm-card--header-count
+            color: $lm-gray-3
+            font-size: 14px
+
+    .lm-card--body
+        padding: 24px
+        box-shadow: 0 2px 0 0 rgba(40, 42, 54, 0.03)
+        text-align: center
+        label
+            color: #515562
+            text-align: left
+            font-size: 14px
+            display: block
+            margin-bottom: 8px
+
+    .lm-card--footer
+        padding: 20px 24px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .lm-card--footer--left
+            display: flex
+            align-items: center
+            justify-content: flex-start
+            .like-card
+                padding-left: 24px
+                cursor: pointer
+                background-repeat: no-repeat
+                background-position: left center
+                background-size: 16px
+                margin-right: 30px
+                color: $lm-gray-1
+                font-size: 15px
+                &:hover, &.active
+                    @include lm-heart('%23fc2e5f')
+            .comment-card
+                padding-left: 24px
+                cursor: pointer
+                background-repeat: no-repeat
+                background-position: left center
+                background-size: 16px
+                margin-right: 30px
+                color: $lm-gray-1
+                font-size: 15px
+            .shared-count-card
+                padding-left: 24px
+                cursor: pointer
+                background-repeat: no-repeat
+                background-position: left center
+                background-size: 16px
+                margin-right: 30px
+                color: $lm-gray-1
+                font-size: 15px
+        .lm-card--footer--right
+            .lm-share
+                cursor: pointer
+                width: 14px
+                height: 16px
+                background-position: center
+                background-size: 14px 16px
+                background-repeat: no-repeat
+.lm-popup-modal
+    .modal-dialog
+        width: auto
+    .modal-content
+        border: 0
+.lm-popups
+    width: 400px
+    border-radius: 2px
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.06)
+    background-color: $lm-white
+    border: solid 1px $lm-gray-4
+    .lm-popups-head
+        padding: 20px 24px
+        position: relative
+        box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.03)
+        .lm-popups-head--title
+            font-size: 18px
+            font-weight: 600
+            line-height: 24px
+            text-align: left
+            color: $lm-gray-1
+        .lm-popups--close
+            background-position: center
+            background-repeat: no-repeat
+            background-size: 10px
+            position: absolute
+            width: 16px
+            height: 16px
+            top: 0
+            bottom: 0
+            margin: auto
+            right: 16px
+            cursor: pointer
+            display: block
+    .lm-popups-content
+        padding: 24px
+        .lm-popups--title
+            font-size: 18px
+            font-weight: 600
+            line-height: 24px
+            text-align: center
+            color: $lm-gray-1
+            margin-bottom: 4px
+        .lm-popups--desc
+            font-size: 14px
+            text-align: center
+            color: $lm-gray-3
+            margin-bottom: 24px
+        .lm-popups--actions
+            margin-top: 24px
+            display: flex
+            align-items: center
+            justify-content: center
+            a + a
+                margin-left: 8px
+// Tabs
+.lm-tabs
+    &.black
+        .lm-tabs-header
+            border-bottom: solid 1px #515562
+            .lm-tabs-header--item
+                &:hover
+                    a
+                        color: $lm-white !important
+                &.active
+                    &:before
+                        background-color: $lm-white
+                    a
+                        color: $lm-white
+                a
+                    color: #808792
+    .lm-tabs-content
+        padding: 24px
+    .lm-tabs-header
+        list-style: none
+        width: 100%
+        border-bottom: solid 1px $lm-gray-5
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        padding: 0 24px
+        &.nav-tabs > li
+            margin-right: 0
+            a
+                margin-right: 0
+                letter-spacing: 0
+        .lm-tabs-header--item
+            position: relative
+            &:hover
+                a
+                    color: $lm-main !important
+            &.active
+                a
+                    color: $lm-gray-1
+                &:before
+                    content: ''
+                    display: block
+                    position: absolute
+                    bottom: -1.5px
+                    left: 0
+                    width: 100%
+                    height: 2px
+                    border-radius: 5px
+                    background-color: $lm-main
+            a
+                display: block
+                padding: 0 24px
+                padding-bottom: 20px
+                font-size: 12px
+                font-weight: 600
+                color: $lm-gray-3
+                text-transform: uppercase
+.lm-dot-steps
+    display: flex
+    align-items: center
+    justify-content: space-between
+    div
+        position: relative
+        flex: auto
+        display: flex
+        justify-content: center
+        &:first-child
+            justify-content: flex-start
+        &:last-child
+            justify-content: flex-end
+        &.active
+            span
+                background-color: $lm-main
+        span
+            width: 8px
+            height: 8px
+            display: block
+            border-radius: 50%
+            background-color: $lm-gray-4
+        &.complite
+            &:before
+                background-color: $lm-main
+            &:not(:last-child):not(:first-child)
+                &:after
+                    background-color: $lm-main
+        &.active
+            &:not(:last-child):not(:first-child)
+                &:before
+                    background-color: $lm-main
+        &:first-child
+            &:after
+                display: none
+            &:before
+                left: 16px
+                width: calc(100% - 16px)
+        &:after
+            content: ''
+            display: block
+            position: absolute
+            top: 0
+            bottom: 0
+            margin: auto
+            background-color: $lm-gray-4
+            height: 2px
+            width: calc(50% - 16px)
+            right: 8px
+        &:before
+            content: ''
+            display: block
+            position: absolute
+            top: 0
+            bottom: 0
+            margin: auto
+            background-color: $lm-gray-4
+            height: 2px
+            width: 50%
+            left: -8px
+        &:last-child
+            &:after
+                display: none
+            &:before
+                width: 100%
+                left: -16px
+
+// Splits
+.lm-splits
+    display: inline-block
+    border-radius: 3px
+    overflow: hidden
+    .lm-splits--items
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        label:last-child
+            border-bottom-right-radius: 18px
+            border-top-right-radius: 18px
+        .lm-splits--item--radio
+            display: none
+            &:first-child
+                + .lm-splits--item--label
+                    border-top-left-radius: 18px
+                    border-bottom-left-radius: 18px
+            &:not(:first-child) + .lm-splits--item--label
+                margin-left: -1px
+
+            &:checked + .lm-splits--item--label
+                color: $lm-white
+                background-color: $lm-main
+                border-color: $lm-main
+                & + .lm-splits--item--radio + .lm-splits--item--label
+                    border-left-color: $lm-main
+        .lm-splits--item--label
+            padding: 9px 32px
+            font-size: 14px
+            line-height: 18px
+            display: block
+            text-align: center
+            cursor: pointer
+            color: $lm-gray-3
+            border: solid 1px $lm-gray-4
+            &:not(:last-child)
+                border-right: 1px solid $lm-gray-4
+            &:hover
+                color: $lm-main
+
+// flex
+.lm-flex
+    display: flex
+.lm-flex-end
+    display: flex
+    justify-content: flex-end
+    flex-wrap: wrap
+.lm-flex-bettwen
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &.settings
+        .lm-card
+            margin-bottom: 20px !important
+        .lm-card--header
+            text-align: center
+// inputs
+.lm-input-wrap
+    position: relative
+    margin-bottom: 24px
+    label
+        font-size: 14px
+        display: block
+        margin-bottom: 8px
+        color: $lm-gray-2
+    textarea.lm-input
+        padding: 12px 16px
+        min-height: 128px
+    span
+        font-size: 12px
+        letter-spacing: .5px
+        line-height: 1.4
+        display: block
+        text-align: left
+        &.lm-input-info
+            color: $lm-gray-3
+        &.lm-input-error
+            color: $lm-support-1
+    .lm-input
+        height: 40px
+        line-height: 40px
+        border-radius: 8px
+        letter-spacing: 0.25px
+        background-color: $lm-white
+        border: solid 1px $lm-gray-4 !important
+        color: $lm-gray-3 !important
+        font-size: 14px
+        margin: 0
+        &.lm-loader
+            background-position: calc(100% - 14px) center
+            background-repeat: no-repeat
+            background-size: 14px
+            background-image: url('data:image/svg+xml;utf8,<svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="%2320dba9"><g fill="none" fill-rule="evenodd"><g transform="translate(1 1)" stroke-width="4"><path d="M36 18c0-9.94-8.06-18-18-18"><animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="1s" repeatCount="indefinite"/></path></g></g></svg>')
+            &.error
+                background-image: url('data:image/svg+xml;utf8,<svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="%23fc2e5f"><g fill="none" fill-rule="evenodd"><g transform="translate(1 1)" stroke-width="4"><path d="M36 18c0-9.94-8.06-18-18-18"><animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="1s" repeatCount="indefinite"/></path></g></g></svg>')
+        &.calendar
+            @include lm-calendar-fill()
+            background-position: 12px center
+            background-size: 16px
+            padding-left: 40px
+            background-repeat: no-repeat
+        &.error
+            background-color: $lm-white
+            border: solid 1px $lm-support-1 !important
+            color: $lm-support-1 !important
+        &:disabled
+            background-color: $lm-white
+            border: solid 1px $lm-gray-4 !important
+            color: $lm-gray-4 !important
+            cursor: not-allowed
+        &:hover
+            color: $lm-gray-1 !important
+            background-color: $lm-white
+            border: solid 1px $lm-gray-3 !important
+        &.filled
+            background-color: $lm-white
+            border: solid 1px $lm-gray-3 !important
+            color: $lm-gray-1 !important
+        &.lm-input--password
+            background-size: 16px !important
+            background-image: none !important
+            ~ [class*='eye-']
+                display: block
+                width: 16px
+                height: 16px
+                background-repeat: no-repeat
+                background-size: contain
+                background-position: center
+                cursor: pointer
+                position: absolute
+                top: 12px
+                right: 16px
+            ~ .eye-show
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="%23808792" fill-rule="evenodd" d="M15.871 8.492C15.744 8.716 12.707 14 8.001 14 3.268 14 .253 8.713.127 8.489a.998.998 0 0 1-.002-.975C.251 7.289 3.246 2 8 2c4.731 0 7.746 5.287 7.872 5.512a1 1 0 0 1 0 .98zM13.818 8C13.036 6.835 10.84 4 8 4 5.146 4 2.958 6.835 2.181 7.999 2.962 9.162 5.16 12 8.001 12c2.836 0 5.033-2.834 5.817-4z" clip-rule="evenodd"/><path fill="%23808792" d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>')
+            ~ .eye-hide
+                background-image: url('data:image/svg+xml;utf8,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.131 0L6.707 1.424C6.985 1.771 7.213 2.088 7.376 2.331C6.616 3.461 4.526 6.151 1.815 6.316L0 8.131C0.496 8.255 1.014 8.331 1.557 8.331C6.264 8.331 9.301 3.047 9.428 2.823C9.599 2.519 9.6 2.147 9.429 1.843C9.382 1.758 8.929 0.962 8.131 0Z" transform="translate(6.44336 5.66919)" fill="%23808792"/><path d="M0.293375 15.7072C0.488375 15.9022 0.744375 16.0002 1.00038 16.0002C1.25638 16.0002 1.51238 15.9022 1.70738 15.7072L15.7074 1.70725C16.0984 1.31625 16.0984 0.68425 15.7074 0.29325C15.3164 -0.09775 14.6844 -0.09775 14.2934 0.29325L11.5484 3.03825C10.5154 2.43125 9.33137 2.00025 8.00037 2.00025C3.24537 2.00025 0.251375 7.28925 0.126375 7.51425C-0.0426249 7.81725 -0.0416249 8.18625 0.128375 8.48925C0.198375 8.61425 1.17238 10.2913 2.82138 11.7653L0.292375 14.2942C-0.0976249 14.6842 -0.0976249 15.3162 0.293375 15.7072ZM2.18138 7.99925C2.95838 6.83525 5.14637 4.00025 8.00037 4.00025C8.74237 4.00025 9.43737 4.20125 10.0784 4.50825L8.51237 6.07425C8.34837 6.02925 8.17837 6.00025 8.00037 6.00025C6.89537 6.00025 6.00038 6.89525 6.00038 8.00025C6.00038 8.17825 6.02938 8.34825 6.07438 8.51225L4.24038 10.3462C3.28538 9.51025 2.55938 8.56225 2.18138 7.99925Z" fill="%23808792"/></svg>')
+
+// Dropdown
+.lm-dropdown-wrap
+    label
+        font-size: 14px
+        display: block
+        margin-bottom: 8px
+        color: $lm-gray-2
+    &--n
+        .lm-dropdown
+            &.open
+                .lm-dropdown-menu
+                    border-top: 0 !important
+                    margin-top: 0 !important
+                    ul
+                        padding: 2px 0
+                    &--item
+                        padding: 4px 16px !important
+                        line-height: 24px
+                        &:hover
+                            background-color: transparent !important
+                .lm-dropdown-selected
+                    border-color: $lm-main
+    &.no-border
+        .lm-dropdown-selected
+            text-align: right !important
+            border: 0 !important
+        .lm-dropdown
+            margin-bottom: 0
+            &.open
+                .lm-dropdown-menu
+                    border-top-left-radius: 18px
+                    border-top-right-radius: 18px
+                    box-shadow: 0 4px 16px 0 rgba(40, 42, 54, 0.16)
+    &.error
+        .lm-dropdown
+            .lm-dropdown-selected
+                border: solid 1px $lm-support-1
+                color: $lm-support-1
+            span.lm-input-error
+                font-size: 11px
+                letter-spacing: 0.2px
+                display: block
+                text-align: left
+                color: $lm-support-1
+            .lm-dropdown-icon
+                @include lm-dropdown-icon('%23fc2e5f')
+    .lm-dropdown
+        margin-bottom: 24px
+        position: relative
+        display: block
+        &.disabled
+            cursor: not-allowed
+            .lm-dropdown-selected
+                border: solid 1px $lm-gray-4
+                color: $lm-gray-4
+        &.open
+            .lm-dropdown-selected
+                border-bottom-left-radius: 0 !important
+                border-bottom-right-radius: 0 !important
+            .lm-dropdown-menu
+                width: 100%
+                position: absolute
+                top: 36px
+                left: 0
+                display: block
+                margin-top: -1px
+                border-radius: 0 0 8px 8px
+                background-color: $lm-white
+                border: solid 1px $lm-gray-4
+                box-shadow: 0 4px 16px 0 rgba(40, 42, 54, 0.16)
+            &.bottom
+                .lm-dropdown-selected
+                    border-top-left-radius: 18px !important
+                    border-top-right-radius: 18px !important
+                    border-bottom-left-radius: 0 !important
+                    border-bottom-right-radius: 0 !important
+                .lm-dropdown-menu
+                    top: 36px
+                    bottom: auto
+                    border-top-left-radius: 0
+                    border-top-right-radius: 0
+                    border-bottom-left-radius: 18px
+                    border-bottom-right-radius: 18px
+            &.top
+                .lm-dropdown-selected
+                    border-top-left-radius: 0 !important
+                    border-top-right-radius: 0 !important
+                    border-bottom-left-radius: 18px !important
+                    border-bottom-right-radius: 18px !important
+                .lm-dropdown-menu
+                    top: auto
+                    bottom: 100%
+                    border-top-left-radius: 18px
+                    border-top-right-radius: 18px
+                    border-bottom-left-radius: 0
+                    border-bottom-right-radius: 0
+        .lm-dropdown-icon, .lm-close
+            display: block
+            width: 16px
+            height: 16px
+            background-size: 16px
+            background-position: center
+            position: absolute
+            background-repeat: no-repeat
+            right: 14px
+            top: 12px
+        .lm-close
+            background-size: 8px
+            @include lm-close('%23CBD0D8')
+        .lm-dropdown-selected
+            padding-left: 16px
+            display: block
+            text-align: left
+            color: $lm-gray-3 !important
+            font-size: 14px
+            line-height: 40px
+            padding-right: 30px
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
+            height: 40px
+            border-radius: 18px
+            border: solid 1px $lm-gray-4
+            &.fill
+                color: $lm-gray-1
+        .lm-dropdown-menu
+            display: none
+            .lm-dropdown-menu--item
+                color: $lm-gray-1
+                font-size: 14px
+                display: block
+                width: 100%
+                white-space: nowrap
+                overflow: hidden
+                text-overflow: ellipsis
+                padding: 16px 14px
+                &:hover, &.select
+                    background-color: rgba(0, 99, 218, 0.02)
+                    color: $lm-main
+// tags
+.lm-tags
+    .lm-tag
+        & + .lm-tag
+            margin-left: 16px
+        &.small
+            height: 20px
+            line-height: 20px
+            padding: 0 8px
+        height: 28px
+        padding: 0 16px
+        text-align: center
+        font-size: 12px
+        font-weight: 500
+        color: $lm-gray-3
+        text-transform: uppercase
+        background-color: $lm-gray-5
+        border-radius: 22px
+        cursor: pointer
+        display: inline-block
+        vertical-align: middle
+        line-height: 28px
+        &.disabled
+            color: $lm-gray-4 !important
+            line-height: 26px
+            background-color: transparent
+            border: solid 1px $lm-gray-4
+            cursor: not-allowed
+        &.active
+            color: $lm-white !important
+            background-color: $lm-main
+        &:hover
+            color: $lm-main
+// sex
+.lm-sex
+    width: 20px
+    height: 20px
+    border-radius: 50%
+    background-position: center
+    background-repeat: no-repeat
+    &.male
+        background-size: 9px
+        @include lm-sex-male
+        background-color: rgba(0, 99, 218, 0.08)
+    &.female
+        background-size: 8px
+        @include lm-sex-female
+        background-color: rgba(252, 46, 95, 0.08)
+
+
+
+

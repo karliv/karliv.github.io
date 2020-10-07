@@ -1,0 +1,10 @@
+.d-feed {
+  display: flex;
+  width: 100%;
+}
+
+@import '__sidebar/_d-feed__sidebar.scss';
+@import '__counter/_d-feed__counter.scss';
+@import '__body/_d-feed__body.scss';
+
+@import '_notifications/_d-feed_notifications.scss';

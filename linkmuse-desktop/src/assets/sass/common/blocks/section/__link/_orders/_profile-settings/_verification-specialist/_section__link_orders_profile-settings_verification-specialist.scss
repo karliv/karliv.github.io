@@ -1,0 +1,15 @@
+.section__link_orders_profile-settings_verification-specialist {
+	@include button;
+	min-width: 140px;
+	background-color: transparent;
+	color: $lm-main;
+	border: 1px solid $lm-main;
+	transition: all 0.25s ease-in-out;
+	&:hover {
+		transition: all 0.25s ease;
+		color: $lm-white;
+		background-color: $lm-main;
+	}
+}
+
+@import '_disabled/_section__link_orders_profile-settings_verification-specialist_disabled.scss';

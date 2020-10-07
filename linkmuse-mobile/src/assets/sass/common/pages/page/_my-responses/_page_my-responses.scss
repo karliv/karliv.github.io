@@ -1,0 +1,13 @@
+.page_my-responses {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	.response__date {
+		text-transform: uppercase;
+	}
+	.page__content {
+		padding-bottom: 88px;
+		box-sizing: border-box;
+	}
+}
+

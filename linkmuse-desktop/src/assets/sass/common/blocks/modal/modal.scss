@@ -1,0 +1,15 @@
+.modal {}
+@import '__content/_modal__content.scss';
+@import '__notification/_modal__notification.scss';
+@import '__section/_modal__section.scss';
+@import '__description/_modal__description.scss';
+@import '__title/_modal__title.scss';
+@import '__phone/_modal__phone.scss';
+
+@import '_verification/_modal_verification.scss';
+@import '_declaration/_modal_declaration.scss';
+@import '_active/_modal_active.scss';
+@import '_confirm/_modal_confirm.scss';
+@import '_write-all/_modal_write-all.scss';
+@import '_onboarding/_modal_onboarding.scss';
+@import '_talent-phone/_modal_talent-phone.scss';

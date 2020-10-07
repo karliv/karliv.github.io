@@ -1,0 +1,9 @@
+.list_values {
+	.list__item {
+		margin-top: $multiplicity*6;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}
+

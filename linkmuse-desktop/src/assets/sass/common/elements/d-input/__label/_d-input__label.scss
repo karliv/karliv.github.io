@@ -1,0 +1,14 @@
+.d-input__label {
+	display: flex;
+	align-items: center;
+	flex-shrink: 0;
+	font-size: 14px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.29;
+	letter-spacing: 0.5px;
+	color: $lm-gray-1;
+}
+
+@import '_required/_d-input__label_required.scss';

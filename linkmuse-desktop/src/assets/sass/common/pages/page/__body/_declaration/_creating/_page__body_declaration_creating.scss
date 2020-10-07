@@ -1,0 +1,8 @@
+.page__body_declaration_creating {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 1000px;
+	padding: 0 12px;
+}
+
+@import '_second/_page__body_declaration_creating_second.scss';

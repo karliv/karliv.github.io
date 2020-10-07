@@ -1,0 +1,7 @@
+.modal_declaration {
+  .modal-dialog {
+    width: inherit;
+  }
+}
+
+@import '_casting/_modal_declaration_casting.scss';

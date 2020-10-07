@@ -1,0 +1,9 @@
+.page__img_error_404 {
+	width: 100%;
+	max-width: 324px;
+	margin-bottom: 24px;
+	@media screen and (max-width: 767px) {
+		max-width: 250px;
+	}
+}
+

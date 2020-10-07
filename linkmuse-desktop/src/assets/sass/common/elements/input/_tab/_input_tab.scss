@@ -1,0 +1,21 @@
+.input_tab {
+	 display: none; 
+	 margin-bottom: 0;
+	/* gallery */
+	&:checked + .tab_gallery_verification-specialist {
+		color: $lm-white;
+		border-color: $lm-white;
+	}
+	&:checked ~ .tab__content_gallery_verification-specialist {
+		display: block;
+	}
+	/* studios */
+	&:checked + .tab_verification-specialist {
+		color: $lm-main;
+		border-color: $lm-main;
+	}
+	&:checked ~ .tab__content_studios {
+		display: block;
+	}
+}
+

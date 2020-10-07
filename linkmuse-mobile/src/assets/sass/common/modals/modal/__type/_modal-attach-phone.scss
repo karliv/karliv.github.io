@@ -1,0 +1,13 @@
+.lm-modal-attach-phone {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .modal-attach-phone-content {
+    max-width: 340px;
+    box-sizing: border-box;
+    padding: 0 36px;
+  }
+}

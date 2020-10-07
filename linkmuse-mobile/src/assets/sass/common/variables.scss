@@ -1,0 +1,28 @@
+// opacity
+$opacity_disabled: 0.32; // outdated
+
+// box-shadow
+$panes__box-shadow: 0 1px 4px 0 rgba(40, 42, 54, 0.06); // outdated
+$panes__box-shadow_top: 0 -1px 4px 0 rgba(40, 42, 54, 0.06); // outdated
+
+/* **************************** */
+
+// common
+$multiplicity: 4px;
+
+// breakpoints
+$sm-breakpoint: 767px;
+
+// border-radius
+$border-radius_16: $multiplicity*4;
+$border-radius_8: $multiplicity*2;
+$border-radius_4: $multiplicity;
+$border-radius_2: $multiplicity/2;
+
+// box-shadow
+$box-shadow_blur_4: 0 0 4px 0 rgba(40, 42, 54, 0.06);
+$box-shadow_blur_16: 0 0 16px 0 rgba(40, 42, 54, 0.16);
+$box-shadow_blur_down_16: 0 4px 16px 0 rgba(40, 42, 54, 0.16);
+$box-shadow_blur_down_4: 0 1px 4px 0 rgba(40, 42, 54, 0.06);
+$box-shadow_blur_up_16: 0 -4px 16px 0 rgba(40, 42, 54, 0.16);
+$box-shadow_blur_up_4: 0 -1px 4px 0 rgba(40, 42, 54, 0.06);

@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Русский",
+    "locale": "ru",
+    "country": "ru",
+    "fallback": true
+  },
+  {
+    "name": "English",
+    "locale": "en",
+    "country": "us"
+  }
+]

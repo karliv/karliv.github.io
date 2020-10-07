@@ -1,0 +1,29 @@
+.d-card__date_casting-creation {
+	font-size: 8px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	color: $lm-gray-3;
+	text-transform: uppercase;
+
+  span {
+    display: none;
+    font-size: 8px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    //color: $lm-gray-2;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    span {
+      display: inline;
+    }
+  }
+}
+

@@ -1,0 +1,45 @@
+.card__placement_premium {
+  background-color: $lm-support-3_08;
+
+  .btn {
+    background-color: $lm-support-3;
+  }
+
+  .icon_check {
+    background-color: $lm-support-3;
+  }
+
+  .sale-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 126px;
+    height: 32px;
+    object-fit: contain;
+    background-image: linear-gradient(to left, #f5a623, #fc2e5f);
+    position: relative;
+    left: -20px;
+
+    &:after {
+      content: '';
+      position: relative;
+      height: 26px;
+      width: 26px;
+      background-color: #fef8ed;
+      transform: rotate(45deg);
+      right: -30px;
+      top: 0;
+      border-radius: 4px;
+    }
+  }
+
+  .line-border_absolute {
+    width: calc(100% - 120px);
+    position: relative;
+    top: -17px;
+    right: -120px;
+    height: 1px;
+    background-color: $lm-gray-opacity-8;
+  }
+}
+

@@ -1,0 +1,73 @@
+.section_responses {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin-top: $multiplicity;
+	.section__notification {
+		box-sizing: border-box;
+		width: 100%;
+		max-width: 424px;
+		padding: $multiplicity*9 $multiplicity*6;
+		font-size: 14px;
+		font-weight: 600;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.29;
+		letter-spacing: 0.5px;
+		color: $lm-main;
+		.btn_close {
+			background-color: transparent;
+			&::before {
+				background-color: $lm-main;
+				width: 10px;
+			}
+			&::after {
+				background-color: $lm-main;
+				width: 10px;
+			}
+		}
+	}
+	.notification__text {
+		max-width: 232px;
+		@media screen and (min-width: $sm-breakpoint) {
+			max-width: 340px;
+		}
+	}
+	.declaration__card_inner {
+		.profile__wrapper {
+			padding: 24px 24px;
+		}
+	}
+	.block_response_casting {
+		&:first-child {
+			padding-top: 0;
+		}
+	}
+	.profile-card__avatar {
+		img {
+			width: 86px;
+			height: 86px;
+			border-radius: 8px;
+		}
+	}
+	.profile-card__description {
+		margin-top: 0;
+	}
+	.section_specialist-parameters {
+		padding: 24px 0 0;
+		.card__header {
+			margin-bottom: 2px;
+		}
+		.card__body {
+			line-height: 1.33;
+			letter-spacing: .5px;
+			font-size: 12px;
+			span {
+				line-height: 1.29;
+				font-size: 14px;
+			}
+		}
+	}
+}
+

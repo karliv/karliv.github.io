@@ -1,0 +1,337 @@
+@mixin icon-download-top($color)
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16" height="16" viewBox="0 0 16 16"><g class="nc-icon-wrapper" fill="#{$color}"><path fill="#{$color}" d="M7,3.4V12h2V3.4l4,4L14.4,6L8.7,0.3c-0.4-0.4-1-0.4-1.4,0L1.6,6L3,7.4L7,3.4z"></path> <path data-color="color-2" fill="#{$color}" d="M14,14H2v-3H0v4c0,0.6,0.4,1,1,1h14c0.6,0,1-0.4,1-1v-4h-2V14z"></path></g></svg>')
+
+
+@mixin icon-arrow($color)
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13"><path fill="#{$color}" fill-rule="nonzero" d="M0 6.5c0 .305.1.508.3.71L6 13l1.4-1.422-4-4.062H12V5.484H3.4l4-4.062-.702-.713L6 0 .3 5.79c-.2.202-.3.405-.3.71z"/></svg>')
+
+
+@mixin lm-single-folded-content($color:'%23CBD0D8')
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill="#{$color}" fill-rule="nonzero" d="M14 15V5L9 0H1C.4 0 0 .4 0 1v14c0 .6.4 1 1 1h12c.6 0 1-.4 1-1zM2 2h6v4h4v8H2V2z"/></svg>')
+.lm-icon-single-folded-content
+  @include lm-single-folded-content()
+
+
+@mixin lm-zoom($color:'%23CBD0D8')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"><path fill="#{$color}" fill-rule="nonzero" d="M12.7 11.3c.9-1.2 1.4-2.6 1.4-4.2 0-3.9-3.1-7.1-7-7.1S0 3.2 0 7.1c0 3.9 3.2 7.1 7.1 7.1 1.6 0 3.1-.5 4.2-1.4l3 3c.2.2.5.3.7.3.2 0 .5-.1.7-.3.4-.4.4-1 0-1.4l-3-3.1zm-5.6.8c-2.8 0-5.1-2.2-5.1-5S4.3 2 7.1 2s5.1 2.3 5.1 5.1-2.3 5-5.1 5z"/></svg>')
+.lm-icon-zoom
+    @include lm-zoom()
+.lm-icon-zoom.black
+  @include lm-zoom('%23282A36')
+
+
+@mixin lm-lock($color:'%23CBD0D8')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill="#{$color}" fill-rule="nonzero" d="M7 0C4.8 0 3 1.8 3 4v1H1c-.6 0-1 .4-1 1v9c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1h-2V4c0-2.2-1.8-4-4-4zm1 11.7V13H6v-1.3c-.6-.3-1-1-1-1.7 0-1.1.9-2 2-2s2 .9 2 2c0 .7-.4 1.4-1 1.7zM9 5H5V4c0-1.1.9-2 2-2s2 .9 2 2v1z"/></svg>')
+.lm-icon-lock
+    @include lm-lock()
+
+
+@mixin lm-send($color:'%23CBD0D8')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#{$color}" fill-rule="nonzero" d="M15.707.293a1 1 0 0 0-1.043-.234l-14 5a.999.999 0 0 0-.111 1.835l4.586 2.292L11 5l-4.187 5.862 2.292 4.586a1.004 1.004 0 0 0 1.838-.112l5-14c.129-.363.037-.77-.236-1.043z"/></svg>')
+.lm-icon-send
+    @include lm-send()
+
+
+@mixin lm-send1($color:'%23CBD0D8')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="none" viewBox="0 0 16 15"><path fill="#{$color}" d="M.04 13.959L1.687 8.98a.79.79 0 0 1 .605-.529L8.555 7.5l-6.263-.953a.79.79 0 0 1-.605-.529L.04 1.041A.796.796 0 0 1 .26.202a.778.778 0 0 1 .852-.129l2.733 1.27 11.698 5.44a.793.793 0 0 1 0 1.435l-14.43 6.71a.78.78 0 0 1-.853-.13c-.24-.24-.316-.554-.221-.84z"/></svg>')
+
+
+@mixin lm-world($color:'%23CBD0D8')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g fill="#{$color}" fill-rule="nonzero"><path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 14c-1.5 0-2.8-.5-3.9-1.4.6-.8.7-1.8.1-2.6-.5-.7-1.3-1.4-1.3-2 0-.8 1.9-1.1 2.5-1.9.7-.8 0-2.3-.7-3.1.8-.5 1.7-.9 2.8-1 .2.5.9 1.1 1.2 1.5.5.8.6 1.3 1.3 1.3.2 0 2 0 3-.3.6 1 1 2.2 1 3.5 0 3.3-2.7 6-6 6z"/><path d="M10.2 6.7C9 6.7 7.9 7.5 8 8.6c.3 2.5-.5 3.4.6 3.9 1.3.5 3.9-1.9 3.8-3.9 0-1.1-.9-1.9-2.2-1.9z"/></g></svg>')
+.lm-icon-world
+    @include lm-world()
+
+
+@mixin lm-bell($color:'%23CBD0D8')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g fill="#{$color}" fill-rule="nonzero"><path d="M10 14H6c0 1.1.9 2 2 2s2-.9 2-2zM15 11h-.5c-.7-.7-1.5-1.7-1.5-3V5c0-2.8-2.2-5-5-5S3 2.2 3 5v3c0 1.3-.8 2.3-1.5 3H1c-.6 0-1 .4-1 1s.4 1 1 1h14c.6 0 1-.4 1-1s-.4-1-1-1z"/></g></svg>')
+.lm-icon-bell
+    @include lm-bell()
+
+
+@mixin lm-pencil($color:'%23CBD0D8')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#{$color}" fill-rule="nonzero" d="M11.7.3c-.4-.4-1-.4-1.4 0l-10 10c-.2.2-.3.4-.3.7v4c0 .6.4 1 1 1h4c.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4l-4-4zM4.6 14H2v-2.6l6-6L10.6 8l-6 6zM12 6.6L9.4 4 11 2.4 13.6 5 12 6.6z"/></svg>')
+.lm-icon-pencil
+    @include lm-pencil()
+
+
+@mixin lm-square-download($color:'%23CBD0D8')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g fill="#{$color}" fill-rule="nonzero"><path d="M8 12c.3 0 .5-.1.7-.3L14.4 6 13 4.6l-4 4V0H7v8.6l-4-4L1.6 6l5.7 5.7c.2.2.4.3.7.3z"/><path d="M14 14H2v-3H0v4c0 .6.4 1 1 1h14c.6 0 1-.4 1-1v-4h-2v3z"/></g></svg>')
+.lm-icon-square-download
+    @include lm-square-download()
+
+
+@mixin lm-chat($color:'%23CBD0D8')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#{$color}" fill-rule="nonzero" d="M15 4a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-2v3l-3-3H5l1.828-2H13a1 1 0 0 0 1-1V4h1zM1 0h10a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H6l-3 3V9H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1z"/></svg>')
+.lm-icon-chat
+    @include lm-chat()
+
+
+@mixin lm-message($color:'%23CBD0D8')
+    background-image: url('data:image/svg+xml;utf8,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 0H15C15.552 0 16 0.448 16 1V11C16 11.552 15.552 12 15 12H10L4 16V12H1C0.448 12 0 11.552 0 11V1C0 0.448 0.448 0 1 0Z" fill="#{$color}"/></svg>')
+.lm-icon-message
+    @include lm-message()
+
+
+@mixin lm-menu-icon($color:'%23CBD0D8')
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="#{$color}" fill-opacity=".32" d="M15 1.25H1a1 1 0 0 0-1 1v.5a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-.5a1 1 0 0 0-1-1zM13 6.75H3a1 1 0 0 0-1 1v.5a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-.5a1 1 0 0 0-1-1zM15 12.25H1a1 1 0 0 0-1 1v.5a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-.5a1 1 0 0 0-1-1z"/></svg>')
+.lm-icon-menu
+  @include lm-menu-icon()
+
+
+@mixin lm-settings-gear($color:'%23CBD0D8')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#{$color}" fill-rule="nonzero" d="M12.9 4.5L14.4 3 13 1.6l-1.5 1.5c-.7-.5-1.6-.9-2.5-1V0H7v2.1c-.9.2-1.8.5-2.5 1L3.1 1.6 1.6 3.1l1.5 1.5c-.5.6-.9 1.5-1 2.4H0v2h2.1c.2.9.5 1.8 1 2.5L1.6 13 3 14.4l1.5-1.5c.7.5 1.6.9 2.5 1V16h2v-2.1c.9-.2 1.8-.5 2.5-1l1.5 1.5 1.4-1.4-1.5-1.5c.5-.7.9-1.6 1-2.5H16V7h-2.1c-.1-.9-.5-1.8-1-2.5zM8 11c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z"/></svg>')
+.lm-icon-settings-gear
+    @include lm-settings-gear()
+
+
+@mixin lm-eye($color:'%23CBD0D8')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12"><g fill="#{$color}" fill-rule="nonzero"><path d="M8 12c4.707 0 7.744-5.284 7.871-5.508a1 1 0 0 0 .001-.98C15.746 5.287 12.731 0 8 0 3.245 0 .251 5.289.126 5.514a.998.998 0 0 0 .002.975C.254 6.713 3.269 12 8 12zM8 2c2.839 0 5.036 2.835 5.818 4-.784 1.166-2.981 4-5.818 4-2.841 0-5.038-2.838-5.819-4.001C2.958 4.835 5.146 2 8 2z"/><circle cx="8" cy="6" r="2"/></g></svg>')
+.lm-icon-eye
+    @include lm-eye()
+
+
+@mixin lm-phone($color:'%23CBD0D8')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#{$color}" fill-rule="nonzero" d="M15.285 12.305l-2.578-2.594a1 1 0 0 0-1.416-.002L9 12 4 7l2.294-2.294a1 1 0 0 0 .001-1.414L3.715.708a1 1 0 0 0-1.415 0L.004 3.003 0 3c0 7.18 5.82 13 13 13l2.283-2.283a1 1 0 0 0 .002-1.412z"/></svg>')
+.lm-icon-phone
+    @include lm-phone()
+
+
+@mixin lm-square-upload($color:'%23CBD0D8')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g fill="#{$color}" fill-rule="nonzero"><path d="M7 3.4V12h2V3.4l4 4L14.4 6 8.7.3c-.4-.4-1-.4-1.4 0L1.6 6 3 7.4l4-4z"/><path d="M14 14H2v-3H0v4c0 .6.4 1 1 1h14c.6 0 1-.4 1-1v-4h-2v3z"/></g></svg>')
+.lm-icon-square-upload
+    @include lm-square-upload()
+
+@mixin lm-check-circle($color:'%23CBD0D8')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14"><g fill="#{$color}" fill-rule="nonzero"><path d="M5.7 5.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l2 2c.2.2.4.3.7.3.3 0 .5-.1.7-.3l7-7c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0L7 6.6 5.7 5.3z"/><path d="M7 14c3.9 0 7-3.1 7-7 0-.6-.4-1-1-1s-1 .4-1 1c0 2.8-2.2 5-5 5S2 9.8 2 7s2.2-5 5-5c.6 0 1.1.1 1.7.3.5.2 1.1-.1 1.3-.6.2-.5-.1-1.1-.6-1.3C8.6.1 7.8 0 7 0 3.1 0 0 3.1 0 7s3.1 7 7 7z"/></g></svg>')
+.lm-icon-check-circle
+    @include lm-check-circle()
+
+
+@mixin lm-info($color:'%23CBD0D8')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g fill="#{$color}" fill-rule="nonzero"><path d="M0 8c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8zm2 0c0 3.3 2.7 6 6 6s6-2.7 6-6-2.7-6-6-6-6 2.7-6 6z" clip-rule="evenodd"/><path d="M7 7h2v5H7V7zM8 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></g></svg>')
+.lm-icon-info
+    @include lm-info()
+
+
+@mixin lm-heart($color:'%23CBD0D8')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"><path fill="#{$color}" fill-rule="nonzero" d="M14.682 1.318a4.5 4.5 0 0 0-6.364 0c-.121.121-.214.259-.318.389-.104-.13-.197-.268-.318-.389a4.5 4.5 0 0 0-6.364 6.364L8 14l6.682-6.318a4.5 4.5 0 0 0 0-6.364z"/></svg>')
+.lm-icon-heart
+    @include lm-heart()
+
+
+@mixin lm-multiple($color:'%23CBD0D8')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g fill="#{$color}" fill-rule="nonzero"><path d="M8 6C6.3 6 5 4.7 5 3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3zM10 16H6v-4l-2-2V7h8v3l-2 2zM2 5C.9 5 0 4.1 0 3s.9-2 2-2 2 .9 2 2-.9 2-2 2zM3 10.4V6H0v3l1 1v4h3v-2.6zM14 5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM13 10.4V6h3v3l-1 1v4h-3v-2.6z"/></g></svg>')
+.lm-icon-multiple
+    @include lm-multiple()
+
+
+@mixin lm-single($color:'%23CBD0D8')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><g fill="#{$color}" fill-rule="nonzero"><path d="M7 9C4.8 9 3 7.2 3 5V4c0-2.2 1.8-4 4-4s4 1.8 4 4v1c0 2.2-1.8 4-4 4zM9 11H5c-2.8 0-5 2.2-5 5h14c0-2.8-2.2-5-5-5z"/></g></svg>')
+.lm-icon-single
+    @include lm-single()
+
+
+@mixin lm-wallet($color:'%23CBD0D8')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g fill="#{$color}" fill-rule="nonzero"><path d="M10 0H1.5C.7 0 0 .7 0 1.5S.7 3 1.5 3H10V0zM15 5H0v9c0 1.1.9 2 2 2h13c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1zm-2.5 7c-.8 0-1.5-.7-1.5-1.5S11.7 9 12.5 9s1.5.7 1.5 1.5-.7 1.5-1.5 1.5z"/></g></svg>')
+.lm-icon-wallet
+    @include lm-wallet()
+
+
+@mixin lm-wallet-union($color:'%23CBD0D8')
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><g clip-path="url(%23a)"><path fill="#{$color}" fill-rule="evenodd" d="M2 1.55a2 2 0 0 0-2 2v5.5h1.5v-3h13V9.8c0 .69-.56 1.25-1.25 1.25H12v1.5h2a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2H2zm12.5 3V4.3c0-.69-.56-1.25-1.25-1.25H2.75c-.69 0-1.25.56-1.25 1.25v.25h13zM10 8.9a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5A.75.75 0 0 1 10 8.9zm-5.063-.4l.875-.875 3.48 3.48a1 1 0 0 1 0 1.414L5.813 16l-.875-.874 2.688-2.688H0v-1.25h7.625L4.937 8.5z" clip-rule="evenodd"/></g><defs><clipPath id="a"><path fill="#{$color}" d="M0 0h16v16H0z"/></clipPath></defs></svg>')
+
+
+@mixin lm-calendar($color:'%23808792')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><g fill="none" fill-rule="evenodd" stroke="#{$color}" stroke-linecap="round" stroke-linejoin="round" stroke-width=".933"><path d="M.438 4.813h13.124M12.688 2.188H1.312a.875.875 0 0 0-.875.874v9.626c0 .483.392.874.875.874h11.376a.875.875 0 0 0 .874-.874V3.062a.875.875 0 0 0-.874-.874zM3.938.438v1.75M10.063.438v1.75"/></g></svg>')
+.lm-icon-calendar
+    @include lm-calendar()
+
+
+@mixin lm-calendar-fill($color:'%23CBD0D8')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#{$color}" fill-rule="nonzero" d="M15 2h-2V1c0-.6-.4-1-1-1h-1c-.6 0-1 .4-1 1v1H6V1c0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1v1H1c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h14c.6 0 1-.4 1-1V3c0-.6-.4-1-1-1zm-1 12H2V7h12v7z"/></svg>')
+.lm-icon-calendar-fill
+    @include lm-calendar-fill()
+
+
+@mixin lm-favourite($color:'%23CBD0D8')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"><path fill="#{$color}" fill-rule="nonzero" d="M16.144 5.438l-4.316-.627L9.897.9C9.559.217 8.441.217 8.103.9l-1.93 3.911-4.317.627a1.002 1.002 0 0 0-.554 1.707l3.124 3.044-.737 4.299a1 1 0 0 0 1.451 1.054L9 13.513l3.861 2.03c.728.381 1.591-.234 1.451-1.054l-.737-4.299 3.124-3.044a1.003 1.003 0 0 0-.555-1.708z"/></svg>')
+.lm-icon-favourite
+    @include lm-favourite()
+
+
+@mixin lm-home($color:'%23CBD0D8')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"><g fill="#{$color}" fill-rule="nonzero"><path d="M6 7h4v2H6z"/><path d="M15.651 7.241l-7-6a.998.998 0 0 0-1.302 0L4 4.112V3a1 1 0 1 0-2 0v2.826L.349 7.241a.999.999 0 1 0 1.302 1.517L2 8.46V16a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8.46l.349.299c.189.162.42.241.651.241a1 1 0 0 0 .651-1.759zM12 15h-2v-4H6v4H4V6.746l4-3.428 4 3.428V15z"/></g></svg>')
+.lm-icon-home
+    @include lm-home()
+
+
+@mixin lm-email($color:'%23CBD0D8')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"><path fill="#{$color}" fill-rule="nonzero" d="M15 0H1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm-1 12H2V5.723l5.504 3.145a.998.998 0 0 0 .992 0L14 5.723V12zm0-8.58L8 6.849 2 3.42V2h12v1.42z"/></svg>')
+.lm-icon-email
+    @include lm-email()
+
+
+@mixin lm-casting($color:'%23CBD0D8', $color2:'%23FFFFFF')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="none" d="M0 0h16v16H0z"/><path fill="#{$color}" fill-rule="evenodd" d="M.7 4.515l14-4c.7-.1 1.3.3 1.3 1v11.9c0 .7-.7 1.2-1.3 1l-5.7-1.6v1.7c0 .6-.4 1-1 1H3c-.6 0-1-.4-1-1v-3.7l-1.3-.3c-.4-.2-.7-.6-.7-1v-4c0-.4.3-.8.7-1zm3.3 9h3v-1.2l-3-.9v2.1z" clip-rule="evenodd"/></svg>')
+.lm-casting
+    @include lm-casting()
+
+
+@mixin lm-share($color:'%23282A36')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill="#{$color}" fill-rule="evenodd" d="M11.667 11.317c-.591 0-1.124.237-1.529.619L4.597 8.598c.042-.18.07-.37.07-.562 0-.193-.028-.381-.07-.562l5.483-3.305c.416.401.972.65 1.587.65C12.954 4.82 14 3.74 14 2.41 14 1.08 12.954 0 11.667 0c-1.288 0-2.334 1.08-2.334 2.41 0 .192.028.381.07.562L3.92 6.277a2.277 2.277 0 0 0-1.587-.65C1.046 5.627 0 6.707 0 8.037c0 1.328 1.046 2.409 2.333 2.409.615 0 1.17-.25 1.587-.65l5.542 3.337a2.344 2.344 0 0 0-.063.526C9.4 14.952 10.414 16 11.667 16c1.252 0 2.267-1.048 2.267-2.341 0-1.294-1.015-2.342-2.267-2.342z"/></svg>')
+.lm-share
+    @include lm-share()
+
+
+@mixin lm-close($color:'%23282A36')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><g fill="none" fill-rule="evenodd"><path d="M-3-3h16v16H-3z"/><path fill="#{$color}" d="M5 3.603l3.255-3.3A1.05 1.05 0 0 1 9.68.256c.407.359.429.962.05 1.346L6.377 5l3.351 3.398a.916.916 0 0 1-.05 1.346 1.05 1.05 0 0 1-1.424-.047L5 6.397l-3.255 3.3a1.05 1.05 0 0 1-1.425.047.916.916 0 0 1-.05-1.346L3.623 5 .271 1.602A.916.916 0 0 1 .32.256a1.05 1.05 0 0 1 1.424.047L5 3.603z"/></g></svg>')
+.lm-close
+    @include lm-close()
+
+
+@mixin lm-close-2($color:'%23FFFFFF')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="#fff" d="M10.1 4.5L8 6.6 5.9 4.5 4.5 5.9 6.6 8l-2.1 2.1 1.4 1.4L8 9.4l2.1 2.1 1.4-1.4L9.4 8l2.1-2.1-1.4-1.4z"/></svg>')
+.lm-close-2
+    @include lm-close-2()
+
+
+@mixin lm-dropdown-icon($color:'%23CBD0D8')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#{$color}" fill-rule="nonzero" d="M8 10.625L4.4 7.25l.933-.875L8 8.875l2.667-2.5.933.875z"/></svg>')
+.lm-dropdown-icon
+    @include lm-dropdown-icon()
+
+
+@mixin lm-error($color:'%23fc2e5f')
+    background-image: url('data:image/svg+xml;utf8,<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs></defs><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="icons-/-help-/-lm-round-e-alert" fill="#{$color}" fill-rule="nonzero"><g id="lm-round-e-alert"><path d="M8,0 C3.6,0 0,3.6 0,8 C0,12.4 3.6,16 8,16 C12.4,16 16,12.4 16,8 C16,3.6 12.4,0 8,0 Z M8,14 C4.7,14 2,11.3 2,8 C2,4.7 4.7,2 8,2 C11.3,2 14,4.7 14,8 C14,11.3 11.3,14 8,14 Z" id="Shape"></path><rect id="Rectangle-path" x="7" y="4" width="2" height="5"></rect><circle id="Oval" cx="8" cy="11" r="1"></circle></g></g></g></svg>')
+.lm-error-icon
+    @include lm-error()
+
+
+@mixin lm-wait($color:'%23cbd0d8')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16"><defs><path id="a" d="M8 0c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8zm0 14c3.3 0 6-2.7 6-6s-2.7-6-6-6-6 2.7-6 6 2.7 6 6 6zM9 4v3h3v2H7V4h2z"/></defs><g fill="none" fill-rule="evenodd"><mask id="b" fill="%23ffffff"><use xlink:href="%23a"/></mask><use fill="#{$color}" fill-rule="nonzero" xlink:href="%23a"/><g fill="#{$color}" mask="url(%23b)"><path d="M0 0h16v16H0z"/></g></g></svg>')
+.lm-wait-icon
+  @include lm-wait()
+
+@mixin lm-pdf($color:'%23808792')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="#{$color}" d="M0 7.75v8.5h2.155v-2.492H3.54c1.885 0 3.182-1.184 3.182-2.998 0-1.826-1.233-3.01-3.053-3.01H0zm2.155 1.655H3.1c.905 0 1.445.477 1.445 1.36 0 .89-.54 1.367-1.456 1.367h-.934V9.405zM8.682 7.75v8.5h3.441c2.555 0 4.064-1.585 4.064-4.3 0-2.71-1.504-4.2-4.064-4.2h-3.44zm2.155 1.744h1.005c1.362 0 2.154.866 2.154 2.462 0 1.696-.751 2.55-2.155 2.55h-1.004V9.494zM20.389 16.25v-3.17h3.282v-1.654H20.39V9.494H24V7.75h-5.766v8.5h2.155z"/></svg>')
+.lm-pdf-icon
+    @include lm-pdf()
+
+@mixin lm-sex-female()
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16"><path fill="%23FC2E5F" fill-opacity=".6" fill-rule="nonzero" d="M10 5c0-2.8-2.2-5-5-5S0 2.2 0 5c0 2.4 1.7 4.4 4 4.9V12H2v2h2v2h2v-2h2v-2H6V9.9c2.3-.5 4-2.5 4-4.9zM2 5c0-1.7 1.3-3 3-3s3 1.3 3 3-1.3 3-3 3-3-1.3-3-3z"/></svg>')
+.lm-sex-female-icon
+    @include lm-sex-female()
+
+
+@mixin lm-sex-male()
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><path fill="%230093FF" fill-rule="nonzero" d="M7 0v2h3.6L7.8 4.8C7 4.3 6 4 5 4 2.2 4 0 6.2 0 9s2.2 5 5 5 5-2.2 5-5c0-1-.3-2-.8-2.8L12 3.4V7h2V0H7zM5 12c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z"/></svg>')
+.lm-sex-male-icon
+    @include lm-sex-male()
+
+
+@mixin lm-ok-icon($color:'%23ffffff')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="6" fill="none" viewBox="0 0 8 6"><path fill="#{$color}" d="M7.765 1.235L6.529 0 3 3.53 1.235 1.764 0 3l3 3 4.765-4.765z"/><mask id="a" width="8" height="6" x="0" y="0" maskUnits="userSpaceOnUse"><path fill="#{$color}" d="M8.8 1.4L7.4 0l-4 4-2-2L0 3.4l3.4 3.4 5.4-5.4z" transform="scale(.88235)"/></mask><g mask="url(%23a)"><path fill="#{$color}" fill-rule="evenodd" d="M-.53-.53h8.824v7.06H-.529V-.53z" clip-rule="evenodd"/></g></svg>')
+.lm-ok-icon-icon
+    @include lm-ok-icon()
+
+
+@mixin lm-social-ok()
+  background-image: url('data:image/svg+xml;utf8,<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 16C0 7.16345 7.16344 0 16 0H20C28.8366 0 36 7.16345 36 16V20C36 28.8365 28.8366 36 20 36H16C7.16344 36 0 28.8365 0 20V16ZM17.1802 21.2698C15.8892 21.1404 14.7252 20.835 13.7285 20.0861C13.7039 20.0675 13.6792 20.0491 13.6544 20.0306C13.5546 19.9566 13.4548 19.8824 13.3644 19.799C12.9281 19.3965 12.8842 18.9355 13.2294 18.4604C13.5247 18.054 14.0203 17.9452 14.5356 18.1786C14.6353 18.2239 14.7304 18.2803 14.8214 18.341C16.6788 19.5671 19.2303 19.601 21.0947 18.3961C21.2794 18.2601 21.4768 18.1491 21.7057 18.0925C22.1506 17.9827 22.5655 18.1398 22.8043 18.5138C23.0771 18.9409 23.0736 19.3578 22.7375 19.6895C22.2219 20.1978 21.6019 20.5657 20.9129 20.8224C20.2615 21.065 19.548 21.1872 18.8417 21.2683C18.9483 21.3797 18.9985 21.4345 19.0652 21.4988C19.414 21.8356 19.7634 22.1718 20.1128 22.5081C20.7239 23.0961 21.3349 23.6841 21.943 24.2748C22.2687 24.5912 22.3367 24.9835 22.1574 25.3514C21.9613 25.7536 21.5225 26.0182 21.0922 25.9899C20.8196 25.9718 20.607 25.8414 20.4181 25.6586C20.1807 25.4291 19.9418 25.2009 19.703 24.9728L19.7024 24.9723C19.2134 24.5052 18.7244 24.0383 18.2482 23.5594C18.0419 23.3522 17.9426 23.3914 17.7605 23.5714C17.0325 24.2914 16.2926 25.0004 15.5484 25.7054C15.2142 26.0219 14.8166 26.0789 14.429 25.8981C14.017 25.7062 13.7549 25.3022 13.7751 24.8962C13.7891 24.6215 13.9296 24.4117 14.1259 24.2236C14.8934 23.4872 15.6593 22.7493 16.425 22.0116L16.968 21.4885C17.0066 21.451 17.0436 21.4122 17.0877 21.3661C17.1151 21.3373 17.1453 21.3057 17.1802 21.2698ZM13.7884 14.0403C13.7749 16.2566 15.6635 18.0909 17.9667 18.0985C20.2932 18.1062 22.1949 16.3135 22.2068 14.1018C22.2184 11.8378 20.3478 10.006 18.0173 10C15.6914 9.99384 13.8016 11.7996 13.7884 14.0403ZM18.0005 12.0682C19.1437 12.0692 20.0559 12.9453 20.0599 14.0457C20.0637 15.1459 19.1539 16.0276 18.0112 16.0316C16.8649 16.0356 15.9449 15.1657 15.9363 14.0695C15.9274 12.959 16.8478 12.067 18.0005 12.0682Z" fill="%23F5A623"/></svg>')
+.lm-social-ok-icon
+  @include lm-social-ok()
+
+
+@mixin lm-social-youtube()
+  background-image: url('data:image/svg+xml;utf8,<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 0C7.16345 0 0 7.16345 0 16V20C0 28.8365 7.16345 36 16 36H20C28.8365 36 36 28.8365 36 20V16C36 7.16345 28.8365 0 20 0H16ZM12.1537 25H23.8463C26.1403 25 28 23.1603 28 20.891V15.109C28 12.8397 26.1403 11 23.8463 11H12.1537C9.85968 11 8 12.8397 8 15.109V20.891C8 23.1603 9.85968 25 12.1537 25ZM15.5681 15.1384L21.0371 17.7187C21.2016 17.7963 21.2045 18.027 21.0418 18.1085L15.5729 20.85C15.4268 20.9232 15.2541 20.8182 15.2541 20.6562V15.3345C15.2541 15.1748 15.4224 15.0697 15.5681 15.1384Z" fill="%23FC2E5F"/></svg>')
+.lm-social-youtube-icon
+  @include lm-social-youtube()
+
+
+@mixin lm-twitter()
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 36 36"><path fill="%231FAEE9" fill-rule="evenodd" d="M16 0C7.163 0 0 7.163 0 16v4c0 8.837 7.163 16 16 16h4c8.837 0 16-7.163 16-16v-4c0-8.837-7.163-16-16-16h-4zm9.013 13.382A6.863 6.863 0 0 0 27 12.847a6.991 6.991 0 0 1-1.734 1.767c.006.146.013.298.013.444 0 4.5-3.48 9.692-9.848 9.692a9.915 9.915 0 0 1-5.306-1.53 7.035 7.035 0 0 0 5.127-1.409c-1.511-.03-2.795-1.014-3.233-2.369a3.487 3.487 0 0 0 1.567-.06c-1.585-.316-2.776-1.689-2.776-3.34v-.043c.469.255 1 .407 1.567.425a3.388 3.388 0 0 1-1.543-2.836c0-.625.173-1.208.47-1.712a9.905 9.905 0 0 0 7.138 3.558 3.16 3.16 0 0 1-.092-.777c0-1.883 1.548-3.407 3.461-3.407.993 0 1.894.413 2.523 1.075a7.065 7.065 0 0 0 2.203-.826 3.415 3.415 0 0 1-1.524 1.883z" clip-rule="evenodd"/></svg>')
+.lm-twitter-icon
+  @include lm-twitter()
+
+
+@mixin lm-back($color:'%23ffffff')
+  background-image: url('data:image/svg+xml;utf8,<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><style type="text/css">.st0{fill:#{$color};}</style><path class="st0" d="M6.7,14.4L8.1,13L3.8,8.7H16v-2H3.8l4.3-4.3L6.7,1L0,7.7L6.7,14.4z"/></svg>')
+.lm-back-icon
+  @include lm-back()
+
+
+@mixin lm-more($color:'%23ffffff')
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="20" fill="none" viewBox="0 0 4 20"><path fill="#{$color}" fill-rule="evenodd" d="M2 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM0 10a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm0 8a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" clip-rule="evenodd"/></svg>')
+.lm-more-icon
+  @include lm-more()
+
+
+@mixin lm-subscribe($color:'%23CBD0D8', $color_2:'%23ffffff')
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16"><defs><path id="a" d="M7 9C4.8 9 3 7.2 3 5V4c0-2.2 1.8-4 4-4s4 1.8 4 4v1c0 2.2-1.8 4-4 4zm-2 2h3v5H0c0-2.8 2.2-5 5-5zm9-1v2h2v2h-2v2h-2v-2h-2v-2h2v-2h2z"/></defs><g fill="none" fill-rule="evenodd"><mask id="b" fill="#{$color_2}"><use xlink:href="%23a"/></mask><use fill="#{$color_2}" fill-rule="nonzero" xlink:href="%23a"/></g></svg>')
+.lm-subscribe-icon
+  @include lm-subscribe
+
+
+@mixin lm-plus($color:'%23282A36')
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="#{$color}" d="M11.25 5h-2.5v3.75H5v2.5h3.75V15h2.5v-3.75H15v-2.5h-3.75V5z"/></svg>')
+.lm-plus-icon
+  @include lm-plus()
+
+
+@mixin lm-attach($color:'%23CBD0D8')
+  background-image: url('data:image/svg+xml;utf8,<svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.82965 12.8297C7.23797 14.4149 4.75097 14.4149 3.1593 12.8297C1.56762 11.2446 1.46814 8.86687 3.05982 7.38081L7.53641 2.9226C8.53121 1.93189 10.1229 1.93189 11.0182 2.9226C12.013 3.91331 12.013 5.49845 11.0182 6.39009L7.53641 9.95666C7.13849 10.3529 6.54161 10.3529 6.14369 9.95666C5.74577 9.56037 5.74577 8.96594 6.14369 8.56966L8.92913 5.79567L7.43693 4.40867L4.75097 7.08359C3.55722 8.27245 3.55722 10.1548 4.75097 11.2446C5.94473 12.3344 7.83485 12.4334 8.92913 11.2446L12.5104 7.67802C14.301 5.89474 14.301 3.12074 12.5104 1.33746C10.7198 -0.44582 7.93433 -0.44582 6.14369 1.33746L1.6671 5.99381C-0.620938 8.27245 -0.521458 11.9381 1.76658 14.2167C2.96034 15.4056 4.45253 16 6.04421 16C7.63589 16 9.12809 15.4056 10.2224 14.2167L14.5 9.95666L13.1073 8.56966L8.82965 12.8297Z" fill="#{$color}"/></svg>')
+.lm-attach-icon
+  @include lm-attach()
+
+
+@mixin lm-smile($color:'%23CBD0D8')
+  background-image: url('data:image/svg+xml;utf8,<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><style type="text/css">.st0{fill:#{$color};}</style><path class="st0" d="M8,0C3.6,0,0,3.6,0,8c0,4.4,3.6,8,8,8s8-3.6,8-8C16,3.6,12.4,0,8,0z M8,14c-3.3,0-6-2.7-6-6c0-3.3,2.7-6,6-6c3.3,0,6,2.7,6,6C14,11.3,11.3,14,8,14z M7,6c0,0.6-0.4,1-1,1S5,6.6,5,6s0.4-1,1-1S7,5.4,7,6z M10,7c0.6,0,1-0.4,1-1s-0.4-1-1-1C9.4,5,9,5.4,9,6S9.4,7,10,7z M11,9c0,1.7-1.3,3-3,3s-3-1.3-3-3H11z"/></svg>')
+.lm-smile-icon
+  @include lm-smile()
+
+
+@mixin lm-send($color:'%230063DA')
+  background-image: url('data:image/svg+xml;utf8,<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.0402365 13.9589L1.68758 8.98063C1.77805 8.70722 2.01005 8.50483 2.292 8.45227L8.5554 7.50005L2.29202 6.54683C2.00951 6.49484 1.77862 6.29133 1.6876 6.01848L0.0403495 1.04134C-0.0578864 0.742214 0.0286996 0.412341 0.26181 0.202115C0.494365 -0.00867038 0.830152 -0.059552 1.11377 0.0729536C2.32811 0.63754 3.23887 1.06098 3.84605 1.34327C6.44564 2.5519 10.345 4.36484 15.5442 6.7821C15.8206 6.91181 16.0004 7.19024 16.0004 7.49999C16.001 7.80806 15.8223 8.08873 15.5442 8.21789L1.11364 14.9273C0.829465 15.0592 0.494233 15.0089 0.261682 14.7981C0.0208056 14.5577 -0.0541193 14.2441 0.0402365 13.9589Z" fill="#{$color}"/></svg>')
+.lm-send-icon
+  @include lm-send()
+
+
+@mixin lm-play($color:'%23ffffff')
+  background-image: url('data:image/svg+xml;utf8,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="16" fill="black" fill-opacity="0"/><path fill-rule="evenodd" clip-rule="evenodd" d="M13.911 6.42984C15.068 7.10525 15.068 8.77706 13.911 9.45247L3.81636 15.3456C2.64972 16.0266 1.18408 15.1852 1.18408 13.8343V2.04805C1.18408 0.697153 2.64972 -0.144339 3.81637 0.536731L13.911 6.42984Z" fill="white"/></svg>')
+.lm-play-icon
+  @include lm-play()
+
+
+@mixin lm-music($color:'%23ffffff')
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" fill="none" viewBox="0 0 11 12"><path fill="#{$color}" d="M10.267 0h-6.6c-.44 0-.734.3-.734.75v6.9c-.22-.075-.44-.15-.733-.15C.953 7.5 0 8.475 0 9.75S.953 12 2.2 12c1.247 0 2.2-.975 2.2-2.25v-6h5.133v2.4C9.313 6.075 9.093 6 8.8 6c-1.247 0-2.2.975-2.2 2.25s.953 2.25 2.2 2.25c1.247 0 2.2-.975 2.2-2.25V.75c0-.45-.293-.75-.733-.75z"/></svg>')
+.lm-music-icon
+  @include lm-music()
+
+
+@mixin lm-follow($color:'%23ffffff')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="#{$color}" fill-rule="evenodd" d="M7 9C4.8 9 3 7.2 3 5V4c0-2.2 1.8-4 4-4s4 1.8 4 4v1c0 2.2-1.8 4-4 4zm-2 2c-2.8 0-5 2.2-5 5h8v-5H5zm7-1h2v2h2v2h-2v2h-2v-2h-2v-2h2v-2z" clip-rule="evenodd"/><mask id="a" width="16" height="16" x="0" y="0" maskUnits="userSpaceOnUse"><path fill="#{$color}" fill-rule="evenodd" d="M7 9C4.8 9 3 7.2 3 5V4c0-2.2 1.8-4 4-4s4 1.8 4 4v1c0 2.2-1.8 4-4 4zm-2 2c-2.8 0-5 2.2-5 5h8v-5H5zm7-1h2v2h2v2h-2v2h-2v-2h-2v-2h2v-2z" clip-rule="evenodd"/></mask><g mask="url(%23a)"><path fill="#{$color}" fill-rule="evenodd" d="M0 0h16v16H0V0z" clip-rule="evenodd"/></g></svg>')
+.lm-follow-icon
+    @include lm-follow()
+
+
+@mixin lm-following($color:'%23ffffff')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="#{$color}" fill-rule="evenodd" d="M3 5c0 2.2 1.8 4 4 4s4-1.8 4-4V4c0-2.2-1.8-4-4-4S3 1.8 3 4v1zM0 16c0-2.8 2.2-5 5-5h3v5H0z" clip-rule="evenodd"/><path fill="#{$color}" d="M11.624 16a.926.926 0 0 1-.657-.272L9.11 13.87l1.313-1.314 1.2 1.201 3.059-3.058 1.313 1.313-3.715 3.715a.926.926 0 0 1-.656.272z"/></svg>')
+.lm-following-icon
+    @include lm-following()
+
+
+@mixin lm-small-ok($color:'%23ffffff')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="#{$color}" d="M15 5.265L12.773 3 6.409 9.47 3.227 6.236 1 8.5 6.41 14 15 5.265z"/><mask id="a" width="14" height="11" x="1" y="3" maskUnits="userSpaceOnUse"><path fill="#{$color}" d="M14 2.265L11.773 0 5.409 6.47 2.227 3.236 0 5.5 5.41 11 14 2.265z" transform="translate(1 3)"/></mask><g mask="url(%23a)"><path fill="#{$color}" fill-rule="evenodd" d="M0 2h16v13H0V2z" clip-rule="evenodd"/></g></svg>')
+.lm-small-ok-icon
+    @include lm-small-ok()
+
+
+@mixin lm-blog($color:'%23CBD0D8')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="%23000" fill-opacity="0" d="M0 0h16v16H0z"/><path fill="%23000" fill-opacity="0" d="M0 0h16v16H0z"/><path fill="#{$color}" d="M4 0v9H0v4c0 1.7 1.3 3 3 3h10c1.7 0 3-1.3 3-3V0H4zm10 13c0 .6-.4 1-1 1H6V2h8v11z"/><path fill="#{$color}" d="M12 5H8v2h4V5zM12 9H8v2h4V9z"/></svg>')
+.lm-blog-icon
+    @include lm-blog()
+
+
+@mixin lm-power($color:'%23ffffff')
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="#{$color}" fill-rule="evenodd" d="M6.91 1.1C6.91.494 7.392 0 8 0c.608 0 1.09.493 1.09 1.1v6.994c0 .607-.482 1.1-1.09 1.1-.608 0-1.09-.493-1.09-1.1V1.1zM2.972 2.115c.27.015.539.135.724.322a1.17 1.17 0 0 1 .004 1.67c-.984 1.088-1.515 2.534-1.426 3.876v.016c0 3.175 2.508 5.798 5.726 5.798 3.13 0 5.726-2.534 5.726-5.798v-.016c.089-1.344-.443-2.79-1.43-3.88l-.008-.009-.007-.01c-.32-.431-.471-1.147.023-1.647.197-.2.478-.287.738-.287s.54.087.738.287l.006.006C15.228 3.999 16 5.95 16 7.999c0 4.387-3.562 7.998-7.904 8-4.44.095-8-3.52-8.096-7.995V8c0-2.045.769-3.992 2.206-5.547a.88.88 0 0 1 .766-.337z" clip-rule="evenodd"/></svg>')
+.lm-power-icon
+  @include lm-power()

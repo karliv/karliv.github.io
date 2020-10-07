@@ -1,0 +1,433 @@
+.register-page, .setting-page, .login-page
+  width: 100%
+  background-color: $white
+  border-radius: 2px
+  position: relative
+  #specialization_musician, #specialization_composer
+    margin-bottom: 16px !important
+    .lists
+      margin-bottom: 0 !important
+  .skils
+    p
+      display: block
+      margin-top: 25px
+      font-size: 17px
+  h1.setting-page-h1
+    font-size: 19px
+    text-align: center
+    margin: 22px 0
+
+  &.company
+    .register--input-wrap
+      .social
+        > div
+          margin-bottom: 0
+
+  .well--content
+    padding-bottom: 40px
+  h1
+    text-align: center
+    margin-top: 40px
+    margin-bottom: 40px
+    font-size: 36px
+    color: $black-rock
+  .register-step
+    position: absolute
+    right: 63px
+    top: 41px
+    font-size: 15px
+    color: $mischka-2
+  .nav-tabs
+    list-style: none
+    text-align: center
+    border-bottom: 1px solid $solitude-8
+    li
+      display: inline-block
+      vertical-align: middle
+      &:hover:not(.active)
+        a:after
+          display: none !important
+      a
+        padding: 20px
+        display: inline-block
+        vertical-align: middle
+        position: relative
+
+      &.active a
+        color: $tangaroa !important
+        //font-size: 16px
+        &:before
+          position: absolute
+          width: 100%
+          height: 3px
+          background-color: $chetwode-blue-1
+          display: block
+          content: ''
+          bottom: -4px
+          left: 0
+  .register--select-role
+    margin: 0 auto
+    width: 465px
+  .register--description-step
+    margin-top: 45px
+    margin-bottom: 52px
+    text-align: center
+    font-size: 20px
+    color: $black-rock
+    line-height: 30px
+    span
+      display: block
+      font-size: 15px
+      color: $mischka-2
+      margin-top: 16px
+  .register--select-role
+    .checkbox__register--role
+      position: absolute
+      visibility: hidden
+      width: 0
+      height: 0
+    .checkbox__register--role:checked ~ .register--role-item
+      border: solid 2px $fire-engine-red
+
+      // line-height: 116px
+      &:before
+        background-image: none
+      img
+        @include scaletransiction(1s,1.1)
+    &.roles
+      .register--role-item
+        height: 70px
+        width: 70px
+        line-height: 70px
+        &:hover
+          line-height: 66px
+    .register--role-item
+      display: block
+      margin: 0 auto
+      width: 120px
+      height: 120px
+      border-radius: 50%
+      background-size: 104%
+      background-position: center
+      margin-bottom: 30px
+      cursor: pointer
+      text-align: center
+      line-height: 120px
+      position: relative
+      overflow: hidden
+      z-index: 5
+      transition: 1s background
+      padding-left: 0 !important
+      &:before
+        content: ''
+        display: block
+        position: absolute
+        width: 100%
+        height: 100%
+        z-index: 2
+        background-image: linear-gradient(to bottom,rgba(0,0,0,.48),rgba(0,0,0,.59))
+      img
+        left: 0
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        border-radius: 50%
+        z-index: 1
+      &:hover
+        border: solid 2px $fire-engine-red
+        &:before
+          background-image: none
+        img
+          @include scaletransiction(1s,1.1)
+      span
+        color: $white
+        text-align: center
+        font-size: 15px
+        z-index: 2
+        position: relative
+        text-transform: uppercase
+        vertical-align: middle
+        display: inline-block
+        &:before
+          content: ""
+          display: inline-block
+          min-height: inherit
+          height: 100%
+          vertical-align: middle
+  .separator-register
+    height: 1px
+    width: 398px
+    display: block
+    margin: 0 auto
+    margin-top: 40px
+    margin-bottom: 40px
+    background-color: $solitude-8
+    &.small
+      margin-top: -10px
+      margin-bottom: 10px
+  .register--next-step
+    background-color: $fire-engine-red-1
+    cursor: pointer
+    height: 40px
+    width: 275px
+    line-height: 40px
+    margin: 0 auto
+    display: block
+    &:hover
+      background-color: $torch-red
+    &:active, &.active
+      background-color: $fire-engine-red-2
+      box-shadow: inset 0 1px 3px 0 rgba($color-black, 0.34)
+      color: $solitude-3
+  .register--prev-step
+    text-align: center
+    display: block
+    margin-top: 15px
+    font-size: 15px
+    color: $mischka-2
+    &:hover
+      color: $mariner
+  .register--input-wrap
+    width: 398px
+    display: block
+    margin: 0 auto
+    .checkbox
+      margin: 0
+      margin-bottom: 10px
+      margin-top: -10px
+      //input[type='checkbox']
+      //  display: inline-block
+      //  width: auto
+      //  vertical-align: middle
+      //  position: relative
+      //  margin: 0
+      //  border-radius: 3px
+      //  background-color: $white
+      //  border: solid 1px $link-water
+      //  width: 17px
+      //  height: 17px
+      //  & ~ label
+      //    display: inline-block
+      //    padding: 0
+      //    vertical-align: middle
+      //    font-size: 14px
+      //    color: $lm-gray-3
+      //    padding-left: 8px
+    &.params
+      width: 510px
+    .checkbox__register--role:checked ~ .register--role-item
+      border: solid 2px $fire-engine-red
+      line-height: 66px
+      padding-left: 0
+    .messenger, .social
+      div
+        margin-bottom: 20px
+      a
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        text-align: center
+        font-size: 20px
+        line-height: 40px
+        color: $link-water-8
+        border: solid 1px $link-water
+        display: inline-block
+        vertical-align: middle
+        margin-right: 10px
+        margin-bottom: 10px
+        background-size: 39px
+    .roles
+      > div
+        display: inline-block
+        vertical-align: middle
+        width: 70px
+        height: 70px
+        border-radius: 50%
+        text-transform: uppercase
+        text-align: center
+        background-size: 105%
+        background-position: center center
+        line-height: 70px
+        margin-right: 20px
+        margin-bottom: 20px
+        cursor: pointer
+        &:hover
+          //border: solid 2px $fire-engine-red
+          line-height: 66px
+        span
+          font-size: 10px
+          color: $white
+          display: inline-block
+          vertical-align: middle
+          &:after
+            content: ""
+            display: inline-block
+            min-height: inherit
+            height: 100%
+            vertical-align: middle
+        &.add-role
+          background-color: $fire-engine-red
+          &:hover
+            border: 0
+          span
+            line-height: 72px
+            font-size: 18px
+
+    .addparams
+      text-align: justify
+      span
+        &:hover
+          color: $fire-engine-red-1
+        margin-bottom: 10px
+        color: $mischka-2
+        display: inline-block
+        vertical-align: middle
+        font-size: 15px
+        cursor: pointer
+    > div:last-child .btn-group:not(.multiselect)
+      //margin-bottom: 0
+  label
+    font-size: 15px
+    display: block
+    padding-bottom: 10px
+  textarea
+    margin-bottom: 30px
+  .btn-group
+    width: 100%
+    margin-bottom: 30px
+    & > .btn:first-child:not(:last-child):not(.dropdown-toggle):not(:hover)
+      border-right: 1px solid $link-water
+
+    .btn:hover:not(:active):last-child
+      border-left: 1px solid rgba($storm-grey, 0.7)
+      margin-left: -1px
+    .btn.active ~ .btn:last-child
+      border-left: 0
+      margin: 0
+    .btn:hover:not(:active):first-child
+      border-right: 1px solid rgba($storm-grey, 0.7)
+    .btn:hover:not(.active)
+      border-color: rgba($storm-grey, 0.7)
+      color: rgba($storm-grey, 0.7)
+    .btn + .btn
+      margin: 0
+    label
+      border-radius: 3px
+      background-color: $white
+      border: solid 1px $link-water
+      padding-bottom: 0px
+      height: 36px
+      color: $mischka-6
+      font-size: 14px
+      width: 50%
+
+      &:first-child
+        border-right: 0
+      &:last-child
+        border-left: 0
+      &:hover
+        border-color: $link-water
+        &:first-child
+          border-right: 0
+        &:last-child
+          border-left: 0
+      &.active
+        background-color: $white
+        border-color: $tangaroa
+        color: $tangaroa
+        box-shadow: none
+        &:first-child
+          border-right: 1px solid $tangaroa !important
+        &:last-child
+          margin-left: -1px
+          border-left: 1px solid $tangaroa !important
+  .form-control
+    font-size: 14px
+    box-shadow: none
+    color: $dark-gray
+    height: 36px !important
+    border-radius: 3px
+    background-color: $white
+    border: solid 1px $link-water
+
+.social, .messenger
+  a
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    text-align: center
+    font-size: 20px
+    line-height: 40px
+    color: $link-water-8
+    border: solid 1px $link-water
+    display: inline-block
+    vertical-align: middle
+    margin-right: 10px
+    margin-bottom: 10px
+    font-size: 30px !important
+    &.whatsapp
+      font-size: 35px !important
+      &.active, &:hover
+        background: $lime-green-3
+        color: $white
+        border-color: $lime-green-3
+    &.skype
+      font-size: 25px !important
+      &.active, &:hover
+        background: $deep-sky-blue
+        color: $white
+        border-color: $deep-sky-blue
+    &.telegram
+      &.active, &:hover
+        background: $summer-sky-3
+        color: $white
+        border-color: $summer-sky-3
+    &.twitter
+      &.active, &:hover
+        background: $cornflower-blue-1
+        color: $white
+        border-color: $cornflower-blue-1
+    &.facebook
+      &.active, &:hover
+        background: $mariner-1
+        color: $white
+        border-color: $mariner-1
+    &.linkendin
+      &.active, &:hover
+        color: $white
+        background: $cerulean
+        border-color: $cerulean
+    &.vk
+      &.active, &:hover
+        background: $san-marino
+        color: $white
+        border-color: $san-marino
+    &.instagram
+      &.active, &:hover
+        background: $dark-orchid
+        color: $white
+        border-color: $dark-orchid
+    &.ok
+      border: 0 !important
+      background-repeat: no-repeat
+      background-position: center
+    &.google
+      &.active, &:hover
+        background: $flamingo
+        color: $white
+        border-color: $flamingo
+    &.pinterest
+      &.active, &:hover
+        background: $cardinal-1
+        color: $white
+        border-color: $cardinal-1
+    &.youtube
+      border: 0 !important
+      background-repeat: no-repeat
+      background-position: center
+      //&.active, &:hover
+      //  background: $fire-engine-red
+      //  color: $white
+      //  border-color: $fire-engine-red
+// TODO: добавить иконки

@@ -1,0 +1,23 @@
+.page_declaration {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 56px;
+	background-color: $lm-white;
+	input, select, textarea {
+		margin-bottom: 0;
+	}
+	.lm-dropdown {
+		margin-bottom: 0;
+		&::after {
+			top: 12px;
+		}
+	}
+	.lm-dropdown-selected {
+		box-sizing: border-box;
+	}
+	.lm-dropdown-icon {
+		display: none !important;
+	}
+}
+
+@import '_casting/_page_declaration_casting.scss';

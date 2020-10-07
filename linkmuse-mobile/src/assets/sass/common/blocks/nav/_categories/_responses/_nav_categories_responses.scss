@@ -1,0 +1,9 @@
+.nav_categories_responses {
+	position: relative;
+	top: 0;
+	left: -$multiplicity*6;
+	@media screen and (min-width: $sm-breakpoint) {
+		left: -$multiplicity*6;
+	}
+}
+

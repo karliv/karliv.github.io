@@ -1,0 +1,33 @@
+.button__decoration_x {
+	width: 14px;
+	height: 14px;
+	position: relative;
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: calc(50% - 1px);
+		left: -2px;
+		border-radius: 2px;
+		width: 18px;
+		height: 2px;
+		background-color: $lm-gray-1;
+		transform: rotate(45deg);
+	}
+	
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: calc(50% - 1px);
+		left: -2px;
+		border-radius: 2px;
+		width: 18px;
+		height: 2px;
+		background-color: $lm-gray-1;
+		transform: rotate(-45deg);
+	}
+}
+
+@import '_delete-img/_button__decoration_x_delete-img.scss';
+@import '_delete-section/_button__decoration_x_delete-section.scss';

@@ -1,0 +1,6 @@
+.card__status_invitation_customer {
+	color: $lm-main;
+}
+
+@import '_viewed/_card__status_invitation_customer_viewed.scss';
+@import '_not-viewed/_card__status_invitation_customer_not-viewed.scss';

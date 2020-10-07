@@ -1,0 +1,106 @@
+.error-page
+  &.server-error
+    .error-page--desc
+      width: 514px
+      text-align: left
+      font-weight: normal
+      font-style: normal
+      font-stretch: normal
+      line-height: normal
+      letter-spacing: normal
+      span
+        font-size: 15px
+        color: $kimberly
+
+  &.not-found
+    h1
+      text-transform: uppercase
+    .error-page--desc
+      font-size: 15px
+      font-weight: normal
+      font-style: normal
+      font-stretch: normal
+      line-height: normal
+      letter-spacing: normal
+      color: $deluge
+      span
+        text-align: left
+  .error-page-wrap
+    width: 576px
+    padding-top: 166px
+    overflow: hidden
+  .button:not(.register)
+    width: 311px
+    line-height: 60px
+    height: 60px
+    border-radius: 100px
+    font-size: 23px
+    text-transform: uppercase
+    background-color: $fire-engine-red-1
+    margin: 0
+    margin-bottom: 225px
+    &:hover
+      color: $white
+      background-image: none
+      background-color: $torch-red
+    &:active
+      background-image: none
+      color: $white
+      background-color: $fire-engine-red-2
+  .error-page--desc
+    a
+      color: $martinique
+    font-size: 15px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: center
+    color: $kimberly
+    margin-bottom: 35px
+    span
+      display: block
+  h1
+    font-size: 36px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: normal
+    color: $deluge
+    display: block
+    width: 576px
+    text-align: center !important
+    padding-bottom: 35px
+    border-bottom: 2px solid $lavender-grey !important
+  .error-page--type
+    font-size: 24px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: normal
+    color: $deluge
+    position: relative
+    text-align: center
+    &:before
+      position: absolute
+      content: ''
+      display: block
+
+      width: 255px
+      top: calc(50% - 1px)
+      height: 2px
+      background-color: $topaz
+      border: solid 1px $lavender-grey
+    &:after
+      position: absolute
+      content: ''
+      display: block
+      width: 255px
+      right: 0
+      top: calc(50% - 1px)
+      height: 2px
+      background-color: $topaz
+      border: solid 1px $lavender-grey

@@ -1,0 +1,14 @@
+.multiselect__content_declaration {
+	box-sizing: border-box;
+	background-color: $lm-white;
+	border-radius: 8px;
+	padding: 16px 16px 56px;
+	min-width: 272px;
+	max-width: 272px;
+	//min-height: 520px;
+  height: calc(100vh - 52px);
+	max-height: 520px;
+	overflow-y: auto;
+	position: relative;
+}
+

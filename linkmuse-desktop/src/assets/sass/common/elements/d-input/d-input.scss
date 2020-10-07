@@ -1,0 +1,13 @@
+.d-input {
+	outline: none;
+	display: inline-block;
+	transition: all 0.15s ease-in-out;
+}
+@import '__label/_d-input__label.scss';
+@import '__field/_d-input__field.scss';
+@import '__notification/_d-input__notification.scss';
+@import '__prefix/_d-input__prefix';
+
+@import '_multiple/_d-input_multiple.scss';
+@import '_row/_d-input_row.scss';
+@import '_search/_d-input_search.scss';

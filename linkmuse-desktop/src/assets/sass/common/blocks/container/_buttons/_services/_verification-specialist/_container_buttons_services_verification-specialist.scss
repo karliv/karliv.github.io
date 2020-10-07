@@ -1,0 +1,14 @@
+.container_buttons_services_verification-specialist {
+	padding: 12px 16px;
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid $lm-gray-6;
+	width: auto;
+	&:before {
+		content: none;
+	}
+	&:after {
+		content: none;
+	}
+}
+

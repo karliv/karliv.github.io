@@ -1,0 +1,13 @@
+.section__link_orders_profile-settings_verification-specialist_disabled {
+	background-color: transparent;
+	background-color: transparent;
+	color: $lm-gray-3;
+	border: 1px solid $lm-gray-4;
+	cursor: default;
+	pointer-events: none;
+	&:hover {
+		transition: none;
+		background-color: transparent;
+	}
+}
+

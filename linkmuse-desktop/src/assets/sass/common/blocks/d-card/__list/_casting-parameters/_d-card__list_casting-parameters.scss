@@ -1,0 +1,36 @@
+.d-card__list_casting-parameters {
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.33;
+	letter-spacing: 0.5px;
+	color: $lm-gray-2;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	div {
+		margin-right: $multiplicity;
+    line-height: 1.33;
+		&::after {
+			content: '•';
+			color: $lm-gray-opacity-32;
+			margin-left: $multiplicity;
+		}
+		&:only-child {
+			margin-right: 0;
+			&::after {
+				content: '';
+				display: none;
+			}
+		}
+		&:last-child {
+			margin-right: 0;
+			&::after {
+				content: '';
+				display: none;
+			}
+		}
+	}
+}
+

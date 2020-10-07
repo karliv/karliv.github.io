@@ -1,0 +1,38 @@
+.d-card {
+	display: block;
+	width: 100%;
+	background-color: $lm-white;
+	width: 100%;
+	box-sizing: border-box;
+	padding: $multiplicity*4 $multiplicity*5;
+	border-radius: $multiplicity;
+	margin-top: $multiplicity*4;
+	box-shadow: $box-shadow_blur_down_4;
+	&:first-child {
+		margin-top: 0;
+	}
+	&:only-child {
+		margin-top: 0;
+	}
+	&.bg-color_main_08 {
+		border: solid 1px $lm-gray-opacity-8;
+	}
+}
+@import '__description/_d-card__description.scss';
+@import '__section/_d-card__section.scss';
+@import '__slider/_d-card__slider.scss';
+@import '__fee/_d-card__fee.scss';
+@import '__status/_d-card__status.scss';
+@import '__list/_d-card__list.scss';
+@import '__type/_d-card__type.scss';
+@import '__date/_d-card__date.scss';
+@import '__disabled_respond/_d-card__disabled_respond.scss';
+
+@import '_feed-plug/_d-card_feed-plug.scss';
+@import '_outline/_d-card_outline.scss';
+@import '_archived/_d-card_archived.scss';
+@import '_vacancy/_d-card_vacancy.scss';
+@import '_uplift/_d-card_uplift.scss';
+@import '_premium-placement/_d-card_premium-placement.scss';
+@import '_placement/_d-card_placement.scss';
+@import '_premium/_d-card_premium.scss';

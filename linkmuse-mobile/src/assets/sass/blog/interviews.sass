@@ -1,0 +1,78 @@
+.lm-m-interviews--list
+  display: flex
+  flex-wrap: wrap
+  margin-top: 14px
+  @media (max-width: 767px)
+    flex-direction: column
+    margin-top: 10px
+  .lm-m-interviews--item
+    position: relative
+    overflow: hidden
+    &.not-publish
+      border: 1px solid $lm-support-1
+      height: calc(100% - 2px)
+    &:last-child
+      margin-bottom: 0
+    height: 100%
+    background-color: $lm-white
+    box-shadow: 0 2px 8px 0 rgba(40, 42, 54, 0.03)
+    box-sizing: border-box
+    margin-bottom: 12px
+    width: calc(50% - 12px)
+    display: inline-block
+    vertical-align: top
+    padding-bottom: 12px
+    @media (max-width: 767px)
+      display: block
+      margin-bottom: 8px
+      min-width: 288px
+      max-width: 728px
+      width: 100%
+    .lm-m-interviews--item--head
+      position: relative
+      img
+        height: 352px
+        object-fit: cover
+        width: 100%
+        display: block
+        @media (max-width: 767px)
+          height: 272px
+          object-position: 0 0
+    .lm-m-interviews--item--bottom
+      padding: 12px 20px
+      padding-bottom: 0
+      .lm-user-block
+        display: flex
+        align-items: center
+        .lm-user-block-info
+          display: block
+          flex: 1 1 auto
+          width: 100%
+          overflow: hidden
+        .lm-user-block-info-name
+          width: 100%
+          overflow: hidden
+          span
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
+            display: block
+        img
+          flex: 1 auto
+          min-width: 40px
+          display: flex
+      @media (max-width: 767px)
+        padding: 12px
+        padding-bottom: 0
+      .lm-m-interviews--item--name
+        color: $lm-gray-1
+        font-size: 18px
+        font-weight: 600
+        line-height: 24px
+        overflow: hidden
+        margin-bottom: 12px
+        max-height: 48px
+        height: 48px
+        @media (max-width: 767px)
+          height: auto
+

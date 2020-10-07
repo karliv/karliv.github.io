@@ -1,0 +1,12 @@
+.form_vacancy {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	.input__field {
+		width: 100%;
+	}
+	.upload-zone__field {
+		width: 100%;
+	}
+}
+

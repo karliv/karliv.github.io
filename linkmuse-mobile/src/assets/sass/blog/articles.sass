@@ -1,0 +1,260 @@
+.lm-m-articles--list
+  display: flex
+  flex-wrap: wrap
+  margin-top: 14px
+  @media (max-width: 767px)
+    flex-direction: column
+    margin-top: 10px
+  .lm-m-articles--item
+    &:last-child
+      margin-bottom: 0
+    height: 100%
+    background-color: $lm-white
+    box-shadow: 0 2px 8px 0 rgba(40, 42, 54, 0.03)
+    box-sizing: border-box
+    margin-bottom: 12px
+    width: calc(50% - 12px)
+    display: inline-block
+    vertical-align: top
+    padding-bottom: 12px
+    @media (max-width: 767px)
+      display: block
+      margin-bottom: 8px
+      min-width: 288px
+      max-width: 728px
+      width: 100%
+    .lm-m-articles--item--head
+      img
+        height: 144px
+        object-fit: cover
+        width: 100%
+        display: block
+        @media (max-width: 767px)
+          height: 164px
+    .lm-m-articles--item--bottom
+      padding: 12px 20px 0
+      @media (max-width: 767px)
+        padding: 12px 12px 0
+      .lm-user-block
+        display: flex
+        align-items: center
+        .lm-user-block-info
+          display: block
+          flex: 1 1 auto
+          width: 100%
+          overflow: hidden
+        .lm-user-block-info-name
+          width: 100%
+          overflow: hidden
+          span
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
+            display: block
+        img
+          flex: 1 auto
+          min-width: 32px
+          display: flex
+      .lm-m-articles--item--top
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        margin-bottom: 12px
+        flex-wrap: wrap
+        .type
+          text-transform: uppercase
+          display: block
+          margin-right: 20px
+          font-size: 12px
+          font-weight: 600
+          line-height: 24px
+          color: $lm-support-1
+        .date
+          font-size: 14px
+          line-height: 24px
+          color: $lm-gray-1
+      .lm-m-articles--item--name
+        color: $lm-gray-1
+        font-size: 18px
+        font-weight: 600
+        line-height: 24px
+        overflow: hidden
+        margin-bottom: 12px
+        max-height: 48px
+        height: 48px
+        @media (max-width: 767px)
+          height: auto
+.lm-m-article-wrap
+  background: $lm-white
+  .lm-m-article-wrap--item
+    .lm-m-article-overflow-item
+      position: relative
+      z-index: 2
+      width: 600px
+      margin: 0 auto
+      .text
+        padding-top: 0px
+        padding-bottom: 24px
+        line-height: 1.5
+        font-size: 16px
+        p
+          display: block
+        img
+          margin: 10px
+          object-fit: contain
+          max-width: 100%
+      .blog-title
+        +lm-section-header
+        padding-bottom: 24px
+        display: block
+      @media (max-width: 767px)
+        .blog-title
+          +lm-section-header
+          padding-bottom: 20px
+        width: 100%
+        padding: 0 16px
+        box-sizing: border-box
+      .lm-m-article-item-user
+        border-top: 1px solid rgba(40, 42, 54, 0.05)
+        border-bottom: 1px solid rgba(40, 42, 54, 0.05)
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-top: 8px
+        padding-bottom: 8px
+        margin-bottom: 24px
+        @media (max-width: 767px)
+          flex-wrap: wrap
+          padding-bottom: 0px
+          .lm-user-block
+            height: 52px
+            display: flex
+            align-items: center
+            min-width: 100%
+            border-bottom: 1px solid rgba(40, 42, 54, 0.05)
+            padding-bottom: 8px
+          .lm-m-article-item-share
+            height: 68px !important
+          .lm-m-article-item-view
+            height: 68px !important
+        .lm-user-block
+          flex: 1 auto
+        .lm-m-article-item-share
+          display: flex
+          align-items: center
+          justify-content: flex-start
+          margin-right: 12px
+          .lm-share
+            margin-right: 12px
+            display: block
+            width: 14px
+            height: 16px
+            background-size: 14px 16px
+            @include lm-share('%23282a36')
+            background-position: center
+            background-repeat: no-repeat
+          .lm-social [class*='lm-social-']
+            width: 40px
+            height: 40px
+            background-size: 40px
+            margin: 0 4px
+        .lm-m-article-item-view
+          display: flex
+          align-items: center
+          justify-content: flex-end
+          height: 48px
+          border-left: 1px solid rgba(40, 42, 54, 0.05)
+          padding-left: 16px
+          i.lm-icon-heart
+            display: block
+            margin-right: 8px
+            width: 16px
+            height: 16px
+            background-position: center
+            background-size: 14px
+            background-repeat: no-repeat
+            &.active
+              @include lm-heart('%23FC2E5F')
+          i.lm-icon-eye
+            display: block
+            margin-right: 8px
+            width: 16px
+            height: 16px
+            background-position: center
+            background-size: 14px
+            background-repeat: no-repeat
+          span
+            font-size: 14px
+            font-weight: 600
+            line-height: 24px
+            color: $lm-gray-4
+
+
+    .lm-m-article-overflow-item-title
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        margin-bottom: 12px
+        .category
+          +LM-BUTTON()
+          &.bio
+            color: $lm-main
+          &.news
+            color: $lm-support-1
+          text-transform: uppercase
+        .date
+          padding-left: 8px
+          +lm-body-content
+          color: $lm-gray-3
+          font-size: 14px
+          line-height: 24px
+    .lm-m-article-wrap--item-head
+      margin-top: -20px
+      border-top-left-radius: 20px
+      border-top-right-radius: 20px
+      overflow: hidden
+      position: relative
+      height: 400px
+      margin-bottom: 24px
+      &.artile-fix
+        height: auto
+      .lm-m-article-overflow
+        z-index: 2
+        position: relative
+        width: 600px
+        margin: 0 auto
+      .image-article
+        width: 100%
+        height: 346px
+        object-fit: cover
+        position: relative
+        z-index: 1
+        @media (max-width: 767px)
+          height: auto
+      img.background
+        object-fit: cover
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        z-index: 1
+        margin: auto
+        filter: grayscale(100%)
+      img.image
+        z-index: 2
+        width: 267px
+        height: 400px
+        object-fit: contain
+      @media (max-width: 767px)
+        .lm-m-article-overflow
+          width: auto
+        margin-bottom: 16px
+        height: 344px
+        img.background
+          display: none
+        img.image
+          width: 100%
+          height: 344px
+          object-fit: cover
+          object-position: 0 0

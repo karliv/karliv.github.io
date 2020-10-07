@@ -1,0 +1,921 @@
+.carts-page .folder-page
+  .folder-header
+  .projects--action
+    text-align: right
+    i.icon-more
+      z-index: 15
+    & > *
+      text-align: left
+  .friends--list
+    margin-top: 0
+    .friends--item
+      .invite-user-castings
+        width: auto
+        padding: 0 10px
+        min-width: 200px
+        line-height: 42px
+      &:hover
+        .icon-more
+          display: block
+      .icon-more
+        display: inline-block
+        vertical-align: middle
+        cursor: pointer
+        color: rgba($link-water-10, 0.98)
+        font-size: 4.5px
+        position: absolute
+        right: -10px
+        top: -10px
+        z-index: 11111
+        text-align: left
+        padding: 10px
+        display: none
+        .actions-item
+          top: 10px
+          a
+            font-size: 12px
+      .quickview--wrap
+        width: 108px
+        height: 108px
+        margin: 0 auto
+        position: relative
+        border-radius: 50%
+        overflow: hidden
+        text-align: center
+        &:after
+          transition: .3s all
+          content: ''
+          opacity: 0
+          width: 100%
+          height: 100%
+          background-color: rgba($tangaroa, 0.6)
+          position: absolute
+          top: 0
+          left: 0
+          z-index: 13
+        &:hover
+          &:after
+            opacity: 1
+          span
+            opacity: 1
+        span
+          opacity: 0
+          font-size: 15px
+          line-height: 1.47
+          letter-spacing: 0
+          text-align: center
+          color: $solitude
+          position: absolute
+          z-index: 14
+          top: 30px
+          left: 0
+          width: 100%
+          transition: .3s all
+        img
+          width: 108px
+          height: 108px
+      .info
+        span
+          display: block
+          font-size: 15px
+          font-weight: lighter
+          font-style: normal
+          font-stretch: normal
+          line-height: 1.47
+          letter-spacing: 0
+          text-align: center
+          color: $storm-grey
+          min-height: 22px
+      &:hover
+        span
+          z-index: 14
+        &:after
+          width: 265px
+          left: calc(50% - 132.5px)
+          height: calc(100% + 130px)
+      .friends--list_border_hover-action
+        margin-top: 13px
+        margin-bottom: 13px
+        .message
+          width: 44px
+          font-weight: bold
+          height: 44px
+          border: solid 1px $heather
+          border-radius: 50%
+          text-align: center
+          line-height: 44px
+          color: $heather
+          cursor: pointer
+          font-size: 15px
+          vertical-align: middle
+          float: left
+          display: inline-block
+        .invite
+          display: inline-block
+          width: 112px
+          height: 44px
+          line-height: 44px
+          color: $santas-grey
+          border-radius: 24px
+          border: solid 1px $mischka
+          cursor: pointer
+          vertical-align: middle
+        .close
+          opacity: 1
+          float: right
+          display: inline-block
+          vertical-align: middle
+          width: 44px
+          height: 44px
+          border: solid 1px $heather
+          border-radius: 50%
+          text-align: center
+          line-height: 44px
+          color: $santas-grey
+          cursor: pointer
+          font-size: 15px
+          transform: rotate(45deg)
+.carts-page
+  width: 100%
+
+  .profile__info--content
+    padding-bottom: 11px
+  .profile__projects
+    .profile__projects--header
+      i.icon-Add
+        float: right
+        transform: rotate(45deg)
+        cursor: pointer
+        color: $mischka
+        font-size: 15px
+        line-height: 28px
+        &:hover
+          color: $color-black
+  .profile__info--controls
+    .button
+      color: $grey-chateau
+      border: solid 1px $grey-chateau
+  .nav
+    padding-top: 26px
+    padding-bottom: 26px
+  .friends--list
+    margin-top: 0
+    .friends--item
+      margin-bottom: 85px
+
+      &:hover
+        img, > span
+          z-index: 12
+        .friends--list_border_hover-info
+          display: block
+  .friends--list_border_hover-add-cart
+    position: absolute
+    height: 357px
+    width: 265px
+    left: calc(50% - 132.5px)
+    border-radius: 2px
+    background-color: $white
+    box-shadow: 0 4px 7px 0 rgba($white, 0.08)
+    border: solid 1px $solitude-1
+    top: -29px
+    padding-bottom: 150px
+    z-index: 222
+    display: block
+    .select--add
+      color: $mariner
+      font-size: 14px
+      line-height: 29px
+      i
+        margin-right: 12px
+        display: inline-block
+        vertical-align: middle
+    &.create
+      .add-cart
+        padding-top: 50px
+        label
+          font-size: 15px
+          font-weight: normal
+          font-style: normal
+          font-stretch: normal
+          line-height: 1.47
+          letter-spacing: normal
+          color: $tangaroa
+          display: block
+          text-align: left
+          margin-bottom: 10px
+        input
+          margin-bottom: 26px
+        .add-cart--button
+          color: $white
+          width: 154px
+          border: 0
+          background: linear-gradient(to bottom, $alizarin-3, $cardinal)
+
+  .friends--list_border_hover-info
+    display: none
+    position: absolute
+    height: 100%
+    width: 265px
+    left: calc(50% - 132.5px)
+    border-radius: 2px
+    background-color: $white
+    box-shadow: 0 4px 7px 0 rgba($color-black, 0.08)
+    border: solid 1px $solitude-1
+    padding-top: 200px
+    top: -29px
+    padding-bottom: 150px
+    z-index: 11
+    .move
+      color: $mariner
+      cursor: pointer
+      font-size: 14px
+    span
+      display: block
+      font-size: 15px
+      font-weight: normal
+      font-style: normal
+      font-stretch: normal
+      line-height: 1.47
+      letter-spacing: 0
+      text-align: center
+      color: $storm-grey
+      min-height: 22px
+  .empty-follow
+    .searchtalents
+      line-height: 42px
+      border-color: $mariner
+  .cart-list-people
+    padding-top: 26px
+    height: 100%
+    a
+      font-size: 15px
+      font-weight: normal
+      font-style: normal
+      font-stretch: normal
+      line-height: 1.47
+      letter-spacing: 0.1px
+      color: $mariner
+    .cart-list-people-head-right
+      margin-bottom: 55px
+      span
+        display: inline-block
+        vertical-align: middle
+        font-size: 15px
+        font-weight: normal
+        font-style: normal
+        font-stretch: normal
+        line-height: 1.47
+        letter-spacing: 0
+        text-align: right
+        color: $storm-grey
+      i
+        display: inline-block
+        vertical-align: middle
+        cursor: pointer
+        color: $zumthor
+        font-size: 16px
+        margin-left: 16px
+  .projects--action
+    float: right
+    .addtalents
+      vertical-align: middle
+      font-size: 15px
+      font-weight: normal
+      font-style: normal
+      font-stretch: normal
+      line-height: 30px
+      height: 32px
+      cursor: pointer
+      border-radius: 24px
+      width: auto
+      padding: 0 18px
+      margin-right: 0
+      border: solid 1px $zircon
+      background: $white
+      color: $aluminium
+    span
+      display: inline-block
+      vertical-align: middle
+      font-size: 15px
+      font-weight: normal
+      font-style: normal
+      font-stretch: normal
+      line-height: 1.47
+      letter-spacing: 0
+      color: $storm-grey
+    i
+      margin-left: 20px
+      display: inline-block
+      vertical-align: middle
+      cursor: pointer
+      color: rgba($link-water-10, 0.98)
+      font-size: 4.5px
+  span.desc
+    font-size: 15px
+    font-weight: normal
+    padding-left: 14px
+    font-style: normal
+    font-stretch: normal
+    line-height: 1.47
+    letter-spacing: 0
+    color: $storm-grey
+  .carts--list
+    .folder-null
+      text-align: center
+      span
+        font-size: 15px
+        line-height: 1.47
+        letter-spacing: 0.1px
+        color: $mischka-1
+        display: block
+        margin-bottom: 20px
+      a
+        display: block
+    > div
+      width: 100%
+    &:before
+      display: block
+    display: flex
+    flex-flow: row wrap
+    .carts--list-item
+      background-color: $white
+
+      .profile--user--lists-mini
+        object
+          margin-left: -14.5px
+          a
+            margin: 0 !important
+            img, span
+              width: 37px
+              height: 37px
+          &:first-child
+            margin-left: -3px
+      > a
+        border-radius: 3px
+        border: solid 1px $solitude-1
+        padding-top: 30px
+        padding-right: 25px
+        padding-bottom: 20px
+        padding-left: 18px
+        margin-bottom: 15px
+        position: relative
+        display: block
+        height: 229px
+        i.icon-more
+          position: absolute
+          color: rgba($link-water-10, 0.98)
+          font-size: 5px
+          top: 17px
+          right: 17px
+          display: none
+        &:hover
+          box-shadow: 0 3px 8px 0 rgba($color-black, 0.09)
+          i.icon-more
+            display: block
+
+        .carts--list-item-name
+          +text-h-1()
+          display: block
+          padding-bottom: 7px
+          height: 51px
+        //word-break: break-all
+        .carts--list-item-desc
+          height: 60px
+          font-size: 15px
+          font-weight: normal
+          font-style: normal
+          font-stretch: normal
+          line-height: 1.47
+          letter-spacing: 0
+          color: $storm-grey
+          padding-bottom: 16px
+        .carts--list-item-composition
+          .carts--list-item-composition-top
+            font-size: 15px
+            font-weight: normal
+            font-style: normal
+            font-stretch: normal
+            line-height: 1.47
+            letter-spacing: normal
+            text-align: left
+            color: $blue-bayoux
+            padding-bottom: 7px
+        .profile--user--lists-mini
+          height: 37px
+          a:first-child
+            margin-left: -3px
+  .create-cart
+    height: 600px
+    label
+      margin-bottom: 10px
+      font-size: 15px
+      display: block
+      font-weight: normal
+      font-style: normal
+      font-stretch: normal
+      line-height: 1.47
+      letter-spacing: normal
+      color: $tangaroa
+    .action
+      margin-top: 10px
+      border-top: solid 1px $solitude-2
+      padding-top: 40px
+    .button
+      margin: 0 auto
+      display: block
+      &.write
+        width: 156px
+        background-color: $fire-engine-red-1
+        height: 44px
+        line-height: 42px
+        border: 1px solid $fire-engine-red-1
+        color: $white
+        display: block
+        &:hover
+          background-color: $torch-red
+          color: $white
+        &:active, &.active
+          background-color: $fire-engine-red-2
+          box-shadow: inset 0 1px 3px 0 rgba($color-black, 0.34)
+          color: $solitude-3
+    .cancel
+      text-align: center
+      display: block
+      margin: 0 auto
+      margin-top: 37px
+      font-size: 14px
+      font-weight: normal
+      font-style: normal
+      font-stretch: normal
+      line-height: 1.57
+      letter-spacing: 0.1px
+      color: $mariner
+.add-cart
+  .scrollbar
+    height: 236px
+  ul
+    list-style: none
+    text-align: left
+    li
+      padding: 12px 0
+      padding-left: 26px
+      padding-right: 46px
+      min-height: 48px
+      cursor: pointer
+      overflow: hidden
+      position: relative
+      &:not(:last-child):before
+        content: ''
+        display: block
+        width: calc(100% - 52px)
+        height: 1px
+        background: $solitude-4
+        position: absolute
+        bottom: 0
+        left: 26px
+        padding: 0 26px
+        z-index: 2
+      .add-cart--removed.view, .add-cart--saved.view, .icon-ok.view
+        display: block
+      //background-color: $white
+      .icon-ok.hideicon
+        top: 0px
+        span
+          font-size: 15px
+          cursor: pointer
+          line-height: 60px
+          color: $aluminium
+        &:before
+          content: ''
+        &:hover
+          &.remove
+            span:first-child
+              display: none
+            .removed
+              display: block
+      .icon-ok.view
+        color: $mariner
+        .removed
+          display: none
+      &:hover
+        .icon-ok.view:not(.hideicon)
+          transform: rotate(45deg)
+          color: $aluminium
+          &:before
+            content: '\e909'
+
+      i
+        display: none
+        cursor: pointer
+      i
+        &.icon-ok
+          position: absolute
+          right: 26px
+          top: 25px
+          font-size: 12px
+          color: $aluminium
+          &:hover
+            color: $navy-blue-1
+        &.icon-ok_already_saved
+          position: absolute
+          display: block
+          right: 26px
+          top: 25px
+          font-size: 12px
+          color: $navy-blue-1
+      .add-cart--removed, .add-cart--saved
+        display: none
+        position: absolute
+        padding-right: 26px
+        right: 0px
+        padding-left: 5px
+        top: 0
+        font-size: 13px
+        line-height: 60px
+        color: $aluminium
+      &:hover
+        //background-color: $solitude-6
+        .add-cart--removed, .add-cart--saved
+          display: block
+        //background-color: $solitude-6
+        .add-cart--removed, .add-cart--saved
+          color: $mariner
+        i
+          &.icon-ok
+            display: block
+            background-color: transparent
+            &:hover
+              color: $mariner
+          &.icon-ok_already_saved
+            display: block
+          &.icon-plus_L
+            position: absolute
+            display: block
+            right: 26px
+            top: 25px
+            font-size: 12px
+            color: $aluminium
+            transform: rotate(45deg)
+            &:hover
+              color: $tangaroa
+      span
+
+        font-size: 15px
+        font-weight: normal
+        font-style: normal
+        font-stretch: normal
+        line-height: 36px
+        letter-spacing: normal
+        text-align: left
+        color: $aluminium
+        word-wrap: break-word
+  .title
+
+    line-height: 59px
+    padding-left: 26px
+    padding-right: 26px
+    border-bottom: solid 1px $solitude-2
+    text-align: left
+    font-size: 16px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    letter-spacing: 0.1px
+    color: $tangaroa
+    i
+      line-height: 55px
+      position: relative
+      top: 3px
+      float: right
+      color: $link-water-2
+      cursor: pointer
+      font-size: 10px
+      transform: rotate(45deg)
+  > span
+    text-align: left
+    padding-bottom: 12px
+    +text-body()
+  .multiselect
+    margin-bottom: 26px
+  .add-cart--button
+    width: 119px
+    height: 44px
+    border-radius: 24px
+    line-height: 44px
+    color: $mischka
+    border: solid 1px $mischka
+    margin: 0 auto
+    margin-bottom: 26px
+    cursor: pointer
+  .add-cart--cansel
+    color: $mariner
+    font-size: 14px
+    cursor: pointer
+    line-height: 22px
+.friends--list_create_cart
+  border-bottom: solid 1px $solitude-2
+  width: 100%
+  > div
+    padding-left: 26px
+    cursor: pointer
+  input
+    margin-bottom: 0
+    padding: 0
+    border: none !important
+    height: 58px
+    display: inline-block
+    width: 546px
+    padding-right: 26px
+    margin-left: 26px
+  i
+    cursor: pointer
+    color: $mariner
+    line-height: 57px
+    text-align: center
+    font-size: 14px
+    display: inline-block
+    margin-right: 8px
+    vertical-align: middle
+  span
+    padding-right: 55px
+    cursor: pointer
+    font-size: 15px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    letter-spacing: normal
+    text-align: left
+    color: $mariner
+    line-height: 58px
+  &:hover
+    span, i
+      color: $summer-sky-2
+.modal-folders
+  .link-create-project
+    color: $summer-sky-2
+    i
+      font-size: 12px
+      font-weight: bold
+    i, span
+      color: $summer-sky-2
+      display: inline-block
+      vertical-align: middle
+  .modal-body
+    .add-cart
+      position: relative
+      .button
+        margin: 0 auto
+        margin-top: 32px
+        margin-bottom: 32px
+        &:hover
+          color: $white !important
+        &:active
+          color: $solitude-3 !important
+.friends--list
+  &.no-top
+    margin-top: 0
+  .friends--item
+    margin-bottom: 45px
+    &.friends--item--talents
+      .friends--list_border_hover-info
+        height: initial
+        padding-bottom: 10px
+        padding-top: 200px
+    &:hover
+      .quickview--wrap
+        z-index: 11
+    .friends--list_border_hover-info
+      //width: 216px
+      padding-bottom: 105px
+      padding-top: 185px
+      //left: calc(50% - 108px)
+      .move
+        display: none
+      .friends--list_border_hover-action
+        padding: 0 14px
+        margin: 0
+        margin-top: 6px
+        .message, .close
+          width: 37px
+          height: 37px
+          line-height: 37px
+        .invite
+          width: 100px
+          height: 37px
+          line-height: 35px
+          &.full
+            width: 165px
+    .quickview--wrap
+      width: 108px
+      height: 108px
+      margin: 0 auto
+      position: relative
+      border-radius: 50%
+      overflow: hidden
+      text-align: center
+
+      &:hover
+        span, &:after
+          opacity: 1
+      span
+        opacity: 0
+        font-size: 15px
+        line-height: 1.47
+        letter-spacing: 0
+        text-align: center
+        color: $solitude
+        position: absolute
+        z-index: 14
+        top: 30px
+        left: 0
+        width: 100%
+        transition: .3s all
+      &:after
+        transition: .3s all
+        content: ''
+        opacity: 0
+        width: 100%
+        height: 100%
+        background-color: rgba($tangaroa, 0.6)
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 13
+    img
+      width: 108px
+      height: 108px
+    .raiting
+      top: 75px
+      right: 50px
+.folders-list--item
+  border-radius: 3px
+  background-color: $white
+  box-shadow: 0 1px 2px 0 rgba($color-black, 0.09)
+  border: solid 1px $solitude-1
+  position: relative
+  padding: 0
+  margin-bottom: 16px
+  display: block
+  i.icon-more
+    right: 16px
+    top: 16px
+    position: absolute
+    font-size: 5px
+    color: rgba($link-water-11, 0.98)
+    .actions-item
+      right: -6px
+      top: -5px
+  &.create
+    cursor: pointer
+    span
+      font-size: 15px
+      line-height: 1.6
+      letter-spacing: 0.2px
+      text-align: center
+      color: $mischka-2
+      display: block
+      width: 152px
+      margin: 0 auto
+      margin-bottom: 26px
+      word-break: normal
+    i.icon-plus
+      font-size: 100px
+      color: $mischka-2
+      display: block
+      margin: 0 auto
+      margin-bottom: 28px
+      text-align: center
+      padding-top: 64px
+.folders-list
+  &.folders-list-page
+    margin-top: 0
+    .folders-list--item
+      &.three
+        .folders-list--item-left
+          width: 174px
+          img
+            width: 174px
+  margin-top: 40px
+  .create
+    i.icon-plus
+      padding-top: 42px
+      margin-bottom: 28px
+    span
+      margin-bottom: 36px
+  .folders-list--item
+    &:hover
+      .folders-list--item--name
+        color: $lm-main-hover
+    .icon-more
+      bottom: 41px
+      top: inherit
+      transform: rotate(90deg)
+      right: 0px
+      .actions-item
+        transform: rotate(-90deg)
+        top: -18px
+        right: -22px
+    &.null
+      .folders-list--item--add
+        padding-bottom: 25px
+        background-color: rgba($solitude-8, 0.7)
+        display: block
+        height: 164px
+        i
+          color: $gray-light
+          font-size: 63px
+          padding-top: 34px
+          display: block
+          text-align: center
+          padding-bottom: 22px
+        span
+          font-size: 17px
+          line-height: 1.41
+          letter-spacing: 0.2px
+          text-align: center
+          color: $gray-light
+          display: block
+    &.one
+      .folders-list--item--name
+        margin-bottom: 3px
+      .folders-list--item--full
+        height: 164px
+        img
+          height: 164px
+          object-fit: cover
+          width: 100%
+    &.two
+      //height: 229px
+      .folders-list--item--bottom
+        margin-top: 3px
+      .folders-list--item--left
+        padding-right: 4px
+        &:nth-child(2)
+          padding-right: 0
+      .folders-list--item--left, .folders-list--item--right
+        width: 50%
+        height: 164px
+        float: left
+
+        img
+          width: 100%
+          height: 164px
+          object-fit: cover
+    &.three
+      .folders-list--item-left
+        vertical-align: top
+        display: inline-block
+        width: 169px
+        height: 164px
+        float: left
+        img
+          width: 170px
+          height: 164px
+          object-fit: cover
+      .folders-list--item-right
+        display: inline-block
+        width: 80px
+        margin-left: 4px
+        vertical-align: top
+        height: 164px
+        float: left
+        a, div
+          display: block
+          text-align: right
+          width: 80px
+          height: 80px
+          &:first-child
+            margin-bottom: 4px
+          img
+            object-fit: cover
+            width: 80px
+            height: 80px
+        .folders-list--item-right-top
+
+        .folders-list--item--right-bottom
+    .folders-list--item-bottom
+      padding: 8px 16px
+      min-height: 66px
+      max-height: 66px
+      margin-top: 0px
+    .folders-list--item--count
+      font-size: 15px
+      line-height: 1.6
+      letter-spacing: 0.2px
+      text-align: left
+      color: #b3b4ba
+      min-height: 26px
+      max-height: 26px
+    .folders-list--item--name
+      max-height: 26px
+      text-overflow: ellipsis
+      overflow: hidden
+      white-space: nowrap
+      font-size: 17px
+      line-height: 22px
+      letter-spacing: 0.1px
+      color: $haiti
+      display: block
+      overflow: hidden
+      &:hover
+        color: $lm-main-hover

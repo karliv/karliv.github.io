@@ -1,0 +1,5 @@
+export const SEX = 'sex'
+// export const CITY = 'city'
+export const ROLE = 'role'
+export const ONLINE = 'online'
+export const CATEGORY = 'cat'

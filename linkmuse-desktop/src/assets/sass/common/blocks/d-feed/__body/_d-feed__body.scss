@@ -1,0 +1,18 @@
+.d-feed__body {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 848px;
+	flex-shrink: 0;
+  &.no-sidebar {
+    max-width: 100%;
+  }
+	.d-card {
+		.heading_h4 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-bottom: $multiplicity*2;
+		}
+	}
+}
+

@@ -1,0 +1,29 @@
+.section__button_delete_section {
+	box-sizing: border-box;
+	padding: 8px;
+	width: 32px;
+	height: 32px;
+	border: none;
+	background-color: transparent;
+	margin-right: 0;
+	
+	position: absolute;
+	top: 50%;
+	right: -3.28rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 3.5px;
+		right: 3.5px;
+		border-radius: 50%;
+		background-color: $lm-gray-5;
+		width: 25px;
+		height: 25px;
+	}
+}
+

@@ -1,0 +1,7 @@
+.form__row_declaration {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@import '_payment/_form__row_declaration_payment.scss';

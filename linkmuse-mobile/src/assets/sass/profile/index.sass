@@ -1,0 +1,944 @@
+.lm-m-profile-page
+    min-height: 100vh
+    box-sizing: border-box
+    //padding-bottom: 50px
+    &.fullprofile
+      .wrapper
+        background-color: initial
+    .lm-user-vertical
+        margin: 0 auto
+    .lm-m-profile-actions-button
+        margin: 0 auto
+        margin-top: 16px
+        margin-bottom: 24px
+        display: flex
+        align-items: center
+        justify-content: center
+        a
+            margin: 0 8px
+            display: block
+            width: 44px
+            height: 44px
+            min-width: 44px
+            max-width: 44px
+            background-color: $lm-gray-5
+            background-position: center
+            background-repeat: no-repeat
+            background-size: 16px
+            border-radius: 16px
+            &.lm-icon-message
+                @include lm-message('%23808792')
+            &.lm-icon-phone
+                @include lm-phone('%23808792')
+            &.lm-follow-icon
+                @include lm-following('%23808792')
+                &.blue
+                    background-color: $lm-main
+                    @include lm-following('%23ffffff')
+            &.lm-plus-icon
+                background-color: $lm-main
+            &.lm-plus-icon
+                @include lm-plus('%23ffffff')
+            &.lm-wait-icon
+                background-color: $lm-support-3
+                @include lm-wait('%23ffffff')
+            &.lm-following-icon, &.lm-small-ok-icon
+                background-color: $lm-support-2
+            &.lm-power-icon
+              background-color: $lm-main
+              @include lm-power('%23ffffff')
+            &.lm-pdf-icon
+              background-size: 24px 24px
+        a.btn
+            display: flex
+        a.btn_primary
+            background-color: $lm-main
+    .lm-m-profile-action-edit
+        display: flex
+        align-items: center
+        justify-content: space-between
+        border-top: 2px solid rgba(40, 42, 54, 0.05)
+        padding: 12px 16px
+        &.cs
+          background: #ffffff
+          position: fixed
+          z-index: 2
+          width: 100%
+          bottom: 0
+          box-sizing: border-box
+          max-width: 1024px
+          min-width: 320px
+    .wrapper
+        position: relative
+        padding: 0 !important
+        background-color: $lm-white
+        min-height: calc(100vh - 50px)
+        @media (max-width: 767px)
+          min-height: auto
+        &:after
+            clear: both
+            content: ''
+    .lm-m-nav-menu
+        display: none
+        @media (max-width: 767px)
+            display: block
+            padding: 0 16px
+            margin-bottom: 10px
+            .lm-m-nav-wrapper
+                width: 100%
+                .lm-m-nav-menu--left
+                    width: 100%
+                    a
+                        &.active
+                            color: $lm-gray-1
+                            &:after
+                                border-radius: 2px
+                                content: ''
+                                display: block
+                                position: absolute
+                                left: 0
+                                bottom: -1px
+                                width: 100%
+                                background-color: #0063da
+                                height: 2px
+                        width: 50%
+                        text-align: center
+    .lm-m-profile-cs-info
+      box-shadow: 0 2px 8px 0 rgba(40, 42, 54, 0.04)
+      background-color: $lm-white
+      border-top: 8px solid $lm-gray-5
+      max-width: 320px
+      @media (max-width: 767px)
+        max-width: inherit
+        border: 0
+      .title
+        padding: 16px
+        padding-bottom: 0px
+        color: $lm-gray-1
+        +lm-bold-content()
+      .lm-m-profile-cs-list
+        .lm-m-profile-cs-item
+          padding: 12px 16px
+          border-bottom: 1px solid $lm-gray-5
+          .lm-m-profile-cs-item-review
+            display: none
+            background-color: $lm-gray-5
+            margin: 0 -16px
+            margin-top: 8px
+            .text
+              padding: 8px 16px
+              font-size: 12px
+              line-height: 16px
+              color: $lm-gray-3
+          &.open
+            padding-bottom: 0px
+            border: 0
+            .lm-cs-arrow
+              opacity: 1
+              transform: rotate(180deg)
+            .lm-m-profile-cs-item-review
+              display: block
+          .lm-user-block
+            a
+              display: flex
+              align-items: center
+              justify-content: space-between
+              .lm-user-block-right
+                display: flex
+                align-items: center
+                justify-content: flex-end
+              .lm-cs-arrow
+                margin-right: 16px
+                display: block
+                width: 7px
+                height: 4px
+                opacity: 0.32
+                @include lm-dropdown-icon('%23808792')
+                background-position: center
+                background-repeat: no-repeat
+
+    .lm-m-profile-user-info
+        width: 100%
+        box-sizing: border-box
+        max-width: 320px
+        border-right: 2px solid #f3f4f6
+        .lm-m-profile-action-edit
+            margin: 0 -24px
+            padding: 12px 24px
+            @media (max-width: 767px)
+                padding: 12px 16px
+                margin: 0 -16px
+        @media (max-width: 767px)
+            max-width: inherit
+            border: 0
+        .lm-m-profile-user-info--line
+            border-bottom: 2px solid #f3f4f6
+            padding: 24px
+            background-color: $lm-white
+            &.info-edit
+              .desc
+                font-size: 8px
+                font-weight: 600
+                line-height: 12px
+                letter-spacing: 1px
+                color: $lm-gray-3
+                text-transform: uppercase
+            &.lock-profile
+              padding: 30px
+              text-align: center
+              border-bottom: 0
+              @media (min-width: 768px)
+                padding-top: 64px
+              .title
+                color: $lm-gray-1
+                +lm-bold-content()
+                margin-bottom: 4px
+                justify-content: center
+              .desc
+                font-size: 14px
+                line-height: 18px
+                margin-bottom: 12px
+                color: $lm-gray-3
+
+            .fix-label
+                margin-bottom: 16px
+            .lm-m-profile-user-info--line-edit-wrap
+                padding-bottom: 8px
+                .lm-tags
+                    margin-bottom: 16px
+                    .lm-tag
+                        background-color: $lm-main
+                        padding-right: 28px
+                        position: relative
+                        color: $lm-white
+                        i.icon-close
+                            @include lm-close('%23ffffff')
+                            width: 8px
+                            height: 8px
+                            background-repeat: no-repeat
+                            background-position: center
+                            background-size: 8px
+                            position: absolute
+                            top: 0
+                            bottom: 0
+                            margin: auto
+                            right: 10px
+
+                .lm-input-icon
+                    &.filled
+                        &.lm-icon-calendar-fill
+                            @include lm-calendar-fill('%230063da')
+                        &.lm-icon-phone
+                            @include lm-phone('%230063da')
+                        &.lm-icon-email
+                            @include lm-email('%230063da')
+                        &.lm-icon-world
+                            @include lm-world('%230063da')
+                .lm-radio-buttons
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    li
+                        margin: 0
+                        &:first-child
+                            margin-right: 36px
+                    label
+                        margin: 0
+                .lm-m-profile-user-info--line-separator
+                    height: 2px
+                    width: calc(100% + 48px)
+                    background-color: $lm-gray-5
+                    margin: 0 -24px
+                    margin-bottom: 16px
+                    @media (max-width: 767px)
+                        width: calc(100% + 32px)
+                        margin: 0 -16px
+            &.editable
+                padding-bottom: 0
+                margin-top: 8px
+                margin-bottom: 8px
+                .lm-editable-removed-line
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    > div
+                        flex: 1
+                    .lm-round-button
+                        min-width: 44px
+                        margin-left: 16px
+                        margin-top: 8px
+                .lm-editable-add-wrap
+                    margin-top: 16px
+                    margin-bottom: 8px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+
+            @media (max-width: 767px)
+                padding: 16px
+            .lm-dropdown
+                margin-bottom: 16px
+            .lm-input-wrap
+                margin-bottom: 16px
+                input
+                    box-sizing: border-box
+                textarea
+                    min-height: 86px
+                    box-sizing: border-box
+                    line-height: 18px
+                    resize: none
+            .lm-m-profile-skills-line
+                + .lm-m-profile-skills-line
+                    margin-top: 12px
+                .lm-m-profile-skill-title
+                    font-size: 14px
+                    line-height: 18px
+                    color: $lm-gray-1
+                .lm-m-profile-skill-desc
+                    font-size: 12px
+                    line-height: 15px
+                    color: $lm-gray-3
+            .lm-social
+                justify-content: flex-start
+                div
+                    width: 32px
+                    height: 32px
+                    background-size: 32px
+                    margin: 0
+                    border: none
+                    + div
+                        margin-left: 12px
+            .lm-profile-contact
+                .lm-profile-contact-line
+                    margin-bottom: 12px
+                    a
+                        padding-left: 28px
+                        background-repeat: no-repeat
+                        background-position: left center
+                        background-size: 16px
+                    .lm-profile-contact-mail
+                        @include lm-email()
+                    .lm-profile-contact-phone
+                        @include lm-phone()
+                    .lm-profile-contact-phone, .lm-profile-contact-mail, .lm-profile-contact-web
+                        span
+                            font-size: 14px
+                            line-height: 18px
+                            color: $lm-gray-1
+                    .lm-profile-contact-web
+                        @include lm-world()
+                        span
+                            color: $lm-main
+            .lm-m-profile-user-params
+                ul
+                    display: flex
+                    justify-content: space-between
+                    flex-wrap: wrap
+                    li
+                        display: flex
+                        justify-content: space-between
+                        width: 100%
+                        .left
+                            width: 50%
+                            span
+                                font-size: 14px
+                                line-height: 32px
+                                letter-spacing: normal
+                                color: $lm-gray-3
+                        .right
+                            text-align: right
+                            width: 50%
+                            span
+                                font-size: 14px
+                                line-height: 32px
+                                letter-spacing: normal
+                                color: $lm-gray-1
+            .lm-m-profile-user-profession-line
+                .lm-m-profile-user-profession-item
+                    display: flex
+                    align-items: center
+                    justify-content: flex-start
+                    margin-bottom: 8px
+                    width: 100%
+                    i
+                        margin-right: 16px
+                        min-width: 48px
+                        width: 48px
+                        height: 48px
+                        border-radius: 16px
+                        background-color: $lm-support-2
+                        +lm-m-backgound-normalize
+                        &.actor
+                            @include lm-m-actor('%23ffffff')
+                        &.model
+                            @include lm-m-model('%23ffffff')
+                        &.musician
+                            @include lm-m-musician('%23ffffff')
+                        &.dancer
+                            @include lm-m-dancer('%23ffffff')
+                        &.leading
+                            @include lm-m-leading('%23ffffff')
+                        &.composer
+                            @include lm-m-composer('%23ffffff')
+                        &.circus-artist
+                            @include lm-m-circus-artist('%23ffffff')
+                        &.photographer
+                            @include lm-m-photographer('%23ffffff')
+                        &.visagiste
+                            @include lm-m-visagiste('%23ffffff')
+                        &.designer
+                            @include lm-m-designer('%23ffffff')
+                        &.film-crew
+                            @include lm-m-film-crew('%23ffffff')
+                    .right
+                        .profession-title
+                            color: $lm-gray-1
+                            +LM-BUTTON()
+                            margin-bottom: 2px
+                            text-transform: uppercase
+                        .profession-desc
+                            font-size: 14px
+                            line-height: 18px
+                            color: $lm-gray-3
+
+            .title
+                display: flex
+                align-items: center
+                justify-content: space-between
+                margin-bottom: 12px
+                .left
+                    span
+                        color: $lm-gray-1
+                        +lm-bold-content()
+                .right
+                    i.lm-icon-pencil, i.lm-icon-eye
+                        display: block
+                        width: 16px
+                        height: 16px
+                        +lm-m-backgound-normalize
+                        background-size: 16px
+            .about
+                display: flex
+                align-items: center
+                justify-content: flex-start
+                flex-wrap: wrap
+                .lm-sex, .lm-tags
+                    margin-right: 8px
+                    margin-bottom: 8px
+                .city
+                    font-size: 14px
+                    line-height: 18px
+                    color: $lm-gray-2
+                    margin-bottom: 8px
+            .about-text
+                font-size: 14px
+                line-height: 18px
+                color: $lm-gray-1
+                word-break: break-word
+            .list
+                list-style: disc
+                list-style-position: inside
+                li
+                    margin-bottom: 16px
+                    position: relative
+                    padding-left: 12px
+                    display: block
+                    &:after
+                        width: 4px
+                        height: 4px
+                        background-color: $lm-gray-2
+                        position: absolute
+                        left: 0
+                        top: 7px
+                        display: block
+                        content: ''
+                        border-radius: 50%
+                    .name
+                        font-size: 14px
+                        line-height: 18px
+                        color: $lm-gray-1
+                        margin-bottom: 8px
+                        display: block
+                    .date
+                        font-size: 12px
+                        line-height: 15px
+                        letter-spacing: normal
+                        color: $lm-gray-3
+
+
+    .lm-m-profile-tablet-right
+        min-width: 448px
+        float: right
+        width: calc(100% - 320px)
+        height: 100%
+        vertical-align: top
+        position: absolute
+        right: 0
+        top: 0
+        bottom: 0
+        background-color: $lm-white
+        margin: auto
+        border-left: 2px solid #f3f4f6
+        &.cs
+          margin: 0
+        .lm-m-profile-cs-item-media
+          padding-top: 8px
+          display: flex
+          flex-wrap: wrap
+          background: $lm-gray-5
+          @media (min-width: 768px)
+            padding-top: 0
+            background: #fff
+          .video
+            position: relative
+            &:after
+              content: ''
+              display: block
+              position: absolute
+              width: 44px
+              height: 44px
+              border-radius: 16px
+              backdrop-filter: blur(12px)
+              background-color: rgba(40, 42, 54, 0.32)
+              left: 0
+              top: 0
+              bottom: 0
+              right: 0
+              margin: auto
+              z-index: 1
+            &:before
+              z-index: 2
+              position: absolute
+              left: 0
+              top: 0
+              bottom: 0
+              right: 0
+              width: 14px
+              height: 16px
+              content: ''
+              display: block
+              @include lm-play('%23ffffff')
+              background-size: 14px 16px
+              background-position: center
+              background-repeat: no-repeat
+              margin: auto
+          .photo, .video
+            width: calc(50% - 1px)
+            border-radius: 2px
+            display: block
+            margin-bottom: 2px
+            box-sizing: border-box
+            &:nth-child(even)
+              margin-left: 1px
+            &:nth-child(odd)
+              margin-right: 1px
+            img
+              height: 159px
+              width: 100%
+              object-fit: cover
+              display: block
+              @media (min-width: 768px)
+                height: 212px
+        .lm-profile-lock-icon
+          margin: auto
+          text-align: center
+          position: fixed
+          right: calc(50% - 220px)
+          @include lm-m-backgound-normalize
+          @include lm-lock()
+          width: 56px
+          height: 64px
+          background-size: cover
+          display: none
+          @media (min-width: 768px)
+            display: block
+        &.castings
+            margin-top: 0
+            background: transparent
+            @media (min-width: 768px)
+                width: calc(100% - 332px)
+            .lm-m-casting--list
+                margin-top: 0
+        .lm-portfolio
+            @media (min-width: 768px)
+                width: 272px
+            padding-top: 36px
+            @media (min-width: 768px)
+                .lm-m-post-register-portfolio--item
+                    &.first
+                        height: 272px
+                    &.second
+                        width: 134px
+                        height: 134px
+                    &.three
+                        height: 130px
+        &.null:not(.open-portfolio-edit)
+            height: 100vh
+            display: flex
+            align-items: center
+            flex-direction: column
+            margin: 0
+            @media (max-width: 767px)
+                position: static
+                box-shadow: none
+                height: auto
+                display: block
+                margin: 8px auto
+        @media (max-width: 767px)
+            margin: 8px auto
+            min-width: 320px
+            width: 100%
+            position: static
+            float: none
+            border: none
+        .lm-m-profile-portfolio
+            margin: 0
+            position: relative
+            &:not(.null)
+                margin-left: -2px
+                width: calc(100% + 2px)
+            @media (max-width: 767px)
+                margin: 0 auto !important
+                position: static !important
+                &:not(.null)
+                    margin-left: 0
+                    width: 100%
+            .lm-icon-pencil
+                position: absolute
+                width: 16px
+                height: 16px
+                background-size: 16px
+                +lm-m-backgound-normalize
+                right: 16px
+                top: 16px
+                z-index: 1
+                @include lm-pencil('%23ffffff')
+            &.model
+                .video
+                    position: relative
+                    margin-bottom: 2px
+                    .lm-play-button
+                        position: absolute
+                        top: 0
+                        left: 0
+                        right: 0
+                        bottom: 0
+                        margin: auto
+                        display: block
+                        width: 56px
+                        height: 56px
+                        background-size: 56px
+
+                    img
+                        display: block
+                        width: 100%
+                        max-width: 100%
+                        min-width: 320px
+                        height: 190px
+                        object-fit: cover
+                .portret
+                    margin-bottom: 2px
+                    position: relative
+                    img
+                        display: block
+                        width: 100%
+                        max-width: 100%
+                        min-width: 320px
+                        height: 440px
+                        object-fit: cover
+                .full-height
+                    position: relative
+                    margin-bottom: 2px
+                    img
+                        display: block
+                        width: 100%
+                        max-width: 100%
+                        min-width: 320px
+                        height: 320px
+                        object-fit: cover
+            &.null
+                margin: auto
+                padding: 16px
+                text-align: center
+                //position: fixed
+                //right: calc(50% - 320px)
+                //top: 50%
+                height: auto
+                display: flex
+                align-items: center
+                flex-direction: column
+                justify-content: center
+                border: 0
+                @media (max-width: 767px)
+                  border-bottom: 8px solid #f3f4f6
+                  border-top: 8px solid #f3f4f6
+                .desc + a.lm-outline-button
+                  margin-top: 16px
+                span
+                    font-size: 36px
+                    display: block
+                    margin-bottom: 8px
+                .desc
+                    font-size: 14px
+                    line-height: 18px
+                    color: $lm-gray-3
+                a.lm-icon-button
+                    margin-top: 16px
+                    @include lm-plus('%23ffffff')
+    .lm-m-profile--partners
+      background-color: #ffffff
+      padding: 0 24px
+      margin-bottom: 10px
+      margin-top: 10px
+      box-sizing: border-box
+      &--wrap
+        height: 48px
+        width: 100%
+        display: flex
+        align-items: center
+        align-content: center
+        justify-content: space-between
+        .left
+          font-size: 14px
+          font-weight: 600
+          font-style: normal
+          font-stretch: normal
+          line-height: 1.29
+          letter-spacing: 0.5px
+          color: $lm-gray-1
+        .right
+          font-size: 12px
+          font-weight: 600
+          font-style: normal
+          font-stretch: normal
+          line-height: 1.33
+          letter-spacing: 1px
+          color: $lm-main
+          text-transform: uppercase
+      @media (min-width: 768px)
+        max-width: 320px
+      @media (max-width: 767px)
+        padding: 0 16px
+    .lm-m-profile--boards
+      background-color: #ffffff
+      padding: 0 24px
+      margin-bottom: 10px
+      margin-top: 10px
+      box-sizing: border-box
+      &--wrap
+        height: 48px
+        width: 100%
+        display: flex
+        align-items: center
+        align-content: center
+        justify-content: space-between
+        .left
+          font-size: 14px
+          font-weight: 600
+          font-style: normal
+          font-stretch: normal
+          line-height: 1.29
+          letter-spacing: 0.5px
+          color: $lm-gray-1
+        .right
+          font-size: 12px
+          font-weight: 600
+          font-style: normal
+          font-stretch: normal
+          line-height: 1.33
+          letter-spacing: 1px
+          color: $lm-main
+          text-transform: uppercase
+      @media (min-width: 768px)
+        max-width: 320px
+      @media (max-width: 767px)
+        padding: 0 16px
+    .lm-m-profile--boards--responses
+      background-color: #ffffff
+      padding: 0 24px
+      margin-bottom: 10px
+      margin-top: 10px
+      box-sizing: border-box
+      &--wrap
+        height: 48px
+        width: 100%
+        display: flex
+        align-items: center
+        align-content: center
+        justify-content: space-between
+        .left
+          font-size: 14px
+          font-weight: 600
+          font-style: normal
+          font-stretch: normal
+          line-height: 1.29
+          letter-spacing: 0.5px
+          color: $lm-gray-1
+        .right
+          font-size: 12px
+          font-weight: 600
+          font-style: normal
+          font-stretch: normal
+          line-height: 1.33
+          letter-spacing: 1px
+          color: $lm-main
+          text-transform: uppercase
+      @media (min-width: 768px)
+        max-width: 320px
+      @media (max-width: 767px)
+        padding: 0 16px
+    .lm-m-profile--create-castings
+      background-color: #ffffff
+      padding: 16px
+      text-align: center
+      border-bottom: 2px solid #f3f4f6
+      max-width: 320px
+      display: block
+      border-right: 2px solid #f3f4f6
+      box-sizing: border-box
+      @media (max-width: 767px)
+        &+.lm-m-profile--partners
+          margin-top: 8px
+        border-right: 0
+        width: 100%
+        max-width: inherit
+        border-top: 2px solid #f3f4f6
+    .lm-m-profile-page-head
+        background: $lm-white
+        padding-bottom: 24px
+        border-bottom: 2px solid #f3f4f6
+        padding-top: 36px
+        max-width: 320px
+        border-right: 2px solid #f3f4f6
+        box-sizing: border-box
+        @media (max-width: 767px)
+            border: 0
+            max-width: inherit
+        .lm-m-profile--subscribe-block
+            box-sizing: border-box
+            margin: 24px 16px 0
+            border-top: 1px solid $lm-gray-opacity-8
+            padding-top: 16px
+            display: flex
+            align-items: center
+            a
+                flex: 1
+                text-align: center
+                + div
+                    width: 1px
+                    height: 16px
+                    background-color: $lm-gray-opacity-8
+
+                .count
+                    color: $lm-gray-1
+                    +lm-bold-content()
+                    text-transform: uppercase
+                    margin-bottom: 4px
+                .desc
+                    font-size: 12px
+                    line-height: 18px
+                    color: $lm-gray-3
+
+@keyframes block_fade_in
+  from
+    opacity: 0
+  to
+    opacity: 1
+@keyframes block_fade_out
+  from
+    opacity: 1
+    z-index: 400
+  to
+    opacity: 0
+    z-index: 400
+
+.lm-m-pdf-success
+  &.fade_in
+    opacity: 1
+    animation: block_fade_in .4s ease
+    z-index: 400
+    display: flex
+  &.fade_out
+    animation: block_fade_out .4s ease
+    opacity: 0
+    display: flex
+  z-index: -100
+  background-color: rgba(40, 42, 54, 0.64)
+  height: 100vh
+  width: 100vw
+  display: none
+  position: fixed
+  left: 0
+  top: 0
+  flex-wrap: wrap
+  align-items: center
+  justify-content: center
+  align-content: center
+  &:before
+    content: ''
+    display: block
+    height: 80px
+    width: 80px
+    background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="none" viewBox="0 0 80 80"><path fill="#fff" d="M62 30l-7-7-20 20-10-10-7 7 16.293 16.293a1 1 0 0 0 1.414 0L62 30z"/></svg>')
+    background-size: 100%
+    background-repeat: no-repeat
+    background-position: center
+  span
+    display: block
+    font-size: 18px
+    font-weight: 600
+    width: 100vw
+    text-align: center
+    font-style: normal
+    font-stretch: normal
+    line-height: 1.33
+    letter-spacing: 0.3px
+    color: $lm-white
+
+.pdf-email
+  .lm-link-button
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 16px 16px
+    &.send
+      @include lm-send1('%230063DA')
+    &.disabled
+      @include lm-send1('%23CBD0D8')
+
+.lm-m-modal-wrap.promo
+  background: transparent
+  overflow: hidden
+  .lm-m-modal-enter-promo
+    overflow: hidden
+    position: relative
+    .error
+      position: absolute
+      bottom: 4px
+      left: 24px
+      font-size: 8px
+      font-weight: 600
+      line-height: 12px
+      letter-spacing: 1px
+      color: $lm-support-1
+
+    .lm-link-button
+      position: absolute
+      right: 8px
+      top: 0
+      bottom: 0
+      height: 36px
+      margin: auto
+      line-height: 36px
+      &.ok
+        color: $lm-main
+    input
+      margin: 0 !important
+      border-radius: 0 !important
+      border-top-right-radius: 18px !important
+      border-top-left-radius: 18px !important
+      box-sizing: border-box
+      height: 52px
+      line-height: 52px !important
+      padding-left: 24px
+      padding-top: 8px
+      padding-bottom: 8px

@@ -1,0 +1,15 @@
+.page_error {
+	box-sizing: border-box;
+	background-color: $lm-white;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+@import '_404/_page_error_404.scss';
+@import '_502/_page_error_502.scss';

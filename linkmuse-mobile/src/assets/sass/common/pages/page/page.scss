@@ -1,0 +1,20 @@
+.page {}
+@import '__block/_page__block.scss';
+@import '__body/_page__body.scss';
+@import '__footer/_page__footer.scss';
+@import '__header/_page__header.scss';
+@import '__img/_page__img.scss';
+@import '__link/_page__link.scss';
+@import '__paragraph/_page__paragraph.scss';
+@import '__title/_page__title.scss';
+@import '__content/_page__content.scss';
+@import '__plug/_page__plug.scss';
+
+@import '_declaration/_page_declaration.scss';
+@import '_inner/_page_inner.scss';
+@import '_design-system/_page_design-system.scss';
+@import '_error/_page_error.scss';
+@import '_mailing/_page_mailing.scss';
+@import '_feed/_page_feed.scss';
+@import '_my-responses/_page_my-responses.scss';
+@import '_profile/_page_profile.scss';

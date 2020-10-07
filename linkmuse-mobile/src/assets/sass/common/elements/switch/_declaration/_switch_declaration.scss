@@ -1,0 +1,51 @@
+.switch_declaration {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  padding: 16px 20px;
+  box-sizing: border-box;
+}
+
+.form__row_declaration_payment {
+  .switch_declaration {
+    padding: 8px 20px;
+    &:first-child {
+      padding-top: 16px;
+    }
+    &:last-child {
+      padding-bottom: 16px;
+    }
+    &:only-of-type {
+      padding-bottom: 16px;
+    }
+  }
+}
+
+.form__group_declaration_switch {
+  border: 1px solid $lm-gray-4;
+  border-radius: 8px;
+  &.disabled {
+    border: none;
+  }
+
+  .switch__declaration_description {
+    background-color: $lm-gray-5;
+    border-top: 1px solid $lm-gray-4;
+    border-radius: 0 0 8px 8px;
+    padding: 16px 20px;
+
+    span {
+      display: block;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      line-height: 1.33;
+      color: $lm-gray-2;
+    }
+    .switch__span_first {
+      margin-bottom: 12px;
+    }
+    .switch__span_work-is-paid {
+      margin-bottom: 12px;
+    }
+  }
+}

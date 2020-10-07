@@ -1,0 +1,25 @@
+.style-chooser {
+  &.vs--open_full {
+    position: fixed;
+    //.vs__selected-search {
+    //  display: flex;
+    //  width: 100%;
+    //  outline: none;
+    //  box-sizing: border-box;
+    //  border-radius: 8px;
+    //  padding: 60px 16px 16px;
+    //  min-width: 200px;
+    //  font-size: 14px;
+    //  font-weight: normal;
+    //  font-style: normal;
+    //  font-stretch: normal;
+    //  line-height: normal;
+    //  letter-spacing: 0.3px;
+    //  color: #282a36;
+    //}
+    .modal__content_body {
+      width: 100%;
+      max-width: 376px;
+    }
+  }
+}

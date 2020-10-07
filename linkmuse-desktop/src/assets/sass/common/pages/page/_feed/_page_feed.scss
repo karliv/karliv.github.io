@@ -1,0 +1,17 @@
+.page_feed {
+	width: 100vw !important;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: $lm-gray-5;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 48px;
+	.sidebar {
+		margin-right: 0;
+	}
+}
+
+@import '_profile/_page_feed_profile.scss';

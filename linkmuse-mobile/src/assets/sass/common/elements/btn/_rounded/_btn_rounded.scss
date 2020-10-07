@@ -1,0 +1,13 @@
+.btn_rounded {
+	background-color: $lm-gray-5;
+	fill: $lm-gray-2;
+	max-height: 40px;
+	padding: 12px;
+	margin-right: 0;
+	&:not(:only-child){
+		margin-left: 16px;
+	}
+	&:first-child {
+		margin-left: 0;
+	}
+}

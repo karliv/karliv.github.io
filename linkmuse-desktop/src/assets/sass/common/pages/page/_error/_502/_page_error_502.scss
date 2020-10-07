@@ -1,0 +1,23 @@
+.page_error_502 {
+	box-sizing: border-box;
+	width: 100% !important;
+	height: 100% !important;
+	background-color: $lm-main;
+	color: $lm-white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	padding-top: 0 !important;
+	font-size: 14px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.29;
+	letter-spacing: 0.5px;
+	color: $lm-white;
+	.heading {
+		color: $lm-white;
+	}
+}
+

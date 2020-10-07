@@ -1,0 +1,341 @@
+html
+  background-color: $lm-gray-5
+  min-width: 320px
+  height: 100%
+body
+  min-height: 100%
+  position: relative
+  font-size: 14px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.33
+  letter-spacing: .5px
+  color: $lm-gray-1
+main
+  display: block
+  margin: 0 auto
+  .wrapper
+    max-width: 1024px
+    min-width: 320px
+    padding-left: constant(safe-area-inset-left)
+    padding-right: constant(safe-area-inset-right)
+
+    /* iOS 11.2+ */
+    padding-left: env(safe-area-inset-left)
+    padding-right: env(safe-area-inset-right)
+
+    padding: 0 16px
+    margin: auto
+    box-sizing: border-box
+    &.no-padding
+      padding: 0
+      @media (min-width: 767px)
+        padding: 0 20px
+    @media (min-width: 767px)
+      padding: 0 20px
+
+#app
+  padding-bottom: 48px
+  margin-bottom: 12px
+  position: relative
+
+.row
+  display: flex
+
+.lm-m-filter-categories-wrap
+  background-color: $lm-white
+  padding-bottom: 12px
+  padding-top: 12px
+  .lm-m-filter-categories
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    overflow-y: scroll
+    max-width: calc(1024px - 40px)
+    width: calc(100% - 40px)
+    margin: 0 auto
+    @media (max-width: 767px)
+      width: calc(100% - 32px)
+    .lm-tag
+      height: 20px
+      line-height: 20px
+      background-color: rgba(40, 42, 54, 0.16)
+      white-space: nowrap
+      &.active
+        background-color: $lm-main
+      & + .lm-tag
+        margin-left: 8px
+.lm-m-nav-menu
+  background-color: $lm-white
+  .lm-m-nav-wrapper
+    max-width: calc(1024px - 40px)
+    width: calc(100% - 40px)
+    margin: 0 auto
+    @media (max-width: 767px)
+      width: calc(100% - 32px)
+    display: flex
+    align-items: center
+    justify-content: space-between
+  .lm-m-nav-menu--left, .lm-m-nav-menu--center, .lm-m-nav-menu--right
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    .lm-m-nav-menu--item
+      align-items: center
+      justify-content: flex-start
+      font-size: 12px
+      font-weight: 600
+      line-height: 56px
+      color: $lm-gray-3
+      .count
+        color: $lm-main
+      &.router-link-exact-active, &.active
+        color: $lm-gray-1
+        &:after
+          border-radius: 2px
+          content: ''
+          display: block
+          position: absolute
+          left: 0
+          bottom: -1px
+          width: 100%
+          background-color: $lm-main
+          height: 2px
+      position: relative
+      text-transform: uppercase
+      padding: 0 24px
+      @media (max-width: 767px)
+        padding: 0
+        width: 128px
+        text-align: center
+        box-sizing: border-box
+  .lm-m-nav-menu--center
+    flex: 1
+    margin-left: 24px
+    .lm-m-nav-menu--item
+      margin: 0 auto
+      width: auto
+      .text
+        color: $lm-gray-1
+  .lm-m-nav-menu--right
+    .lm-m-nav-menu--add
+      @include lm-plus()
+      margin-right: 3px
+      width: 16px
+      height: 16px
+      +lm-m-backgound-normalize
+      background-size: 16px
+      &.red
+        @include lm-plus('%23FFFFFF')
+        width: 36px
+        height: 36px
+        border-radius: 16px
+        background-color: $lm-support-1
+
+footer
+  background-color: $lm-white
+  width: 100%
+  position: fixed
+  bottom: 0
+  z-index: 1
+  border-top: 2px solid rgba(40, 42, 54, 0.05)
+  .wrapper
+    max-width: 1024px
+    min-width: 320px
+    margin: 0 auto
+  .footer--menu
+    list-style: none
+    display: flex
+    max-width: 500px
+    margin: 0 auto
+    box-sizing: border-box
+    align-items: flex-start
+    justify-content: center
+    li
+      a
+        display: block
+        padding-top: 11px
+        padding-bottom: 6px
+        width: 64px
+        @media (min-width: 414px)
+          padding-top: 12px
+          padding-bottom: 9px
+          width: 78px
+        @media (min-width: 768px)
+          padding-top: 11px
+          padding-bottom: 6px
+          width: 96px
+    [class*="footer--menu--"]
+      &.active
+        i
+          opacity: 1
+        span
+          color: $lm-main
+      text-align: center
+      span
+        display: block
+        font-size: 8px
+        font-weight: 600
+        line-height: 1.5
+        letter-spacing: 0.5px
+        color: rgba(40, 42, 54, 0.32)
+      i
+        margin: 0 auto
+        margin-bottom: 3px
+        width: 16px
+        height: 16px
+        background-position: center
+        background-repeat: no-repeat
+        cursor: pointer
+        background-size: auto 16px
+        display: block
+        &.new
+          position: relative
+          &:after
+            display: block
+            position: absolute
+            width: 8px
+            height: 8px
+            background-color: $lm-main
+            border-radius: 50%
+            border: solid 2px $lm-white
+            content: ''
+            top: -4px
+            right: -4px
+    .footer--menu--casting
+      i
+        @include lm-casting('%23babbbf')
+      &.active
+        i
+          @include lm-casting('%230063da')
+    .footer--menu--blog
+      i
+        @include lm-blog('%23babbbf')
+      &.active
+        i
+          @include lm-blog('%230063da')
+    .footer--menu--profile
+      i
+        @include lm-single('%23babbbf')
+      &.active
+        i
+          @include lm-single('%230063da')
+    .footer--menu--notificate
+      i
+        @include lm-bell('%23babbbf')
+      &.active
+        i
+          @include lm-bell('%230063da')
+    .footer--menu--message
+      i
+        @include lm-message('%23babbbf')
+      &.active
+        i
+          @include lm-message('%230063da')
+    .footer--menu--menu
+      i
+        @include lm-menu-icon('%23282A36')
+      &.active
+        i
+          @include lm-menu-icon('%230063da')
+
+.lm-m-page
+  .lm-m-page--head
+    display: flex
+    position: relative
+    z-index: 1
+    height: 56px
+    margin-bottom: 6px
+    align-items: center
+    justify-content: space-between
+    background: $lm-white
+    padding: 0 16px
+    .left, .right
+      width: 16px
+    .left
+      i.lm-icon-zoom
+        display: block
+        width: 16px
+        height: 16px
+        background-size: contain
+        background-position: center
+        background-repeat: no-repeat
+        @include lm-zoom('%23282A36')
+        &.active
+          @include lm-zoom('%230063da')
+      i.lm-icon-wallet
+        display: block
+        width: 16px
+        height: 16px
+        background-size: contain
+        background-position: center
+        background-repeat: no-repeat
+        @include lm-wallet('%23808792')
+      .lm-back-icon
+        display: block
+        width: 16px
+        height: 16px
+        background-size: contain
+        background-position: center
+        background-repeat: no-repeat
+        @include lm-back('%23282A36')
+    .center
+      .input-search
+        height: 18px
+        text-transform: uppercase
+        text-align: center !important
+        line-height: 18px !important
+        padding: 0
+        border: 0 !important
+        margin: 0
+        color: $lm-main
+        +LM-BUTTON()
+        &::placeholder
+          text-align: center !important
+          text-transform: uppercase
+
+      span
+        +LM-BUTTON
+        text-transform: uppercase
+        color: $lm-gray-1
+    .right
+      i.lm-plus-icon, i.lm-close, i.lm-more-icon, i.lm-icon-settings-gear
+        display: block
+        width: 16px
+        height: 16px
+        background-size: contain
+        background-position: center
+        background-repeat: no-repeat
+      i.lm-close
+        background-size: 14px
+      i.lm-icon-settings-gear
+        @include lm-settings-gear('%23808792')
+
+.lm-column-2
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  > div
+    width: calc(50% - 8px)
+.lm-column-center
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+
+.lm-loader-page
+  background: rgba(255, 255, 255, 1)
+  width: 100vw
+  height: 100vh
+  position: fixed
+  top: 0
+  right: 0
+  left: 0
+  bottom: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  z-index: 3000
+  img
+    border-radius: 50%

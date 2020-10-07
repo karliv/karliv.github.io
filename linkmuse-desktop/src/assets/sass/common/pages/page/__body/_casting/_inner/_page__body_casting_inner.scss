@@ -1,0 +1,9 @@
+.page__body_casting_inner {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 742px;
+	padding-right: $multiplicity*12;
+	border-right: 1px solid $lm-gray-opacity-8;
+	flex-shrink: 0;
+}
+

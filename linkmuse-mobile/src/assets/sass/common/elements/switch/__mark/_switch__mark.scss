@@ -1,0 +1,22 @@
+.switch__mark {
+	display: none;
+	&:checked + .switch__btn {
+		background-color: $lm-main;
+		border: 1px solid $lm-main;
+		transition: all 0.35s ease;
+		&::before {
+			border: 1px solid $lm-main;
+			transform: translateX(18px);
+			transition: all 0.25s ease;
+		}
+	}
+	&:disabled + .switch__btn {
+		background-color: $lm-gray-5;
+		border: 1px solid $lm-gray-5;
+		&::before {
+			background-color: $lm-gray-4;
+			border-color: $lm-gray-4;
+		}
+	}
+}
+

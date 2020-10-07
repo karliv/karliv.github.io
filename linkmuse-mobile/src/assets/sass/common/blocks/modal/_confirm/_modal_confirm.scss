@@ -1,0 +1,40 @@
+.modal-confirm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $lm-white;
+  .btn_close-modal {
+    position: absolute;
+    right: 36px;
+    top: 36px;
+    padding: 0;
+    height: auto;
+  }
+}
+
+.modal-confirm__header {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 48px 53px;
+  box-sizing: border-box;
+  background-color: $lm-gray-5;
+  border-radius: 8px 8px 0 0;
+  .d-icon {
+    height: 68px;
+    width: 214px;
+    fill: transparent;
+  }
+}
+
+.modal-confirm__body {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 36px;
+  text-align: center;
+}
+

@@ -1,0 +1,19 @@
+.declaration__status {
+	display: block;
+	padding: $multiplicity*6;
+	width: 100%;
+	position: relative;
+	left: -$multiplicity*6;
+	top: 0;
+	font-size: 14px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.29;
+	letter-spacing: 0.5px;
+}
+
+@import '_archive/_declaration__status_archive.scss';
+@import '_draft/_declaration__status_draft.scss';
+@import '_moderation/_declaration__status_moderation.scss';
+@import '_refused/_declaration__status_refused.scss';

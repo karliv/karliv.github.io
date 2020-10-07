@@ -1,0 +1,12 @@
+.card__message_response_contractor {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: 0.3px;
+  color: $lm-gray-2;
+  margin-top: 8px;
+}
+
+@import '_refusal/_card__message_response_contractor_refusal.scss';

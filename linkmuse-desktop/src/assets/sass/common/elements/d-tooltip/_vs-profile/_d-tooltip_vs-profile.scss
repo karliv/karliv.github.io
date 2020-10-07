@@ -1,0 +1,12 @@
+.d-tooltip_vs-profile {
+	.d-tooltip__icon {
+		position: absolute;
+		bottom: 0.1rem;
+		left: 0;
+		fill: $lm-gray-opacity-32;
+		&:hover {
+			fill: $lm-main;			
+		}
+	}
+}
+

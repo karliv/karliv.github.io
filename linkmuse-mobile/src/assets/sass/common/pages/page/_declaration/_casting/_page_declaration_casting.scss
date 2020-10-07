@@ -1,0 +1,18 @@
+.page_declaration_casting, .page_declaration_location {
+  flex-direction: column;
+  align-items: center;
+  background-color: $lm-gray-5;
+  overflow: hidden;
+}
+
+.page_declaration_location {
+  .page__header {
+    .btn_rounded {
+      background-color: rgba(40, 42, 54, 0.64);
+      fill: $white;
+    }
+    .icon_edit {
+      fill: $white;
+    }
+  }
+}

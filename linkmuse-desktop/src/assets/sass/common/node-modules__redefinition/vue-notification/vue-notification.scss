@@ -1,0 +1,69 @@
+.notifications {
+	box-sizing: border-box;
+	width: auto !important;
+	max-width: 286px !important;
+	min-width: 240px !important;
+	right: 132px !important;
+	bottom: 48px !important;
+
+	.notification-wrapper {
+		box-shadow: $box-shadow_blur_down_16 !important;
+		margin-bottom: 5px;
+
+		&:last-child {
+			margin-bottom: 0;			
+		}
+	}
+
+	.vue-notification {
+		border: none;
+		color: $lm-white;
+		border-radius: 4px;
+		margin: 0 !important;
+
+		.notification-title {
+			font-size: 14px;
+			font-weight: 600;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.29;
+			letter-spacing: 0.5px;
+			color: $lm-white;
+		}
+
+		.notification-content {
+			font-size: 12px;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.33;
+			letter-spacing: 0.5px;
+			color: $lm-white;
+			margin-top: $multiplicity;
+
+      a {
+        color: $lm-white;
+        text-decoration: underline;
+      }
+		}
+
+		&.success {
+			background: $lm-main !important;
+			border: none;	
+			border-left-color: transparent;
+			padding: $multiplicity*4 $multiplicity*5;
+		}
+		&.warn1 {
+			background-color: $lm-gray-2;
+			border: none;	
+			padding: $multiplicity*4 $multiplicity*5;
+		}
+		&.response {
+			background-color: $lm-gray-2;
+			border: none;	
+			padding: $multiplicity*4 $multiplicity*5;
+		}
+	}
+}
+
+

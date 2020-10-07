@@ -1,0 +1,883 @@
+// includes
+@import ./icons-v2
+@import ./varables_v2
+@import ./helpers
+@import ./sertificate
+@import ./sg-helpers
+@import ./animations
+
+.lm-v2, .lm-v2 body
+    main
+        .lm-content
+            flex: none
+            //margin: 0 8px
+            box-sizing: content-box
+            float: none
+            .lm-card.success
+                h1
+                    text-align: center
+                .lm-card--body-wrap
+                    .desc
+                        display: block
+                        text-align: center
+            @media (max-width: 1280px)
+                border: 0
+                padding-left: 0
+                margin: 0 auto
+            .lm-content-left, .lm-content-right
+                width: 489px
+                border-radius: 2px
+                //background-color: #ffffff
+                box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.03)
+                display: inline-block
+                vertical-align: top
+            .lm-content-left
+                float: left
+            .lm-content-right
+
+            //.projects-page--list, .castings-page--list
+                .profile__projects--header
+                    position: relative
+                .page--left
+                    width: 746px !important
+                    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.03)
+                    background: #fff
+                    .profile__projects--header
+                        position: relative
+                .page--right
+                    width: 255px !important
+                    float: right
+                    margin-left: -1px
+                    background: #fff
+                    label
+                        font-size: 14px
+                    .castings--list--filter
+                        input
+                            font-size: 14px
+                        border: 0
+                        .title
+                            span
+                                font-size: 14px
+                        .button
+                            font-size: 14px
+            .ss-choice-of-method-wrap
+                display: flex
+                align-items: flex-start
+                justify-content: space-between
+                flex-wrap: wrap
+                margin-bottom: 60px
+                .ss-method-item
+                    width: 235px
+                    position: relative
+                    text-align: center
+                    border-radius: 2px
+                    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.03)
+                    background-color: #ffffff
+                    border: solid 1px transparent
+                    margin-bottom: 20px
+                    padding-top: 24px
+                    .lm-checkbox-buttons
+                        position: absolute
+                        left: 14px
+                        top: 14px
+                    .questions-icon
+                        background-size: cover
+                        position: absolute
+                        right: 12px
+                        top: 12px
+                        width: 20px
+                        height: 20px
+                        cursor: pointer
+                        background-position: center
+                        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20"><defs><path id="b" d="M246 1445h231a2 2 0 0 1 2 2v236a2 2 0 0 1-2 2H246a2 2 0 0 1-2-2v-236a2 2 0 0 1 2-2z"/><filter id="a" width="111.1%" height="110.8%" x="-5.5%" y="-4.6%" filterUnits="objectBoundingBox"><feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="4"/><feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/><feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0"/></filter></defs><g fill="none" fill-rule="evenodd"><g transform="translate(-447 -1457)"><use fill="%23000" filter="url(%23a)" xlink:href="%23b"/><use fill="%23FFF" xlink:href="%23b"/><path stroke="%2394C5FF" d="M246 1445.5a1.5 1.5 0 0 0-1.5 1.5v236a1.5 1.5 0 0 0 1.5 1.5h231a1.5 1.5 0 0 0 1.5-1.5v-236a1.5 1.5 0 0 0-1.5-1.5H246z"/></g><g><circle cx="10" cy="10" r="9.25" stroke="%23CBD0D8" stroke-width="1.5"/><path fill="%23CBD0D8" d="M7.5 5.996c.154-.136.322-.264.505-.386a3.623 3.623 0 0 1 1.284-.532c.248-.052.517-.078.806-.078.393 0 .75.054 1.074.163.323.108.6.263.83.464.23.2.408.443.535.728.126.285.19.603.19.955 0 .344-.05.64-.15.891-.099.25-.224.469-.375.654a2.988 2.988 0 0 1-.492.481 82.78 82.78 0 0 1-.501.383c-.158.12-.295.237-.41.352a.696.696 0 0 0-.207.39l-.155.989H9.289l-.116-1.104a.301.301 0 0 1-.006-.058v-.058c0-.198.05-.371.149-.518.1-.147.223-.284.372-.413.15-.129.31-.254.481-.376.172-.122.332-.254.481-.397.15-.142.274-.303.373-.484.1-.18.15-.393.15-.637 0-.162-.031-.308-.092-.437a.988.988 0 0 0-.254-.332 1.14 1.14 0 0 0-.39-.213 1.566 1.566 0 0 0-.491-.075 2.188 2.188 0 0 0-1.108.275c-.124.07-.23.133-.315.19a.433.433 0 0 1-.23.084.37.37 0 0 1-.353-.203l-.44-.698zm1.28 7.988c0-.14.026-.274.078-.4a.955.955 0 0 1 .217-.325 1.067 1.067 0 0 1 .735-.298 1.025 1.025 0 0 1 .725.298 1.025 1.025 0 0 1 .298.725 1.035 1.035 0 0 1-.298.725A1.042 1.042 0 0 1 9.81 15a1.06 1.06 0 0 1-.735-.291.963.963 0 0 1-.217-.322 1.034 1.034 0 0 1-.078-.403z"/></g></g></svg>')
+                    &.recommend
+                        border: solid 1px #94c5ff
+                    &:hover
+                        .ss-method-item-bottom
+                            .ss-method-item-bottom-action
+                                display: block
+                            .ss-method-item-bottom-price
+                                display: none
+                    .ss-method-item-top-number
+                        font-size: 24px
+                        font-weight: 600
+                        line-height: 36px
+                        text-align: center
+                        color: #282a36
+                        margin-bottom: 4px
+                    .ss-method-item-top-recommend
+                        font-size: 12px
+                        font-weight: 600
+                        text-align: center
+                        color: #0063da
+                        height: 14px
+                        margin-bottom: 16px
+                        text-transform: uppercase
+                    .ss-method-item-top-desc
+                        min-height: 72px
+                        margin-bottom: 32px
+                        span
+                            display: block
+                            font-size: 14px
+                            line-height: 24px
+                            text-align: center
+                            color: #808792
+                    .ss-method-item-bottom
+                        border-top: solid 1px #f3f4f6
+                        height: 63px
+                        display: flex
+                        align-items: center
+                        justify-content: center
+
+                        .ss-method-item-bottom-action
+                            display: none
+                            text-align: center
+                            a
+                                display: inline-block
+                                min-width: 148px
+                                text-transform: uppercase
+                        .ss-method-item-bottom-price
+                            .from
+                                font-size: 14px
+                                font-weight: 600
+                                line-height: 24px
+                                text-align: left
+                                color: #282a36
+                            .price
+                                font-size: 18px
+                                font-weight: 600
+                                line-height: 24px
+                                text-align: left
+                                color: #282a36
+            &.ss-dispute
+                .ss-payment
+                    width: 336px
+                    margin: 0 auto
+                    .ss-payment-wrap
+                        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.03)
+                        background-color: $lm-white
+                        border-radius: 16px
+                        padding-top: 20px
+                        padding-left: 24px
+                        padding-right: 24px
+                        padding-bottom: 20px
+                        .ss-payment-wrap-pay
+                            a
+                                display: block
+                        .ss-payment-wrap-total
+                            margin-top: 24px
+                            margin-bottom: 20px
+                            .ss-payment-wrap-total-wrap
+                                display: flex
+                                align-items: center
+                                justify-content: flex-start
+                            .title
+                                font-size: 12px
+                                font-weight: 600
+                                font-style: normal
+                                font-stretch: normal
+                                line-height: 1.33
+                                letter-spacing: 1px
+                                color: $lm-gray-3
+                            .total
+                                font-size: 24px
+                                font-weight: 600
+                                font-style: normal
+                                font-stretch: normal
+                                line-height: 1.5
+                                letter-spacing: normal
+                                color: $lm-gray-1
+                                padding-right: 8px
+                            .sale
+                                font-size: 18px
+                                font-weight: 600
+                                font-style: normal
+                                font-stretch: normal
+                                line-height: 1.33
+                                letter-spacing: normal
+                                color: $lm-gray-4
+                        .ss-payment-wrap-promo
+                            .ss-payment-promo-code
+                                height: 36px
+                                border-radius: 16px
+                                background-color: $lm-gray-5
+                                color: $lm-gray-1
+                                font-size: 14px
+                                font-weight: 600
+                                line-height: 36px
+                                padding-left: 16px
+                            .lm-remove-promo
+                                display: block
+                                width: 7px
+                                position: absolute
+                                cursor: pointer
+                                height: 7px
+                                right: 20px
+                                top: 0
+                                bottom: 0
+                                margin: auto
+                                background-position: center
+                                background-repeat: no-repeat
+                                background-size: cover
+                                @include lm-close('%23cbd0d8')
+                            border-bottom: 1px solid  $lm-gray-5
+                            margin-top: 24px
+                            margin-bottom: 24px
+                            position: relative
+                            padding-bottom: 24px
+                            .lm-relative
+                                position: relative
+
+                            input
+                                margin-bottom: 0
+                            .lm-primary-button
+                                position: absolute
+                                right: 0
+                                top: 0
+                                bottom: 0
+                                margin: auto
+                        .ss-payment-wrap-content
+                            border-bottom: 1px solid  $lm-gray-5
+                            .ss-payment-wrap-content-line
+                                margin-bottom: 24px
+                                .title
+                                    font-size: 8px
+                                    font-weight: 600
+                                    line-height: 1.5
+                                    text-transform: uppercase
+                                    letter-spacing: 1px
+                                    color: $lm-gray-3
+                                    margin-bottom: 4px
+                                .payment-content
+                                    b
+                                        color: $lm-gray-1
+                                        font-size: 14px
+                                        font-weight: 600
+                                        line-height: 1.29
+                                    .lm-user-block
+                                        img
+                                            width: 32px
+                                            height: 32px
+
+                        .ss-payment-wrap-head
+                            display: flex
+                            align-items: center
+                            justify-content: space-between
+                            padding-bottom: 20px
+                            margin-bottom: 24px
+                            border-bottom: 1px solid $lm-gray-5
+                            h3
+                                font-size: 18px
+                                font-weight: 600
+                                font-style: normal
+                                font-stretch: normal
+                                line-height: 1.33
+                                letter-spacing: normal
+                                color: $lm-gray-1
+                                margin: 0 !important
+
+                            .lm-icon-edit
+                                display: block
+                                width: 16px
+                                height: 16px
+                                @include lm-pencil('%23cbd0d8')
+
+                &.ss-scroll-order
+                    display: flex
+                    justify-content: space-between
+                    align-items: flex-start
+                    .lm-content-left
+                        max-height: calc(100vh - 100px)
+                        min-height: 400px
+                        overflow: hidden
+                        overflow-y: scroll
+                h1
+                    margin: 0
+                    font-size: 28px
+                    text-align: center
+                    font-weight: bold
+                    color: #282a36
+                    margin-bottom: 16px
+                    display: block
+                .ss-dispute-desc
+                    margin: 0 auto
+                    width: 450px
+                    font-size: 14px
+                    line-height: 24px
+                    text-align: center
+                    color: #282a36
+                    margin-bottom: 16px
+                    a
+                        color: #0063da
+                .ss-dispute-desc-bottom
+                    margin: 0 auto
+                    width: 450px
+                    text-align: left
+                    font-size: 14px
+                    line-height: 24px
+                    color: #282a36
+                    margin-top: 56px
+                    margin-bottom: 16px
+                    b
+                        font-weight: 600
+                .ss-dispute-form-comment
+                    width: 450px
+                    margin: 0 auto
+                    text-align: right
+                    textarea
+                        border-radius: 3px
+                        background-color: #ffffff
+                        border: solid 1px #dddddd
+                        padding: 16px
+                        height: 128px
+                        text-align: left
+                        margin-bottom: 16px
+                    .lm-primary-button
+                        display: inline-block
+                        text-transform: uppercase
+                .ss-dispute-form
+                    text-align: left
+                    width: 489px
+                    border-radius: 2px
+                    background-color: #ffffff
+                    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.03)
+                    margin: 0 auto
+                    padding-bottom: 16px
+                    .ss-dispute-form-wrap
+                        .center
+                            text-align: center
+                        .download
+                            margin: auto
+                            margin-bottom: 24px
+                            display: inline-block
+                            vertical-align: middle
+                            font-size: 12px
+                            font-weight: 500
+                            text-align: center
+                            color: #0063da
+                            text-transform: uppercase
+                            padding-left: 24px
+                            background-position: left center
+                            background-repeat: no-repeat
+                            background-size: 12px
+                            @include icon-download('%230063da')
+                        h2
+                            font-size: 24px
+                            font-weight: 600
+                            margin-bottom: 16px
+                            display: block
+                            text-align: left
+                            color: #282a36
+                        .ss-dispute-form--video
+                            margin-bottom: 24px
+                            position: relative
+                            display: block
+                            &:hover
+                                .lm-icon-play
+                                    display: block
+                            .ss-dispute-form--video-cover
+                                width: 100%
+                                max-width: 100%
+                                max-height: 100%
+                                height: auto
+                                object-fit: cover
+                            .lm-icon-play
+                                display: none
+                                position: absolute
+                                left: 0
+                                top: 0
+                                z-index: 1
+                                width: 100%
+                                height: 100%
+                                cursor: pointer
+                                background-repeat: no-repeat
+                                background-size: 65px
+                                background-position: center
+                                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">  <g fill="none" fill-rule="evenodd">  <circle cx="32" cy="32" r="32" fill="%23282A36" opacity=".7"/><path fill="%23FFFFFF" d="M44.124 33.856L25.876 44.392a2 2 0 0 1-3-1.732V21.588a2 2 0 0 1 3-1.732l18.248 10.536a2 2 0 0 1 0 3.464z"/></g></svg>')
+                        .ss-dispute-form--images
+                            display: flex
+                            align-items: center
+                            justify-content: flex-start
+                            flex-wrap: wrap
+                            margin-bottom: 24px
+                            a
+                                margin-bottom: 8px
+                                img
+                                    width: 144px
+                                    display: block
+                                    height: 100px
+                                    object-fit: cover
+                                &:not(:nth-child(3n))
+                                    margin-right: 4px
+
+                        &.border-bottom
+                            border-bottom: 1px solid #f3f4f6
+                        &.top
+                            padding-top: 24px
+                            border-bottom: 1px solid #f3f4f6
+                            padding-bottom: 18px
+                            margin-bottom: 16px
+                        padding-right: 24px
+                        padding-left: 24px
+                        .action
+                            text-align: center
+                            .lm-primary-button
+                                display: inline-block
+                                margin: 0 auto
+                        .ss-dispute-form-comment
+                            margin-bottom: 26px
+                            label
+                                font-size: 14px
+                                text-align: left
+                                color: #515562
+                                display: block
+                                margin-bottom: 8px
+                            textarea
+                                padding: 12px 16px
+                                font-size: 14px
+                                line-height: 24px
+                                text-align: left
+                                color: #808792
+                                width: 100%
+                                height: 128px
+                        .title
+                            font-size: 14px
+                            font-weight: 600
+                            text-align: left
+                            color: #515562
+                            margin-bottom: 20px
+                        .lm-radio-buttons
+                            margin-bottom: 6px
+                        .ss-dispute-form-comment
+                            margin-top: 48px
+            &.ss-map
+                .ss-map-left
+                    margin-left: -32px
+                    width: 627px
+                    .ss-list
+                        .ss-item
+                            border-radius: 2px
+                            padding: 16px
+                            background-color: #ffffff
+                            box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.07)
+                            margin-bottom: 12px
+                            .ss-item-right
+                                width: 260px
+                                display: inline-block
+                                vertical-align: top
+                                .ss-item-images
+                                    .ss-item-images-left
+                                        display: inline-block
+                                        vertical-align: top
+                                        img
+                                            width: 126px
+                                            height: 128px
+                                            object-fit: cover
+                                    .ss-item-images-center, .ss-item-images-right
+                                        display: inline-block
+                                        vertical-align: top
+                                        a
+                                            display: block
+                                            &.read-more-photos
+                                                position: relative
+                                                .count
+                                                    position: absolute
+                                                    top: 0
+                                                    left: 0
+                                                    width: 100%
+                                                    height: 100%
+                                                    background-color: rgba(40, 42, 54, 0.5)
+                                                    font-size: 12px
+                                                    font-weight: 600
+                                                    color: #ffffff
+                                                    line-height: 62px
+                                                    text-align: center
+                                            & + a
+                                                margin-top: 4px
+                                            img
+                                                display: block
+                                                width: 62px
+                                                height: 62px
+                                                object-fit: cover
+
+                            .ss-item-left
+                                width: 266px
+                                display: inline-block
+                                vertical-align: top
+                                .user-info
+                                    display: inline-block
+                                    vertical-align: top
+                                    .read_more
+                                        font-size: 12px
+                                        font-weight: 500
+                                        color: #0063da
+                                        padding: 11px 20px
+                                        height: 36px
+                                        border-radius: 18px
+                                        border: solid 1px #0063da
+                                        line-height: 34px
+                                        text-align: center
+                                        display: inline
+                                        text-transform: uppercase
+                                    .links-ss
+                                        margin-top: 16px
+                                        margin-bottom: 12px
+                                        a
+                                            display: block
+                                            font-size: 14px
+                                            .text
+                                                color: #282a36
+                                            .count
+                                                color: #808792
+                                    .ss-item-name
+                                        font-size: 14px
+                                        font-weight: 600
+                                        line-height: 24px
+                                        text-align: left
+                                        color: #282a36
+                                        margin-bottom: 2px
+                                    .ss-item-point
+                                        font-size: 14px
+                                        text-align: left
+                                        color: #0063da
+                                        padding-left: 18px
+                                        margin-bottom: 16px
+                                        background-size: 12px
+                                        background-repeat: no-repeat
+                                        background-position: left center
+
+                                .center
+                                    width: 40px
+                                    text-align: center
+                                    display: inline-block
+                                    vertical-align: top
+                                    margin-right: 8px
+                                    img
+                                        width: 40px
+                                        height: 40px
+                                        border-radius: 8px
+                                        object-fit: cover
+                                        overflow: hidden
+                                        display: block
+                                        margin: 0 auto
+                                        margin-bottom: 9px
+                                    .rate
+                                        padding: 0 5px
+                                        height: 16px
+                                        display: inline-block
+                                        line-height: 16px
+                                        border-radius: 4px
+                                        background-color: #fc2e5f
+                                        font-size: 12px
+                                        font-weight: 600
+                                        text-align: center
+                                        color: #fff
+                    .ss-map-left-wrap
+                        padding-left: 32px
+                        padding-right: 32px
+                        h3
+                            margin: 0
+                            margin-top: 13px
+                            margin-bottom: 16px
+                            font-size: 18px
+                            font-weight: 600
+                            line-height: 24px
+                            text-align: left
+                            color: #282a36
+                        .ss-list-header
+                            display: flex
+                            align-items: center
+                            justify-content: space-between
+                            .ss-list-header-left
+                                span
+                                    font-size: 14px
+                                    line-height: 1.71
+                                    text-align: left
+                                    color: #515562
+                                    &.count
+                                        font-weight: 600
+                                        color: #808792
+                    .ss-map-left-top
+                        padding-left: 32px
+                        margin-top: 36px
+                        padding-bottom: 18px
+                        border-bottom: 1px solid rgba(203, 208, 216, 0.3)
+                        span, a
+                            display: inline-block
+                            vertical-align: middle
+                        .text
+                            line-height: 24px
+                            text-align: left
+                            color: #515562
+                            font-size: 14px
+                            padding-right: 20px
+                        .who
+                            line-height: 24px
+                            text-align: left
+                            color: #282a36
+                            font-size: 14px
+                            padding-right: 8px
+                        a
+                            line-height: 24px
+                            text-align: left
+                            font-size: 14px
+                            color: #0063da
+                .ss-map-right
+                    background-color: rgba(40, 42, 54, 0.5)
+                    position: relative
+                    .gm-style-iw
+                        width: auto
+                        //width: 200px !important
+                    .ss-item-actions-map
+                        text-align: center
+                        a
+                            padding: 16px 0
+                            padding-bottom: 0
+                            display: block
+                            font-size: 12px
+                            font-weight: 500
+                            text-transform: uppercase
+                            color: #0063da
+                    .ss-item-bottom-map
+                        .ss-item-images-map
+                            a
+                                display: inline-block
+                                vertical-align: middle
+                                width: 62px
+                                height: 62px
+                                & + a
+                                    margin-left: 4px
+                                img
+                                    width: 62px
+                                    height: 62px
+                                    object-fit: cover
+            &.ss-main
+                .lm-card
+                    &--header
+                        padding: 28px
+                .ss-main-head
+                    width: 100%
+                    height: 340px
+                    text-align: center
+                    background-size: cover
+                    background-repeat: no-repeat
+                    background-position: center
+                    background-image: url('/dist/img/ss/main-head.jpg')
+                    margin-top: 20px
+                    &.photo-model
+                        background-image: url('/dist/img/ss/main-head-photo.png')
+                    .ss-main-head-text
+                        padding-top: 72px
+                        padding-bottom: 36px
+                        width: 650px
+                        font-size: 48px
+                        line-height: 56px
+                        text-align: center
+                        color: #ffffff
+                        margin: 0 auto
+                        font-weight: 300
+                        b
+                            font-weight: 600
+                    .ss-main-head-button
+                        display: inline-block
+                        padding: 0 25px
+                        line-height: 44px
+                        height: 44px
+                        border-radius: 22px
+                        background-color: #ffffff
+                        box-shadow: 0 2px 24px 0 rgba(40, 42, 54, 0.3)
+                        font-size: 12px
+                        font-weight: 500
+                        text-align: center
+                        color: #282a36
+                .ss-main-line
+                    width: 100%
+                    text-align: center
+                    .lm-card
+                        margin-bottom: 20px
+                    &:not(:first-child)
+                        margin-top: 64px
+                    h2
+                        margin: 0
+                        font-size: 48px
+                        font-weight: bold
+                        text-align: center
+                        line-height: normal
+                        color: #282a36
+                    h3
+                        margin-top: 24px
+                        margin-bottom: 16px
+                        font-size: 28px
+                        font-weight: 600
+                        text-align: center
+                        line-height: normal
+                        color: #282a36
+                        b
+                            font-weight: bold
+                    .conditions
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        flex-direction: column
+                        height: 360px
+                        box-shadow: 0 2px 8px 0 rgba(40, 42, 54, 0.03)
+                        background-image: url('/dist/img/ss/conditions.png')
+                        background-size: cover
+                        background-position: center
+                        background-repeat: no-repeat
+                        margin-bottom: 40px
+                        h2
+                            margin-top: 0 !important
+                            margin-bottom: 24px !important
+                            color: #fff
+                        .desc
+                            font-size: 14px
+                            line-height: 24px
+                            width: 456px
+                            margin: 0 auto
+                            text-align: center
+                            color: #ffffff
+                        .center
+                            text-align: center
+                        ul
+                            margin-top: 20px
+                            display: inline-block
+                            list-style: none
+                            width: 320px
+                            li
+                                font-size: 14px
+                                line-height: 24px
+                                text-align: left
+                                color: #ffffff
+                                font-weight: normal
+                                b
+                                    font-weight: 600
+                    .how-work
+                        margin: 0 -10px
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        div
+                            margin: 10px
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            flex-wrap: wrap
+                            width: 320px
+                            height: 240px
+                            background-color: #282a36
+                            box-shadow: 0 2px 8px 0 rgba(40, 42, 54, 0.03)
+                            background-size: cover
+                            background-position: center
+                            background-repeat: no-repeat
+                            &.take-measurements
+                                background-image: url('/dist/img/ss/take-measurements.png')
+                            &.take-photo
+                                background-image: url('/dist/img/ss/take-photo.png')
+                            &.take-video
+                                background-image: url('/dist/img/ss/take-video.png')
+                            span
+                                font-size: 14px
+                                text-align: center
+                                color: #ffffff
+                                font-weight: 600
+                    &.ss-what-is-it
+                        .ss-what-is-it-text
+                            margin: 0 auto
+                            margin-top: 24px
+                            font-size: 14px
+                            line-height: 24px
+                            text-align: center
+                            color: #282a36
+                            width: 620px
+                            margin-bottom: 50px
+                            .lm-icon-settings-gear
+                                @include lm-settings-gear('%23515562')
+                                width: 16px
+                                height: 16px
+                                background-position: center
+                                background-repeat: no-repeat
+                                background-size: 16px
+                                display: inline-block
+                                vertical-align: middle
+                        .ss-what-is-it-img
+                            width: 834px
+                            margin: 0 auto
+                    &.how-work-it
+                        .how-work-it-text
+                            font-size: 14px
+                            line-height: 24px
+                            letter-spacing: 0.25px
+                            text-align: center
+                            color: #282a36
+                    &.ss-select-specialist
+                        .ss-select-specialist-text
+                            width: 600px
+                            margin: 0 auto
+                            font-size: 14px
+                            line-height: 24px
+                            margin-top: 16px
+                            margin-bottom: 36px
+                            text-align: center
+                            color: #282a36
+                        .ss-select-specialist-list
+                            margin: 0 auto
+                            margin-top: 48px
+                            display: flex
+                            align-items: center
+                            justify-content: space-between
+                            flex-wrap: wrap
+                            width: 770px
+                            .ss-select-specialist-list-item
+                                text-align: center
+                                display: block
+                                margin-bottom: 20px
+                                width: 180px
+                                flex: none
+                                .ss-select-specialist-item-img
+                                    width: 96px
+                                    height: 96px
+                                    overflow: hidden
+                                    border-radius: 50%
+                                    display: block
+                                    object-fit: cover
+                                    margin: 0 auto
+                                    margin-bottom: 16px
+                                .ss-select-specialist-item-name
+                                    font-size: 18px
+                                    font-weight: 600
+                                    line-height: 24px
+                                    text-align: center
+                                    color: #282a36
+                                    margin-bottom: 4px
+                                .ss-select-specialist-item-type
+                                    font-size: 14px
+                                    line-height: 24px
+                                    text-align: center
+                                    color: #808792
+                    &.ss-meeting
+                        margin-top: 60px
+                        margin-bottom: 60px
+                        text-align: center
+                        .ss-meeting-text
+                            width: 600px
+                            margin: 0 auto
+                            font-size: 14px
+                            line-height: 24px
+                            margin-top: 16px
+                            margin-bottom: 36px
+                            text-align: center
+                            color: #282a36
+                        .ss-meeting-button
+                            display: inline-block
+                            height: 44px
+                            border-radius: 22px
+                            background-color: #0063da
+                            padding: 0 46px
+                            line-height: 44px
+                            font-size: 12px
+                            font-weight: 500
+                            letter-spacing: 0.4px
+                            text-align: center
+                            color: #ffffff
+                            text-transform: uppercase

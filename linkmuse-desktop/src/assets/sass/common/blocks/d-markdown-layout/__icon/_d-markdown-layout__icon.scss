@@ -1,0 +1,12 @@
+.d-markdown-layout__icon {
+	word-wrap: break-word;
+	word-break: normal;
+}
+
+@import '_strikethrough/_d-markdown-layout__icon_strikethrough.scss';
+@import '_italic/_d-markdown-layout__icon_italic.scss';
+@import '_link/_d-markdown-layout__icon_link.scss';
+@import '_list-ol/_d-markdown-layout__icon_list-ol.scss';
+@import '_bold/_d-markdown-layout__icon_bold.scss';
+@import '_visibility/_d-markdown-layout__icon_visibility.scss';
+@import '_list-ul/_d-markdown-layout__icon_list-ul.scss';

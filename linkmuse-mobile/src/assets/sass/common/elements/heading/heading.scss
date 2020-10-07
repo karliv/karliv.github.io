@@ -1,0 +1,11 @@
+.heading {
+  line-height: 1.33;
+  color: $lm-gray-1;
+  margin: 0;
+}
+
+@import '_h1/_heading_h1.scss';
+@import '_h2/_heading_h2.scss';
+@import '_h3/_heading_h3.scss';
+@import '_h4/_heading_h4.scss';
+@import '_h5/_heading_h5.scss';

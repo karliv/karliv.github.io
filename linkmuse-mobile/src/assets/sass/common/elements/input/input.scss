@@ -1,0 +1,15 @@
+.input {
+	outline: none;
+	display: inline-block;
+	transition: all 0.15s ease-in-out;
+}
+@import '__field/_input__field.scss';
+@import '__icon/_input__icon.scss';
+@import '__label/_input__label.scss';
+@import '__notification/_input__notification.scss';
+@import '__password/_input__password.scss';
+
+@import '_search/_input_search.scss';
+@import '_error/_input_error.scss';
+@import '_info/_input_info.scss';
+@import '_success/_input_success.scss';

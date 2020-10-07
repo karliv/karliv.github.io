@@ -1,0 +1,28 @@
+.lm-show-left-menu
+    &-enter, &-leave-to
+        transform: translate(-244px)
+        visibility: visible
+    &-enter-active, &-leave-active
+        transition: all ease-in-out .5s
+    &-enter-to
+    &-leave
+        visibility: hidden
+.lm-ss-popup-modal
+    @media (max-width: 1024px)
+        overflow-y: scroll
+        position: absolute
+        left: 0
+        right: 0
+        width: 1024px
+    &.modal
+        opacity: 1
+    &.lm-specialist-modal
+        &-enter, &-leave-to
+            opacity: 0
+            transform: translate(100%)
+            visibility: visible
+        &-enter-active, &-leave-active
+            transition: all ease-in-out .5s
+        &-enter-to
+            opacity: 1 !important
+        &-leave

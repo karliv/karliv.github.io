@@ -1,0 +1,9 @@
+.card__list_attachments_response_invitation {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	@media screen and (min-width: $sm-breakpoint) {
+		align-items: flex-start;
+	}
+}
+

@@ -1,0 +1,13 @@
+.form__checkbox_ad_gender {
+	display: none;
+
+	&:checked + .checkbox__label_ad_gender {
+		color: $lm-main;
+		background-color: rgba(0, 99, 218, 0.08);
+		transition: all 0.25s ease;
+	}
+}
+
+// form__checkbox_ad_gender mods
+@import '_female/_form__checkbox_ad_gender_female.scss';
+@import '_male/_form__checkbox_ad_gender_male.scss';

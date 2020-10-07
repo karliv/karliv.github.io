@@ -1,0 +1,14 @@
+.textarea__label {
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: 0.5px;
+	color: $lm-gray-2;
+	margin-bottom: $multiplicity;
+	display: block;
+}
+
+@import '_declaration/_textarea__label_declaration.scss';
+@import '_ad/_textarea__label_ad.scss';

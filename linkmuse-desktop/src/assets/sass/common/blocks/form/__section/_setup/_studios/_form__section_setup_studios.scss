@@ -1,0 +1,11 @@
+.form__section_setup_studios {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 36px 0 24px;
+	border-top: 1px solid rgba(40, 42, 54, 0.08);
+	position: relative;
+	&:first-child {
+		border-top: none;
+	}
+}
+

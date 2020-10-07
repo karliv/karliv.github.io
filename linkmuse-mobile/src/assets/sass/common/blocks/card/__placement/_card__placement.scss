@@ -1,0 +1,39 @@
+.card__placement {   //card_premium-placement
+  border-radius: $multiplicity*2;
+  padding: $multiplicity*4 $multiplicity*5 $multiplicity*5;
+  background-color: $lm-main-08;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+
+  .card__content {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .card__price {
+    min-width: 98px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .m-text_normal {
+      text-decoration: line-through;
+    }
+  }
+
+  .icon_check {
+    border-radius: 50%;
+    background-color: $lm-main;
+  }
+
+  .line-border {
+    width: 100% ;
+    height: 1px;
+    position: relative;
+    background-color: $lm-gray-opacity-8;
+  }
+}
+
+@import "_premium/_card__placement_premium.scss";

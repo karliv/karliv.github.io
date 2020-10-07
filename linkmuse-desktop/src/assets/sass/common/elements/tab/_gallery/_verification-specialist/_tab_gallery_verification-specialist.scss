@@ -1,0 +1,24 @@
+.tab_gallery_verification-specialist {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: 1px;
+	color: $lm-gray-3;
+	text-transform: uppercase;
+	padding: 16px;
+	min-height: 56px;
+	min-width: 262px;
+	border-bottom: 2px solid;
+	border-color: $lm-gray-2;
+	border-radius: 1px;
+	transition: all 0.25s ease-in-out;
+	cursor: pointer;
+}
+
+@import '_active/_tab_gallery_verification-specialist_active.scss';

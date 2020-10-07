@@ -1,0 +1,36 @@
+.list_required-fields {
+	list-style-position: inside;
+	list-style-type: none;
+	.list__item {
+		margin-bottom: $multiplicity*3;
+		font-size: 14px;
+		font-weight: 600;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.29;
+		letter-spacing: 0.5px;
+		color: $lm-gray-3;
+		transition: all 0.25s ease-in-out;
+		display: flex;
+		align-items: center;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&:only-child {
+			margin-bottom: 0;
+		}
+		.d-icon_checkmark {
+			background-color: $lm-gray-3;
+			transition: all 0.25s ease-in-out;
+		}
+	}
+	.list__item_active {
+		color: $lm-main;
+		transition: all 0.25s ease;
+		.d-icon_checkmark {
+			transition: all 0.25s ease;
+			background-color: $lm-main;
+		}
+	}
+}
+

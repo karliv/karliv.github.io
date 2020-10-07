@@ -1,0 +1,58 @@
+.d-input_row {
+	display: flex;
+	.d-input__field {
+		width: 100%;
+		max-width: 790px;
+	}
+	.d-input__field.max-w_654 {
+		width: 654px;
+	}
+	.d-input__label {
+    min-width: 172px;
+		max-height: 40px;
+		display: flex;
+		align-items: center;
+    flex-shrink: 0;
+		margin-right: $multiplicity*10;
+	}
+  .d-input__link {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: 0.5px;
+    &.d-input__link_blue {
+      color: $lm-main;
+    }
+    &.d-input__link_red {
+      color: $lm-support-1;
+    }
+    &.d-input__link_disabled {
+      color: $lm-gray-3
+    }
+  }
+  .d-input__change-link {
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 1px;
+    color: $lm-gray-3;
+    text-transform: uppercase;
+    position: absolute;
+    padding-right: 16px;
+  }
+  .d-input__icon {
+    position: absolute;
+    height: 16px;
+  }
+  .d-input__icon_left {
+    left: 16px;
+  }
+  .d-input__icon_right {
+    right: 16px;
+  }
+}
+

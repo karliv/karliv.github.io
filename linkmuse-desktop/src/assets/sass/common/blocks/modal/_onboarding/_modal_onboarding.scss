@@ -1,0 +1,27 @@
+.modal_onboarding {
+	.modal-dialog {
+	}
+	.modal-content {
+		max-width: 470px;
+		width: 100%;
+		box-sizing: border-box;
+		padding: $multiplicity*8 $multiplicity*9;
+		border-radius: $multiplicity*4;
+		border: none;
+	}
+	.modal__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		font-size: 14px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.29;
+		letter-spacing: 0.25px;
+		color: $lm-gray-1;
+	}
+}
+
+@import '_slide/_modal_onboarding_slide.scss';

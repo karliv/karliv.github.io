@@ -1,0 +1,41 @@
+.modal_onboarding_slide {
+	.modal-dialog {
+	}
+	.modal-content {
+		max-width: 492px;
+		width: 100%;
+		box-sizing: border-box;
+		border-radius: $multiplicity*4;
+		border: none;
+	}
+	.modal__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		font-size: 12px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.29;
+		letter-spacing: 0.25px;
+		color: $lm-gray-1;
+		.modal__section {
+			padding: $multiplicity*8 $multiplicity*9;
+			display: flex;
+			flex-direction: column;
+		}
+		.d-link {
+			font-size: 12px;
+		}
+	}
+	.d-img {
+		height: 312px;
+		object-fit: contain;
+		width: 100%;
+		border-top-right-radius:$multiplicity*4;
+		border-top-left-radius: $multiplicity*4;
+		overflow: hidden;
+	}
+}
+

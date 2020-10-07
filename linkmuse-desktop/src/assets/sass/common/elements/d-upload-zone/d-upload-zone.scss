@@ -1,0 +1,15 @@
+.d-upload-zone {
+  .lm-dropzone {
+    &--item {
+      &--duration {
+        right: 8px;
+        bottom: 12px;
+        padding: 4px 8px;
+        background-color: $lm-gray-opacity-64;
+        border-radius: 8px;
+        line-height: 1.4;
+      }
+    }
+  }
+}
+@import '__field/_d-upload-zone__field.scss';

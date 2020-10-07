@@ -1,0 +1,15 @@
+.card_response_contractor {
+	border-radius: 2px;
+	box-shadow: $panes__box-shadow;
+	background-color: $lm-white;
+	box-sizing: border-box;
+	padding: 0 16px;
+	margin-bottom: 8px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	@media screen and (min-width: $sm-breakpoint) {
+		padding: 0 20px;
+	}
+}
+

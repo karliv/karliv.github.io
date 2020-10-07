@@ -1,0 +1,13 @@
+.form__title_declaration {
+	font-size: 18px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.29;
+	letter-spacing: 0.5px;
+	color: $lm-gray-1;
+	@media screen and (min-width: $sm-breakpoint) {
+		font-size: 28px;
+	}
+}
+

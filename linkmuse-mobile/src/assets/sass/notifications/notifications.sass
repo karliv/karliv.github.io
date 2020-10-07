@@ -1,0 +1,99 @@
+.lm-m-notifications
+  .lm-m-notifications-list
+    .lm-m-notifications-item
+      padding: 12px 16px
+      margin-bottom: 2px
+      display: block
+      box-sizing: border-box
+      width: 100%
+      background: $lm-white
+      .lm-user-block
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        width: 100%
+
+        .lm-user-block-avatar-wrap
+          max-width: 32px
+          min-width: 32px
+          position: relative
+          width: 32px
+          flex: 1 auto
+          margin-right: 12px
+          img
+            margin-right: 12px
+          .lm-user-block-avatar-icon
+            position: absolute
+            width: 16px
+            height: 16px
+            border: solid 2px $lm-white
+            border-radius: 50%
+            box-sizing: border-box
+            top: 17px
+            right: -3px
+            background-repeat: no-repeat
+            background-size: 6px
+            background-position: center
+            &.like
+              background-color: $lm-support-1
+              @include lm-heart('%23ffffff')
+            &.subscribe
+              background-color: $lm-support-3
+              @include lm-subscribe('%23ffffff')
+            &.comment
+              background-color: $lm-support-2
+              @include lm-message('%23ffffff')
+            &.partner
+              background-color: $lm-support-4
+              &.partner-subscribe
+                @include lm-single('%23ffffff')
+              &.partner-subscribe-ok
+                @include lm-ok-icon('%23ffffff')
+              &.partner-subscribe-remove
+                @include lm-close('%23ffffff')
+                background-size: 4px
+            &.partner-exclusive
+              background-color: $lm-support-1
+              &.partner-exclusive-ok
+                @include lm-ok-icon('%23ffffff')
+              &.partner-exclusive-subscribe
+                @include lm-favourite('%23ffffff')
+                background-size: 6px
+                background-position: center 3.5px
+              &.partner-exclusive-remove
+                @include lm-close('%23ffffff')
+                background-size: 4px
+            &.casting
+              background-color: $lm-main
+              @include lm-casting('%23ffffff')
+              background-size: 4px
+            &.approve
+              background-color: $lm-main
+              @include lm-lock('%23ffffff')
+            &.not-approve
+              background-color: $lm-support-1
+              @include lm-lock('%23ffffff')
+    .lm-user-block-info
+          flex: 1 1 auto
+          display: flex
+          .lm-user-block-info-wrap
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+            .separator
+              display: block
+              height: 12px
+              background: #808792
+              width: 1px
+              margin: 0 5px
+            .lm-user-block-info-type
+              color: $lm-main !important
+              &.red
+                color: $lm-support-1 !important
+            .lm-user-block-info-action, .lm-user-block-info-name
+              margin-right: 4px
+              line-height: 18px
+            .lm-user-block-info-action, .lm-user-block-info-type
+              +lm-body-content
+              color: $lm-gray-3
+              line-height: 18px

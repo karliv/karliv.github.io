@@ -1,0 +1,10 @@
+.container_declaration_casting {
+	margin-top: 16px;
+	margin-bottom: 12px;
+	&:only-child {
+		margin-top: 0;
+	}
+	&:first-child {
+		margin-top: 0;
+	}
+}

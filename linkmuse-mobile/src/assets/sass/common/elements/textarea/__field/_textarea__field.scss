@@ -1,0 +1,37 @@
+.textarea__field {
+	display: block;
+	outline: none;
+	box-sizing: border-box;
+	border: 1px solid $lm-gray-4;
+	border-radius: $multiplicity*4;
+	min-height: 40px;
+	padding: $multiplicity*3 $multiplicity*4;
+	min-width: 200px;
+	overflow: hidden;
+	height: 40px;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: 0.3px;
+	color: $lm-gray-1;
+	resize: vertical;
+	@include placeholder_color_lm-gray-3();
+/*	&:hover {
+		transition: all 0.15s ease;
+		border-color: $lm-gray-opacity-32;
+	}*/
+	&:focus {
+		transition: all 0.15s ease;
+		border-color: $lm-main;
+	}
+	&:disabled {
+		transition: all 0.15s ease;
+		border-color: $lm-gray-5;
+		background-color: $lm-gray-5;
+		resize: none;
+		@include placeholder_color_lm-gray-opacity-32();
+	}
+}
+

@@ -1,0 +1,14 @@
+.text_declaration {
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: 0.5px;
+  color: $lm-gray-1;
+  a {
+    color: $lm-gray-1;
+    text-decoration: none;
+    transition: color .25s, background-color .25s, border-color .25s ease-in;
+  }
+}

@@ -1,0 +1,1619 @@
+@keyframes slide__btn_fadein
+  0%
+    transform: translate(0, 36px)
+    opacity: 0
+  52%
+    transform: translate(0, 36px)
+    opacity: 0
+  100%
+    transform: translate(0, 0px)
+    opacity: 1
+
+@keyframes slide__h2_fadein
+  0%
+    transform: translate(0, 36px)
+    opacity: 0
+  52%
+    transform: translate(0, 36px)
+    opacity: 0
+  100%
+    transform: translate(0, 0px)
+    opacity: 1
+
+@keyframes slide__desc_fadein
+  0%
+    transform: translate(0, 36px)
+    opacity: 0
+  60%
+    transform: translate(0, 36px)
+    opacity: 0
+  100%
+    transform: translate(0, 0px)
+    opacity: 1
+
+@keyframes slide__h2_fadeout
+  from
+    transform: translate(0, 0px)
+    opacity: 1
+  to
+    transform: translate(0, -30px)
+    opacity: 0
+
+@keyframes slide__item_fadein
+  0%
+    opacity: 0
+    display: none
+  52%
+    opacity: 1
+    display: block
+  100%
+    opacity: 1
+    display: block
+
+@keyframes slide__item_fadeout
+  0%
+    opacity: 1
+    display: block
+  99%
+    opacity: 1
+    display: block
+  100%
+    opacity: 0
+    display: none
+
+@keyframes slide__controls_active
+  from
+    transform: translate(0, 0)
+  to
+    transform: translate(0, 24px)
+
+@keyframes slide__controls_disactive
+  from
+    transform: translate(0, 24px)
+  to
+    transform: translate(0, 0)
+
+@keyframes slide__controls_active_switcher
+  from
+    transform: translate(0, 0)
+  to
+    transform: translate(0, -24px)
+
+@keyframes slide__controls_disactive_switcher
+  from
+    transform: translate(0, -24px)
+  to
+    transform: translate(0, 0)
+
+@keyframes slide__child__h2__fadeout
+  0%
+    transform: translate(0, 0px)
+    opacity: 1
+  4%
+    transform: translate(0, 0px)
+    opacity: 1
+  to
+    transform: translate(0, -30px)
+    opacity: 0
+
+@keyframes slide__child__desc__fadeout
+  0%
+    transform: translate(0, 0px)
+    opacity: 1
+  10%
+    transform: translate(0, 0px)
+    opacity: 1
+  to
+    transform: translate(0, -30px)
+    opacity: 0
+
+@keyframes slide__child__pbtn__fadeout
+  0%
+    transform: translate(0, 0px)
+    opacity: 1
+  20%
+    transform: translate(0, 0px)
+    opacity: 1
+  to
+    transform: translate(0, -30px)
+    opacity: 0
+
+@keyframes slide__child__sbtn__fadeout
+  0%
+    transform: translate(0, 0px)
+    opacity: 1
+  23%
+    transform: translate(0, 0px)
+    opacity: 1
+  to
+    transform: translate(0, -30px)
+    opacity: 0
+
+@keyframes slide__child__bbtn__fadeout
+  0%
+    transform: translate(0, 0px)
+    opacity: 1
+  24%
+    transform: translate(0, 0px)
+    opacity: 1
+  to
+    transform: translate(0, -36px)
+    opacity: 0
+
+@keyframes slide__child__img__fadeout
+  0%
+    transform: translate(0, 0px)
+    opacity: 1
+  30%
+    transform: translate(0, 0px)
+    opacity: 1
+  to
+    transform: translate(0, -30px)
+    opacity: 0
+
+@keyframes slide__child__all__fadeout
+  0%
+    opacity: 1
+    display: block
+  99%
+    opacity: 1
+    display: block
+  100%
+    opacity: 0
+    display: none
+
+@keyframes slide__child__all__fadein
+  0%
+    opacity: 0
+    display: none
+  65%
+    opacity: 0
+    display: block
+  100%
+    opacity: 1
+    display: block
+
+@keyframes slide__child__h2__fadein
+  0%
+    transform: translate(0, 36px)
+    opacity: 0
+  38.5%
+    transform: translate(0, 36px)
+    opacity: 0
+  100%
+    transform: translate(0, 0)
+    opacity: 1
+
+@keyframes slide__child__desc__fadein
+  0%
+    transform: translate(0, 36px)
+    opacity: 0
+  37.5%
+    transform: translate(0, 36px)
+    opacity: 0
+  100%
+    transform: translate(0, 0)
+    opacity: 1
+
+@keyframes slide__child__pbtn__fadein
+  0%
+    transform: translate(0, 36px)
+    opacity: 0
+  36%
+    transform: translate(0, 36px)
+    opacity: 0
+  100%
+    transform: translate(0, 0)
+    opacity: 1
+
+@keyframes slide__child__sbtn__fadein
+  0%
+    transform: translate(0, 36px)
+    opacity: 0
+  35.7%
+    transform: translate(0, 36px)
+    opacity: 0
+  100%
+    transform: translate(0, 0)
+    opacity: 1
+
+@keyframes slide__child__bbtn__fadein
+  0%
+    transform: translate(0, 36px)
+    opacity: 0
+  35.4%
+    transform: translate(0, 36px)
+    opacity: 0
+  100%
+    transform: translate(0, 0)
+    opacity: 1
+
+@keyframes slide__child__img__fadein
+  0%
+    transform: translate(0, 36px)
+    opacity: 0
+  34.6%
+    transform: translate(0, 36px)
+    opacity: 0
+  100%
+    transform: translate(0, 0)
+    opacity: 1
+
+.main-layout
+  header
+    top: 0
+    left: 0
+    right: 0
+    z-index: 2
+  footer
+    z-index: 3
+    position: relative
+    padding-top: calc(22px + 66 / 1440 * 100vw)
+    &:before
+      content: ''
+      position: absolute
+      bottom: calc(100% - 66 / 1440 * 100vw + 1px)
+      z-index: 4
+      left: 0
+      width: 100vw
+      background-position: center top
+      background-size: 101%
+      height: calc(66 / 1440 * 100vw)
+      background-image: url("/dist/img/main/bottom-wave.svg")
+  label
+    font-size: 14px
+    display: block
+    margin-bottom: 8px
+    color: $lm-gray-2
+  .lm-main-wrapper
+    width: 1136px
+    min-width: 1136px
+    margin: 0 auto
+    box-sizing: border-box
+    position: relative
+    z-index: 3
+  .lm-index-fixed
+    .lm-header-section
+      .lm-down-arrow
+        z-index: 3
+        bottom: 96px
+        width: 32px
+        height: 32px
+      .lm-main-slider
+        position: relative
+        height: 546px
+        &--controls
+          position: absolute
+          bottom: unset
+          top: 216px
+          right: 0
+          z-index: 3
+          display: flex
+          width: 16px
+          height: 36px
+          flex-wrap: wrap
+          align-content: space-between
+          text-align: center
+          align-items: center
+          justify-content: center
+          margin: auto 0
+          &:not(.active)
+            a
+              &:first-child
+                animation: slide__controls_disactive .5s ease
+              &:last-child
+                transform: translate(0, 0px)
+                animation: slide__controls_disactive_switcher .5s ease
+          &.active
+            a
+              &:first-child
+                transform: translate(0, 24px)
+                animation: slide__controls_active .5s ease
+              &:last-child
+                transform: translate(0, -24px)
+                animation: slide__controls_active_switcher .5s ease
+          a
+            width: 8px
+            height: 8px
+            transform: translate(0, 0)
+            display: block
+            background-color: rgba(255, 255, 255, 0.64)
+            border-radius: 50%
+            &:first-child
+              width: 16px
+              height: 16px
+              background-color: transparent
+              border: 4px solid $lm-white
+
+        .lm-header-content
+          padding-top: 90px
+          padding-bottom: 148px
+          background: none
+          &:before
+            content: ''
+            position: absolute
+            left: 0
+            top: 0
+            width: 100%
+            height: 100%
+            background-image: url('/dist/img/main/lm-il-2.svg')
+            background-size: 910px 498px
+            background-repeat: no-repeat
+            background-position: 200px 48px
+            z-index: 2
+          &.lm-vs
+            .lm-connect-button
+              background-color: $lm-support-3
+              &:hover
+                background-color: $lm-support-2
+            &:before
+              background-image: url('/dist/img/main/lm-il-2.1.svg')
+              background-size: 805px 584px
+              background-repeat: no-repeat
+              background-position: 334px 16px
+              bottom: 0
+              top: -50px
+              height: auto
+              z-index: 1
+          h2
+            font-size: 48px
+            font-weight: bold
+            font-style: normal
+            font-stretch: normal
+            line-height: 1.25
+            letter-spacing: 0.5px
+            color: $lm-white
+            width: 491px
+            display: block
+            margin: 0 0 16px !important
+            position: relative
+            z-index: 3
+          .desc
+            font-size: 16px
+            font-weight: normal
+            font-style: normal
+            font-stretch: normal
+            line-height: 1.25
+            letter-spacing: normal
+            color: $lm-white
+            display: block
+            margin-bottom: 24px
+            width: 390px
+            position: relative
+            z-index: 3
+          .lm-connect-button
+            padding: 0 24px
+            height: 40px
+            color: #fff
+            display: inline-block
+            line-height: 40px
+            font-size: 12px
+            box-sizing: border-box
+            text-align: center
+            font-weight: 600
+            text-transform: uppercase
+            border-radius: 8px
+            background-color: #fc2e5f
+            letter-spacing: 1px
+            transition: background-color .25s ease
+            position: relative
+            z-index: 3
+            &:hover
+              background-color: #20dba9
+        &--item
+          width: 100%
+          height: 100%
+          top: 0
+          left: 0
+          position: absolute
+          &.fadeout
+            z-index: 0
+            &.disable
+              opacity: 0 !important
+            .lm-header-content:before, h2, .desc, .lm-connect-button
+              opacity: 0
+              transform: translate(0, -30px)
+            opacity: 0
+            animation: slide__child__all__fadeout .66s ease
+            h2
+              animation: slide__child__h2__fadeout .52s ease
+            .desc
+              animation: slide__child__desc__fadeout .55s ease
+            .lm-connect-button
+              animation: slide__child__pbtn__fadeout .6s ease
+            .lm-header-content
+              &:before
+                animation: slide__child__img__fadeout .65s ease
+          &.active
+            z-index: 1
+            opacity: 1
+            animation: slide__child__all__fadein 1.15s ease
+            .lm-header-content:before, h2, .desc, .lm-connect-button
+              opacity: 1
+            h2
+              animation: slide__child__h2__fadein 1.17s ease
+            .desc
+              animation: slide__child__desc__fadein 1.2s ease
+            .lm-connect-button
+              animation: slide__child__pbtn__fadein 1.25s ease
+            .lm-header-content
+              &:before
+                animation: slide__child__img__fadein 1.3s ease
+
+  .lm-index-static
+    .lm-page-1
+      ul
+        align-items: flex-start
+        li
+          &:nth-child(1)
+            margin-top: 16px
+          &:nth-child(2)
+            margin-top: 44px
+          &:nth-child(3)
+            margin-top: 72px
+          &:nth-child(4)
+            margin-top: 100px
+      padding-top: 0
+  .lm-index-static
+    background: #fff
+    position: relative
+    z-index: 3
+    margin-top: 632px
+    padding-bottom: 165px
+    &:before
+      position: absolute
+      content: ''
+      bottom: calc(100% - 2px)
+      width: 100vw
+      left: 0
+      right: 0
+      pointer-events: none
+      background-image: url("/dist/img/main/top-wave.svg")
+      background-repeat: no-repeat
+      height: calc(78 / 1440 * 100vw + 5px)
+      background-repeat: no-repeat
+      background-position: center bottom
+      background-size: 101%
+      @media (min-width: 1900px)
+        bottom: calc(100% - 20px)
+      @media (min-width: 2300px)
+        bottom: calc(100% - 30px)
+  .lm-index-fixed
+    position: fixed
+    z-index: 1
+    width: 100%
+    top: 0
+
+  .lm-header-section
+    position: relative
+    background-color: $lm-main
+    padding-top: 86px
+    .lm-down-arrow
+      transform: rotate(-90deg)
+      position: absolute
+      left: 0
+      right: 0
+      margin: auto
+      bottom: 36px
+      width: 36px
+      cursor: pointer
+      height: 36px
+      border-radius: 8px
+      border: solid 1px $lm-white
+      background-repeat: no-repeat
+      background-size: 12px
+      background-position: center
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="%23ffffff" d="M6.7 14.4L8.1 13 3.8 8.7H16v-2H3.8l4.3-4.3L6.7 1 .707 6.993a1 1 0 0 0 0 1.414L6.7 14.4z"/></svg>')
+    .lm-header-content
+      padding-top: 46px
+      padding-bottom: 148px
+      background-image: url('/dist/img/main/lm-main-head-back-2.svg')
+      background-size: auto
+      background-repeat: no-repeat
+      background-position: center right
+      h1
+        width: 490px
+        font-size: 48px
+        font-weight: bold
+        line-height: 60px
+        color: #fff
+        display: block
+        margin-bottom: 16px
+      .desc
+        display: block
+        margin-bottom: 36px
+        width: 390px
+        font-size: 14px
+        letter-spacing: 0.5px
+        line-height: 20px
+        color: #fff
+      .lm-connect-button
+        padding: 0 24px
+        height: 44px
+        color: #fff
+        display: inline-block
+        line-height: 44px
+        font-size: 12px
+        font-weight: 600
+        text-transform: uppercase
+        border-radius: 16px
+        background-color: #fc2e5f
+        letter-spacing: 1px
+        transition: background-color .25s ease
+        &:hover
+          background-color: #20dba9
+  .lm-page-1
+    padding-top: 100px
+    margin-bottom: 25px
+    ul
+      padding: 0 100px
+      list-style: none
+      display: flex
+      align-items: center
+      justify-content: space-between
+      li
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: flex-start
+        svg
+          margin-bottom: 24px
+        span
+          font-size: 12px
+          font-weight: 600
+          line-height: 16px
+          letter-spacing: 1px
+          color: #282a36
+          text-transform: uppercase
+  .lm-main-wrapper
+    .left, .right
+      width: 50%
+  .lm-page-2
+    background-position: top left
+    background-repeat: no-repeat
+    background-image: url('/dist/img/main/lm-page-1-bg-left.svg')
+    margin-bottom: 25px
+    .lm-main-wrapper
+      .left
+        padding-top: 96px
+        padding-left: 64px
+        margin-bottom: 136px
+        img
+          width: 500px
+          height: 463px
+      .right
+        padding-right: 64px
+        padding-left: 124px
+        padding-top: 250px
+        text-align: left
+        h2
+          display: block
+          font-size: 28px
+          font-weight: bold
+          letter-spacing: 0.5px
+          line-height: 1.25
+          color: #282a36
+          margin: 0 0 16px !important
+        ul
+          list-style-position: inside
+          margin-bottom: 24px
+          li
+            color: #0063da
+            span
+              font-size: 14px
+              line-height: 20px
+              margin-left: -8px
+              letter-spacing: .25px
+              color: $lm-gray-1
+        .lm-get-job-button
+          display: inline-block
+          padding: 0 24px
+          height: 40px
+          color: #fff
+          line-height: 40px
+          font-size: 12px
+          font-weight: 600
+          text-transform: uppercase
+          border-radius: 8px
+          background-color: #0063da
+          letter-spacing: 1px
+          transition: background-color .25s ease
+          &:hover
+            background-color: #20dba9
+  .lm-page-3
+    background-position: top right
+    background-repeat: no-repeat
+    background-image: url('/dist/img/main/lm-page-3-bg-right.svg')
+    margin-bottom: 96px
+    background-size: contain
+    .lm-main-steps
+      margin-bottom: 26px
+    .right
+      padding-right: 64px
+      padding-left: 52px
+      padding-top: 36px
+      margin-bottom: 72px
+      img
+        width: 448px
+    .left
+      padding-top: 168px
+      padding-left: 64px
+      padding-right: 124px
+      .lm-red-button
+        transition: background-color .25s ease
+        &:hover
+          background-color: #f5a623
+      ul
+        list-style-position: inside
+        margin-bottom: 24px
+        li
+          color: #fc2e5f
+          span
+            font-size: 14px
+            line-height: 20px
+            margin-left: -8px
+            letter-spacing: .25px
+            color: $lm-gray-1
+      h2
+        display: block
+        font-size: 28px
+        font-weight: bold
+        line-height: 1.25
+        letter-spacing: .5px
+        color: #282a36
+        margin: 0 0 16px !important
+  .lm-page-4
+    text-align: center
+
+    h2
+      font-size: 28px
+      font-weight: bold
+      line-height: 36px
+      margin-bottom: 12px
+      color: #282a36
+    .desc-block
+      font-size: 16px
+      line-height: 26px
+      color: #282a36
+      width: 300px
+      margin: 0 auto
+      margin-bottom: 64px
+    .lm-inside-wrap
+      background-image: url('/dist/img/main/phone-clouds.svg')
+      background-position: center
+      background-repeat: no-repeat
+      width: 436px
+      height: 533px
+      margin: 0 auto
+      position: relative
+      img
+        display: none
+        position: absolute
+        margin: auto
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+      .lm-inside-blocks
+        padding: 20px
+        width: 310px
+        border-radius: 16px
+        cursor: pointer
+        position: absolute
+        box-sizing: border-box
+        &.lm-inside-1
+          top: 36px
+          left: -310px
+          &:hover, &.active
+            ~ .lm-inside-img-1
+              display: block
+              left: -35px
+              bottom: -40px
+              width: 285px
+              height: 465px
+        &.lm-inside-2
+          top: 250px
+          left: -310px
+          &:hover, &.active
+            ~ .lm-inside-img-2
+              display: block
+              left: 43px
+              bottom: -26px
+              width: 289px
+              height: 479px
+        &.lm-inside-3
+          top: 160px
+          right: -310px
+          &:hover, &.active
+            ~ .lm-inside-img-3
+              display: block
+              left: 4px
+              bottom: -41px
+              width: 234px
+              height: 462px
+        &.lm-inside-4
+          top: 350px
+          right: -310px
+          &:hover, &.active
+            ~ .lm-inside-img-4
+              display: block
+              left: -44px
+              bottom: -19px
+              width: 283px
+              height: 485px
+        &:hover, &.active
+          box-shadow: 0 4px 16px 0 rgba(40, 42, 54, 0.16)
+          background-color: #fff
+          .left
+            .number
+              color: #0063da !important
+          .right
+            .title, .desc
+              color: #282a36 !important
+        .lm-inside-text
+          display: flex
+          align-items: flex-start
+          justify-content: flex-start
+          .left
+            min-width: 20px
+            margin-right: 16px
+            .number
+              font-size: 18px
+              font-weight: 600
+              line-height: 24px
+              color: #808792
+          .right
+            flex: 1
+            text-align: left
+            .title
+              font-size: 18px
+              font-weight: 600
+              line-height: 24px
+              margin-bottom: 4px
+              color: #808792
+            .desc
+              font-size: 14px
+              line-height: 24px
+              color: #808792
+  .lm-page-5
+    margin-top: 96px
+    background-position: top left
+    background-repeat: no-repeat
+    background-image: url('/dist/img/main/lm-page-5-bg-left.svg')
+    background-size: contain
+    .d-icon
+      width: 127px
+      height: 40px
+      fill: $lm-white
+      border-radius: 8px
+    .left
+      padding-left: 64px
+      padding-right: 64px
+      img
+        width: 436px
+    .right
+      padding-top: 124px
+      padding-right: 64px
+      padding-left: 124px
+      .lm-app-links
+        height: 40px
+        a
+          height: 40px
+          display: inline-block
+          margin-right: 20px
+      .desc
+        font-size: 14px
+        color: $lm-gray-1
+        margin-bottom: 24px
+        line-height: 20px
+        letter-spacing: .25px
+      h2
+        display: block
+        font-size: 28px
+        font-weight: bold
+        line-height: 40px
+        color: #282a36
+        margin: 0 0 12px !important
+  .lm-red-button
+    display: inline-block
+    padding: 0 24px
+    height: 40px
+    color: #fff
+    line-height: 40px
+    font-size: 12px
+    font-weight: 600
+    text-transform: uppercase
+    border-radius: 8px
+    background-color: #fc2e5f
+    letter-spacing: 1px
+  footer
+    background: url('/dist/img/main/lm-footer-left.svg') no-repeat bottom left, #0063da url('/dist/img/main/lm-footer-right.svg') no-repeat bottom right
+  .modal-authentication
+    padding-bottom: 20px
+    position: fixed
+    width: 100%
+    height: calc(100vh - 10px)
+    max-height: 100vh
+    overflow-y: auto
+    top: 0px
+    bottom: 0
+    background-color: hsla(0,0%,100%, 1)
+    display: flex
+    align-items: center
+    .align-center
+      display: flex
+      align-items: center
+    .modal-restore-wrap
+      width: 304px
+      margin: 0 auto
+      h1
+        font-size: 23px
+        font-weight: 300
+        text-align: center
+        color: $nero
+        margin: 0
+        margin-bottom: 9px
+      .desc
+        font-size: 16px
+        line-height: 1.25
+        text-align: center
+        color: $grey-chateau-4
+        font-weight: 300
+        display: block
+        margin-bottom: 32px
+      .form-restore
+        .back
+          font-size: 15px
+          font-weight: 300
+          text-align: center
+          color: $grey-chateau-4
+    .close-modal
+      width: 30px
+      height: 30px
+      cursor: pointer
+      position: absolute
+      right: 48px
+      top: 48px
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 16px
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="%23808782" d="M6.444 8L1 2.556 2.556 1 8 6.444 13.444 1 15 2.556 9.556 8 15 13.444 13.444 15 8 9.556 2.556 15 1 13.444 6.444 8z"/></svg>')
+      &:hover
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="%23282a36" d="M6.444 8L1 2.556 2.556 1 8 6.444 13.444 1 15 2.556 9.556 8 15 13.444 13.444 15 8 9.556 2.556 15 1 13.444 6.444 8z"/></svg>')
+    .lm-input-wrap
+      .lm-input
+        width: 100%
+        padding-left: 15px
+        display: block
+    .or
+      font-size: 15px
+      font-weight: 300
+      text-align: center
+      color: #cbd0d8
+      display: block
+      margin-bottom: 30px
+    h1
+      margin-top: 0
+      margin-bottom: 60px
+      font-size: 24px
+      text-align: center
+      color: #0c111d
+    .social-register
+      text-align: center
+      display: flex
+      align-items: center
+      justify-content: center
+  .lm-primary-button
+    min-width: 200px
+    display: inline-block
+    padding: 0 24px
+    height: 40px
+    color: #fff
+    line-height: 40px
+    cursor: pointer
+    font-size: 12px
+    border: 0
+    font-weight: 600
+    text-transform: uppercase
+    border-radius: 8px
+    background-color: #0063da
+    letter-spacing: 1px
+    &:active
+      background-color: #007bed
+    &:hover
+      background-color: #084bc5
+  .remember-password-wrap
+    margin-top: 48px
+    .remember-password
+      letter-spacing: 0.5px
+      font-size: 14px
+      font-weight: 300
+      color: $lm-gray-3
+  .input-ok-icon
+    display: none
+  .input-ok + .input-ok-icon
+    width: 30px
+    display: block
+    height: 30px
+    position: absolute
+    right: -33px
+    top: 0
+    bottom: 0
+    margin: auto
+    background-position: center
+    background-repeat: no-repeat
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"><path fill="%23B3B4BA" fill-rule="evenodd" d="M13.6 1.05L5.814 9.805l-4.69-3.751a.507.507 0 0 0-.632.79l5.065 4.053a.506.506 0 0 0 .695-.06l8.104-9.116a.506.506 0 1 0-.758-.673z"/></svg>')
+  .eye_show
+    display: block
+    top: 0
+    bottom: 0
+    margin: auto
+    width: 30px
+    height: 30px
+    background-position: center
+    background-repeat: no-repeat
+    background-size: 30px 20px
+    cursor: pointer
+    position: absolute
+    right: 10px
+    background-image: url('/dist/img/eye_show.svg')
+  .eye_hide
+    display: block
+    width: 30px
+    height: 30px
+    background-repeat: no-repeat
+    background-size: 30px 20px
+    background-position: center
+    cursor: pointer
+    position: absolute
+    top: 0
+    bottom: 0
+    margin: auto
+    right: 10px
+    background-image: url('/dist/img/eye_hide.svg')
+  .modal-restore-password
+    .align-center
+      display: flex
+      align-items: center
+    .modal-restore-wrap
+      width: 304px
+      margin: 0 auto
+      h1
+        font-size: 23px
+        font-weight: 300
+        text-align: center
+        color: $nero
+        margin: 0
+        margin-bottom: 9px
+      .desc
+        font-size: 16px
+        line-height: 1.25
+        text-align: center
+        color: $grey-chateau-4
+        font-weight: 300
+        display: block
+        margin-bottom: 32px
+      .form-restore
+        .back
+          font-size: 15px
+          font-weight: 300
+          text-align: center
+          color: $grey-chateau-4
+
+.social-register
+  a
+    margin: 0 8px
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    width: 40px
+    height: 40px
+    border-radius: 8px
+    &:first-child
+      margin-left: 0
+    &.disabled
+      pointer-events: none
+  .google
+    border-radius: 8px
+    border: 1px solid #CBD0D8
+    background-image: url('data:image/svg+xml;utf8,<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0)"><path d="M15.5459 21.6689L14.989 23.7481L12.9534 23.7911C12.3451 22.6628 12 21.3718 12 19.9999C12 18.6733 12.3226 17.4223 12.8945 16.3208H12.8949L14.7072 16.6531L15.5011 18.4544C15.3349 18.9388 15.2443 19.4588 15.2443 19.9999C15.2444 20.5872 15.3508 21.1498 15.5459 21.6689Z" fill="%23FBBB00"/><path d="M27.8601 18.5056C27.952 18.9896 27.9999 19.4893 27.9999 20.0001C27.9999 20.5729 27.9397 21.1316 27.825 21.6705C27.4355 23.5043 26.4179 25.1056 25.0083 26.2388L25.0078 26.2384L22.7252 26.1219L22.4022 24.1052C23.3375 23.5566 24.0685 22.6981 24.4536 21.6705H20.1758V18.5056H24.516H27.8601Z" fill="%23518EF8"/><path d="M25.0081 26.2384L25.0086 26.2388C23.6376 27.3408 21.896 28.0002 20.0002 28.0002C16.9536 28.0002 14.3048 26.2973 12.9536 23.7914L15.5461 21.6692C16.2217 23.4723 17.9611 24.7558 20.0002 24.7558C20.8767 24.7558 21.6978 24.5188 22.4024 24.1052L25.0081 26.2384Z" fill="%2328B446"/><path d="M25.1064 13.8418L22.5147 15.9635C21.7855 15.5077 20.9235 15.2444 20 15.2444C17.9148 15.2444 16.1429 16.5868 15.5011 18.4545L12.895 16.3209H12.8945C14.226 13.7538 16.9082 12 20 12C21.9411 12 23.7209 12.6914 25.1064 13.8418Z" fill="%23F14336"/></g><defs><clipPath id="clip0"><rect width="16" height="16" fill="white" transform="translate(12 12)"/></clipPath></defs></svg>')
+  .fb
+    border-radius: 8px
+    border: 1px solid #CBD0D8
+    background-image: url('data:image/svg+xml;utf8,<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.013 15.0987C18.013 15.5019 18.013 17.3016 18.013 17.3016H16.5V19.9953H18.013V28H21.1211V19.9955H23.2067C23.2067 19.9955 23.402 18.7039 23.4967 17.2916C23.2253 17.2916 21.1328 17.2916 21.1328 17.2916C21.1328 17.2916 21.1328 15.7245 21.1328 15.4499C21.1328 15.1746 21.4717 14.8043 21.8066 14.8043C22.1409 14.8043 22.8465 14.8043 23.5 14.8043C23.5 14.4375 23.5 13.1703 23.5 12C22.6276 12 21.6351 12 21.1976 12C17.9362 11.9998 18.013 14.6962 18.013 15.0987Z" fill="%231A32AF"/></svg>')
+  .vk
+    border-radius: 8px
+    border: 1px solid #CBD0D8
+    background-image: url('data:image/svg+xml;utf8,<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M20.7849 24.71C20.7849 24.71 21.0739 24.6767 21.2209 24.5112C21.3569 24.3593 21.3519 24.0741 21.3519 24.0741C21.3519 24.0741 21.3329 22.7389 21.929 22.5422C22.516 22.3486 23.2701 23.8327 24.0691 24.404C24.6732 24.8359 25.1322 24.7412 25.1322 24.7412L27.2693 24.71C27.2693 24.71 28.3874 24.6382 27.8574 23.7234C27.8144 23.6485 27.5484 23.047 26.2683 21.8106C24.9282 20.516 25.1082 20.7262 26.7223 18.4877C27.7054 17.1244 28.0984 16.2918 27.9754 15.9359C27.8584 15.5966 27.1353 15.6861 27.1353 15.6861L24.7312 15.7007C24.7312 15.7007 24.5531 15.6757 24.4201 15.7579C24.2911 15.8391 24.2081 16.0264 24.2081 16.0264C24.2081 16.0264 23.8271 17.0817 23.3191 17.9788C22.248 19.8718 21.8189 19.9717 21.6439 19.8541C21.2369 19.5804 21.3389 18.7531 21.3389 18.1661C21.3389 16.3314 21.6059 15.5665 20.8179 15.3687C20.5559 15.3032 20.3638 15.2595 19.6948 15.2522C18.8367 15.2428 18.1097 15.2553 17.6986 15.4645C17.4246 15.6039 17.2136 15.9151 17.3426 15.9328C17.5016 15.9546 17.8617 16.0337 18.0527 16.3043C18.2997 16.6529 18.2907 17.4376 18.2907 17.4376C18.2907 17.4376 18.4327 19.5971 17.9597 19.8656C17.6346 20.0498 17.1896 19.6741 16.2345 17.9559C15.7455 17.0765 15.3755 16.1035 15.3755 16.1035C15.3755 16.1035 15.3045 15.9224 15.1775 15.8256C15.0234 15.708 14.8074 15.6705 14.8074 15.6705L12.5213 15.6851C12.5213 15.6851 12.1782 15.6955 12.0522 15.8506C11.9402 15.989 12.0432 16.2741 12.0432 16.2741C12.0432 16.2741 13.8334 20.6315 15.8595 22.8284C17.7186 24.8421 19.8288 24.71 19.8288 24.71H20.7849Z" fill="%23007BED"/></svg>')
+  .instagram
+    background-image: url('/dist/img/icons-v2/instagram.png')
+
+.modal-authentication
+  h2
+    line-height: 1.3
+    text-align: center
+  .wrapper
+    background-color: $lm-white
+    height: 100vh
+    display: flex
+  .form-user
+    width: 280px
+    margin: 0 auto
+    text-align: center
+    .remember-password
+      float: right
+      font-size: 14px
+      font-weight: 300
+      text-align: right
+      color: #0d121f
+      position: absolute
+      right: 0
+      top: 70px
+    .bottom-form-text
+      text-align: center
+      display: block
+      font-size: 12px
+      letter-spacing: .5px
+      line-height: 1.4
+      color: $lm-gray-3
+      a
+        color: $dodger-blue
+    .vdp-datepicker__calendar
+      top: -360px
+      left: -40px
+  .bottom-sign-up
+    text-align: center
+    margin-top: 48px
+    padding-top: 48px
+    border-top: 1px solid $lm-gray-opacity-8
+  .lm-sign-up-content
+    font-size: 14px
+    line-height: 18px
+    color: $lm-gray-2
+    letter-spacing: 0.2px
+  .social-list-new
+    list-style: none
+    padding-bottom: 28px
+    border-bottom: solid 1px rgba(230, 231, 232, 0.75)
+    margin-bottom: 33px
+    li
+      height: 36px
+      border-radius: 8px
+      width: 310px
+      display: block
+      margin-bottom: 16px
+
+      line-height: 36px
+      a
+        position: relative
+        padding-left: 43px
+        i
+          display: block
+          position: absolute
+          width: 36px
+          left: 5px
+          top: 0
+          bottom: 0
+          margin: auto
+          height: 36px
+        span
+          color: #f5f7fa
+          font-size: 15px
+  .social-list
+    list-style: none
+    margin-bottom: 42px
+    li
+      padding: 10px 0
+      border-bottom: solid 1px rgba($zircon, 0.75)
+      &:hover
+        span
+          color: $mischka-2
+    i
+      display: inline-block
+      vertical-align: middle
+      margin-left: 10px
+      margin-right: 37px
+      width: 20px
+      height: 20px
+    span
+      display: inline-block
+      vertical-align: middle
+      font-size: 15px
+      text-align: left
+
+.lm-relative
+  position: relative
+
+.select-sex
+  .btn
+    width: 50%
+
+.main-wrapper-full-page
+  margin: 0 !important
+  min-width: 100%
+  max-width: 100%
+
+.post-register
+  &.page-container
+    .page
+      display: flex
+      align-items: center
+      text-align: center
+      background-color: $lm-white
+    .wrapper > div
+      width: 400px
+      margin: 0 auto
+      text-align: center
+      @media screen and (max-width: 992px)
+        width: 300px
+    h2
+      display: block
+      color: $lm-gray-1
+      font-weight: 700
+      font-size: 28px
+      text-align: center
+      letter-spacing: .5px
+    .desc
+      display: block
+      font-size: 18px
+      line-height: 1.5
+      text-align: center
+      color: $aluminium
+      margin-bottom: 40px
+    .blue-button
+      margin: 0 auto
+      margin-top: 30px
+      margin-bottom: 30px
+      width: 176px
+      &.disabled
+        background: #B5B9C0
+        cursor: not-allowed
+      span
+        font-size: 12px
+        text-transform: uppercase
+        display: block
+        line-height: 44px
+    .register-user-form
+      margin-top: 25px
+      text-align: left
+      .desc
+        margin-top: 2px
+        margin-bottom: 48px
+        &.sending-code
+          text-align: center
+          .send-code
+            font-size: 12px
+            font-weight: 600
+            font-style: normal
+            font-stretch: normal
+            line-height: 16px
+            letter-spacing: 1px
+            text-transform: uppercase
+            color: $lm-main
+        .counter
+          color: $lm-main !important
+        span, .counter
+          text-transform: uppercase
+          font-size: 8px
+          font-weight: 600
+          font-style: normal
+          font-stretch: normal
+          line-height: 1.5
+          letter-spacing: 1px
+          color: $lm-gray-3
+        span
+          font-size: 12px
+          line-height: 18px
+          text-align: center
+          color: $lm-gray-3
+          display: block
+      .lm-phone-text-error
+        margin-top: 2px
+        text-align: center
+        font-size: 8px
+        text-transform: uppercase
+        line-height: 12px
+        color: $lm-support-1
+        margin-bottom: 48px
+      .lm-phone-text-info
+        margin-top: 2px
+        text-align: center
+        font-size: 12px
+        line-height: 16px
+        color: $lm-gray-3
+        margin-bottom: 48px
+      .submit.blue-button.send-phone
+        margin-top: 0 !important
+      .tooltop-error
+        border: 0
+        z-index: 23 !important
+        .tooltop-errors.tooltip
+          padding-left: 0
+          .tooltop-arrow
+            border-right-color: $alizarin
+      #sex
+        width: 100%
+        input
+          display: none
+        .btn
+          width: 50%
+          border-radius: 4px
+          background-color: $white
+          border: solid 1px $link-water
+          margin-bottom: 0
+          padding: 7px 12px
+          text-align: center
+          box-shadow: 0 0 0 0 !important
+          color: $nobel-2
+          font-weight: 300
+          font-size: 14px
+          z-index: 0 !important
+          + .btn
+            margin-left: -3px
+          &:not(.active):first-child
+            border-top-right-radius: 0
+            border-bottom-right-radius: 0
+          &:not(.active):last-child
+            border-top-left-radius: 0
+            border-bottom-left-radius: 0
+          &.active
+            color: $tangaroa
+            border: solid 1px $tangaroa
+            z-index: 22 !important
+            &:first-child
+              border-top-right-radius: 1px
+              border-bottom-right-radius: 1px
+            + .btn
+              border-top-left-radius: 0
+              border-bottom-left-radius: 0
+      .form-group
+        margin-bottom: 0
+      label
+        margin-bottom: 16px
+        display: block
+      input
+        &:hover
+          border: solid 1px $mischka-2
+      input.input-ok
+        background-position-x: calc(100% - 16px)
+        background-position-y: center
+    .error-wrap-modal
+      color: $fire-engine-red-1
+      margin-top: 25px
+    .upload-photo
+      min-width: 128px
+      width: 128px
+      height: 128px
+      opacity: 0.68
+      background-color: $lm-gray-5
+      border-radius: 8px
+      transition: all 0.15s ease
+      cursor: pointer
+      object-fit: cover
+      &:hover
+        box-shadow: 0 4px 16px 0 $lm-gray-opacity-16
+        transition: all 0.15s ease
+    .upload-photo-link
+      cursor: pointer
+      //label
+        display: inline-block
+        margin-bottom: 11px
+        text-align: center
+        color: #0063da
+        cursor: pointer
+        margin-top: 12px
+        font-size: 14px
+        font-weight: 600
+        line-height: 1.29
+        letter-spacing: 0.5px
+      //a
+        display: inline-block
+        margin-bottom: 11px
+        font-size: 15px
+        font-weight: 300
+        text-align: center
+        color: $navy-blue-4
+        &:hover
+          text-decoration: underline
+      .desc-upload
+        display: block
+        font-size: 13px
+        line-height: 1.46
+        text-align: left
+        color: $aluminium
+    .d-btn_primary:disabled
+      background-color: #B5B9C0
+      color: $lm-white
+  .next
+    text-transform: uppercase
+    font-size: 15px
+    font-weight: 500
+    text-align: left
+    color: $dodger-blue
+    &:hover
+      color: $royal-blue-2
+
+.modal-authentication, .main-layout
+  .lm-input-wrap
+    position: relative
+    margin-bottom: 16px
+    textarea.lm-input
+      padding: 12px 16px
+      min-height: 128px
+    span
+      &.lm-input-info
+        color: $lm-gray-3
+    &.error
+      .lm-input, .lm-input:hover
+        background-color: $lm-white
+        border: solid 1px $lm-support-1 !important
+        color: $lm-support-1 !important
+    .lm-input
+      height: 40px
+      line-height: 40px
+      border-radius: 8px
+      letter-spacing: 0.25px
+      background-color: $lm-white
+      border: solid 1px $lm-gray-4 !important
+      color: $lm-gray-1 !important
+      font-size: 14px
+      margin: 0
+      box-sizing: border-box
+      &.error
+        background-color: $lm-white
+        border: solid 1px $lm-support-1 !important
+        color: $lm-support-1 !important
+      &:disabled
+        background-color: $lm-white
+        border: solid 1px $lm-gray-4 !important
+        color: $lm-gray-4 !important
+        cursor: not-allowed
+      &:hover
+        color: $lm-gray-1 !important
+        background-color: $lm-white
+        border: solid 1px $lm-gray-opacity-32 !important
+
+
+.editable
+  color: $lm-gray-4 !important
+  background-color: $lm-gray-5 !important
+  border-color:  $lm-gray-5 !important
+  background-size: 12px
+  background-repeat: no-repeat
+  background-position: calc(100% - 16px) center
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="%23CBD0D8" fill-rule="nonzero" d="M11.7.3c-.4-.4-1-.4-1.4 0l-10 10c-.2.2-.3.4-.3.7v4c0 .6.4 1 1 1h4c.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4l-4-4zM4.6 14H2v-2.6l6-6L10.6 8l-6 6zM12 6.6L9.4 4 11 2.4 13.6 5 12 6.6z"/></svg>')
+
+.tooltop-error
+  position: absolute
+  top: 45px
+  right: 10px
+  color: #0063da
+  background-color: #FFFFFF
+  display: block
+  width: 20px
+  height: 20px
+  border: 1px solid #0063da
+  -webkit-border-radius: 50%
+  border-radius: 50%
+  text-align: center
+  line-height: 20px
+  z-index: 1
+  cursor: help
+
+.input-fix-color.error .tooltop-error
+  color: red
+
+.guardian-title
+  margin-top: -16px
+  margin-bottom: 26px !important
+  span
+    display: block
+    font-size: 13px
+    line-height: 1.46
+    text-align: right
+    color: #B5B9C0
+
+.wrapper-scrolled
+  min-height: 680px
+
+.submit
+  position: relative
+  transition: width 400ms ease-in-out, border-radius 400ms ease-in-out
+  &.loading
+    width: 45px !important
+    padding: 0
+    transition: all 0.28s ease
+    transition-delay: 0s
+    .loader
+      opacity: 1
+      transition: all 0.28s ease
+      transition-delay: 0.1s
+  &.success
+    pointer-events: none
+    background-color: $de-york
+    &:after
+      content: ""
+      display: block
+      position: absolute
+      width: 18px
+      height: 8px
+      top: 50%
+      left: 50%
+      margin-top: -4px
+      margin-left: -4px
+      border-bottom: 3px $white solid
+      border-left: 3px $white solid
+      z-index: 9999
+      -webkit-transform: rotate(-45deg)
+      -moz-transform: rotate(-45deg)
+      -o-transform: rotate(-45deg)
+      -ms-transform: rotate(-45deg)
+      transform: rotate(-45deg)
+      -webkit-animation: fade 900ms ease forwards
+      -moz-animation: fade 900ms ease forwards
+      -o-animation: fade 900ms ease forwards
+      -ms-animation: fade 900ms ease forwards
+      animation: fade 900ms ease forwards
+  &.error
+    pointer-events: none
+    background-color: $alizarin
+    &:after
+      content: "×"
+      display: block
+      position: absolute
+      width: 18px
+      font-size: 28px
+      line-height: 40px
+      color: $white
+      z-index: 9999
+      -webkit-animation: fade 900ms ease forwards
+      -moz-animation: fade 900ms ease forwards
+      -o-animation: fade 900ms ease forwards
+      -ms-animation: fade 900ms ease forwards
+      animation: fade 900ms ease forwards
+  .loader
+    position: absolute
+    height: 15px
+    width: 15px
+    background-color: transparent
+    box-sizing: border-box
+    opacity: 0
+    border-radius: 50%
+    border-top: 2px solid $white
+    border-left: 2px solid $white
+    border-bottom: 2px solid $white
+    border-right: 2px solid rgba($white, 0.35)
+    transition: all 0.5s ease
+    animation-name: spin
+    animation-duration: 0.75s
+    animation-iteration-count: infinite
+    animation-timing-function: linear
+
+@-moz-keyframes spin
+  from
+    transform: translateY(0) rotate(0deg)
+  to
+    transform: translateY(0) rotate(360deg)
+
+@-webkit-keyframes spin
+  from
+    transform: translateY(0) rotate(0deg)
+  to
+    transform: translateY(0) rotate(360deg)
+
+@keyframes spin
+  from
+    transform: translateY(0) rotate(0deg)
+  to
+    transform: translateY(0) rotate(360deg)
+
+@-webkit-keyframes fade
+  0%
+    opacity: 0
+  50%
+    opacity: 0
+  100%
+    opacity: 1
+
+footer
+  padding-top: 32px
+  padding-bottom: 16px
+  .lm-flex-bettwen
+    width: 656px
+    margin: 0 auto
+    &.menu
+      padding-bottom: 32px
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+      margin-bottom: 16px
+    .social
+      ul
+        list-style: none
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        li
+          margin-left: 20px
+          &.vk
+            a
+              background-image: url('/dist/img/main/vk.svg')
+          &.fb
+            a
+              background-image: url('/dist/img/main/fb.svg')
+          &.instagram
+            a
+              background-image: url('/dist/img/main/instagram.svg')
+          &.youtube
+            a
+              background-image: url('/dist/img/main/youtube.svg')
+          a
+            display: block
+            width: 24px
+            height: 24px
+            border: solid 1px #fff
+            border-radius: 50%
+            background-position: center
+            background-repeat: no-repeat
+    .desc
+      span
+        opacity: 0.64
+        font-size: 12px
+        display: block
+        line-height: 16px
+        color: #fff
+    nav
+      width: 110px
+      .title
+        margin-bottom: 12px
+        font-size: 12px
+        font-weight: 600
+        line-height: 16px
+        letter-spacing: 1px
+        color: #fff
+        text-transform: uppercase
+      ul
+        list-style: none
+        li
+          + li
+            margin-top: 8px
+          a
+            opacity: 0.72
+            font-size: 12px
+            line-height: 16px
+            color: #fff
+            transition: opacity .25s ease
+            &:hover
+              opacity: 1
+  &.footer-static
+    .lm-flex-bettwen
+      .desc
+        span
+          color: #808792
+      &.menu
+        nav
+          .title
+            color: #808792
+          ul
+            list-style: none
+            li
+              a
+                color: #808792
+  &.grey
+    .lm-flex-bettwen
+      .social
+        ul
+          li
+            &.vk
+              a
+                background-image: url('/dist/img/main/vk-grey.svg')
+                color: red
+            &.fb
+              a
+                background-image: url('/dist/img/main/fb-grey.svg')
+            &.instagram
+              a
+                background-image: url('/dist/img/main/instagram-grey.svg')
+            &.youtube
+              a
+                background-image: url('/dist/img/main/youtube-grey.svg')
+            a
+              border: solid 1px #808792

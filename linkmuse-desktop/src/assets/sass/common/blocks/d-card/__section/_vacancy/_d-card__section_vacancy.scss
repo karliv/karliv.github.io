@@ -1,0 +1,16 @@
+.d-card__section_vacancy {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	.heading {
+		margin-bottom: 0;
+		min-width: 170px;
+		text-align: left;
+	}
+	.d-btn {
+		position: relative;
+		right: -24px;
+	}
+}
+

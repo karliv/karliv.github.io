@@ -1,0 +1,38 @@
+.d-list_declarations {
+	box-sizing: border-box;
+	background-color: $lm-white;
+	width: 100%;
+	max-width: 848px;
+	border-radius: $multiplicity;
+	box-shadow: $box-shadow_blur_down_4;
+	padding: $multiplicity*5;
+	display: flex;
+	flex-wrap: wrap;
+	.declaration {
+		box-sizing: content-box;
+		width: 100%;
+		max-width: 242px;
+		padding-right: $multiplicity*5;
+		border-right: 1px solid $lm-gray-opacity-8;
+		margin-right: $multiplicity*5;
+		&:only-child {
+			margin-right: 0;
+		}
+		&:nth-child(3n) {
+			border-right: none;
+			margin-right: 0;
+			padding-right: 0;
+		}
+		&:nth-child(n + 4) {
+			margin-top: $multiplicity*6;
+		}
+		.declaration__section {
+			.d-btn {
+				padding-top: 0;
+				padding-bottom: 0;
+				height: auto;
+			}
+		}
+	}
+}
+

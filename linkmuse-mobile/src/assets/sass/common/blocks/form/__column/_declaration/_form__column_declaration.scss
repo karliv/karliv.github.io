@@ -1,0 +1,11 @@
+.form__column_declaration {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	margin-right: 16px;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+@import '_payment/_form__column_declaration_payment.scss';

@@ -1,0 +1,10 @@
+.d-btn_primary_show-phone {
+  background-color: #ebf3fc;
+}
+
+.d-card_premium {
+  .d-btn_primary_show-phone {
+    background-color: $lm-gray-opacity-8;
+    color: $lm-gray-1;
+  }
+}

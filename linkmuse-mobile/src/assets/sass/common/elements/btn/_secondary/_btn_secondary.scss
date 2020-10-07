@@ -1,0 +1,19 @@
+.btn_secondary {
+	color: $lm-gray-3;
+	&:active {
+		transition: all 0.15s ease;
+		color: $lm-main-light;
+	}
+	&:disabled {
+		transition: all 0.15s ease;
+		color: $lm-gray-opacity-32;
+		pointer-events: none;
+		cursor: default;
+	}
+}
+
+.btn_secondary_filled {
+  color: $lm-gray-2;
+  background-color: $lm-gray-5;
+}
+

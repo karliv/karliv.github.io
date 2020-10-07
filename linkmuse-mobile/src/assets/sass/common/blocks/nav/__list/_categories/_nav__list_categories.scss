@@ -1,0 +1,21 @@
+.nav__list_categories {
+	display: flex;
+	overflow-x: auto;
+	padding-left: $multiplicity*4;
+	padding-right: $multiplicity*4;
+  /*margin-right: $multiplicity*4;*/
+  &:after {
+    content: '123';
+    width: 0px;
+    height: 1px;
+    display: block;
+    flex-basis: 0px;
+    color: transparent;
+  }
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	@media screen and (min-width: $sm-breakpoint) {
+		padding-left: $multiplicity*6;
+	}
+}

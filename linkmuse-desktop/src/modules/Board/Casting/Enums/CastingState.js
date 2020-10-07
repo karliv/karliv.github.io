@@ -1,0 +1,6 @@
+export const CREATED = 'created'
+export const DRAFT = 'draft'
+export const MODERATION = 'moderation'
+export const REJECTED = 'rejected'
+export const PUBLISHED = 'published'
+export const ARCHIVED = 'archived'

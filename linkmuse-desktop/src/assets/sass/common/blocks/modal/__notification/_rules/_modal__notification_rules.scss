@@ -1,0 +1,18 @@
+.modal__notification_rules {
+	box-sizing: border-box;
+	margin: $multiplicity*8 0;
+	padding: $multiplicity*8;
+	background-color: $lm-main_08;
+	border-radius: $multiplicity*4;
+	width: 100%;
+	font-size: 14px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.29;
+	letter-spacing: 0.5px;
+	color: $lm-main;
+	text-align: center;
+	text-transform: none;
+}
+

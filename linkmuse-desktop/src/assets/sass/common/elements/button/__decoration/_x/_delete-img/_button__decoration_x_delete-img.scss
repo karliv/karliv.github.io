@@ -1,0 +1,38 @@
+.button__decoration_x_delete-img {
+	box-sizing: border-box;
+	display: block;
+	position: relative;
+	width: 16px;
+	height: 16px;
+	background-color: rgba(40, 42, 54, 0.32);
+	border-radius: 50%;
+	&::before {
+		box-sizing: border-box;
+		content: '';
+		display: block;
+		position: absolute;
+		left: 3px;
+		top: 7px;
+		border-radius: 2px;
+		width: 10px;
+		height: 2px;
+		background-color: $lm-white;
+		transform: rotate(45deg);
+	}
+	
+	&::after {
+		box-sizing: border-box;
+		content: '';
+		display: block;
+		position: absolute;
+		top: 7px;
+		left: 3px;
+		
+		border-radius: 2px;
+		width: 10px;
+		height: 2px;
+		background-color: $lm-white;
+		transform: rotate(-45deg);
+	}
+}
+

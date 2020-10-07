@@ -1,0 +1,12 @@
+.modal {}
+@import '__icon/_modal__icon.scss';
+@import '__description/_modal__description.scss';
+@import '__title/_modal__title.scss';
+@import '__content/_modal__content.scss';
+
+
+@import '_filters/_modal_filters.scss';
+@import '_active/_modal_active.scss';
+@import '_write-all/_modal_write-all.scss';
+@import '_talent-phone/_modal_talent-phone.scss';
+@import '_confirm/_modal_confirm.scss';

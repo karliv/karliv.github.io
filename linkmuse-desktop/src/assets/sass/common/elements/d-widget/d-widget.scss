@@ -1,0 +1,13 @@
+.d-widget {
+	display: flex;
+	margin-right: $multiplicity*5;
+	&:only-child {
+		margin-right: 0;
+	}
+	&:last-child {
+		margin-right: 0;
+	}
+}
+@import '__count/_d-widget__count.scss';
+@import '__icon/_d-widget__icon.scss';
+

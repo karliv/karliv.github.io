@@ -1,0 +1,29 @@
+.d-switch__mark {
+	display: none;
+	&:checked + .d-switch__btn {
+		background-color: $lm-main;
+		border: 1px solid $lm-main;
+		transition: all 0.35s ease;
+		&::before {
+			border: 1px solid $lm-main;
+			transform: translateX(18px);
+			transition: all 0.25s ease;
+		}
+		&:hover {
+			background-color: $lm-main-dark;
+		}
+	}
+	&:disabled {
+		cursor: not-allowed;
+	}
+	&:disabled + .d-switch__btn {
+		background-color: $lm-gray-5;
+		border: 1px solid $lm-gray-5;
+		cursor: not-allowed;
+		&::before {
+			background-color: $lm-gray-4;
+			border-color: $lm-gray-4;
+		}
+	}
+}
+

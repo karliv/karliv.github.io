@@ -1,0 +1,11 @@
+.multiselect__group_declaration {
+	display: flex;
+	align-items: center;
+	padding: 16px 0;
+	border-top: 1px solid rgba(40, 42, 54, 0.08);
+	&:first-child {
+		border-top: none;
+		padding: 0 0 16px;
+	}
+}
+

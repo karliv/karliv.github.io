@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Русский",
+    "locale": "ru",
+    "country": "ru",
+    "fallback": true
+  },
+  {
+    "name": "English",
+    "locale": "en",
+    "country": "us"
+  },
+  {
+    "name": "Русский",
+    "locale": "web_ru",
+    "country": "ru"
+  },
+  {
+    "name": "English",
+    "locale": "web_en",
+    "country": "us"
+  }
+]

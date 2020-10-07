@@ -1,0 +1,418 @@
+.lm-v3 {
+  header {
+    top: 0;
+    z-index: 18;
+    height: 48px;
+    position: sticky;
+    margin-bottom: 16px;
+    background-color: $lm-white;
+    box-shadow: $panes__box-shadow;
+
+    .lm-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .lm-v3-dropdown-action {
+        cursor: pointer;
+        position: relative;
+
+        &:hover {
+          z-index: 1111111;
+
+          .lm-v3-dropdown-action-wrap {
+
+            .lm-v3-dropdown-action--header {
+              .lm-v3-dropdown-action-header--link, .d-icon{
+                transition: color .25s ease;
+              }
+
+              .lm-v3-dropdown-action-header--link {
+                color: $lm-main;
+              }
+
+              .d-icon {
+                fill: $lm-main;
+              }
+            }
+
+            .lm-v3-dropdown-action-content {
+              width: 141px;
+              height: 84px;
+              display: block;
+            }
+          }
+        }
+
+        .lm-v3-dropdown-action-wrap {
+          margin-right: 16px;
+
+          .lm-v3-dropdown-action--header {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            .lm-v3-dropdown-action-header--link, .d-icon {
+              flex-direction: row;
+            }
+
+            .lm-v3-dropdown-action-header--link {
+              padding-right: 0 !important;
+            }
+
+            .d-icon {
+              margin-right: 8px;
+              object-fit: contain;
+              border-radius: 4px;
+              transform: rotate(90deg)
+            }
+          }
+
+          .lm-v3-dropdown-action-content {
+            left: 0;
+            z-index: 2;
+            margin: auto;
+            display: none;
+            padding-top: 19px;
+            position: absolute;
+
+            .lm-dropdown-indent {
+              padding: 6px 0
+            }
+
+            ul {
+              overflow: hidden;
+              list-style: none;
+              border-radius: 8px;
+              background: $lm-white;
+              box-shadow: 0 4px 16px 0 rgba(40, 42, 54, 0.16);
+
+              li {
+                text-align: left;
+
+                &:hover {
+                  background: $lm-main_08;
+                }
+
+                a {
+                  height: 28px;
+                  display: block;
+                  font-size: 14px;
+                  font-weight: 600;
+                  line-height: 1.29;
+                  text-align: left;
+                  padding: 10px 20px 0;
+                  letter-spacing: 0.5px;
+                  box-sizing: content-box;
+
+                  &:hover {
+                    color: $lm-main !important
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .lm-header-left {
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .lm-header-left-menu {
+          display: flex;
+          list-style: none;
+          align-items: center;
+          justify-content: center;
+
+          li, .fix-li {
+            &.new {
+              position: relative;
+
+              span {
+                right: 0;
+                top: -12px;
+                font-size: 8px;
+                font-weight: bold;
+                position: absolute;
+                color: $lm-support-1;
+                text-transform: uppercase;
+              }
+            }
+
+            a {
+              display: block;
+              font-size: 14px;
+              padding: 0 20px;
+              font-weight: 600;
+              line-height: 1.29;
+              color: $lm-gray-1;
+              letter-spacing: 0.5px;
+              transition: color .25s ease-in;
+
+              &:hover {
+                color: $lm-main;
+                transition: color .25s ease;
+              }
+            }
+
+            .lm_header_text_ads {
+              padding: 0 4px 0 24px
+            }
+          }
+        }
+
+        .lm-header-logo {
+          margin-right: 24px;
+
+          a {
+            height: 32px;
+            display: block;
+          }
+
+          img {
+            width: 94px;
+            height: 14px;
+            display: block;
+            margin: 17px 0;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .lm-header-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .lm-v3-header-create-btn {
+          display: flex;
+          height: 28px;
+          cursor: pointer;
+          padding: 0 10px;
+          line-height: 28px;
+          position: relative;
+          align-items: center;
+
+          span {
+            font-size: 14px;
+            line-height: 28px;
+            font-weight: 600;
+            flex-direction: row;
+            letter-spacing: 0.5px;
+          }
+
+          .d-icon {
+            width: 16px;
+            height: 16px;
+            fill: $lm-white;
+            margin-right: 8px;
+            flex-direction: row;
+            object-fit: contain;
+            border-radius: 4px;
+          }
+        }
+
+        .create-account {
+          color: $lm-main !important;
+          line-height: 28px !important;
+        }
+
+        .login-button, .create-account {
+          display: block;
+          padding: 0 20px;
+          color: $lm-main;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 16px;
+          letter-spacing: 1px;
+        }
+
+        .lm-v3-header-user {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+
+          .lm-v3-header-user-link {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+          }
+
+          &.open {
+            .lm-home-page-menu {
+              fill: $lm-main;
+              color: $lm-main;
+              border-radius: 8px;
+              background: $lm-main_08;
+            }
+          }
+
+          .dropdown-menu {
+            right: 0;
+            border: 0;
+            left: initial;
+            padding: 6px 0;
+            margin-top: 8px;
+            border-radius: 8px;
+            background-color: $lm-white;
+            box-shadow: 0 4px 16px 0 rgba(40, 42, 54, 0.16);
+
+            li {
+              &:hover {
+                background: $lm-main_08;
+              }
+
+              &:not(.lm-login-out) {
+                &:hover {
+                  a {
+                    span {
+                      color: $lm-main;
+                      transition: color .25s ease;
+                    }
+                  }
+                }
+              }
+
+              &.lm-login-out {
+                a {
+                  span {
+                    color: $lm-gray-3;
+                  }
+                }
+              }
+
+              + .lm-user-line {
+                border-top: 1px solid rgba(40, 42, 54, 0.08)
+              }
+
+              a {
+                display: flex;
+                padding: 8px 20px;
+                align-items: center;
+                justify-content: flex-start;
+
+                span {
+                  font-size: 14px;
+                  text-align: left;
+                  font-weight: 600;
+                  line-height: 1.29;
+                  color: $lm-gray-2;
+                  letter-spacing: 0.5px;
+                  transition: color .25s ease-in;
+
+                  &.new {
+                    font-size: 8px;
+                    margin-left: 8px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    color: $lm-support-1 !important;
+                  }
+                }
+              }
+            }
+
+            .cards-base-lm-divider {
+              height: 1px;
+              margin: 6px 20px;
+              background-color: $lm-gray-opacity-8;
+            }
+          }
+
+          img {
+            width: 20px;
+            height: 20px;
+            display: block;
+            object-fit: cover;
+            border-radius: 8px;
+          }
+
+          .lm-profile-icon-arrow {
+            width: 20px;
+            height: 20px;
+            display: none;
+            object-fit: cover;
+            border-radius: 8px;
+            background-color: $lm-main;
+
+            .d-icon {
+              fill: $lm-white;
+            }
+          }
+
+          &.open {
+            .lm-profile-icon-avatar {
+              display: none;
+            }
+
+            .lm-profile-icon-arrow {
+              display: block
+            }
+          }
+
+        }
+
+        .lm-v3-header-notification, .lm-v3-header-message {
+          width: 16px;
+          height: 16px;
+
+          .d-icon {
+            fill: $lm-gray-2;
+            transition: all 0.15s ease-in-out;
+          }
+
+          a {
+            display: block;
+            position: relative;
+          }
+
+          &.new {
+            a {
+              &:after {
+                top: -4px;
+                width: 8px;
+                height: 8px;
+                right: -4px;
+                content: '';
+                display: block;
+                position: absolute;
+                border-radius: 50%;
+                box-sizing: content-box;
+                background-color: $lm-main;
+                border: solid 2px $lm-white;
+              }
+            }
+          }
+        }
+
+        .lm-home-page-menu {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          cursor: pointer;
+          border-radius: 8px;
+          align-items: center;
+          align-content: center;
+          justify-content: center;
+
+          &:hover, &:active, &.active {
+            fill: $lm-main;
+            color: $lm-main;
+            border-radius: 8px;
+            background: $lm-main_08;
+
+            .lm-v3-header-notification, .lm-v3-header-message {
+              .d-icon {
+                fill: $lm-main;
+                transition: all 0.15s ease;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

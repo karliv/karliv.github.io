@@ -1,0 +1,25 @@
+.nav__item_categories {
+	background-color: $lm-gray-5;
+	padding: $multiplicity*1.5 $multiplicity*4;
+	color: $lm-gray-3;
+  flex-shrink: 0;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.4;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border-radius: $multiplicity*2;
+	margin-right: $multiplicity*2;
+	&:active {
+		transition: all 0.25s ease;
+		background-color: $lm-main_08;
+		color: $lm-main;
+	}
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@import '_active/_nav__item_categories_active.scss';

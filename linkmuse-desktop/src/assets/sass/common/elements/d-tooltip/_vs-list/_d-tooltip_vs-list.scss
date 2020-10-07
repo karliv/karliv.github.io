@@ -1,0 +1,12 @@
+.d-tooltip_vs-list {
+	.d-tooltip__icon {
+		position: absolute;
+		left: 0.7rem;
+		bottom: 0;
+		fill: $lm-gray-opacity-32;
+		&:hover {
+			fill: $lm-main;			
+		}
+	}
+}
+

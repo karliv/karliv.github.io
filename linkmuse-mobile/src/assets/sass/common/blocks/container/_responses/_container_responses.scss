@@ -1,0 +1,21 @@
+.container_responses {
+	margin-top: $multiplicity;
+	background-color: $lm-gray-5;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background-color: $lm-white;
+	border-radius: $border-radius_4;
+	flex-shrink: 0;
+	box-shadow: $box-shadow_blur_down_4;
+	&:only-child {
+		margin-top: 0;
+	}
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+@import '_notification/_container_responses_notification.scss';

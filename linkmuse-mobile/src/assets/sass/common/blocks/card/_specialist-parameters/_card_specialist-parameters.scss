@@ -1,0 +1,55 @@
+.card_specialist-parameters {
+	box-sizing: border-box;
+	flex: 1;
+	border: 1px solid $lm-gray-4;
+	border-radius: $multiplicity*2;
+	padding: $multiplicity*3 $multiplicity*4;
+	min-height: 56px;
+	margin-right: 12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	&:last-child {
+		margin-right: 0;
+	}
+	.card__header {
+		display: flex;
+		align-items: center;
+		margin-bottom: $multiplicity*2;
+		span {
+			font-size: 8px;
+			font-weight: 600;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: 1px;
+			color: $lm-gray-3;
+			text-transform: uppercase;
+		}
+	}
+	.card__body {
+		display: flex;
+		align-items: flex-end;
+		font-size: 14px;
+		font-weight: 600;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1;
+		letter-spacing: 0.3px;
+		color: $lm-gray-1;
+		span {
+			font-size: 18px;
+			line-height: 0.97;
+			margin-right:  $multiplicity;
+		}
+	}
+	.card__icon {
+		margin-right: $multiplicity*2;
+		width: 8px;
+		height: 8px;
+		fill: $lm-gray-3;
+	}
+}
+
+@import '_big/_card_specialist-parameters_big.scss';
+@import '_small/_card_specialist-parameters_small.scss';

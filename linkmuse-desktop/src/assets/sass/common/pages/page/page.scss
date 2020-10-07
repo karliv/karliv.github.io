@@ -1,0 +1,27 @@
+.page {
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 100vh;
+	padding-top: 56px;
+}
+@import '__body/_page__body.scss';
+@import '__container/_page__container.scss';
+@import '__img/_page__img.scss';
+@import '__link/_page__link.scss';
+@import '__paragraph/_page__paragraph.scss';
+@import '__section/_page__section.scss';
+@import '__title/_page__title.scss';
+@import '__sidebar/_page__sidebar.scss';
+@import '__plug/_page__plug.scss';
+@import '__content/_page__content.scss';
+
+@import '_error/_page_error.scss';
+@import '_mailing/_page_mailing.scss';
+@import '_settings/_page_settings.scss';
+@import '_verification/_page_verification.scss';
+@import '_declaration/_page_declaration.scss';
+@import '_inner/_page_inner.scss';
+@import '_casting/_page_casting.scss';
+@import '_feed/_page_feed.scss';
+@import '_hr/_page_hr.scss';
+@import '_vacancy/_page_vacancy.scss';

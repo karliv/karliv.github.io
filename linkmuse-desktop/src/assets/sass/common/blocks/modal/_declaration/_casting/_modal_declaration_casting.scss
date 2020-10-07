@@ -1,0 +1,14 @@
+.modal_declaration_casting {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw !important;
+	height: 100vh;
+	background-color: rgba(40, 42, 54, 0.64);
+	opacity: 0;
+	z-index: -1;
+}
+

@@ -1,0 +1,43 @@
+{
+  "oauth": {
+    "vkontakte": {
+      "url": "https://oauth.vk.com/authorize",
+      "params": {
+        "v": "5.92",
+        "client_id": "",
+        "scope": "email",
+        "redirect_uri": "",
+        "display": "mobile"
+      }
+    },
+    "facebook": {
+      "url": "https://www.facebook.com/dialog/oauth",
+      "params": {
+        "client_id": "",
+        "display": "touch",
+        "redirect_uri": "",
+        "response_type": "code",
+        "scope": "email, user_birthday, user_location, user_hometown"
+      }
+    },
+    "google": {
+      "url": "https://accounts.google.com/o/oauth2/auth",
+      "params": {
+        "client_id": "",
+        "redirect_uri": "",
+        "response_type": "code",
+        "scope": "email profile"
+      }
+    },
+    "apple": {
+      "url": "https://appleid.apple.com/auth/authorize",
+      "params": {
+        "client_id": "",
+        "redirect_uri": "",
+        "scope": "name email",
+        "response_type": "code",
+        "response_mode": "form_post"
+      }
+    }
+  }
+}

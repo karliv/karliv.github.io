@@ -1,0 +1,30 @@
+.btn_research {
+	box-sizing: border-box;
+	background-color: $lm-gray-3;
+	padding: $multiplicity*2 $multiplicity*3;
+	font-size: 8px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: 1px;
+	color: $lm-white;
+	text-transform: uppercase;
+	border-radius: 20px 20px 0 0;
+	min-width: 100px;
+	max-width: 100px;
+	max-height: 28px;
+	position: fixed;
+	right: -36px;
+	top: calc(50vh - 50px);
+	transform: rotate(-90deg);
+  z-index: 100;
+	@media screen and (min-width: $sm-breakpoint) {
+		font-size: 12px;
+		max-height: 40px;
+		max-width: 160px;
+		padding: $multiplicity*3 $multiplicity*6;
+		right: -58px;
+	}
+}
+

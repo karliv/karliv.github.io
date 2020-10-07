@@ -1,0 +1,18 @@
+@mixin lm-dropdown-icon($color:'%23CBD0D8')
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#{$color}" fill-rule="nonzero" d="M8 10.625L4.4 7.25l.933-.875L8 8.875l2.667-2.5.933.875z"/></svg>')
+
+.lm-w-dropdown-icon
+  @include lm-dropdown-icon()
+
+@mixin lm-close($color:'%23282A36')
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><g fill="none" fill-rule="evenodd"><path d="M-3-3h16v16H-3z"/><path fill="#{$color}" d="M5 3.603l3.255-3.3A1.05 1.05 0 0 1 9.68.256c.407.359.429.962.05 1.346L6.377 5l3.351 3.398a.916.916 0 0 1-.05 1.346 1.05 1.05 0 0 1-1.424-.047L5 6.397l-3.255 3.3a1.05 1.05 0 0 1-1.425.047.916.916 0 0 1-.05-1.346L3.623 5 .271 1.602A.916.916 0 0 1 .32.256a1.05 1.05 0 0 1 1.424.047L5 3.603z"/></g></svg>')
+
+.lm-close
+  @include lm-close()
+
+@mixin lm-info($color:'%23CBD0D8')
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g fill="#{$color}" fill-rule="nonzero"><path d="M0 8c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8zm2 0c0 3.3 2.7 6 6 6s6-2.7 6-6-2.7-6-6-6-6 2.7-6 6z" clip-rule="evenodd"/><path d="M7 7h2v5H7V7zM8 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></g></svg>')
+
+.lm-icon-info
+  @include lm-info()
+

@@ -1,0 +1,13 @@
+.nav_sidebar {
+	box-sizing: border-box;
+	width: 100%;
+  max-width: 214px;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+  @media screen and (min-width: $sm-breakpoint) {
+    max-width: 288px;
+  }
+}
+
+@import '_active/_nav_sidebar_active.scss';

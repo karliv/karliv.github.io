@@ -1,0 +1,6 @@
+.form__button_back_verification-step {
+	@include button_cancel();
+	min-width: 176px;
+	background-color: $lm-gray-5;
+}
+

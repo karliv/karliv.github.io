@@ -1,0 +1,5 @@
+export const ROOM = 'room'
+export const CONCERT_HALL = 'concert-hall'
+export const THEATER = 'theater'
+export const PAVILION = 'pavilion'
+export const PHOTO_STUDIO = 'photo-studio'

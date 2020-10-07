@@ -1,0 +1,49 @@
+.btn {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 40px;
+	border-radius: $multiplicity*2;
+	border: none;
+	margin: 0;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding: $multiplicity*3 $multiplicity*6;
+	background-color: transparent;
+	color: $lm-main;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.15s ease-in-out;
+	text-decoration: none;
+	&:disabled {
+		transition: all 0.15s ease;
+		color: $lm-gray-opacity-32;
+		pointer-events: none;
+		cursor: default;
+	}
+}
+@import '__icon/_btn__icon.scss';
+
+@import '_back/_btn_back.scss';
+@import '_icon/_btn_icon.scss';
+@import '_options/_btn_options.scss';
+@import '_outline/_btn_outline.scss';
+@import '_primary/_btn_primary.scss';
+@import '_round/_btn_round.scss';
+@import '_rounded/_btn_rounded.scss';
+@import '_chat/_btn_chat.scss';
+@import '_secondary/_btn_secondary.scss';
+@import '_share/_btn_share.scss';
+@import '_transparency/_btn_transparency.scss';
+@import '_plus/_btn_plus.scss';
+@import '_filters/_btn_filters.scss';
+@import '_close/_btn_close.scss';
+@import '_reset/_btn_reset.scss';
+@import '_research/_btn_research.scss';
+@import '_like/_btn_like.scss';

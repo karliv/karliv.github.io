@@ -1,0 +1,9 @@
+.status {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+}
+
+@import '_notification/_status_notification.scss';
+@import '_offline/_status_offline.scss';
+@import '_online/_status_online.scss';

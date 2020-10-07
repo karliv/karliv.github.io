@@ -1,0 +1,20 @@
+.d-nav__item_categories {
+	background-color: $lm-gray-5;
+	padding: $multiplicity*1.5 $multiplicity*4;
+	color: $lm-gray-2;
+	flex-shrink: 0;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.4;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border-radius: $multiplicity*2;
+	margin-right: $multiplicity*2;
+	text-decoration: none;
+	transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+@import '_active/_d-nav__item_categories_active.scss';

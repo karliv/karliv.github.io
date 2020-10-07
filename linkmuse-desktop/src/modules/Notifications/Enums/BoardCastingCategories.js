@@ -1,0 +1,8 @@
+export const CASTING_APPROVE = 'casting.approved'
+export const BOARD_CASTING_DELETE = 'board.casting.delete'
+export const BOARD_CASTING_REJECT = 'board.casting.reject'
+export const BOARD_CASTING_APPROVE = 'board.casting.approve'
+export const CASTING_RESPONSE_NEW = 'casting.response.new'
+export const BOARD_CASTING_NEW_RESPONSE = 'board.casting.new_response'
+export const BOARD_CASTING_FORCE_PUBLISH = 'board.casting.force_publish'
+export const BOARD_CASTING_RESPONSE_VIEWED = 'board.casting.response_viewed'

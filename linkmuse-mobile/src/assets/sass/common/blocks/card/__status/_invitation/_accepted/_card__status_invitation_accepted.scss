@@ -1,0 +1,17 @@
+.card__status_invitation_accepted {
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.33;
+	letter-spacing: 1px;
+	color: $lm-gray-3;
+	text-transform: uppercase;
+	border-top: 1px solid rgba(40, 42, 54, 0.06);
+	text-align: center;
+	padding: 22.5px 0;
+	@media screen and (min-width: $sm-breakpoint) {
+		padding: 26px 0;
+	}
+}
+

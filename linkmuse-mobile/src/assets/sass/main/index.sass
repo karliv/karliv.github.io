@@ -1,0 +1,1084 @@
+.lm-m-main-page
+  .lm-block-static
+    position: relative
+    background-color: #fff
+    z-index: 2
+  .lm-block-invisible
+    visibility: hidden
+    height: calc(960 / 768 * 100vw)
+    max-height: calc(100vh - 10px)
+    @media (max-width: 767px)
+      height: calc(682 / 320 * 100vw - 10px)
+    @media (max-height: 540px) and (max-width: 900px) and (min-width: 478px)
+      height: calc(682 / 320 * 100vw)
+      max-height: calc(100vh)
+    @media (max-width: 350px)
+      height: calc(682 / 340 * 100vw)
+      max-height: calc(100vh)
+  .lm-block-fixed
+    position: fixed
+    z-index: 1
+    top: 0
+    width: 100%
+  .wrapper
+    padding: 0 26px
+    box-sizing: border-box
+  .lm-m-header
+    background-color: $lm-main
+    padding-top: 36px
+    text-align: center
+    .lm-down-arrow
+      transform: rotate(-90deg)
+      width: 32px
+      display: block
+      margin: 0 auto
+      margin-top: 16px
+      cursor: pointer
+      height: 32px
+      border-radius: 8px
+      border: solid 1.5px $lm-white
+      background-repeat: no-repeat
+      background-size: 12px
+      background-position: center
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="%23ffffff" d="M6.7 14.4L8.1 13 3.8 8.7H16v-2H3.8l4.3-4.3L6.7 1 .707 6.993a1 1 0 0 0 0 1.414L6.7 14.4z"/></svg>')
+      @media (min-width: 767px)
+        position: absolute
+        left: 0
+        right: 0
+        margin: auto
+        top: 24px
+    img
+      display: block
+    @media (min-width: 767px)
+      padding-top: 36px
+    .lm-m-center
+      margin-bottom: 48px
+      @media (min-width: 767px)
+        margin-bottom: 72px
+    h1
+      font-size: 28px
+      font-weight: bold
+      line-height: 36px
+      color: $lm-white
+      display: block
+      max-width: 268px
+      margin: 0 auto
+      margin-bottom: 16px
+      @media (min-width: 767px)
+        max-width: 491px
+        font-size: 48px
+        line-height: 60px
+    .lm-m-desc
+      font-size: 14px
+      line-height: 18px
+      color: $lm-gray-5
+      display: block
+      max-width: 280px
+      margin: 0 auto
+      text-align: center
+      margin-bottom: 32px
+      @media (min-width: 767px)
+        max-width: 390px
+        font-size: 16px
+        line-height: 20px
+        margin-bottom: 36px
+    .lm-m-header-btn
+      margin-bottom: 4px
+      display: flex
+      flex-direction: column
+      align-items: center
+      .lm-primary-button
+        width: 186px
+        margin-bottom: 4px
+        transition: background-color .25s ease
+        &:hover
+          background-color: $lima
+      .lm-link-button
+        font-weight: 600
+        color: $lm-white
+        line-height: 44px
+        transition: opacity .25s ease
+        &:hover
+          opacity: .75
+      @media (min-width: 767px)
+        margin-bottom: 24px
+  .content
+    .lm-m-section-1
+      background-color: #ffffff
+      padding-top: 80px
+      @media (min-width: 767px)
+        padding-top: 124px
+      ul
+        padding-bottom: 80px
+        @media (min-width: 767px)
+          display: flex
+          justify-content: flex-start
+          align-items: flex-start
+          flex-wrap: wrap
+          padding-bottom: 164px
+          li
+            min-width: 50%
+            margin-top: 0 !important
+            &:nth-child(-n+2)
+              margin-bottom: 136px
+        li
+          + li
+            margin-top: 64px
+          display: flex
+          align-items: center
+          flex-direction: column
+          justify-content: center
+          svg
+            margin-bottom: 24px
+          span
+            font-size: 12px
+            font-weight: 600
+            line-height: 16px
+            letter-spacing: 1px
+            color: $lm-gray-1
+            text-transform: uppercase
+    .lm-m-section-2
+      background-position: top left
+      background-repeat: no-repeat
+      background-image: url('/dist/img/main/lm-page-1-bg-left.svg')
+      text-align: center
+      padding-bottom: 96px
+      background-color: #ffffff
+      background-size: contain
+      img
+        margin-bottom: 16px
+        max-height: 223px
+        margin-left: 44px
+        @media (min-width: 767px)
+          margin-bottom: 64px
+          max-height: 469px
+      h2
+        font-size: 18px
+        font-weight: 600
+        line-height: 24px
+        color: $lm-gray-1
+        padding-bottom: 8px
+        @media (min-width: 767px)
+          font-size: 28px
+          padding-bottom: 16px
+          line-height: 36px
+      .lm-m-center
+        .lm-m-primary-button
+          transition: background-color .25s ease
+          &:hover
+            background-color: $lima
+      .desc
+        font-size: 14px
+        line-height: 18px
+        color: $lm-gray-2
+        padding-bottom: 24px
+        @media (min-width: 767px)
+          font-size: 17px
+          line-height: 26px
+    .lm-m-section-3
+      background-position: top right
+      background-repeat: no-repeat
+      background-image: url(/dist/img/main/lm-page-3-bg-right.svg)
+      text-align: center
+      padding-bottom: 96px
+      background-color: #ffffff
+      background-size: contain
+      img
+        margin-bottom: 16px
+        max-height: 187px
+        @media (min-width: 767px)
+          max-height: 469px
+          margin-bottom: 64px
+      h2
+        font-size: 18px
+        font-weight: 600
+        line-height: 24px
+        color: $lm-gray-1
+        padding-bottom: 8px
+        @media (min-width: 767px)
+          font-size: 28px
+          padding-bottom: 16px
+          line-height: 36px
+      .lm-m-center
+        .lm-m-primary-button
+          transition: background-color .25s ease
+          &:hover
+            background-color: $mango-tango
+      .desc
+        font-size: 14px
+        line-height: 18px
+        color: $lm-gray-2
+        padding-bottom: 24px
+        @media (min-width: 767px)
+          font-size: 17px
+          line-height: 26px
+    .lm-m-section-4
+      text-align: center
+      padding-bottom: 96px
+      background-color: #ffffff
+      background-size: contain
+      background-position: top left
+      background-repeat: no-repeat
+      background-image: url('/dist/img/main/lm-page-5-bg-left.svg')
+      .lm-app-links
+        max-width: 320px
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+        a
+          display: block
+        img
+          display: block
+          height: 36px
+          border-radius: 8px
+          padding: 2px 8px
+          background-color: #0063da
+
+      .wrapper > img
+        margin-bottom: 16px
+        max-height: 192px
+        @media (min-width: 767px)
+          max-height: 366px
+          margin-bottom: 64px
+      h2
+        font-size: 18px
+        font-weight: 600
+        line-height: 24px
+        color: $lm-gray-1
+        padding-bottom: 8px
+        @media (min-width: 767px)
+          font-size: 28px
+          padding-bottom: 16px
+          line-height: 36px
+      .desc
+        font-size: 14px
+        line-height: 18px
+        color: $lm-gray-2
+        padding-bottom: 24px
+        @media (min-width: 767px)
+          font-size: 17px
+          line-height: 26px
+
+  footer
+    background-color: $lm-main
+    padding-top: 32px
+    .wrapper
+      padding: 0 36px
+    .desc
+      color: $lm-white
+    nav
+      .title
+        color: $lm-white
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08)
+      ul
+        li
+          border-bottom: 1px solid rgba(255, 255, 255, 0.08)
+          a
+            color: $lm-white
+    .menu-old
+      @media (min-width: 767px)
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+    .social-wrap
+      ul
+        .vk
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="none" viewBox="0 0 45 45"><path fill="%23fff" fill-rule="evenodd" d="M23.481 28.448s.361-.042.545-.25c.17-.192.164-.553.164-.553s-.024-1.686.721-1.935c.734-.244 1.677 1.63 2.675 2.352.755.546 1.33.426 1.33.426l2.67-.04s1.398-.09.736-1.246c-.054-.094-.387-.854-1.987-2.416-1.675-1.635-1.45-1.37.568-4.197 1.229-1.722 1.72-2.774 1.566-3.224-.146-.428-1.05-.315-1.05-.315l-3.005.018s-.223-.031-.389.073c-.161.102-.265.339-.265.339s-.476 1.333-1.111 2.466c-1.339 2.391-1.875 2.517-2.094 2.369-.509-.346-.381-1.391-.381-2.133 0-2.317.333-3.283-.652-3.533-.327-.083-.567-.138-1.403-.147-1.073-.012-1.982.004-2.496.268-.342.176-.606.57-.445.591.199.028.65.128.888.47.309.44.297 1.431.297 1.431s.178 2.728-.413 3.067c-.407.233-.963-.242-2.157-2.412-.611-1.11-1.074-2.34-1.074-2.34s-.088-.229-.247-.35a1.209 1.209 0 0 0-.463-.197l-2.857.019s-.43.013-.587.209c-.14.175-.011.535-.011.535s2.238 5.504 4.77 8.279c2.324 2.543 4.962 2.377 4.962 2.377h1.195z" clip-rule="evenodd"/><rect width="44" height="44" x=".5" y=".5" stroke="%23fff" rx="16"/></svg>')
+        .fb
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="none" viewBox="0 0 45 45"><rect width="44" height="44" x=".5" y=".5" stroke="%23fff" rx="16"/><path fill="%23fff" fill-rule="evenodd" d="M19.897 16.986v2.478h-1.729v3.03h1.73V31.5h3.551v-9.005h2.384s.223-1.453.331-3.042h-2.701v-2.072c0-.31.387-.726.77-.726h1.935V13.5h-2.631c-3.728 0-3.64 3.033-3.64 3.486z" clip-rule="evenodd"/></svg>')
+        .instagram
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="none" viewBox="0 0 45 45"><rect width="44" height="44" x=".5" y=".5" stroke="%23fff" rx="16"/><path fill="%23fff" d="M18.054 11.5h8.892a6.561 6.561 0 0 1 6.554 6.554v8.892a6.561 6.561 0 0 1-6.554 6.554h-8.892a6.561 6.561 0 0 1-6.554-6.554v-8.892a6.561 6.561 0 0 1 6.554-6.554zm-4.34 15.446a4.34 4.34 0 0 0 4.34 4.34h8.892a4.34 4.34 0 0 0 4.34-4.34v-8.892a4.34 4.34 0 0 0-4.34-4.34h-8.892a4.34 4.34 0 0 0-4.34 4.34v8.892z"/><path fill="%23fff" d="M22.497 16.81a5.696 5.696 0 0 1 5.69 5.69 5.696 5.696 0 0 1-5.69 5.69 5.696 5.696 0 0 1-5.69-5.69 5.696 5.696 0 0 1 5.69-5.69zm0 9.167a3.477 3.477 0 1 0 0-6.953 3.477 3.477 0 0 0 0 6.953zM16.8 18.216a1.363 1.363 0 1 1 0-2.727 1.363 1.363 0 0 1 0 2.727z"/></svg>')
+        .youtube
+          background-image: url('data:image/svg+xml;utf8,<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="43" height="43" rx="15.5" stroke="%23fff"/><path d="M28.4309 30.25H15.5691C13.0457 30.25 11 28.0818 11 25.4073V18.5927C11 15.9182 13.0457 13.75 15.5691 13.75H28.4309C30.9543 13.75 33 15.9182 33 18.5927V25.4073C33 28.0818 30.9543 30.25 28.4309 30.25ZM25.3408 21.6684L19.325 18.6274C19.1647 18.5464 18.9795 18.6703 18.9795 18.8585V25.1306C18.9795 25.3215 19.1695 25.4452 19.3302 25.3589L25.346 22.1278C25.5249 22.0318 25.5218 21.7599 25.3408 21.6684Z" fill="%23fff"/></svg>')
+
+.footer-static
+  background-color: $lm-gray-5
+  position: static
+  padding-top: 28px
+  padding-bottom: 36px
+  &.footer-nav
+    border: 0
+  .social
+    @media (min-width: 767px)
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-direction: row-reverse
+      .social-wrap
+        width: auto
+        padding-bottom: 0
+        ul
+          li
+            width: 40px
+            height: 40px
+            margin: 0 !important
+            margin-left: 20px !important
+      .desc
+        display: block
+        text-align: left
+        max-width: 270px
+
+  .social-wrap
+    padding-bottom: 36px
+    width: 100%
+    ul
+      display: flex
+      align-items: center
+      justify-content: center
+      li
+        &:nth-child(2), &:nth-child(3)
+          margin-left: 24px
+        display: block
+        width: 40px
+        height: 40px
+        background-position: center
+        background-repeat: no-repeat
+        background-size: contain
+        a
+          display: block
+          width: 100%
+          height: 100%
+      .vk
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="none" viewBox="0 0 45 45"><path fill="%23808792" fill-rule="evenodd" d="M23.481 28.448s.361-.042.545-.25c.17-.192.164-.553.164-.553s-.024-1.686.721-1.935c.734-.244 1.677 1.63 2.675 2.352.755.546 1.33.426 1.33.426l2.67-.04s1.398-.09.736-1.246c-.054-.094-.387-.854-1.987-2.416-1.675-1.635-1.45-1.37.568-4.197 1.229-1.722 1.72-2.774 1.566-3.224-.146-.428-1.05-.315-1.05-.315l-3.005.018s-.223-.031-.389.073c-.161.102-.265.339-.265.339s-.476 1.333-1.111 2.466c-1.339 2.391-1.875 2.517-2.094 2.369-.509-.346-.381-1.391-.381-2.133 0-2.317.333-3.283-.652-3.533-.327-.083-.567-.138-1.403-.147-1.073-.012-1.982.004-2.496.268-.342.176-.606.57-.445.591.199.028.65.128.888.47.309.44.297 1.431.297 1.431s.178 2.728-.413 3.067c-.407.233-.963-.242-2.157-2.412-.611-1.11-1.074-2.34-1.074-2.34s-.088-.229-.247-.35a1.209 1.209 0 0 0-.463-.197l-2.857.019s-.43.013-.587.209c-.14.175-.011.535-.011.535s2.238 5.504 4.77 8.279c2.324 2.543 4.962 2.377 4.962 2.377h1.195z" clip-rule="evenodd"/><rect width="44" height="44" x=".5" y=".5" stroke="%23808792" rx="16"/></svg>')
+      .fb
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="none" viewBox="0 0 45 45"><rect width="44" height="44" x=".5" y=".5" stroke="%23808792" rx="16"/><path fill="%23808792" fill-rule="evenodd" d="M19.897 16.986v2.478h-1.729v3.03h1.73V31.5h3.551v-9.005h2.384s.223-1.453.331-3.042h-2.701v-2.072c0-.31.387-.726.77-.726h1.935V13.5h-2.631c-3.728 0-3.64 3.033-3.64 3.486z" clip-rule="evenodd"/></svg>')
+      .instagram
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="none" viewBox="0 0 45 45"><rect width="44" height="44" x=".5" y=".5" stroke="%23808792" rx="16"/><path fill="%23808792" d="M18.054 11.5h8.892a6.561 6.561 0 0 1 6.554 6.554v8.892a6.561 6.561 0 0 1-6.554 6.554h-8.892a6.561 6.561 0 0 1-6.554-6.554v-8.892a6.561 6.561 0 0 1 6.554-6.554zm-4.34 15.446a4.34 4.34 0 0 0 4.34 4.34h8.892a4.34 4.34 0 0 0 4.34-4.34v-8.892a4.34 4.34 0 0 0-4.34-4.34h-8.892a4.34 4.34 0 0 0-4.34 4.34v8.892z"/><path fill="%23808792" d="M22.497 16.81a5.696 5.696 0 0 1 5.69 5.69 5.696 5.696 0 0 1-5.69 5.69 5.696 5.696 0 0 1-5.69-5.69 5.696 5.696 0 0 1 5.69-5.69zm0 9.167a3.477 3.477 0 1 0 0-6.953 3.477 3.477 0 0 0 0 6.953zM16.8 18.216a1.363 1.363 0 1 1 0-2.727 1.363 1.363 0 0 1 0 2.727z"/></svg>')
+      .youtube
+        background-image: url('data:image/svg+xml;utf8,<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="43" height="43" rx="15.5" stroke="%23808792"/><path d="M28.4309 30.25H15.5691C13.0457 30.25 11 28.0818 11 25.4073V18.5927C11 15.9182 13.0457 13.75 15.5691 13.75H28.4309C30.9543 13.75 33 15.9182 33 18.5927V25.4073C33 28.0818 30.9543 30.25 28.4309 30.25ZM25.3408 21.6684L19.325 18.6274C19.1647 18.5464 18.9795 18.6703 18.9795 18.8585V25.1306C18.9795 25.3215 19.1695 25.4452 19.3302 25.3589L25.346 22.1278C25.5249 22.0318 25.5218 21.7599 25.3408 21.6684Z" fill="%23808792"/></svg>')
+  .desc
+    opacity: 0.64
+    font-size: 12px
+    line-height: 16px
+    color: $lm-gray-3
+    text-align: center
+    span
+      display: block
+
+  .wrapper
+    padding: 0 24px
+    @media (min-width: 767px)
+      padding: 0 56px
+  .menu-old
+    display: block
+    padding-bottom: 12px
+    @media (min-width: 767px)
+      padding-bottom: 8px
+      margin-bottom: 16px
+      border-bottom: 1px solid rgba(128, 135, 146, 0.08)
+      flex-wrap: nowrap
+      display: flex
+  nav
+    margin-bottom: 24px
+    @media (min-width: 767px)
+      width: 110px
+      flex: 1
+
+      .title
+        border: 0 !important
+      ul
+        li
+          border: 0 !important
+          padding: 0 !important
+          padding-bottom: 12px !important
+          a
+            padding: 0 !important
+    .title
+      font-size: 18px
+      font-weight: 600
+      line-height: 24px
+      color: $lm-gray-3
+      padding-bottom: 12px
+      border-bottom: 1px solid rgba(128, 135, 146, 0.08)
+    ul
+        li
+          border-bottom: 1px solid rgba(128, 135, 146, 0.08)
+          padding: 12px 0
+          a
+            opacity: 0.72
+            font-size: 12px
+            line-height: 16px
+            padding: 10px 0
+            color: $lm-gray-3
+            transition: opacity .25s ease
+            &:hover
+              opacity: 1
+
+.lm-m-primary-button
+  display: inline-block
+  padding: 0 24px
+  height: 40px
+  color: #fff
+  line-height: 40px
+  cursor: pointer
+  font-size: 12px
+  border: 0
+  font-weight: 600
+  text-transform: uppercase
+  border-radius: 8px
+  background-color: #0063da
+  letter-spacing: 1px
+  &.red
+    background-color: $lm-support-1
+
+.lm-relative
+  position: relative
+
+.lm-m-main-page
+  .lm-m-header
+    @media (max-width: 767px)
+      padding-top: 40px
+    @media (max-height: 540px) and (max-width: 900px) and (min-width: 478px)
+      padding-top: 16px
+    .lm-m-center
+      @media (max-width: 767px)
+        margin-bottom: 36px
+      @media (max-height: 540px) and (max-width: 900px) and (min-width: 478px)
+        margin-bottom: 16px
+.lm-block-fixed
+  height: calc(960 / 768 * 100vw)
+  max-height: 100vh
+  @media (max-width: 767px)
+    max-height: calc(100vh - 10px)
+    height: calc(682 / 320 * 100vw - 10px)
+  @media (max-height: 540px) and (max-width: 900px) and (min-width: 478px)
+    max-height: calc(100vh - 10px)
+    height: calc(682 / 320 * 100vw - 10px)
+  .lm-m-main-slider
+    height: calc(960 / 768 * 100vw - 140px)
+    max-height: calc(100vh - 140px)
+    position: relative
+    @media (max-width: 767px)
+      height: calc(682 / 320 * 100vw - 68px)
+      max-height: calc(100vh - 68px)
+    @media (max-height: 540px) and (max-width: 900px) and (min-width: 478px)
+      height: calc(682 / 320 * 100vw - 64px)
+      max-height: calc(100vh - 64px)
+    @media (max-width: 350px)
+      height: calc(682 / 320 * 100vw - 150px)
+      max-height: 100vh
+    &--controls
+      position: absolute
+      bottom: 90px
+      top: unset
+      right: 0
+      left: 0
+      z-index: 3
+      display: flex
+      width: 36px
+      height: 16px
+      align-content: center
+      text-align: center
+      align-items: center
+      justify-content: space-between
+      margin: 0 auto
+      @media (max-height: 540px) and (max-width: 900px) and (min-width: 478px)
+        bottom: 35px
+      &:not(.active)
+        a
+          &:first-child
+            animation: slide__controls_disactive .5s ease
+          &:last-child
+            transform: translate(0, 0px)
+            animation: slide__controls_disactive_switcher .5s ease
+      &.active
+        a
+          &:first-child
+            transform: translate(24px, 0)
+            animation: slide__controls_active .5s ease
+          &:last-child
+            transform: translate(-24px, 0)
+            animation: slide__controls_active_switcher .5s ease
+      a
+        width: 8px
+        height: 8px
+        transform: translate(0, 0)
+        display: block
+        background-color: rgba(255, 255, 255, 0.64)
+        border-radius: 50%
+        position: relative
+        &:last-child
+          &:before
+            left: -100%
+            right: -100%
+            top: -100%
+            bottom: -100%
+            position: absolute
+            content: ''
+            margin: auto
+            width: 16px
+            height: 16px
+        &:first-child
+          background-color: transparent
+          border: 4px solid $lm-white
+    &--item
+      &.lm-lm-vs-slide
+        .lm-m-header-btn
+          .lm-primary-button
+            background-color: $lm-support-3
+      h2
+        font-size: 28px
+        font-weight: bold
+        line-height: 36px
+        color: #ffffff
+        display: block
+        max-width: 268px
+        margin: 0 auto
+        margin-bottom: 16px
+        @media (min-width: 768px)
+          max-width: 491px
+          font-size: 48px
+          line-height: 60px
+        @media (max-width: 767px)
+          line-height: 1.29
+          letter-spacing: 0.5px
+          margin-bottom: 12px
+        @media (max-height: 540px) and (max-width: 900px) and (min-width: 478px)
+          font-size: 28px
+          line-height: 1.29
+          letter-spacing: 0.5px
+          margin-bottom: 12px
+      .lm-m-desc
+        @media (max-width: 767px), (max-height: 540px) and (max-width: 900px) and (min-width: 478px)
+          font-size: 14px
+          font-weight: normal
+          font-style: normal
+          font-stretch: normal
+          line-height: 1.29
+          letter-spacing: 0.3px
+          color: $lm-gray-5
+          margin-bottom: 24px
+      .lm-m-header-btn
+        @media (max-width: 767px), (max-height: 540px) and (max-width: 900px) and (min-width: 478px)
+          margin-bottom: 16px
+      img
+        margin: 0 auto
+        position: absolute
+        bottom: 0
+        width: 100vw
+        z-index: 1
+        left: -100%
+        right: -100%
+        max-width: calc(768 / 696 * 100vh)
+        @media (max-width: 767px)
+          height: calc(300 / 320 * 100vw)
+          width: auto
+          max-width: unset
+          @media (max-height: 540px) and (max-width: 900px) and (min-width: 478px)
+            max-width: calc(768 / 696 * 50vh)
+            height: auto
+        &.lm-vs-slide-image
+          width: calc(696 / 768 * 100vw)
+          @media (max-width: 767px)
+            width: auto
+          display: block
+          margin: 0 auto
+          @media (max-height: 540px) and (max-width: 900px) and (min-width: 478px)
+            max-width: calc(768 / 696 * 70vh)
+      h2, .lm-m-desc, .lm-m-header-btn, .lm-relative, .lm-primary-button, .lm-link-button
+        position: relative
+        z-index: 2
+      @media (max-height: 540px) and (max-width: 900px) and (min-width: 478px)
+        .lm-relative
+          display: none
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      position: absolute
+      &.fadeout
+        &.disable
+          opacity: 0 !important
+        opacity: 0
+        z-index: 1
+        animation: slide__child__all__fadeout .66s ease
+        @media (max-width: 767px)
+          animation: m_slide__child__all__fadeout .66s ease
+        h2, .lm-m-desc, .lm-relative, .lm-m-header-btn .lm-primary-button, .lm-m-header-btn .lm-link-button, img
+          opacity: 0 !important
+          transform: translate(0, -30px)
+          transition: none
+        h2
+          animation: slide__child__h2__fadeout .52s ease
+          @media (max-width: 767px)
+            animation: m_slide__child__h2__fadeout .52s ease
+        .lm-m-desc
+          animation: slide__child__desc__fadeout .55s ease
+          @media (max-width: 767px)
+            animation: m_slide__child__desc__fadeout .55s ease
+        .lm-m-header-btn
+          .lm-primary-button
+            animation: slide__child__pbtn__fadeout .6s ease
+            @media (max-width: 767px)
+              animation: m_slide__child__pbtn__fadeout .6s ease
+          .lm-link-button
+            animation: slide__child__sbtn__fadeout .61s ease
+            @media (max-width: 767px)
+              animation: m_slide__child__sbtn__fadeout .61s ease
+        .lm-relative
+          animation: slide__child__bbtn__fadeout .62s ease
+          @media (max-width: 767px)
+            animation: m_slide__child__bbtn__fadeout .62s ease
+        img
+          animation: slide__child__img__fadeout .65s ease
+          @media (max-width: 767px)
+            animation: m_slide__child__img__fadeout .65s ease
+      &.active
+        opacity: 1
+        z-index: 2
+        animation: slide__child__all__fadein 1.15s ease
+        h2, .lm-m-desc, .lm-relative, .lm-m-header-btn  .lm-primary-button, .lm-m-header-btn .lm-link-button, img
+          opacity: 1
+          transition: none
+        h2
+          animation: slide__child__h2__fadein 1.17s ease
+        .lm-m-desc
+          animation: slide__child__desc__fadein 1.2s ease
+          @media (max-width: 767px)
+            animation: m_slide__child__desc__fadein 1.2s ease
+        .lm-m-header-btn
+          .lm-primary-button
+            animation: slide__child__pbtn__fadein 1.25s ease
+            @media (max-width: 767px)
+              animation: m_slide__child__pbtn__fadein 1.25s ease
+          .lm-link-button
+            animation: slide__child__sbtn__fadein 1.26s ease
+            @media (max-width: 767px)
+              animation: m_slide__child__sbtn__fadein 1.26s ease
+        .lm-relative
+          animation: slide__child__bbtn__fadein 1.27s ease
+          @media (max-width: 767px)
+            animation: m_slide__child__bbtn__fadein 1.27s ease
+        img
+          animation: slide__child__img__fadein 1.3s ease
+          @media (max-width: 767px)
+            animation: m_slide__child__img__fadein 1.3s ease
+.lm-block-static
+  &:before
+    position: absolute
+    content: ''
+    pointer-events: none
+    bottom: calc(100% - 3px)
+    width: 100vw
+    left: 0
+    right: 0
+    background-image: url("/dist/img/main/top-wave.svg")
+    background-repeat: no-repeat
+    height: calc(55 / 1024 * 100vw + 5px)
+    background-repeat: no-repeat
+    background-position: center bottom
+    background-size: 101%
+    @media (min-width: 1900px)
+      bottom: calc(100% - 20px)
+    @media (min-width: 2300px)
+      bottom: calc(100% - 30px)
+    @media (max-width: 767px), (max-height: 540px) and (max-width: 900px) and (min-width: 478px)
+      height: calc(24 / 320 * 100vw + 2px)
+      background-size: 103%
+
+@keyframes slide__child_fadeout
+  from
+    transform: translate(0, 0px)
+    opacity: 1
+  to
+    transform: translate(0, -30px)
+    opacity: 0
+
+@keyframes slide__child_fadein
+  0%
+    transform: translate(0, 30px)
+    opacity: 0
+  100%
+    transform: translate(0, 0px)
+    opacity: 1
+
+@keyframes slide__child__h2__fadeout
+  0%
+    transform: translate(0, 0px)
+    opacity: 1
+  4%
+    transform: translate(0, 0px)
+    opacity: 1
+  to
+    transform: translate(0, -30px)
+    opacity: 0
+
+@keyframes slide__child__desc__fadeout
+  0%
+    transform: translate(0, 0px)
+    opacity: 1
+  10%
+    transform: translate(0, 0px)
+    opacity: 1
+  to
+    transform: translate(0, -30px)
+    opacity: 0
+
+@keyframes slide__child__pbtn__fadeout
+  0%
+    transform: translate(0, 0px)
+    opacity: 1
+  20%
+    transform: translate(0, 0px)
+    opacity: 1
+  to
+    transform: translate(0, -30px)
+    opacity: 0
+
+@keyframes slide__child__sbtn__fadeout
+  0%
+    transform: translate(0, 0px)
+    opacity: 1
+  23%
+    transform: translate(0, 0px)
+    opacity: 1
+  to
+    transform: translate(0, -30px)
+    opacity: 0
+
+@keyframes slide__child__bbtn__fadeout
+  0%
+    transform: translate(0, 0px)
+    opacity: 1
+  24%
+    transform: translate(0, 0px)
+    opacity: 1
+  to
+    transform: translate(0, -30px)
+    opacity: 0
+
+@keyframes slide__child__img__fadeout
+  0%
+    transform: translate(0, 0px)
+    opacity: 1
+  30%
+    transform: translate(0, 0px)
+    opacity: 1
+  to
+    transform: translate(0, -30px)
+    opacity: 0
+
+@keyframes slide__child__all__fadein
+  0%
+    opacity: 0
+    display: none
+  65%
+    opacity: 0
+    display: block
+  100%
+    opacity: 1
+    display: block
+
+@keyframes slide__child__h2__fadein
+  0%
+    transform: translate(0, 30px)
+    opacity: 0
+  38.5%
+    transform: translate(0, 30px)
+    opacity: 0
+  100%
+    transform: translate(0, 0)
+    opacity: 1
+
+@keyframes slide__child__desc__fadein
+  0%
+    transform: translate(0, 30px)
+    opacity: 0
+  37.5%
+    transform: translate(0, 30px)
+    opacity: 0
+  100%
+    transform: translate(0, 0)
+    opacity: 1
+
+@keyframes slide__child__pbtn__fadein
+  0%
+    transform: translate(0, 30px)
+    opacity: 0
+  36%
+    transform: translate(0, 30px)
+    opacity: 0
+  100%
+    transform: translate(0, 0)
+    opacity: 1
+
+@keyframes slide__child__sbtn__fadein
+  0%
+    transform: translate(0, 30px)
+    opacity: 0
+  35.7%
+    transform: translate(0, 30px)
+    opacity: 0
+  100%
+    transform: translate(0, 0)
+    opacity: 1
+
+@keyframes slide__child__bbtn__fadein
+  0%
+    transform: translate(0, 30px)
+    opacity: 0
+  35.4%
+    transform: translate(0, 30px)
+    opacity: 0
+  100%
+    transform: translate(0, 0)
+    opacity: 1
+
+@keyframes slide__child__img__fadein
+  0%
+    transform: translate(0, 30px)
+    opacity: 0
+  34.6%
+    transform: translate(0, 30px)
+    opacity: 0
+  100%
+    transform: translate(0, 0)
+    opacity: 1
+
+//-- mobile --//
+
+@keyframes m_slide__child_fadeout
+  from
+    transform: translate(0, 0px)
+    opacity: 1
+  to
+    transform: translate(-30px, 0)
+    opacity: 0
+
+@keyframes m_slide__child_fadein
+  0%
+    transform: translate(30px, 0)
+    opacity: 0
+  100%
+    transform: translate(0, 0px)
+    opacity: 1
+
+@keyframes m_slide__child__h2__fadeout
+  0%
+    transform: translate(0, 0px)
+    opacity: 1
+  4%
+    transform: translate(0, 0px)
+    opacity: 1
+  to
+    transform: translate(-30px, 0)
+    opacity: 0
+
+@keyframes m_slide__child__desc__fadeout
+  0%
+    transform: translate(0, 0px)
+    opacity: 1
+  10%
+    transform: translate(0, 0px)
+    opacity: 1
+  to
+    transform: translate(-30px, 0)
+    opacity: 0
+
+@keyframes m_slide__child__pbtn__fadeout
+  0%
+    transform: translate(0, 0px)
+    opacity: 1
+  20%
+    transform: translate(0, 0px)
+    opacity: 1
+  to
+    transform: translate(-30px, 0)
+    opacity: 0
+
+@keyframes m_slide__child__sbtn__fadeout
+  0%
+    transform: translate(0, 0px)
+    opacity: 1
+  23%
+    transform: translate(0, 0px)
+    opacity: 1
+  to
+    transform: translate(-30px, 0)
+    opacity: 0
+
+@keyframes m_slide__child__bbtn__fadeout
+  0%
+    transform: translate(0, 0px)
+    opacity: 1
+  24%
+    transform: translate(0, 0px)
+    opacity: 1
+  to
+    transform: translate(-30px, 0)
+    opacity: 0
+
+@keyframes m_slide__child__img__fadeout
+  0%
+    transform: translate(0, 0px)
+    opacity: 1
+  30%
+    transform: translate(0, 0px)
+    opacity: 1
+  to
+    transform: translate(-30px, 0)
+    opacity: 0
+
+@keyframes m_slide__child__all__fadein
+  0%
+    opacity: 0
+    display: none
+  65%
+    opacity: 0
+    display: block
+  100%
+    opacity: 1
+    display: block
+
+@keyframes m_slide__child__h2__fadein
+  0%
+    transform: translate(30px, 0)
+    opacity: 0
+  38.5%
+    transform: translate(30px, 0)
+    opacity: 0
+  100%
+    transform: translate(0, 0)
+    opacity: 1
+
+@keyframes m_slide__child__desc__fadein
+  0%
+    transform: translate(30px, 0)
+    opacity: 0
+  37.5%
+    transform: translate(30px, 0)
+    opacity: 0
+  100%
+    transform: translate(0, 0)
+    opacity: 1
+
+@keyframes m_slide__child__pbtn__fadein
+  0%
+    transform: translate(30px, 0)
+    opacity: 0
+  36%
+    transform: translate(30px, 0)
+    opacity: 0
+  100%
+    transform: translate(0, 0)
+    opacity: 1
+
+@keyframes m_slide__child__sbtn__fadein
+  0%
+    transform: translate(30px, 0)
+    opacity: 0
+  35.7%
+    transform: translate(30px, 0)
+    opacity: 0
+  100%
+    transform: translate(0, 0)
+    opacity: 1
+
+@keyframes m_slide__child__bbtn__fadein
+  0%
+    transform: translate(30px, 0)
+    opacity: 0
+  35.4%
+    transform: translate(30px, 0)
+    opacity: 0
+  100%
+    transform: translate(0, 0)
+    opacity: 1
+
+@keyframes m_slide__child__img__fadein
+  0%
+    transform: translate(30px, 0)
+    opacity: 0
+  34.6%
+    transform: translate(30px, 0)
+    opacity: 0
+  100%
+    transform: translate(0, 0)
+    opacity: 1
+
+@keyframes m_slide__child__all__fadeout
+  0%
+    opacity: 1
+    display: block
+  99%
+    opacity: 1
+    display: block
+  100%
+    opacity: 0
+    display: none
+
+@keyframes slide__child__all__fadeout
+  0%
+    opacity: 1
+    display: block
+  99%
+    opacity: 1
+    display: block
+  100%
+    opacity: 0
+    display: none
+
+@keyframes slide__controls_active
+  from
+    transform: translate(0, 0)
+  to
+    transform: translate(24px, 0)
+
+@keyframes slide__controls_disactive
+  from
+    transform: translate(24px, 0)
+  to
+    transform: translate(0, 0)
+
+@keyframes slide__controls_active_switcher
+  from
+    transform: translate(0, 0)
+  to
+    transform: translate(-24px, 0)
+
+@keyframes slide__controls_disactive_switcher
+  from
+    transform: translate(-24px, 0)
+  to
+    transform: translate(0, 0)
+
+.lm-m-main-page
+  footer
+    position: relative
+    padding-top: calc(24px + 21 / 320 * 100vw)
+    &:before
+      content: ''
+      position: absolute
+      bottom: unset
+      top: -3px
+      z-index: 4
+      left: 0
+      width: 100vw
+      background-position: center top
+      background-size: 103%
+      background-repeat: no-repeat
+      height: calc(21 / 320 * 100vw)
+      background-image: url("/dist/img/main/bottom-wave.svg")
+a#lm-m-intercom-btn
+  span
+    display: block
+    width: 20px
+    height: 26px
+    position: absolute
+    left: 6px
+    top: 0
+    right: unset
+    bottom: 0
+    margin: auto
+    z-index: 6
+  z-index: 100
+  position: fixed
+  bottom: 135px
+  right: 0
+  width: 30px
+  height: 60px
+  border-radius: 22px 0 0 22px
+  display: block
+  background: #808792
+
+.mgo-mcw-widget_mobile-view
+  bottom: 60px !important
+  right: -15px !important

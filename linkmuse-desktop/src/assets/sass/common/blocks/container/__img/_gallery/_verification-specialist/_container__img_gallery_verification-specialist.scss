@@ -1,0 +1,18 @@
+.container__img_gallery_verification-specialist {
+	width: 128px;
+	height: 128px;
+	border-radius: 2px;
+	background: url('/dist/img/verification/default2.jpg') center center no-repeat;
+	/*background: url('../src/assets/img/default2.jpg') center center no-repeat;*/
+	-webkit-background-size: cover;
+	background-size: cover;
+	margin-right: 4px;
+	margin-top: 4px;
+	&:nth-child(-n + 4) {
+		margin-top: 0;
+	}
+	&:nth-child(4n) {
+		margin-right: 0;
+	}
+}
+

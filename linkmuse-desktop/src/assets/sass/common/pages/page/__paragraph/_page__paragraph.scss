@@ -1,0 +1,17 @@
+.page__paragraph {
+	margin: 0;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.29;
+	letter-spacing: 0.3px;
+	color: $lm-gray-1;
+	@media screen and (max-width: 767px) {
+		font-size: 12px;
+		line-height: 1.33;
+	}
+}
+
+@import '_error/_page__paragraph_error.scss';
+@import '_mailing/_page__paragraph_mailing.scss';

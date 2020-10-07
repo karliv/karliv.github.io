@@ -1,0 +1,16 @@
+.page__plug_feed_empty-list {
+	flex: 2;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	font-size: 14px;
+	margin: $multiplicity*2 0;
+	border-radius: $multiplicity;
+	box-shadow: $box-shadow_blur_4;
+	background-color: $lm-white;
+}
+

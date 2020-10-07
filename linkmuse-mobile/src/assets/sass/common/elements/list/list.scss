@@ -1,0 +1,10 @@
+.list {
+	margin: 0;
+	padding: 0;
+}
+@import '__item/_list__item.scss';
+
+@import '_features/_list_features.scss';
+@import '_values/_list_values.scss';
+@import '_ul/_list_ul.scss';
+@import '__title/_list__title-info.scss';

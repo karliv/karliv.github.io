@@ -1,0 +1,53 @@
+User-Agent: *
+Disallow: *?
+Disallow: *admin
+Disallow: /api/
+
+Allow: *.js
+Allow: *.css
+Allow: *.jp
+Allow: *.png
+Allow: *.webp
+Allow: *.svg
+Allow: *.gif
+Allow: *.ttf
+Allow: *.woff
+
+Sitemap: https://m.linkmuse.com/sitemap.xml
+Host: https://m.linkmuse.com
+
+User-Agent: DISCo Pump
+Disallow: /
+
+User-Agent: Wget
+Disallow: /
+
+User-Agent: WebZIP
+Disallow: /
+
+User-Agent: Teleport Pro
+Disallow: /
+
+User-Agent: WebSnake
+Disallow: /
+
+User-Agent: Offline Explorer
+Disallow: /
+
+User-Agent: Web-By-Mail
+Disallow: /
+
+User-agent: psbot
+Disallow: /
+
+User-agent: gigabot
+Disallow: /
+
+User-agent: Twiceler
+Disallow: /
+
+User-agent: NetinfoBot
+Disallow: /
+
+User-agent: ia_archiver
+Disallow: /

@@ -1,0 +1,54 @@
+.d-btn {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	border-radius: $multiplicity*2;
+	border: none;
+	margin: 0;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding: $multiplicity*3 $multiplicity*6;
+	background-color: transparent;
+	color: $lm-main;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.15s ease-in-out;
+	flex-shrink: 0;
+	text-decoration: none;
+	div {
+		font-size: 12px !important;
+		font-weight: 600;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+	&:disabled {
+		transition: all 0.15s ease;
+		color: $lm-gray-opacity-32;
+		pointer-events: none;
+		cursor: not-allowed;
+	}
+}
+@import '__popup/_d-btn__popup.scss';
+
+@import '_primary/_d-btn_primary.scss';
+@import '_delete/_d-btn_delete.scss';
+@import '_outline/_d-btn_outline.scss';
+@import '_small/_d-btn_small.scss';
+@import '_secondary/_d-btn_secondary.scss';
+@import '_share/_d-btn_share.scss';
+@import '_favorites/_d-btn_favorites.scss';
+@import '_round/_d-btn_round.scss';
+@import '_archive/_d-btn_archive.scss';
+@import '_like/_d-btn_like.scss';
+@import '_close/_d-btn_close.scss';
+@import '_options/_d-btn_options.scss';

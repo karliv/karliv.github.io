@@ -1,0 +1,9 @@
+.multiselect__button_cancel_declaration {
+	@include button_cancel();
+	min-width: 106px;
+	min-height: 40px;
+	@media screen and (min-width: $sm-breakpoint) {
+		min-width: 106px;
+	}
+}
+

@@ -1,0 +1,31 @@
+.declaration__list_parameters {
+	font-size: 12px;
+	/*font-weight: 600;*/
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: 0.5px;
+	color: $lm-gray-2;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	div {
+		display: flex;
+		align-items: center;
+		&::after {
+			content: '';
+			display: block;
+			width: 4px;
+			height: 4px;
+			background-color: $lm-gray-opacity-32;
+			border-radius: 50%;
+			margin: 0 $multiplicity*1.5;
+		}
+		&:last-child {
+			&::after {
+				display: none;
+			}
+		}
+	}
+}
+

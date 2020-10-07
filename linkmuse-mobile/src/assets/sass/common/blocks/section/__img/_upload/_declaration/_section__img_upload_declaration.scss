@@ -1,0 +1,28 @@
+.section__img_upload_declaration {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	width: calc(50% - 4px);
+	height: 100%;
+	min-height: 80px;
+	max-height: 80px;
+	border-radius: 10px;
+	background: linear-gradient(to top, rgba(40, 42, 54, 0.64), rgba(40, 42, 54, 0.64)), url('/dist/img/default.jpg') center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: relative;
+	z-index: 10;
+	margin-top: 8px;
+	margin-right: 8px;
+	&:nth-child(-n + 2) {
+		margin-top: 0;
+	}
+	&:nth-child(2n) {
+		margin-right: 0;
+	}
+	@media screen and (min-width: 450px) {
+		min-height: 114px;
+		max-height: 114px;
+	}
+}
+

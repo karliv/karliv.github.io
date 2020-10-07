@@ -1,0 +1,9 @@
+.nav__list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+@import '_categories/_nav__list_categories.scss';
+@import '_sidebar/_nav__list_sidebar.scss';
+@import '_menu/_nav__list_menu.scss';

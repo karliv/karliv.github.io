@@ -1,0 +1,10 @@
+.d-breadcrumbs {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+}
+@import '__item/_d-breadcrumbs__item.scss';
+

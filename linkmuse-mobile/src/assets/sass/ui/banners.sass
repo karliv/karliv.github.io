@@ -1,0 +1,44 @@
+.lm-banner-header
+  position: relative
+  display: block
+  border-bottom: 8px solid #f3f4f6
+  &-wrapper
+    background-color: $lm-main
+    border-radius: 2px
+    display: flex
+    align-items: center
+    justify-content: flex-start
+  .left
+    width: calc(100% - 61px)
+    padding: 0 16px
+    .desc
+      h2
+        font-weight: 600
+      span
+        font-weight: 500
+      align-items: center
+      justify-content: flex-start
+      font-size: 14px
+      line-height: 1.29
+      color: $lm-white
+  .right
+    width: 93px
+    height: 58px
+    font-size: 12px
+    line-height: 1.33
+    color: $lm-white
+    background-color: rgba(40, 42, 54, 0.16)
+    display: flex
+    align-items: center
+    justify-content: center
+    .lm-back-icon
+      transform: scaleX(-1)
+      filter: FlipH
+      width: 12px
+      display: block
+      margin: 0 auto 3.2px
+      height: 10px
+      background-size: contain
+      background-repeat: no-repeat
+    a
+      color: #fff

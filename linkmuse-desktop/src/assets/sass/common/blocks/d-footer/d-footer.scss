@@ -1,0 +1,14 @@
+.d-footer {
+	box-sizing: border-box;
+	width: 100%;
+	background-color: $lm-gray-5;
+	padding: $multiplicity*12;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@import '__section/_d-footer__section.scss';
+@import '__text/_d-footer__text.scss';
+@import '__content/_d-footer__content.scss';
+@import '__list/_d-footer__list.scss';
+

@@ -1,0 +1,14 @@
+.card_response_my {
+	box-sizing: border-box;
+	width: 100%;
+	padding: $multiplicity*3 $multiplicity*4;
+	box-shadow: $box-shadow_blur_4;
+	margin-top: $multiplicity*2;
+	border-radius: $border-radius_4;
+	background-color: $lm-white;
+	flex-shrink: 0;
+	@media screen and (min-width: $sm-breakpoint) {
+		padding: $multiplicity*5 $multiplicity*6 $multiplicity*5;
+	}
+}
+

@@ -1,0 +1,59 @@
+// opacity
+$opacity_disabled: 0.32; // outdated
+
+// bg-colors
+$customer__status_online: #20dba9; // outdated
+
+// box-shadow
+$panes__box-shadow: 0 1px 4px 0 rgba(40, 42, 54, 0.06); // outdated
+$panes__box-shadow_top: 0 -1px 4px 0 rgba(40, 42, 54, 0.06); // outdated
+
+/* **************************** */
+
+// common
+$multiplicity: 4px;
+
+// breakpoints
+$sm-breakpoint: 767px;
+
+// colors
+$lm-gray-1: #282a36;
+$lm-gray-2: #515562;
+$lm-gray-3: #808792;
+$lm-gray-4: #cbd0d8;
+$lm-gray-5: #f3f4f6;
+$lm-gray-6: #fbfbfb;
+$lm-white: #ffffff;
+$lm-main: #0063da;
+$lm-main-8: #ebf3fc;
+$lm-main-light: #297ce0;
+$lm-main-dark: #065ac0;
+$lm-support-1: #fc2e5f;
+$lm-support-2: #20dba9;
+$lm-support-3: #f5a623;
+$lm-support-4: #5c3396;
+
+// colors with opacity
+$lm-main_08: rgba(235, 243, 252, 1);
+$lm-support-1_08: rgba(252, 46, 95, 0.08);
+$lm-support-3_08: #fef8ed;
+$lm-gray-opacity-64: rgba(40, 42, 54, 0.64);
+$lm-gray-opacity-32: rgba(40, 42, 54, 0.32);
+$lm-gray-opacity-16: rgba(40, 42, 54, 0.16);
+$lm-gray-opacity-8: rgba(40, 42, 54, 0.08);
+
+$lm-white-opacity-64: rgba(255, 255, 255, 0.64);
+$lm-white-opacity-32: rgba(255, 255, 255, 0.32);
+$lm-white-opacity-16: rgba(255, 255, 255, 0.16);
+$lm-white-opacity-8: rgba(255, 255, 255, 0.8);
+
+// border-radius
+$border-radius_16: $multiplicity*4;
+$border-radius_8: $multiplicity*2;
+$border-radius_2: $multiplicity/2;
+
+// box-shadow
+$box-shadow_blur_down_16: 0 4px 16px 0 rgba(40, 42, 54, 0.16);
+$box-shadow_blur_down_4: 0 1px 4px 0 rgba(40, 42, 54, 0.06);
+$box-shadow_blur_up_16: 0 -4px 16px 0 rgba(40, 42, 54, 0.16);
+$box-shadow_blur_up_4: 0 -1px 4px 0 rgba(40, 42, 54, 0.06);

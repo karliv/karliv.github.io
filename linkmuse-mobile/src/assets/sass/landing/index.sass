@@ -1,0 +1,310 @@
+.lm-vs-landing-talent
+  width: 100% !important
+  padding: 0 !important
+  .lm-m-black-head-nav + .lm-vs-landing-talent-header
+    margin-top: -20px
+    border-top-left-radius: 20px
+    border-top-right-radius: 20px
+  .lm-vs-landing-talent-header
+    background-image: url('/dist/img/vs/landing/vs-landing-talent-top.png')
+    background-position: center
+    background-size: cover
+    display: flex
+    align-items: center
+    justify-content: center
+    padding-top: 36px
+    padding-bottom: 48px
+    @media (min-width: 767px)
+      padding: 72px 0
+    &.vs
+      background-image: url('/dist/img/vs/landing/vs-landing-vs-top.png')
+    .lm-vs-landing-talent-header-wrap
+      padding: 0 24px
+      margin: 0 auto
+      text-align: left
+      .lm-white-button
+        @media (max-width: 767px)
+          max-width: 300px !important
+          width: calc(100% - 48px)
+          display: block
+          margin: 0 auto
+      @media (min-width: 767px)
+        width: 590px
+        text-align: center
+    .title
+      font-size: 28px
+      font-weight: bold
+      line-height: 36px
+      color: $lm-white
+      margin-bottom: 16px
+      @media (min-width: 767px)
+        margin-bottom: 20px
+    .desc
+      color: $lm-white
+      +lm-bold-content()
+      margin-bottom: 24px
+      @media (min-width: 767px)
+        margin-bottom: 28px
+
+  .lm-vs-landing-talent-line
+    padding-top: 28px
+    background-color: #fff
+    text-align: left
+    @media (min-width: 767px)
+      text-align: center
+      padding-bottom: 72px !important
+      padding-top: 64px !important
+    .lm-primary-button
+      @media (max-width: 767px)
+        max-width: 300px !important
+        width: calc(100% - 48px)
+        display: block
+        margin: 0 auto
+    &.last
+      border-bottom-left-radius: 16px
+      border-bottom-right-radius: 16px
+    &.first
+      margin-top: -16px
+      border-top-left-radius: 16px
+      border-top-right-radius: 16px
+      padding: 28px 24px 32px
+      @media (min-width: 767px)
+        padding-top: 72px !important
+      &.no-mt
+        margin-top: 0
+        border-radius: 0
+      .title
+        padding: 0
+
+    & + .lm-vs-landing-talent-line
+      border-top: 1px solid rgba(40, 42, 54, 0.08)
+    .title
+      font-size: 24px
+      font-weight: bold
+      line-height: 28px
+      text-align: left
+      color: $lm-gray-1
+      margin-bottom: 24px
+      padding: 0 24px
+      @media (min-width: 767px)
+        width: 320px
+        text-align: center
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 48px
+    .lm-vs-landing-cooperation-wrap
+      margin-bottom: 48px
+      position: relative
+      @media (min-width: 767px)
+        &:after
+          content: ''
+          position: absolute
+          width: 2px
+          height: calc(100% - 30px)
+          opacity: 0.08
+          background-color: $lm-main
+          left: 0
+          right: 0
+          top: 9px
+          bottom: 9px
+          margin: auto
+      @media (max-width: 766px)
+        &:after
+          content: ''
+          position: absolute
+          width: 2px
+          height: calc(100% - 30px)
+          opacity: 0.08
+          background-color: $lm-main
+          left: 7px
+          top: 0
+          bottom: 0
+          margin: auto
+    &.cooperation
+      padding: 28px 24px
+      .title
+        padding: 0
+    .lm-vs-landing-cooperation-item
+      margin: 0 auto
+      margin-bottom: 24px
+      position: relative
+      padding-left: 32px
+      @media (max-width: 766px)
+        &:before
+          content: ''
+          display: block
+          position: absolute
+          left: 0
+          top: 0
+          bottom: 0
+          margin: auto
+          width: 16px
+          height: 16px
+          background-color: rgba(0, 99, 218, 0.2)
+          border-radius: 50%
+          z-index: 1
+        &:after
+          z-index: 2
+          content: ''
+          display: block
+          position: absolute
+          left: 4px
+          top: 0
+          bottom: 0
+          margin: auto
+          width: 8px
+          height: 8px
+          background-color: $lm-main
+          border-radius: 50%
+        span
+          color: $lm-gray-1
+          +lm-bold-content()
+      @media (min-width: 767px)
+        width: 442px
+        &:before
+          content: ''
+          display: block
+          position: absolute
+          left: 0
+          right: 0
+          top: 0
+          bottom: 0
+          margin: auto
+          width: 16px
+          height: 16px
+          background-color: rgba(0, 99, 218, 0.2)
+          border-radius: 50%
+          z-index: 1
+        &:after
+          z-index: 2
+          content: ''
+          display: block
+          position: absolute
+          left: 0
+          right: 0
+          top: 0
+          bottom: 0
+          margin: auto
+          width: 8px
+          height: 8px
+          background-color: $lm-main
+          border-radius: 50%
+        &:nth-child(odd)
+          padding-right: 96px
+          text-align: left
+          span
+            text-align: right
+            &:before
+              left: 145px
+        &:nth-child(even)
+          padding-left: 96px
+          text-align: right
+          span
+            text-align: left
+            &:before
+              right: 145px
+        span
+          display: inline-block
+          color: $lm-gray-1
+          +lm-bold-content()
+          position: relative
+          width: 130px
+          &:before
+            content: ''
+            display: block
+            height: 1px
+            width: 48px
+            border: 1px dashed $lm-main
+            position: absolute
+            top: 0
+            bottom: 0
+            margin: auto
+    .lm-vs-landing-talent-getting-wrap
+      margin: 0 auto 8px
+      display: flex
+      align-items: flex-start
+      justify-content: center
+      flex-direction: column
+      @media (min-width: 767px)
+        flex-direction: initial
+        width: 522px
+        justify-content: space-between
+        margin-bottom: 24px
+      .lm-vs-landing-talent-getting-item
+        margin-bottom: 24px
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        position: relative
+        padding-left: 52px
+        min-height: 36px
+        @media (min-width: 767px)
+          width: 120px
+          flex-direction: column
+          padding: 0
+        svg
+          width: 36px
+          margin: auto
+          height: 36px
+          display: block
+          position: absolute
+          left: 0
+          top: 0
+          bottom: 0
+          @media (min-width: 767px)
+            position: static
+            margin-bottom: 12px
+        span
+          color: $lm-gray-1
+          +lm-bold-content()
+          @media (min-width: 767px)
+            text-align: center
+    .lm-vs-landing-talent-service-wrap
+      display: flex
+      justify-content: space-between
+      flex-direction: column
+      margin: 0 auto
+      @media (min-width: 767px)
+        align-items: center
+      .lm-vs-landing-talent-service-item
+        text-align: left
+        padding: 0 24px
+        display: block
+        padding-bottom: 24px
+        @media (min-width: 767px)
+          width: 272px
+        & + .lm-vs-landing-talent-service-item
+          padding-top: 24px
+          border-top: 1px solid rgba(40, 42, 54, 0.08)
+        img
+          width: 100%
+          object-fit: cover
+          border-radius: 12px
+          margin-bottom: 16px
+          @media (min-width: 767px)
+            height: 164px
+        .item-title
+          font-size: 18px
+          font-weight: 600
+          line-height: 24px
+          margin-bottom: 8px
+          color: $lm-gray-1
+        .desc
+          font-size: 14px
+          line-height: 18px
+          color: $lm-gray-2
+          margin-bottom: 16px
+        .item-footer
+          display: flex
+          align-items: center
+          justify-content: space-between
+          .lm-primary-button
+            @media (max-width: 767px)
+              max-width: none !important
+              width: auto
+              display: block
+              margin: unset
+          .price
+            color: $lm-main
+            +lm-bold-content()
+

@@ -1,0 +1,21 @@
+.checkbox {
+	display: inline-flex;
+	cursor: pointer;
+	align-items: center;
+/*	&:hover {
+		transition: all 0.15s ease;
+		
+		.checkbox__label {
+			color: $lm-main;
+			&::before {
+				border-color: $lm-main;
+			}
+		}
+		}*/
+	}
+	// checkbox elems
+	@import '__decoration/_checkbox__decoration.scss';
+	@import '__label/_checkbox__label.scss';
+	@import '__mark/_checkbox__mark.scss';
+	@import '_vs-rules/_checkbox_vs-rules.scss';
+

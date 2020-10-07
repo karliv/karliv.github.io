@@ -1,0 +1,23 @@
+.notification {
+	div.d-btn_primary {
+		cursor: default;
+		&:hover {
+			background-color: $lm-main;
+		}
+	}
+	div.bg-color_support-1 {
+		cursor: default;
+		&:hover {
+			background-color: $lm-support-1;
+		}
+	}
+	div.bg-color_support-3 {
+		cursor: default;
+		&:hover {
+			background-color: $lm-support-3;
+		}
+	}
+}
+@import '__text/_notification__text.scss';
+@import '__date/_notification__date.scss';
+

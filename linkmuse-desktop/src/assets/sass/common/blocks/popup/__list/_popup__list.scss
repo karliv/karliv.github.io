@@ -1,0 +1,7 @@
+.popup__list {
+	display: flex;
+	flex-direction: column;
+}
+
+@import '_socials/_popup__list_socials.scss';
+@import '_archive/_popup__list_archive.scss';

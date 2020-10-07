@@ -1,0 +1,179 @@
+// Dropdown
+.lm-w-dropdown-wrap
+  &--n
+    .lm-w-dropdown
+      &.open
+        .lm-w-dropdown-menu
+          border-top: 0 !important
+          margin-top: 0 !important
+          ul
+            padding: 2px 0
+          &--item
+            padding: 4px 16px !important
+            line-height: 24px
+            &:hover
+              background-color: transparent !important
+        .lm-w-dropdown-selected
+          border-color: $lm-main
+  &.no-border
+    .lm-w-dropdown-selected
+      border: 0 !important
+      text-align: right !important
+    .lm-w-dropdown
+      margin-bottom: 0
+      &.open
+        .lm-w-dropdown-menu
+          border-top-left-radius: 16px
+          border-top-right-radius: 16px
+          box-shadow: 0 4px 16px 0 rgba(40, 42, 54, 0.16)
+  &.error
+    .lm-w-dropdown
+      .lm-w-dropdown-selected
+        border: solid 1px $lm-support-1
+        color: $lm-support-1
+      span.lm-input-error
+        font-size: 11px
+        letter-spacing: 0.2px
+        display: block
+        text-align: left
+        color: $lm-support-1
+      .lm-dropdown-icon
+        @include lm-dropdown-icon('%23fc2e5f')
+  .lm-w-dropdown
+    position: relative
+    padding: 0
+    height: 2.5rem
+    min-width: 72px
+    width: 100%
+    cursor: pointer
+    display: inline-block
+    word-wrap: break-word
+    white-space: normal
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    &.disabled
+      cursor: not-allowed
+      .lm-w-dropdown-selected
+        cursor: not-allowed
+        color: $lm-gray-opacity-32
+        border-color: $lm-gray-5
+        background-color: $lm-gray-5
+        @include placeholder_color_lm-gray-opacity-32()
+    &.open
+      .lm-w-dropdown-selected
+        border-bottom-left-radius: 0 !important
+        border-bottom-right-radius: 0 !important
+      .lm-w-dropdown-menu
+        width: 100%
+        position: absolute
+        top: 41px
+        left: 0
+        display: block
+        margin-top: -1px
+        border-radius: 0 0 8px 8px
+        background-color: $lm-white
+        box-shadow: 0 4px 16px 0 rgba(40, 42, 54, 0.16)
+      &.bottom
+        .lm-w-dropdown-selected
+          border-top-left-radius: 8px !important
+          border-top-right-radius: 8px !important
+          border-bottom-left-radius: 0 !important
+          border-bottom-right-radius: 0 !important
+        .lm-w-dropdown-menu
+          top: 41px
+          bottom: auto
+          border-top-left-radius: 0
+          border-top-right-radius: 0
+          border-bottom-left-radius: 8px
+          border-bottom-right-radius: 8px
+      &.top
+        .lm-w-dropdown-selected
+          border-radius: 0 0 8px 8px !important
+        .lm-w-dropdown-menu
+          top: auto
+          bottom: 100%
+          border-top-left-radius: 8px
+          border-top-right-radius: 8px
+          border-bottom-left-radius: 0
+          border-bottom-right-radius: 0
+    .lm-w-dropdown-icon, .lm-close
+      display: block
+      width: 16px
+      height: 16px
+      background-size: 16px
+      background-position: center
+      position: absolute
+      background-repeat: no-repeat
+      right: 14px
+      top: 12px
+    .lm-close
+      background-size: 7px
+      @include lm-close('%23CBD0D8')
+    .lm-w-dropdown-selected
+      padding-left: 16px
+      display: block
+      text-align: left
+      color: $lm-gray-1
+      font-size: 14px
+      line-height: 34px
+      padding-right: 30px
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+      height: 40px
+      border-radius: 8px !important
+      border: solid 1px $lm-gray-4
+      margin-bottom: 0
+      outline: none
+      transition: all 0.15s ease
+      &:not([disabled])
+        &:hover
+          transition: all 0.15s ease
+          border-color: $lm-main
+          color: $lm-main
+        &.readonly
+          cursor: pointer
+      &.fill
+        color: $lm-gray-1
+    .lm-w-dropdown-menu
+      display: none
+      z-index: 1000
+      min-height: 100%
+      background-clip: padding-box
+      ul
+        padding: 8px 0
+        margin: 0
+        text-align: left
+        list-style: none
+        overflow: auto
+        li
+          margin: 0
+          &.no-options
+            a
+              color: #808792
+              font-size: 14px
+              display: block
+              width: 100%
+              white-space: nowrap
+              overflow: hidden
+              -o-text-overflow: ellipsis
+              text-overflow: ellipsis
+              padding: 16px 14px 0 14px
+      .lm-w-dropdown-menu--item
+        color: $lm-gray-1
+        font-size: 14px
+        display: block
+        width: 100%
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+        padding: 12px 16px
+        line-height: 1.29
+        letter-spacing: 0.25px
+        &:hover, &.select
+          background-color: $lm-main-8
+          color: $lm-main

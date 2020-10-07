@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43" height="43" viewBox="0 0 43 43">
+    <defs>
+        <rect id="c" width="638" height="1028" x="352" y="83" rx="2"/>
+        <filter id="b" width="103.3%" height="102%" x="-1.6%" y="-.9%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius="1" result="shadowSpreadOuter1"/>
+            <feOffset dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.123669611 0"/>
+        </filter>
+        <rect id="a" width="638" height="164" x="352" y="164" rx="2"/>
+        <mask id="d" width="640" height="166" x="-1" y="-1">
+            <path fill="#fff" d="M351 163h640v166H351z"/>
+            <use xlink:href="#a"/>
+        </mask>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(-651 -203)">
+        <rect width="1313" height="2011" fill="#0C111D" fill-opacity=".492" opacity=".946" rx="8"/>
+        <use fill="#000" filter="url(#b)" xlink:href="#c"/>
+        <use fill="#FFF" xlink:href="#c"/>
+        <rect width="639" height="1029" x="351.5" y="82.5" stroke="#FAFAFA" rx="2"/>
+        <use fill="#F0EFF4" stroke="#B5B9C0" stroke-dasharray="6" stroke-width="2" mask="url(#d)" xlink:href="#a"/>
+        <circle cx="672.5" cy="224.5" r="21.5" fill="#0A0A0E" fill-opacity=".6" opacity=".378"/>
+        <path fill="#FFF" d="M663.753 220.022c-.967 0-1.753.773-1.753 1.725v10.493c0 .952.786 1.725 1.753 1.725h17.494c.967 0 1.753-.773 1.753-1.725v-10.493c0-.952-.786-1.725-1.753-1.725h-4.25l-.48-1.684a.439.439 0 0 0-.427-.338h-7.18a.434.434 0 0 0-.427.338l-.507 1.684h-4.223zm8.748 12.199c-3.068 0-5.563-2.455-5.563-5.473s2.495-5.474 5.563-5.474c3.066 0 5.561 2.456 5.561 5.474 0 3.017-2.495 5.473-5.561 5.473zm0-10.084c-2.584 0-4.687 2.068-4.687 4.61 0 2.543 2.103 4.61 4.687 4.61 2.583 0 4.685-2.067 4.685-4.61 0-2.542-2.102-4.61-4.685-4.61zm8.18-.515a.802.802 0 0 0-.808.796c0 .44.361.796.808.796a.802.802 0 0 0 .808-.796.803.803 0 0 0-.808-.796z" opacity=".7"/>
+    </g>
+</svg>

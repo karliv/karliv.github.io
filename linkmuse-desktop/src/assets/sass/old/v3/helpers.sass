@@ -1,0 +1,304 @@
+=lm-main-heading-bold()
+    font-size: 28px
+    font-weight: bold
+
+=lm-section-header()
+    font-size: 24px
+    font-weight: 600
+
+=lm-subsection-header()
+    font-size: 18px
+    font-weight: 600
+
+=lm-button-content()
+    font-size: 12px
+    font-weight: 600
+    line-height: 1.25
+    letter-spacing: 1.2px
+    text-align: left
+
+=lm-body-content()
+    font-size: 14px
+
+=lm-small-labels()
+    font-size: 12px
+    line-height: 1.25
+    text-align: left
+
+=lm-bold-content()
+    font-size: 14px
+    font-weight: 600
+    line-height: 1.29
+
+=lm-micro()
+    font-size: 10px
+
+=LM-BUTTON()
+    font-size: 12px
+    font-weight: 600
+
+@mixin lm-ok-icon($color:'%23ffffff')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="6" fill="none" viewBox="0 0 8 6"><path fill="#{$color}" d="M7.765 1.235L6.529 0 3 3.53 1.235 1.764 0 3l3 3 4.765-4.765z"/><mask id="a" width="8" height="6" x="0" y="0" maskUnits="userSpaceOnUse"><path fill="#{$color}" d="M8.8 1.4L7.4 0l-4 4-2-2L0 3.4l3.4 3.4 5.4-5.4z" transform="scale(.88235)"/></mask><g mask="url(%23a)"><path fill="#{$color}" fill-rule="evenodd" d="M-.53-.53h8.824v7.06H-.529V-.53z" clip-rule="evenodd"/></g></svg>')
+
+.lm-ok-icon-icon
+    @include lm-ok-icon()
+
+
+@mixin lm-vk-icon()
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40"><path fill="%23007BED" fill-rule="evenodd" d="M40 20c0 11.046-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0s20 8.954 20 20zm-19.522 5.18c-.167.19-.495.228-.495.228h-1.087s-2.398.152-4.51-2.16c-2.303-2.523-4.337-7.527-4.337-7.527s-.117-.327.01-.486c.144-.178.533-.19.533-.19l2.598-.017s.246.043.42.178c.145.112.226.32.226.32s.42 1.117.976 2.127c1.085 1.973 1.591 2.404 1.96 2.193.538-.309.377-2.788.377-2.788s.01-.901-.27-1.302c-.218-.31-.627-.402-.808-.427-.146-.02.093-.377.405-.537.467-.24 1.293-.255 2.268-.244.76.008.979.058 1.276.134.69.174.669.736.622 1.947-.014.361-.03.78-.03 1.265 0 .11-.003.226-.006.346-.016.62-.035 1.33.353 1.593.199.135.686.02 1.904-2.154.577-1.03 1.01-2.242 1.01-2.242s.094-.215.24-.308c.152-.095.354-.066.354-.066l2.732-.017s.822-.103.955.287c.14.409-.307 1.365-1.424 2.93-1.064 1.491-1.58 2.036-1.528 2.52.037.352.372.672 1.012 1.296 1.35 1.318 1.708 2.008 1.791 2.169l.015.028c.602 1.05-.668 1.132-.668 1.132l-2.429.036s-.522.11-1.208-.387c-.359-.26-.71-.682-1.044-1.086-.512-.616-.985-1.186-1.388-1.052-.677.226-.656 1.76-.656 1.76s.006.327-.149.501z" clip-rule="evenodd"/></svg>')
+
+.lm-vk-icon-icon
+    @include lm-vk-icon()
+
+
+@mixin lm-fb-icon()
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40"><path fill="%231A32AF" fill-rule="evenodd" d="M40 20c0 11.046-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0s20 8.954 20 20zm-22.064-2.76V14.96c-.002-.495-.011-3.142 3.308-3.142h2.393v2.868h-1.76c-.348 0-.7.379-.7.66v1.884h2.456c-.098 1.444-.301 2.765-.301 2.765h-2.167v8.187h-3.23v-8.187h-1.571V17.24h1.572z" clip-rule="evenodd"/></svg>')
+
+.lm-fb-icon-icon
+    @include lm-fb-icon()
+
+@mixin lm-social-ok()
+    background-image: url('data:image/svg+xml;utf8,<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 16C0 7.16345 7.16344 0 16 0H20C28.8366 0 36 7.16345 36 16V20C36 28.8365 28.8366 36 20 36H16C7.16344 36 0 28.8365 0 20V16ZM17.1802 21.2698C15.8892 21.1404 14.7252 20.835 13.7285 20.0861C13.7039 20.0675 13.6792 20.0491 13.6544 20.0306C13.5546 19.9566 13.4548 19.8824 13.3644 19.799C12.9281 19.3965 12.8842 18.9355 13.2294 18.4604C13.5247 18.054 14.0203 17.9452 14.5356 18.1786C14.6353 18.2239 14.7304 18.2803 14.8214 18.341C16.6788 19.5671 19.2303 19.601 21.0947 18.3961C21.2794 18.2601 21.4768 18.1491 21.7057 18.0925C22.1506 17.9827 22.5655 18.1398 22.8043 18.5138C23.0771 18.9409 23.0736 19.3578 22.7375 19.6895C22.2219 20.1978 21.6019 20.5657 20.9129 20.8224C20.2615 21.065 19.548 21.1872 18.8417 21.2683C18.9483 21.3797 18.9985 21.4345 19.0652 21.4988C19.414 21.8356 19.7634 22.1718 20.1128 22.5081C20.7239 23.0961 21.3349 23.6841 21.943 24.2748C22.2687 24.5912 22.3367 24.9835 22.1574 25.3514C21.9613 25.7536 21.5225 26.0182 21.0922 25.9899C20.8196 25.9718 20.607 25.8414 20.4181 25.6586C20.1807 25.4291 19.9418 25.2009 19.703 24.9728L19.7024 24.9723C19.2134 24.5052 18.7244 24.0383 18.2482 23.5594C18.0419 23.3522 17.9426 23.3914 17.7605 23.5714C17.0325 24.2914 16.2926 25.0004 15.5484 25.7054C15.2142 26.0219 14.8166 26.0789 14.429 25.8981C14.017 25.7062 13.7549 25.3022 13.7751 24.8962C13.7891 24.6215 13.9296 24.4117 14.1259 24.2236C14.8934 23.4872 15.6593 22.7493 16.425 22.0116L16.968 21.4885C17.0066 21.451 17.0436 21.4122 17.0877 21.3661C17.1151 21.3373 17.1453 21.3057 17.1802 21.2698ZM13.7884 14.0403C13.7749 16.2566 15.6635 18.0909 17.9667 18.0985C20.2932 18.1062 22.1949 16.3135 22.2068 14.1018C22.2184 11.8378 20.3478 10.006 18.0173 10C15.6914 9.99384 13.8016 11.7996 13.7884 14.0403ZM18.0005 12.0682C19.1437 12.0692 20.0559 12.9453 20.0599 14.0457C20.0637 15.1459 19.1539 16.0276 18.0112 16.0316C16.8649 16.0356 15.9449 15.1657 15.9363 14.0695C15.9274 12.959 16.8478 12.067 18.0005 12.0682Z" fill="%23F5A623"/></svg>')
+
+.lm-social-ok-icon
+    @include lm-social-ok()
+
+@mixin lm-social-youtube()
+    background-image: url('data:image/svg+xml;utf8,<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 0C7.16345 0 0 7.16345 0 16V20C0 28.8365 7.16345 36 16 36H20C28.8365 36 36 28.8365 36 20V16C36 7.16345 28.8365 0 20 0H16ZM12.1537 25H23.8463C26.1403 25 28 23.1603 28 20.891V15.109C28 12.8397 26.1403 11 23.8463 11H12.1537C9.85968 11 8 12.8397 8 15.109V20.891C8 23.1603 9.85968 25 12.1537 25ZM15.5681 15.1384L21.0371 17.7187C21.2016 17.7963 21.2045 18.027 21.0418 18.1085L15.5729 20.85C15.4268 20.9232 15.2541 20.8182 15.2541 20.6562V15.3345C15.2541 15.1748 15.4224 15.0697 15.5681 15.1384Z" fill="%23FC2E5F"/></svg>')
+
+.lm-social-youtube-icon
+    @include lm-social-youtube()
+
+
+
+@mixin lm-google-icon()
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="none" viewBox="0 0 44 44"><path fill="%23FF5A3C" fill-rule="evenodd" d="M43.75 21.875c0 12.081-9.793 21.875-21.875 21.875C9.794 43.75 0 33.956 0 21.875S9.794 0 21.875 0C33.957 0 43.75 9.794 43.75 21.875zm-19.135-1.733h-2.687l-.007-.005c0 .004 0 .006.002.009H17.33v2.892h4.161c-.008.478-.186.874-.498 1.244a4.777 4.777 0 0 1-3.668 1.7c-2.625 0-4.755-2.09-4.755-4.67 0-2.579 2.13-4.67 4.755-4.67 1.167 0 2.235.416 3.063 1.102l2.031-2.099a7.747 7.747 0 0 0-5.094-1.895c-4.253 0-7.7 3.386-7.7 7.563 0 4.176 3.447 7.562 7.7 7.562 1.484 0 2.87-.413 4.045-1.127 2.193-1.332 3.337-3.717 3.337-6.436 0-.398-.032-.789-.092-1.17zm6.659.329h3.102v2.051h-3.102v3.047h-2.088v-3.047h-3.102v-2.051h3.102v-3.047h2.088v3.047z" clip-rule="evenodd"/></svg>')
+
+.lm-google-icon-icon
+    @include lm-google-icon()
+
+@mixin lm-twitter()
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 36 36"><path fill="%231FAEE9" fill-rule="evenodd" d="M16 0C7.163 0 0 7.163 0 16v4c0 8.837 7.163 16 16 16h4c8.837 0 16-7.163 16-16v-4c0-8.837-7.163-16-16-16h-4zm9.013 13.382A6.863 6.863 0 0 0 27 12.847a6.991 6.991 0 0 1-1.734 1.767c.006.146.013.298.013.444 0 4.5-3.48 9.692-9.848 9.692a9.915 9.915 0 0 1-5.306-1.53 7.035 7.035 0 0 0 5.127-1.409c-1.511-.03-2.795-1.014-3.233-2.369a3.487 3.487 0 0 0 1.567-.06c-1.585-.316-2.776-1.689-2.776-3.34v-.043c.469.255 1 .407 1.567.425a3.388 3.388 0 0 1-1.543-2.836c0-.625.173-1.208.47-1.712a9.905 9.905 0 0 0 7.138 3.558 3.16 3.16 0 0 1-.092-.777c0-1.883 1.548-3.407 3.461-3.407.993 0 1.894.413 2.523 1.075a7.065 7.065 0 0 0 2.203-.826 3.415 3.415 0 0 1-1.524 1.883z" clip-rule="evenodd"/></svg>')
+.lm-twitter-icon
+    @include lm-twitter()
+
+.lm-cards-base-lm-body-card
+    border-radius: 2px
+    background-color: $lm-white
+    box-shadow: $panes__box-shadow
+
+@mixin lm-following($color:'%23ffffff')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="#{$color}" fill-rule="evenodd" d="M3 5c0 2.2 1.8 4 4 4s4-1.8 4-4V4c0-2.2-1.8-4-4-4S3 1.8 3 4v1zM0 16c0-2.8 2.2-5 5-5h3v5H0z" clip-rule="evenodd"/><path fill="#{$color}" d="M11.624 16a.926.926 0 0 1-.657-.272L9.11 13.87l1.313-1.314 1.2 1.201 3.059-3.058 1.313 1.313-3.715 3.715a.926.926 0 0 1-.656.272z"/></svg>')
+
+.lm-following-icon
+    @include lm-following()
+
+@mixin lm-plus($color:'%23282A36')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="#{$color}" fill-rule="evenodd" d="M7.037 7.037l-.031-4.52a1.023 1.023 0 0 1 .95-1.015.894.894 0 0 1 .962.894L8.95 7.05l4.654.032a.894.894 0 0 1 .894.963 1.023 1.023 0 0 1-1.014.95l-4.52-.032.03 4.52c.004.528-.421.982-.95 1.015a.894.894 0 0 1-.962-.894L7.05 8.95l-4.654-.032a.894.894 0 0 1-.894-.963 1.023 1.023 0 0 1 1.014-.95l4.52.032z" clip-rule="evenodd"/></svg>')
+
+.lm-plus-icon
+    @include lm-plus()
+
+
+@mixin lm-lock($color:'%23282A36')
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" fill="none" viewBox="0 0 21 24"><path fill="#{$color}" fill-opacity=".16" fill-rule="evenodd" d="M10.5 0c-3.3 0-6 2.7-6 6v1.5h-3C.6 7.5 0 8.1 0 9v13.5c0 .9.6 1.5 1.5 1.5h18c.9 0 1.5-.6 1.5-1.5V9c0-.9-.6-1.5-1.5-1.5h-3V6c0-3.3-2.7-6-6-6zM12 17.55v1.95H9v-1.95c-.502-.251-.91-.689-1.173-1.208A2.99 2.99 0 0 1 7.5 15c0-1.65 1.35-3 3-3s3 1.35 3 3c0 1.05-.6 2.1-1.5 2.55zM7.5 6v1.5h6V6c0-1.65-1.35-3-3-3s-3 1.35-3 3z" clip-rule="evenodd"/></svg>')
+
+.lm-lock-icon
+    @include lm-lock()
+.lm-social
+    display: flex
+    align-items: center
+    justify-content: center
+    [class*='lm-social-']
+        display: block
+        width: 44px
+        height: 44px
+        border-radius: 50%
+        background-size: 44px
+        background-repeat: no-repeat
+        background-position: center
+        margin: 0 10px
+        a
+            width: 100%
+            height: 100%
+            display: block
+    .lm-social-vk
+        @include lm-vk-icon
+    .lm-social-fb
+        @include lm-fb-icon
+    .lm-social-google
+        @include lm-google-icon
+    .lm-social-inst
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 36 36"><path fill="none" d="M0 0h36v36H0z"/><path fill="url(%23a)" fill-rule="evenodd" d="M0 18C0 8.06 8.06 0 18 0s18 8.06 18 18-8.06 18-18 18S0 27.94 0 18zm14.98-6.75h6.05a3.73 3.73 0 0 1 3.725 3.726v6.048a3.73 3.73 0 0 1-3.726 3.726H14.98a3.73 3.73 0 0 1-3.725-3.726v-6.049a3.73 3.73 0 0 1 3.725-3.725zm8.577 9.774a2.53 2.53 0 0 1-2.528 2.528H14.98a2.53 2.53 0 0 1-2.527-2.527v-6.05a2.53 2.53 0 0 1 2.527-2.527h6.05a2.53 2.53 0 0 1 2.527 2.527v6.05zM14.63 18a3.379 3.379 0 0 1 3.375-3.375A3.379 3.379 0 0 1 21.38 18a3.379 3.379 0 0 1-3.375 3.375A3.379 3.379 0 0 1 14.63 18zm3.375 2.213A2.215 2.215 0 0 1 15.792 18c0-1.22.993-2.213 2.213-2.213 1.22 0 2.213.993 2.213 2.213 0 1.22-.993 2.213-2.213 2.213zm3.06-6.466a.848.848 0 0 1 1.193 0 .848.848 0 0 1 0 1.194.851.851 0 0 1-.597.246.851.851 0 0 1-.596-.246.85.85 0 0 1-.248-.597c0-.223.09-.44.248-.597z" clip-rule="evenodd"/><defs><linearGradient id="a" x1="18.952" x2="43.817" y1="44.177" y2="17.944" gradientUnits="userSpaceOnUse"><stop stop-color="%23FFC107"/><stop offset=".504" stop-color="%23F44336"/><stop offset="1" stop-color="%239C27B0"/></linearGradient></defs></svg>')
+    .lm-social-ok
+        @include lm-social-ok
+    .lm-social-youtube
+        @include lm-social-youtube
+    .lm-social-twitter
+        @include lm-twitter
+
+.lm-dropdown-more
+    position: relative
+    &:hover
+        .lm-dropdown-more-content-wrap
+            display: block
+        svg
+            path
+                transition: fill .25s ease
+                fill: $lm-main
+    i.more-icon
+        cursor: pointer
+        display: block
+        width: 16px
+        height: 16px
+        background-size: 16px 4px
+        background-position: center
+        background-repeat: no-repeat
+    .lm-dropdown-more-content-wrap
+        position: absolute
+        right: -12px
+        list-style: none
+        display: none
+        z-index: 1
+        .lm-dropdown-more-content
+            border-radius: 16px
+            background-color: $lm-white
+            box-shadow: 0 4px 16px 0 rgba(40, 42, 54, 0.16)
+            padding-top: 2px
+            padding-bottom: 2px
+            li
+                display: block
+                margin-bottom: 1px
+                & + li
+                    border-top: 1px solid rgba(40, 42, 54, 0.08)
+
+                a
+                    display: block
+                    text-align: left
+                    padding: 0 16px
+                    font-size: 8px
+                    font-weight: 600
+                    font-style: normal
+                    font-stretch: normal
+                    line-height: 28px
+                    height: 28px
+                    letter-spacing: 1px
+                    color: $lm-gray-3
+                    text-transform: uppercase
+                    transition: fill .25s ease
+                    &:hover
+                        transition: fill .25s ease-in
+                        color: $lm-main
+
+
+.profile__user--controls
+    .add-cart-profile, .iconMessage, .iconSubscribe
+        border-radius: 8px
+        border: 1px solid $lm-white
+    .button.create_casting, .button.my_casting
+        border-radius: 8px
+        font-size: 12px
+        font-style: normal
+        font-stretch: normal
+        letter-spacing: 1px
+        color: #ffffff
+        text-transform: uppercase
+    .button.create_casting
+        padding: 0 24px
+        margin-right:  16px
+        width: max-content
+    .button.my_casting
+        width: 141px !important
+
+.profile__header--bottom
+    .lm-talent-pdf-btn
+        width: 40px
+        height: 40px
+        line-height: 40px
+        border-radius: 8px
+        border: 1px solid $lm-white
+        box-sizing: border-box
+        position: relative
+        display: flex
+        justify-content: center
+        align-content: center
+        align-items: center
+        &:before
+            content: ''
+            width: 24px
+            height: 24px
+            background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="%23ffffff" d="M0 7.75v8.5h2.155v-2.492H3.54c1.885 0 3.182-1.184 3.182-2.998 0-1.826-1.233-3.01-3.053-3.01H0zm2.155 1.655H3.1c.905 0 1.445.477 1.445 1.36 0 .89-.54 1.367-1.456 1.367h-.934V9.405zM8.682 7.75v8.5h3.441c2.555 0 4.064-1.585 4.064-4.3 0-2.71-1.504-4.2-4.064-4.2h-3.44zm2.155 1.744h1.005c1.362 0 2.154.866 2.154 2.462 0 1.696-.751 2.55-2.155 2.55h-1.004V9.494zM20.389 16.25v-3.17h3.282v-1.654H20.39V9.494H24V7.75h-5.766v8.5h2.155z"/></svg>')
+            background-position: center
+            background-repeat: no-repeat
+            background-size: 100%
+
+.modal-pdf
+    &.small
+        .modal-content
+            width: 198px !important
+    .modal-content
+        width: 272px !important
+        span.desc
+            font-size: 14px
+            font-weight: normal
+            font-style: normal
+            font-stretch: normal
+            line-height: 1.29
+            letter-spacing: 0.3px
+            color: $lm-gray-2
+        .lm-relative
+            margin-bottom: 30px
+            input
+                margin-bottom: 0
+            .lm-input-error
+                font-size: 11px
+                letter-spacing: 0.2px
+                display: block
+                text-align: left
+                color: #fc2e5f
+        .lm-pdf-success
+            display: flex
+            justify-content: center
+            align-content: center
+            align-items: center
+            text-align: center
+            flex-wrap: wrap
+            span
+                font-size: 18px
+                font-weight: 600
+                font-style: normal
+                font-stretch: normal
+                line-height: 1.33
+                letter-spacing: 0.3px
+                color: $lm-gray-1
+            &:before
+                width: 80px
+                height: 80px
+                content: ''
+                background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="none" viewBox="0 0 80 80"><path fill="%230063DA" d="M62 30l-7-7-20 20-10-10-7 7 16.293 16.293a1 1 0 0 0 1.414 0L62 30z"/></svg>')
+                background-position: center
+                background-repeat: no-repeat
+                background-size: 100%
+        .lm-pdf-error
+            display: flex
+            justify-content: center
+            align-content: center
+            align-items: center
+            text-align: center
+            flex-wrap: wrap
+            span
+                font-size: 18px
+                font-weight: 600
+                font-style: normal
+                font-stretch: normal
+                line-height: 1.33
+                letter-spacing: 0.3px
+                color: $lm-gray-1
+            &:before
+                width: 80px
+                height: 80px
+                content: ''
+                background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="none" viewBox="0 0 80 80"><path fill="%23FC2E5F" d="M50.5 22.5L40 33 29.5 22.5l-7 7L33 40 22.5 50.5l7 7L40 47l10.5 10.5 7-7L47 40l10.5-10.5-7-7z"/></svg>')
+                background-position: center
+                background-repeat: no-repeat
+                background-size: 100%

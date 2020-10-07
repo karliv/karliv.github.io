@@ -1,0 +1,153 @@
+.notificate-page
+  .page--left
+    width: 100%
+    .profile__projects--content
+      .nav
+        width: 100%
+        overflow-y: scroll
+        display: -webkit-box
+
+.notificate--item
+  padding-top: 20px
+  padding-bottom: 10px
+  padding-left: 26px
+  position: relative
+  .notificate--item-time
+    i
+      height: 18px
+      width: 18px
+      border-radius: 50%
+      display: inline-block
+      vertical-align: middle
+      text-align: center
+      color: $white
+      margin-right: 1px
+    .comment
+      font-size: 10px
+      line-height: 19px
+      background-color: $yellow-sea
+    .add-project
+      color: $white !important
+      background-color: $emerald
+      font-size: 8px
+      line-height: 20px
+      font-weight: bold
+    .like-photo
+      font-size: 10px
+      line-height: 20px
+      background-color: $burnt-sienna
+      color: $white
+    .casting
+      background-color: $cornflower-blue
+      font-size: 9px
+      line-height: 20px
+      text-align: left
+      padding-left: 3px
+    .photo-notificate
+      width: 84px
+      height: 58px
+    span
+      display: inline-block
+      vertical-align: middle
+      line-height: 18px
+      font-size: 14px
+      font-weight: normal
+      font-style: normal
+      font-stretch: normal
+      letter-spacing: normal
+      text-align: left
+      color: $heather-2
+  .notificate--item-info
+    display: inline-block
+    vertical-align: top
+    padding-right: 65px
+    width: 756px
+    .notificate--item-time
+      margin-top: 4px
+  .notificate--item-bottom
+    .notificate--item-right-image
+      //width: 84px
+      height: 58px
+      position: absolute
+      right: 52px
+      top: 20px
+  .notificate--user--lists-mini
+    margin-top: 3px
+    margin-bottom: 2px
+    span
+      width: 34px
+      height: 34px
+      border: 2px solid $white
+      border-radius: 50%
+      color: $black-rock-1
+      font-size: 14px
+      line-height: 32px
+      text-align: center
+      background-color: $zircon-1
+      display: block
+    a:first-child
+      margin-left: 0
+    img
+      width: 34px
+      height: 34px
+      border: 2px solid $white
+      border-radius: 50%
+    a
+      width: 34px
+      height: 34px
+      display: inline-block
+      margin-left: -14.5px
+      vertical-align: middle
+  .notificate--item-close
+    display: none
+  .notificate--item-top
+    > *
+      display: inline-block
+      vertical-align: middle
+  .notificate--item-action
+    font-size: 15px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: 1.47
+    letter-spacing: 0.1px
+    color: $black-rock-1
+  .notificate--item-content
+    font-size: 15px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: 1.47
+    letter-spacing: 0.1px
+    color: $black-rock-1
+  .image-user
+    display: inline-block
+    height: 48px
+    width: 48px
+    border-radius: 50%
+    overflow: hidden
+    vertical-align: top
+    margin-right: 10px
+    img
+      height: 48px
+      width: 48px
+      border-radius: 50%
+  .name-user
+    font-size: 15px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: 22px
+    letter-spacing: 0.1px
+    color: $mariner
+    //margin-right: 10px
+  &:hover:not(.no-notificate)
+    background: rgba($pattensblue, 0.95)
+    .notificate--item-close
+      display: block
+      position: absolute
+      cursor: pointer
+      font-size: 9px
+      color: $nobel
+      right: 29px
+      top: 25px

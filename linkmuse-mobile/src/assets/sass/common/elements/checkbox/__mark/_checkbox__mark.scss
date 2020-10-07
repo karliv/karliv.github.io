@@ -1,0 +1,27 @@
+.checkbox__mark {
+	display: none;
+	width: 16px;
+	height: 16px;
+	margin-left: $multiplicity*2;
+	&:checked + .checkbox__label {
+		&::before {
+			content: '';
+			background-position: center center;
+			background-repeat: no-repeat;
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			transition: all 0.15s ease;
+			border-color: $lm-main;
+			background-color: $lm-main;
+			background-image: url(/dist/img/icons/svg/checkbox__mark.svg);
+			/* dont forget to set the bg image */
+		}
+	}
+	&:disabled + .checkbox__label {
+		color: $lm-gray-4;
+		&::before {
+			border-color: $lm-gray-4;
+		}
+	}	
+}
+

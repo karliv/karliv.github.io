@@ -1,0 +1,22 @@
+.d-card_premium-placement {
+	border-radius: $multiplicity*2;
+	padding: $multiplicity*4 $multiplicity*5 $multiplicity*5;
+	background-color: $lm-support-3_08;
+	.d-btn {
+		background-color: $lm-support-3;
+	}
+	.d-card__description {
+		font-size: 14px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.29;
+		letter-spacing: 0.25px;
+		color: $lm-gray-2;
+	}
+	.d-icon_check {
+		background-color: $lm-support-3;
+		border-radius: 50%;
+	}
+}
+

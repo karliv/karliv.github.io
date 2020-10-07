@@ -1,0 +1,6 @@
+export const COMPANY = 'kompaniya'
+export const AGENT = 'agent'
+export const PRODUCER = 'prodyuser'
+export const DIRECTOR = 'rezhisser'
+export const CASTING_DIRECTOR = 'kasting-direktor'
+export const PHOTOGRAPHER = 'fotograf'

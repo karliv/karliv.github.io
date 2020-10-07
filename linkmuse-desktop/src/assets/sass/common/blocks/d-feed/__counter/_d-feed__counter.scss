@@ -1,0 +1,13 @@
+.d-feed__counter {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.3px;
+  color: $lm-gray-3;
+  margin-left: $multiplicity*3;
+  display: flex;
+  align-items: flex-end;
+  line-height: 28px;
+  height: 33px;
+}

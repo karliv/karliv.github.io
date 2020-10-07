@@ -1,0 +1,14 @@
+.textarea_error {
+	.textarea__field {
+		transition: all 0.15s ease;
+		border-color: $lm-support-1;
+	}
+	.textarea__notification_error {
+		transition: all 0.15s ease;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+}
+

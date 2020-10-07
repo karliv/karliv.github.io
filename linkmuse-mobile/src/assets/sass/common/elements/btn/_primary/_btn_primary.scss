@@ -1,0 +1,16 @@
+.btn_primary {
+	background-color: $lm-main;
+	color: $lm-white;
+	&:active {
+		transition: all 0.15s ease;
+		background-color: $lm-main-light;
+	}
+	&:disabled {
+		transition: all 0.15s ease;
+		color: $lm-gray-opacity-32;
+		background-color: $lm-gray-5;
+		pointer-events: none;
+		cursor: default;
+	}
+}
+

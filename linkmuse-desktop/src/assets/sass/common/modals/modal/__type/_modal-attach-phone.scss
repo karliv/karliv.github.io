@@ -1,0 +1,74 @@
+.lm-modal-attach-phone {
+  .modal-content {
+    width: 285px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: $panes__box-shadow;
+
+    .close {
+      top: - 17px;
+      right: -17px;
+
+      span {
+        &:before {
+          color: #fff
+        }
+      }
+    }
+
+    .modal-attach-phone-content {
+      padding: 32px 30px;
+
+      .title {
+        color: #282a36;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.33;
+        text-align: center;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+      }
+
+      .lm-back-button {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        margin-right: 16px;
+        background-size: 16px;
+        background-position: center;
+        border: 1px solid $lm-gray-4;
+        background-repeat: no-repeat;
+        background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="%23CBD0D8" d="M6.7 14.4L8.1 13 3.8 8.7H16v-2H3.8l4.3-4.3L6.7 1 .707 6.993a1 1 0 0 0 0 1.414L6.7 14.4z"/></svg>');
+      }
+
+      .lm-modal-attach-phone-countdown-wrapper {
+
+        span {
+          color: #282a36;
+          display: block;
+          font-size: 12px;
+          line-height: 1.5;
+          font-weight: 600;
+          font-style: normal;
+          font-stretch: normal;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
+
+        .counter {
+          color: #0063da;
+          font-size: 8px;
+          display: block;
+          line-height: 1.5;
+          font-weight: 600;
+          font-style: normal;
+          font-stretch: normal;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+  }
+}

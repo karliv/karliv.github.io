@@ -1,0 +1,7 @@
+.paragraph__break_mobile {
+	display: none;
+	@media screen and (max-width: 450px) {
+		display: block;
+	}
+}
+

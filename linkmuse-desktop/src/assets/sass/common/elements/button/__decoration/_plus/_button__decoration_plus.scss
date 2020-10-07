@@ -1,0 +1,23 @@
+.button__decoration_plus {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&::before {
+		content: '';
+		display: block;
+		position: relative;
+		width: 8px;
+		height: 2px;
+		background-color: $lm-gray-3;
+	}
+	&::after {
+		content: '';
+		display: block;
+		width: 2px;
+		height: 8px;
+		background-color: $lm-gray-3;
+		position: relative;
+		right: 5px;
+	}
+}
+

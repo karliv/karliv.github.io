@@ -1,0 +1,183 @@
+image:
+  name: registry-ds1.cnt.team:35000/webapp-test:v1.4
+  username: $DOCKER_HUB_USERNAME
+  password: $DOCKER_HUB_PASSWORD
+
+pipelines:
+  default:
+      - step:
+          name: Default step
+          script:
+            - echo "Contains the pipeline definition for all branches that don't match a pipeline definition in other sections."
+
+  branches:
+   production:
+    - step:
+        name: Build linkmuse-mobile
+        caches:
+          - docker
+          - node
+        script:
+          - ln -s .env-test .env
+          - npm install
+          - npm run build
+          - export IMAGE_NAME=registry-ds1.cnt.team:35000/linkmuse-mobile:$BITBUCKET_COMMIT
+          - export LATEST_IMAGE_NAME=registry-ds1.cnt.team:35000/linkmuse-mobile:latest
+          - docker login --username $DOCKER_HUB_USERNAME --password $DOCKER_HUB_PASSWORD registry-ds1.cnt.team:35000
+          - docker build --no-cache=true --memory=1g -t $IMAGE_NAME -t $LATEST_IMAGE_NAME -f Dockerfile-linkmuse-mobile .
+          - docker push $IMAGE_NAME
+          - docker push $LATEST_IMAGE_NAME
+        services:
+          - docker
+    - step:
+        name: Deploy linkmuse-mobile
+        caches:
+          - docker
+          - node
+        deployment: production
+        trigger: manual
+        script:
+          - ssh root@134.209.88.133 BITBUCKET_COMMIT=$BITBUCKET_COMMIT bash muse-docker/production/pipeline-deploy-mobile.sh
+        services:
+          - docker
+
+   feature/*:
+    - step:
+        name: Build feature-image
+        caches:
+          - node
+          - docker
+        script:
+          - docker login --username $DOCKER_HUB_USERNAME --password $DOCKER_HUB_PASSWORD registry-ds1.cnt.team:35000
+          - export TAG=$(echo ${BITBUCKET_BRANCH}|sed 's/\//-/g')
+          - export IMAGE_NAME=registry-ds1.cnt.team:35000/linkmuse-mobile:${TAG}
+          - cp .env.feature ./.env
+          - sed -i "s/APP_URL.*/APP_URL=https:\/\/m-${TAG}.test.cnt.team/g" ./.env
+          - sed -i "s/BASE_URL=.*/BASE_URL=https:\/\/${TAG}.test.cnt.team/g" ./.env
+          - sed -i "s/BASE_URL_UPLOAD.*/BASE_URL_UPLOAD=https:\/\/${TAG}.test.cnt.team/g" ./.env
+          - npm install
+          - npm run build:staging
+          - docker build --memory=1g -t $IMAGE_NAME -f Dockerfile-feature .
+          - docker push $IMAGE_NAME
+        services:
+          - docker
+    - step:
+        name: Deploy feature
+        deployment: test
+        trigger: manual
+        script:
+          - ssh root@staging.cnt.team BITBUCKET_BRANCH=${BITBUCKET_BRANCH} bash /root/muse-docker/staging-server/staging_deploy/deploy-staging.sh '"mobile"'
+
+
+
+
+   feature/deploy:
+    - step:
+        name: Build feature/deploy
+        caches:
+          - node
+        script:
+          - npm install
+          - npm run build:staging
+    - step:
+        name: Deploy feature/deploy
+        caches:
+          - docker
+          - node
+        deployment: test
+        trigger: manual
+        script:
+          # - rm .env
+          - ln -s .env-feature-deploy .env
+          - npm install
+          - npm run build:staging
+          - export IMAGE_NAME=registry-ds1.cnt.team:35000/linkmuse-mobile-feature:$BITBUCKET_COMMIT
+          - export LATEST_IMAGE_NAME=registry-ds1.cnt.team:35000/linkmuse-mobile-feature:latest
+          - docker login --username $DOCKER_HUB_USERNAME --password $DOCKER_HUB_PASSWORD registry-ds1.cnt.team:35000
+          - docker build --no-cache=true --memory=1g -t $IMAGE_NAME -t $LATEST_IMAGE_NAME -f Dockerfile-linkmuse-mobile-staging .
+          - docker push $IMAGE_NAME
+          - docker push $LATEST_IMAGE_NAME
+          - ssh root@staging.cnt.team bash muse-docker/staging-server/pipeline-deploy-mobile-feature.sh $BITBUCKET_COMMIT
+        services:
+          - docker
+
+   certifying-specialist:
+    - step:
+        name: Build certifying-specialist
+        caches:
+          - node
+        script:
+          - npm install
+          - npm run build:staging
+    - step:
+        name: Deploy certifying-specialist
+        caches:
+          - docker
+          - node
+        deployment: test
+        trigger: manual
+        script:
+          # - rm .env
+          - ln -s .env-mobile-webapp .env
+          - npm install
+          - npm run build:staging
+          - export IMAGE_NAME=registry-ds1.cnt.team:35000/linkmuse-mobile-webapp:$BITBUCKET_COMMIT
+          - export LATEST_IMAGE_NAME=registry-ds1.cnt.team:35000/linkmuse-mobile-webapp:latest
+          - docker login --username $DOCKER_HUB_USERNAME --password $DOCKER_HUB_PASSWORD registry-ds1.cnt.team:35000
+          - docker build --no-cache=true --memory=1g -t $IMAGE_NAME -t $LATEST_IMAGE_NAME -f Dockerfile-linkmuse-mobile-webapp .
+          - docker push $IMAGE_NAME
+          - docker push $LATEST_IMAGE_NAME
+          - ssh root@staging.cnt.team bash muse-docker/staging-server/pipeline-deploy-mobile-webapp.sh $BITBUCKET_COMMIT
+        services:
+          - docker
+   board:
+    - step:
+        name: Build Board
+        caches:
+          - node
+        script:
+          - ln -s .env-board .env
+          - npm install
+          - npm run build:staging
+          - export IMAGE_NAME=registry-ds1.cnt.team:35000/linkmuse-mobile:$BITBUCKET_COMMIT
+          - docker login --username $DOCKER_HUB_USERNAME --password $DOCKER_HUB_PASSWORD registry-ds1.cnt.team:35000
+          - docker build --no-cache=true --memory=1g -t $IMAGE_NAME -f Dockerfile-linkmuse-mobile-webapp .
+          - docker push $IMAGE_NAME
+        services:
+          - docker
+    - step:
+        name: Deploy board
+        trigger: manual
+        script:
+          # - rm .env
+          - ssh root@staging.cnt.team BITBUCKET_COMMIT=$BITBUCKET_COMMIT bash muse-docker/staging-server/pipeline-deploy-mobile.sh
+        services:
+          - docker
+
+   feature/memory-leak:
+    - step:
+        name: Build image memory-leak
+        caches:
+          - node
+        script:
+          - export TAG=$(echo $BITBUCKET_BRANCH | sed "s/\//-/")
+          - cp .env.memory .env
+          - npm install
+          - npm run build:staging
+          - export IMAGE_NAME=registry-ds1.cnt.team:35000/linkmuse-mobile:$TAG
+          - docker login --username $DOCKER_HUB_USERNAME --password $DOCKER_HUB_PASSWORD registry-ds1.cnt.team:35000
+          - docker build --no-cache=true --memory=1g -t $IMAGE_NAME -f Dockerfile-linkmuse-mobile-webapp .
+          - docker push $IMAGE_NAME
+        services:
+          - docker
+    - step:
+        name: Deploy memory leak
+        trigger: manual
+        script:
+          # - rm .env
+          - ssh root@staging.cnt.team BITBUCKET_BRANCH=$BITBUCKET_BRANCH bash muse-docker/staging-server/pipeline-deploy-mobile-ml.sh
+        services:
+          - docker
+
+
+

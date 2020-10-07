@@ -1,0 +1,15 @@
+.section_specialist-parameters {
+	box-sizing: border-box;
+	width: 100%;
+	padding: $multiplicity*4;
+	.row {
+		margin-bottom: $multiplicity*3;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		> * {
+			margin-left: 0;
+		}
+	}
+}
+

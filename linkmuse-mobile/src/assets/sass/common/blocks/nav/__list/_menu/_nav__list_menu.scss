@@ -1,0 +1,19 @@
+.nav__list_menu {
+	box-sizing: border-box;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	.nav__item {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: $multiplicity*3 $multiplicity*6;
+	}
+	.nav__item_active {
+		.icon {
+			fill: $lm-main;
+		}
+	}
+}
+

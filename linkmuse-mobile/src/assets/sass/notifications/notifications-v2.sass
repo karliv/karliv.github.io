@@ -1,0 +1,158 @@
+.lm-m-v2-notifications
+  .lm-m-v2-notifications-body
+    border-radius: 4px
+    box-shadow: 0 1px 4px 0 rgba(40, 42, 54, 0.06)
+    background-color: $lm-white
+    width: 100%
+    display: block
+    margin-bottom: 20px
+  .lm-m-v2-notifications-list
+    padding: 16px
+  .lm-m-v2-notifications-body-isEmpty
+    width: 100%
+    height: 100%
+    position: fixed
+    top: 0
+    left: 0
+    display: flex
+    text-align: center
+    align-items: center
+    justify-content: center
+    font-size: 14px
+    font-weight: 600
+    font-style: normal
+    font-stretch: normal
+    line-height: 1.29
+    letter-spacing: 0.5px
+    color: $lm-gray-2
+
+.lm-m-v2-notifications-item
+  border-top: 1px solid $lm-gray-opacity-8
+  padding: $multiplicity*4 0
+  display: flex
+  position: relative
+  z-index: 1
+  &:first-child
+    padding-top: 0
+    border-top: none
+  &:only-child
+    padding: 0
+    border-top: none
+  &:last-child
+    padding-bottom: 0
+  .notifications-avatar-wrap
+    .notifications-avatar-icon
+      position: absolute
+      width: 100%
+      height: 100%
+      border-radius: 8px
+      box-sizing: border-box
+      background-repeat: no-repeat
+      background-size: 16px
+      background-position: center
+      &.like
+        background-color: $lm-support-1
+        @include lm-heart('%23ffffff')
+      &.subscribe
+        background-color: $lm-support-3
+        @include lm-subscribe('%23ffffff')
+      &.comment
+        background-color: $lm-support-2
+        @include lm-message('%23ffffff')
+      &.partner
+        background-color: $lm-support-4
+        &.partner-subscribe
+          @include lm-single('%23ffffff')
+        &.partner-subscribe-ok
+          @include lm-ok-icon('%23ffffff')
+        &.partner-subscribe-remove
+          @include lm-close('%23ffffff')
+          background-size: 4px
+      &.partner-exclusive
+        background-color: $lm-support-1
+        &.partner-exclusive-ok
+          @include lm-ok-icon('%23ffffff')
+        &.partner-exclusive-subscribe
+          @include lm-favourite('%23ffffff')
+          background-size: 6px
+          background-position: center 3.5px
+        &.partner-exclusive-remove
+          @include lm-close('%23ffffff')
+          background-size: 4px
+      &.casting
+        background-color: $lm-main
+        @include lm-casting('%23ffffff')
+        background-size: 4px
+      &.approve
+        background-color: $lm-main
+        @include lm-lock('%23ffffff')
+      &.not-approve
+        background-color: $lm-support-1
+        @include lm-lock('%23ffffff')
+      &.check-circle
+        background-color: $lm-main
+        @include lm-check-circle('%23ffffff')
+      &.info
+        background-color: $lm-main
+        @include lm-info('%23ffffff')
+      &.eye
+        background-color: $lm-main
+        @include lm-eye('%23ffffff')
+      &.btn__alert-1
+        background-color: $lm-main
+      &.btn__alert-2
+        background-color: $lm-support-1
+      &.btn__alert-3
+        background-color: $lm-support-3
+
+
+  .notifications-info-wrap
+    .notifications__text
+      font-size: 14px
+      font-weight: normal
+      font-style: normal
+      font-stretch: normal
+      line-height: 1.29
+      letter-spacing: 0.25px
+      color: $lm-gray-1
+    .notifications__date
+      font-size: 8px
+      font-weight: 600
+      font-style: normal
+      font-stretch: normal
+      line-height: 1.5
+      letter-spacing: 1px
+      color: $lm-gray-3
+      text-transform: uppercase
+    .notifications__link
+      color: $lm-main
+      text-decoration: none
+      transition: all 0.15s ease-in-out 0s
+      cursor: pointer
+      &:hover
+        color: $lm-support-3
+    .notifications__btn
+      margin-top: 16px
+      display: inline-block
+    .notifications__btn_disabled
+      background-color: transparent
+      color: $lm-gray-3
+      font-size: 12px
+      font-weight: 600
+      font-style: normal
+      font-stretch: normal
+      line-height: 1.33
+      letter-spacing: 1px
+      text-transform: uppercase
+      padding: 12px 0
+      margin-left: 30px
+
+
+.notifications-avatar-wrap
+  position: relative
+  height: 40px
+  .notifications-avatar
+    position: absolute
+    width: 100%
+    height: 100%
+    border-radius: 8px

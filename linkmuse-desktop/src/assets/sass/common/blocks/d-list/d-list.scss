@@ -1,0 +1,9 @@
+.d-list {
+	margin: 0;
+	padding: 0;
+}
+@import '__item/_d-list__item.scss';
+
+@import '_ul/_d-list_ul.scss';
+@import '_declarations/_d-list_declarations.scss';
+@import '_casting-info/_d-list_casting-info.scss';

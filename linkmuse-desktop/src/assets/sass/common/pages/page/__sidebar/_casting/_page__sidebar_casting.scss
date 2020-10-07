@@ -1,0 +1,15 @@
+.page__sidebar_casting {
+	width: 100%;
+	min-width: 346px;
+	max-width: 346px;
+	margin-right: 0;
+	margin-left: $multiplicity*12;
+	position: relative;
+	flex-shrink: 0;
+	.sidebar__content {
+		widows: 100%;
+		min-width: auto;
+		max-width: auto;
+	}
+}
+

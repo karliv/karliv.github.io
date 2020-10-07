@@ -1,0 +1,6 @@
+.button_mailing {
+	@include button();
+}
+
+@import '_unsubscribe/_button_mailing_unsubscribe.scss';
+@import '_subscribe/_button_mailing_subscribe.scss';

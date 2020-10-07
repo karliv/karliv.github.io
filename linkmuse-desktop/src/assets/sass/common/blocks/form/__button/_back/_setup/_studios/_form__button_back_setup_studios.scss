@@ -1,0 +1,6 @@
+.form__button_back_setup_studios {
+	@include button_cancel();
+	min-width: 176px;
+	background-color: $lm-gray-5;
+}
+

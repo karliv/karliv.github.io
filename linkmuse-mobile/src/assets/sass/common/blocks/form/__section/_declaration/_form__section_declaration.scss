@@ -1,0 +1,10 @@
+.form__section_declaration {
+	display: block;
+	padding: 24px 0;
+	border-bottom: 1px solid rgba(40, 42, 54, 0.08);
+	&:last-of-type {
+		border-bottom: none;
+	}
+}
+
+@import '_disabled/_form__section_declaration_disabled.scss';

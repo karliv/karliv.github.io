@@ -1,0 +1,68 @@
+.card_premium {
+	.btn_primary {
+		background-color: $lm-gray-1;
+		color: $lm-white !important;
+		&.disabled {
+			transition: all 0.15s ease;
+			color: $lm-gray-opacity-32;
+			background-color: $lm-gray-opacity-8;
+			pointer-events: none;
+		}
+		&:disabled {
+			transition: all 0.15s ease;
+			color: $lm-gray-opacity-32;
+			background-color: $lm-gray-opacity-8;
+			pointer-events: none;
+		}
+	}
+	.btn {
+		color: $lm-gray-1;
+		&:disabled {
+			color: $lm-gray-opacity-32;
+		}
+	}
+	.btn_outline {
+		border: 1px solid $lm-gray-1;
+		color: $lm-gray-1;
+		&:hover {
+			background-color: $lm-gray-opacity-8;
+		}
+	}
+	.btn_round {
+		fill: $lm-gray-2;
+		background-color: $lm-gray-opacity-8;
+		&:hover {
+			background-color: $lm-gray-opacity-16;
+		}
+	}
+	.btn_rounded {
+		background-color: $lm-gray-opacity-8;
+	}
+	.btn_secondary_filled {
+		color: $lm-gray-2;
+		background-color: $lm-gray-opacity-8;
+	}
+	&.declaration__card {
+		border: 1px solid $lm-support-3;
+		background-color: $lm-support-3_08;
+	}
+	.declaration__type {
+		color: $lm-gray-1;
+	}
+	.casting__option_premium {
+		font-size: 8px;
+		text-transform: uppercase;
+		font-weight: 600;
+		max-height: 12px;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.5;
+		letter-spacing: 1px;
+		color: $lm-gray-2;
+	}
+
+  .d-card__disabled_respond {
+    background: $lm-gray-opacity-8;
+  }
+}
+

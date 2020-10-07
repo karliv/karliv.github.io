@@ -1,0 +1,25 @@
+.text {}
+
+.m-text_bold {
+  font-weight: 600;
+  line-height: 1.29;
+}
+.m-text_bold-2 {
+   font-size: 12px;
+   font-weight: 600;
+ }
+.m-text_semi-bold {
+  font-size: 12px;
+  line-height: 1.29;
+  font-weight: 600;
+}
+.m-text_normal {
+  font-size: 12px;
+}
+.m-text_normal-2 {
+  line-height: 1.29;
+  letter-spacing: 0.25px;
+}
+
+@import '_declaration/_text_declaration.scss';
+@import '_cropped/_cropped-text.sass';

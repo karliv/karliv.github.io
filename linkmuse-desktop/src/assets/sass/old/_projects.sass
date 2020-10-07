@@ -1,0 +1,199 @@
+.project-user
+  img:not(.verif-customer)
+    width: 48px
+    height: 48px
+    border-radius: 8px
+    object-fit: cover
+    display: inline-block
+    vertical-align: top
+    margin-right: 8px
+  .verif-customer
+    width: 20px
+    height: 20px
+    vertical-align: top
+    display: inline-block
+    margin-left: 5px
+  .project-user--info
+    display: inline-block
+    vertical-align: top
+    width: 179px
+    .project-user--name
+      font-size: 16px
+      color: white
+      line-height: 22px
+      min-height: 22px
+      letter-spacing: 0.1px
+      margin-bottom: 2px
+      display: block
+    .project-user--type
+      font-size: 15px
+      display: block
+      font-weight: lighter
+      color: $mischka-2
+      line-height: 22px
+      letter-spacing: 0.1px
+.file-type
+  cursor: pointer
+  path, rect, polygon, text
+    transition: fill .2s
+
+.files
+  position: relative
+  margin-bottom: 20px
+  cursor: pointer
+  width: 25%
+  overflow: hidden
+  img + div, .file-type + div, & > a + div
+    overflow: hidden
+  .video
+    position: relative
+    margin-right: 12px
+    img
+      margin-right: 0
+
+    &:before
+      content: ''
+      display: block
+      height: 24px
+      width: 24px
+      left: 0
+      right: 0
+      margin: auto
+      top: 3px
+      position: absolute
+      background-position: center
+      background-size: 50%
+      border-radius: 50%
+      background-color: rgba(214, 215, 217, .9)
+      background-repeat: no-repeat
+      @include _buildIconPlay()
+      background-size: 8px
+      background-position: 9px center
+    &:after
+      content: ''
+      width: 100%
+      height: 100%
+      z-index: 1
+      top: 0
+      left: 0
+      display: block
+      position: absolute
+      background-color: rgba($tangaroa, 0.11)
+  .music
+    position: relative
+    margin-right: 12px
+    width: 30px
+    height: 30px
+    &.play
+      &:before
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="26" viewBox="0 0 16 26"><g fill="%23585353" fill-rule="evenodd" opacity=".8"><path d="M2.759 0C1.235 0 0 1.255 0 2.802v20.16c0 1.548 1.235 2.802 2.759 2.802 1.523 0 2.758-1.254 2.758-2.802V2.802C5.517 1.254 4.283 0 2.76 0zM12.536 0c-1.523 0-2.758 1.255-2.758 2.802v20.16c0 1.548 1.235 2.802 2.758 2.802 1.524 0 2.759-1.254 2.759-2.802V2.802C15.295 1.255 14.06 0 12.536 0z"/></g></svg>') !important
+        background-position: center !important
+    &:hover, &.play
+      &:before
+        background-color: rgba(214, 215, 217, .9)
+        @include _buildIconPlay()
+        background-size: 8px
+        background-position: 9px center
+      &:after
+        background-color: rgba($color-black,0.5)
+    &:before
+      content: ''
+      display: block
+      height: 24px
+      width: 24px
+      left: 0
+      right: 0
+      margin: auto
+      top: 3px
+      position: absolute
+      background-position: center
+      background-size: 50%
+      border-radius: 50%
+      background-color: rgba($white, 0.7)
+      background-repeat: no-repeat
+      @include _buildIconMusic()
+      z-index: 2
+    &:after
+      content: ''
+      width: 100%
+      height: 100%
+      z-index: 1
+      top: 0
+      left: 0
+      display: block
+      position: absolute
+      background-color: rgba($color-black,0.5)
+    img
+      margin-right: 0px
+  &:hover
+    .files--remove
+      display: block
+      &:hover
+        color: $storm-grey
+    .files--name
+      color: $lm-main-hover
+  img
+    object-fit: cover
+  img, .file-type
+    width: 30px
+    height: 30px
+    margin-right: 12px
+    display: inline-block
+    vertical-align: top
+  .files--name
+    color: $tangaroa
+    font-size: 13px
+    display: block
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+    text-overflow: ellipsis
+    height: 18px
+  .files--size
+    display: block
+    font-size: 12px
+    color: $gray-light
+  .files--remove
+    cursor: pointer
+    position: absolute
+    right: 0
+    bottom: 14px
+    color: $gray-light
+    font-size: 12px
+    display: none
+
+.status
+  box-shadow: 0.5px 1px 2px 0 rgba($color-black, 0.25)
+  border: solid 1px rgba($color-black, 0.24)
+  width: 12px
+  height: 12px
+  border-radius: 50%
+  position: absolute
+  right: 16px
+  top: 16px
+  z-index: 1
+  background-color: $logan
+  &.online
+    background-color: $lime-green-1
+  &.whait
+    background-color: $hollywood-cerise
+  &.under
+    background-color: $orange
+  &.film
+    background-color: $lm-main
+  &.serial
+    background-color: #084bc5
+  &.pokaz
+    background-color: #a062f7
+  &.ad_verti_sing
+    background-color: $lm-support-1
+  &.filming
+    background-color: $lm-support-4
+  &.event
+    background-color: #cc2c52
+  &.other
+    background-color: $lm-gray-2
+  /* end Projects status */
+
+
+/* END Projects */

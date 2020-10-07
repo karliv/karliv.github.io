@@ -1,0 +1,17 @@
+.widget {
+	margin-left: 16px;
+	text-decoration: none;
+	fill: $lm-gray-3;
+	margin-right: 0;
+	display: flex;
+	align-items: center;
+	&:first-child {
+		margin-left: 0;
+	}
+}
+@import '__count/_widget__count.scss';
+@import '__icon/_widget__icon.scss';
+@import '__label/_widget__label.scss';
+
+@import '_like/_widget_like.scss';
+@import '_views/_widget_views.scss';

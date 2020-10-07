@@ -1,0 +1,12 @@
+.d-feed_notifications {
+	.d-card__section {
+		padding: $multiplicity*5 0;
+		&:first-child {
+			padding-top: 0;
+		}
+		&:last-child {
+			padding-bottom: 0;
+		}
+	}
+}
+

@@ -1,0 +1,13 @@
+.page_declaration_creating {
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $lm-white;
+  min-height: 100%;
+  position: relative;
+  color: $lm-gray-2;
+
+  @import './page_declaration_creating_description';
+}
+

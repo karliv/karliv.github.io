@@ -1,0 +1,16 @@
+.modal_filters {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: auto;
+	width: 100vw;
+	//height: 100vh;
+	height: 100%;
+	background-color: $lm-white;
+	padding: $multiplicity*6 $multiplicity*6 $multiplicity*16;
+}
+

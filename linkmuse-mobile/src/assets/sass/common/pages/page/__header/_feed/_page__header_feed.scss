@@ -1,0 +1,14 @@
+.page__header_feed {
+	padding: $multiplicity*4;
+	background-color: $lm-white;
+	box-shadow: $box-shadow_blur_down_4;
+	border-radius: 4px;
+	@media screen and (min-width: 560px) {
+		padding: 20px 24px;
+		max-width: 516px;
+	}
+	.heading_h4 {
+		color: $lm-gray-1;
+		margin-bottom: 0;
+	}
+}

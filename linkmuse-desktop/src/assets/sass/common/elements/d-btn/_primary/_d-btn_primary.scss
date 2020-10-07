@@ -1,0 +1,24 @@
+.d-btn_primary {
+	background-color: $lm-main;
+	color: $lm-white;
+	fill: $lm-white;
+	&:hover {
+		transition: all 0.15s ease;
+		fill: $lm-white;
+		background-color: $lm-main-dark;
+	}
+	&:active {
+		transition: all 0.15s ease;
+		fill: $lm-white;
+		background-color: $lm-main-light;
+	}
+	&:disabled, &.disabled {
+		transition: all 0.15s ease;
+		color: $lm-gray-opacity-32;
+		background-color: $lm-gray-5;
+		pointer-events: none;
+		cursor: default;
+	}
+}
+
+@import '_show-phone/_d-btn_primary_show-phone.scss';

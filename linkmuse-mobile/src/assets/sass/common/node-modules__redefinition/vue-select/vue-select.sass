@@ -1,0 +1,110 @@
+.style-chooser
+  //&.vs--open
+    .vs__dropdown-toggle, .vs__dropdown-menu
+      transition: all 0.15s ease
+      border-color: $lm-main
+  &.vs--open_full
+    position: fixed
+    .modal__content_body
+      width: 100%
+      max-width: 376px
+    .vs__selected-search
+      border-radius: 8px
+      border: solid 1px $lm-gray-4
+      padding: 8px
+    .vs__selected
+      margin: 0 0 8px
+    .vs__search
+      padding: 0 0 0 5px !important
+    .vs__no-options
+      padding-top: 16px
+  &.vs--open_select
+    .vs__selected
+      position: absolute
+      width: 100%
+      padding: 12px 16px 10px
+      margin: 0
+      line-height: normal
+  .vs__dropdown-menu
+    border-style: solid
+    border-width: 0 1px 1px 1px
+    border-radius: 0 0 8px 8px
+    border-color: $lm-gray-4
+    padding: 8px 0
+  .vs__dropdown-toggle
+    min-height: 40px
+    height: auto
+    border-radius: 8px
+    padding: 0
+    //&:focus
+      transition: all 0.15s ease
+      border-color: $lm-main
+  .vs__selected-options
+    align-items: center
+    padding: 0
+  .vs__search
+    padding: 0 0 0 16px
+    height: 26px
+    margin: 0
+    font-size: 14px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: 0.3px
+    color: $lm-gray-1
+    &:focus
+      padding: 12px 16px
+      margin: 0
+      transition: all 0.15s ease
+      color: $lm-gray-1
+    &::placeholder
+      color: $lm-gray-3
+  .vs__selected
+    width: max-content
+    max-width: 320px
+    word-wrap: break-word
+    display: inline-block
+    padding: 4px 10px 4px 12px
+    background-color: $lm-main-08
+    color: $lm-main
+    margin: 0 0 12px 10px
+    border: none
+    //text-transform: capitalize
+  .vs__deselect
+    vertical-align: middle
+    margin-left: 2px
+  .vs__actions
+    padding: 0
+    margin-right: 16px
+  .vs__clear, .vs__open-indicator
+    fill: #ced2da
+  .vs__clear
+    margin-right: 14px
+  .vs__spinner
+    margin-left: 6px
+  .dropdown-icon
+    display: block
+    width: 16px
+    height: 16px
+    background-size: 16px
+    background-position: center
+    background-repeat: no-repeat
+    @include lm-dropdown-icon('%23CBD0D8')
+  .vs__dropdown-option
+    color: $lm-gray-1
+    font-size: 14px
+    display: block
+    width: 100%
+    white-space: nowrap
+    overflow: hidden
+    //text-transform: capitalize
+    text-overflow: ellipsis
+    padding: 11px 0
+    line-height: 1.29
+    letter-spacing: 0.25px
+    &.select
+      background-color: $lm-main_08
+      color: $lm-main
+  .vs__dropdown-option--highlight
+    background-color: inherit

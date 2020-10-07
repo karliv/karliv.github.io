@@ -1,0 +1,23 @@
+.modal_write-all {
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	color: $lm-gray-2;
+	//display: flex;
+	//justify-content: center;
+	.modal-content {
+		box-sizing: border-box;
+		background-color: $lm-white;
+		border-radius: $border-radius_8;
+		padding: $multiplicity*8 $multiplicity*9;
+		width: 512px;
+	}
+	.d-textarea__field {
+		min-height: 164px;
+	}
+	.d-upload-zone__field {
+		min-height: 116px;
+	}
+}
+

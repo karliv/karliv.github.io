@@ -1,0 +1,4054 @@
+.blur-content
+  filter: blur(3px)
+body
+  .modal-access
+    z-index: 99999999999
+    &.blur
+    .selected-role-auth-modal
+      text-align: center
+      margin-top: 26px
+      direction: rtl
+      a
+        width: 170px
+        height: 44px
+        border-radius: 23px
+        letter-spacing: 0.1px
+        text-align: center
+        color: $tangaroa
+        display: inline-block
+        vertical-align: middle
+        font-size: 17px
+        line-height: 42px
+        transition: all 0.5s ease-in-out
+        &.talents
+          background-color: $fire-engine-red-1
+          border: 1px solid transparent
+          color: $white
+          &:hover
+            color: $white
+        &.customer
+          border: solid 1px $tangaroa
+          &:hover
+            border: 1px solid transparent
+            background-color: $fire-engine-red-1
+            color: $white
+            ~ .talents
+              border: solid 1px $tangaroa
+              background: transparent
+              color: $tangaroa
+    &.modal-access--profile
+      img
+        margin-top: 8px
+        margin-bottom: 47px
+      .button
+        margin-top: 32px
+        margin-bottom: 42px
+    &.modal-access--project
+      img
+        margin-right: 7px
+        margin-top: 25px
+      .button
+        margin-top: 30px
+        margin-bottom: 30px
+    .modal-dialog
+      width: 420px
+      @media screen and (max-width: 992px)
+        width: 320px
+    img
+      height: 211px
+      margin: 0 auto
+      margin-bottom: 36px
+      display: block
+      margin-right: 9px
+      max-width: 100%
+      object-fit: cover
+    span
+      text-align: center
+      font-size: 16px
+      line-height: 1.38
+      letter-spacing: 0
+      color: $mischka-2
+      display: block
+    .button
+      height: 44px !important
+      line-height: 42px !important
+      width: 206px !important
+      font-size: 15px
+      margin-top: 16px
+    a.link-account
+      margin: 0 auto
+      margin-top: 26px
+      margin-bottom: 8px
+      display: block
+      font-size: 15px
+      text-align: center
+      color: $mischka-2
+body
+  .modal-user-info
+    .modal-content, .modal-body
+      min-height: 480px
+.modal-folders
+  z-index: 100000
+  .modal-dialog
+    width: 600px
+    .add-cart
+      min-height: 419px
+      #container-carts
+        max-height: 358px !important
+        min-height: 358px
+        .casting-list-invite-modal
+          li
+            padding: 18px 0
+            padding-left: 26px
+            padding-right: 46px
+            i.remove
+              &:hover
+                .removed
+                  display: block !important
+                  & + span
+                    display: none !important
+            .view:not(.remove)
+              span
+                display: block
+            i, .view
+              margin: auto
+              height: 18px
+              top: 0
+              bottom: 0
+              min-width: 270px
+              text-align: right
+              span
+                text-align: right
+                line-height: 18px
+            .name-casting
+              max-width: 353px
+              text-overflow: ellipsis
+              display: block
+              overflow: hidden
+              line-height: 24px
+              //white-space: nowrap
+            &.disabled
+              .name-casting
+                color: #d0d0d0
+.modal-center
+  .vertical-alignment-helper
+    display: table
+    height: 100%
+    width: 100%
+  .modal-content
+    margin: 0 auto
+  .modal-dialog
+    display: table-cell
+    vertical-align: middle
+.modal_casting_invite, .modal-user-info, .modal-access
+  .vertical-alignment-helper
+    display: table
+    height: 100%
+    width: 100%
+  .modal-content
+    width: inherit
+    height: inherit
+    margin: 0 auto
+  .modal-dialog
+    display: table-cell
+    vertical-align: middle
+    width: 656px
+    .selected-user-date
+      margin-top: 40px
+      .text
+        font-size: 16px
+        line-height: 1.5
+        letter-spacing: 0.1px
+        text-align: left
+        color: #0c111d
+        margin-bottom: 16px
+      .date
+        font-size: 16px
+        line-height: 1.5
+        letter-spacing: 0.1px
+        text-align: left
+        color: #0e70e5
+    .modal-body
+      .icon-left-arrow, .icon-right-arrow
+        color: $gray-light
+        font-size: 34px
+        top: calc(50% - 16px)
+        position: absolute
+        cursor: pointer
+      .icon-left-arrow
+        left: -50px
+        cursor: pointer
+      .icon-right-arrow
+        right: -50px
+        cursor: pointer
+      .icon-close2
+        position: absolute
+        font-size: 10px
+        color: $gray-light
+        right: 16px
+        top: 16px
+        cursor: pointer
+        z-index: 1
+        &:hover
+          color: $color-black
+      .modal_casting_invite--left
+        padding-top: 26px
+        padding-bottom: 20px
+        float: left
+        border-right: solid 1px $solitude-7
+        width: 410px
+        padding-left: 26px
+        padding-right: 26px
+        min-height: 500px
+        .calendar-date
+          margin-top: 40px
+          ul
+            list-style: none
+          .date-title--calendar
+            border-bottom: 0
+            padding-bottom: 0px
+            .day
+              margin: 0 -15px
+              li
+                width: 14.2893%
+                text-align: center
+              span
+                font-size: 10px
+          .date-title
+            border-bottom: 1px solid $crimson
+            padding-bottom: 10px
+            .month
+              padding-bottom: 10px
+            .active
+              span
+                color: $tangaroa
+            span
+              color: $ghost-2
+              font-size: 14px
+              line-height: 22px
+          .date-content
+            margin-top: 20px
+            margin-left: -10px
+            margin-right: -10px
+            &.date-content--calendar
+              li
+                width: 14.2893%
+                &.no-month
+                  span
+                    opacity: 0.4
+            .disabled
+              span
+                color: rgba($ghost-2,0.7)
+            .active
+              span
+                color: #0e70e5
+            li
+              margin-bottom: 36px
+              text-align: center
+              display: block
+              &:not(.disabled)
+                span
+                  cursor: pointer
+              &:hover:not(.disabled)
+                span
+                  color: #0e70e5
+              span
+                color: $tangaroa
+                font-size: 15px
+                line-height: 18px
+                text-align: center
+        .casting-link
+          font-size: 20px
+          line-height: 1.5
+          letter-spacing: 0.1px
+          color: $tangaroa
+          display: block
+          margin-bottom: 18px
+        .about
+          font-size: 16px
+          line-height: 1.38
+          letter-spacing: 0
+          color: $storm-grey
+          display: block
+          margin-bottom: 9px
+        .desc
+          font-size: 15px
+          line-height: 1.47
+          letter-spacing: 0.1px
+          color: $tangaroa
+          display: block
+          margin-bottom: 30px
+          height: 52px
+          overflow: hidden
+        .casting-info
+          .casting-info-item
+            margin-bottom: 15px
+            .casting-info-left
+              width: 125px
+              display: inline-block
+              vertical-align: top
+              span
+                font-size: 16px
+                line-height: 1.38
+                letter-spacing: 0
+                color: $storm-grey
+            .casting-info-right
+              width: 200px
+              display: inline-block
+              vertical-align: top
+              span
+                font-size: 16px
+                line-height: 1.38
+                letter-spacing: 0
+                color: $tangaroa
+        .title
+          font-size: 18px
+          color: #0e70e5
+          display: block
+          margin-bottom: 26px
+        .sub_title
+          margin-top: -16px
+          font-size: 15px
+          line-height: 1.47
+          letter-spacing: 0.1px
+          color: $storm-grey
+          display: block
+        .casting--type
+          position: relative
+          padding-bottom: 9px
+          .status
+            border: 0
+            box-shadow: inherit
+            left: 0
+            top: 0
+            width: 8px
+            height: 8px
+            position: relative
+            display: inline-block
+            vertical-align: middle
+          span
+            font-size: 15px
+            line-height: 1.47
+            letter-spacing: 0.1px
+            color: $storm-grey
+            padding-left: 7px
+            display: inline-block
+            vertical-align: middle
+      .modal_casting_invite--right
+        position: absolute
+        right: 0
+        top: 0
+        height: 100%
+        width: 244px
+        padding-top: 35px
+        padding-bottom: 20px
+        padding-left: 16px
+        padding-right: 26px
+        display: -ms-flexbox
+        display: -webkit-flex
+        display: flex
+        -webkit-flex-direction: column
+        -ms-flex-direction: column
+        flex-direction: column
+        -webkit-flex-wrap: wrap
+        -ms-flex-wrap: wrap
+        flex-wrap: wrap
+        -webkit-justify-content: space-between
+        -ms-flex-pack: justify
+        justify-content: space-between
+        -webkit-align-content: space-between
+        -ms-flex-line-pack: justify
+        align-content: space-between
+        -webkit-align-items: center
+        -ms-flex-align: center
+        align-items: center
+      .title
+        font-size: 16px
+        line-height: 1.38
+        letter-spacing: 0
+        color: $storm-grey
+        display: block
+        margin-bottom: 17px
+      .button
+        width: 172px
+        height: 40px
+        line-height: 38px
+        margin-bottom: 12px
+      .cancel
+        display: block
+        text-align: center
+        font-size: 16px
+        line-height: 1.38
+        letter-spacing: 0
+        color: $gray-light
+      .profile--user--lists
+        a
+          img, span
+            width: 39px
+            height: 39px
+            font-size: 13px
+            line-height: 38px
+      .modal-user--info--header--right
+        .icon-folders
+          position: relative
+          span
+            position: absolute
+            right: -3px
+            bottom: -3px
+            font-size: 13px
+            letter-spacing: 0.2px
+            text-align: center
+            color: #fbfbfb
+            width: 20px
+            line-height: 18px
+            height: 20px
+            background-color: #0e70e5
+            border: solid 1px #ffffff
+            border-radius: 50%
+      .project-user
+        margin-bottom: 26px
+        img
+          width: 42px
+          height: 42px
+          border-radius: 50%
+          object-fit: cover
+          display: inline-block
+          vertical-align: top
+          margin-right: 4px
+        .project-user--info
+          width: 151px
+          display: inline-block
+          vertical-align: top
+          .project-user--name
+            font-size: 16px
+            line-height: 1.38
+            letter-spacing: 0.1px
+            color: $tangaroa
+            margin-bottom: 0
+            word-wrap: break-word
+          .project-user--type
+            font-size: 16px
+            line-height: 1.38
+            letter-spacing: 0.1px
+            color: $gray-light
+            font-weight: lighter
+.modal-auth
+  .modal-dialog
+    width: 370px
+
+  .modal-body
+    padding-right: 32px
+    padding-top: 32px
+    padding-left: 32px
+    padding-bottom: 26px
+    .icon-close2
+      position: absolute
+      font-size: 10px
+      color: $gray-light
+      right: 16px
+      top: 16px
+      cursor: pointer
+      z-index: 1
+      &:hover
+        color: $color-black
+    h2
+      margin: 0
+      font-size: 23px
+      margin-bottom: 32px
+      text-align: center
+      color: $nero
+    label
+      display: block
+      font-size: 15px
+      margin-bottom: 11px
+    input
+      height: 36.2px
+      border-radius: 3px
+      background-color: $white
+      border: solid 1px $link-water
+      margin-bottom: 26px
+    .button
+      margin-top: 6px
+      font-size: 15px
+      height: 44px
+      line-height: 44px
+      text-align: center
+      color: $aluminium
+      border-radius: 67px
+      margin-bottom: 20px
+      border: solid 1px $solitude-7
+    .remember
+      display: block
+      margin: 0 auto
+      font-size: 15px
+      text-align: center
+      margin-bottom: 22px
+      color: $mischka-2
+    .form-group
+      margin-bottom: 0
+    .social-register
+      border-top: solid 1px $zircon
+      padding-top: 32px
+      padding-bottom: 36px
+      span
+        font-size: 15px
+        text-align: center
+        color: $tangaroa
+        display: block
+        margin-bottom: 32px
+      div
+        text-align: center
+        a
+          &:hover
+            box-shadow: 2px 3px 12px 0 rgba($midnight-express, 0.2)
+          transition: all .4s
+          width: 38px
+          height: 38px
+          display: inline-block
+          vertical-align: middle
+          line-height: 40px
+          margin: 0 13px
+          border-radius: 50%
+          color: $white
+          font-size: 30px
+          cursor: pointer
+          &.icon-vk-normal
+            background: $san-marino
+          &.icon-facebook-normal
+            background: $mariner-1
+          &.icon-google-plus-normal
+            background: $flamingo
+    .footer-text
+      display: block
+      text-align: center
+      span, a
+        font-size: 14px
+        line-height: 1.57
+        text-align: center
+        color: $mischka-2
+
+.modal-users-privacy
+  .modal-privacy--head
+    &.modal-privacy--head-back
+      padding: 16px 38px
+    .icon-left-arrow
+      display: block
+      cursor: pointer
+      width: 16px
+      height: 55px
+      line-height: 55px
+      left: 12px !important
+      font-size: 17px !important
+      top: 0 !important
+      bottom: 0
+      margin: auto
+  .step-3-invited-user
+    .add-email-wrap-scroll
+      max-height: 40vh
+      overflow-y: scroll
+  .step-2-invited-user
+    padding-top: 26px
+    padding-left: 38px
+    padding-right: 38px
+    padding-bottom: 26px
+    .step-2-invited-user-footer
+      padding-top: 14px
+      margin-left: -26px
+      margin-right: -38px
+      border-top: 1px solid #f0eff4
+      .button.send
+        width: 257px
+        height: 40px
+        border-radius: 19.5px
+        background-color: #167efb
+        font-size: 15px
+        color: #fdfcfd
+        display: block
+        margin: 0 auto
+        line-height: 40px
+        text-align: center
+        border: 0
+    .title-upload-all
+      font-size: 18px
+      margin-bottom: 32px
+      text-align: left
+      color: #0c111d
+    .upload-all-wrap
+      .upload-all-line
+        display: flex
+        align-items: flex-start
+        justify-content: flex-start
+        &:last-child
+          margin-bottom: 124px
+          margin-top: 18px
+        &:first-child
+          .right
+            padding-bottom: 12px
+            border-bottom: solid 1px #e6e7e8
+        .right
+          a.uploading
+            text-decoration: underline
+            &:hover
+              color: #167efb
+          span.uploading
+            font-size: 15px
+            text-align: left
+            color: #7a7c83
+            line-height: 22px
+          a.no-uploading
+            display: inline-block
+            font-size: 15px
+            text-align: left
+            color: #167efb
+          span.no-uploading
+            font-size: 15px
+            text-align: left
+            color: #7a7c83
+            display: block
+            margin-bottom: 5px
+        .left
+          margin-right: 23px
+          i.ok-icon
+            background-image: url('/dist/img/ok.svg')
+            width: 20px
+            height: 20px
+            padding-top: 5px
+            display: block
+          span
+            padding-top: 5px
+            font-size: 22px
+            display: block
+            width: 20px
+            text-align: left
+            color: #7a7c83
+    .add-more-wrap
+      padding-bottom: 32px
+      margin-top: 5px
+      margin-bottom: 25px
+      border-bottom: solid 1px #f0eff4
+      .add-more
+        font-size: 15px
+        font-weight: 300
+        text-align: left
+        color: #a0a0a0
+        display: inline-block
+    .title
+      font-size: 18px
+      text-align: left
+      color: #0c111d
+      margin-bottom: 22px
+    .add-email-wrap
+      margin-bottom: 16px
+      position: relative
+      display: flex
+      align-items: center
+      justify-content: space-between
+
+      &.error
+        .tooltip
+          width: 170px
+        .add-email
+          background-image: url('/dist/img/mail-error.svg')
+        .has-error
+          position: absolute
+          color: #fc2e5f
+          font-size: 15px
+          cursor: pointer
+          right: 35px
+          top: 12px
+          height: 20px
+          bottom: 0
+          width: 20px
+          text-align: center
+        input
+          color: #fc2e5f !important
+          border-color: #fc2e5f !important
+      i.ok-icon
+        background-image: url('/dist/img/ok.svg')
+        width: 20px
+        height: 20px
+        position: absolute
+        top: 0
+        right: 35px
+        margin: auto
+        bottom: 0
+      i.icon-close2
+        position: absolute
+        color: #afb0b5
+        font-size: 11px
+        top: 0
+        bottom: 0
+        right: -25px
+        line-height: 40px
+        cursor: pointer
+      .add-email
+        background-image: url('/dist/img/mail.svg')
+        background-size: 20px
+        background-position: 10px center
+        background-repeat: no-repeat
+        margin-bottom: 0
+        font-size: 15px
+        font-weight: 300
+        text-align: left
+        color: #a0a0a0
+        height: 44px
+        border-radius: 3px
+        border: solid 1px #b5b9c0
+        padding-left: 44px
+        line-height: 40px
+        width: 100%
+  .modal-dialog
+    width: 600px
+    .icon-left-arrow, .icon-right-arrow
+      color: $gray-light
+      font-size: 34px
+      top: calc(50% - 16px)
+      position: absolute
+      cursor: pointer
+    .icon-left-arrow
+      left: -81px
+      cursor: pointer
+    .icon-right-arrow
+      right: -81px
+      cursor: pointer
+  .modal-privacy--head
+    position: relative
+    padding: 16px 26px
+    border-bottom: 1px solid $solitude-5
+    i.icon-close2
+      position: absolute
+      right: 17px
+      top: 22px
+      color: $gray-light
+      font-size: 11px
+      cursor: pointer
+      &:hover
+        color: $color-black
+    span
+      font-size: 15px
+      line-height: 1.47
+      letter-spacing: 0.1px
+      color: $tangaroa
+  .modal-privacy--search
+    position: relative
+    border-bottom: solid 1px $solitude-10
+    label
+      display: inline-block
+      vertical-align: middle
+      color: $dark-gray
+      font-size: 18px
+      margin-left: 32px
+      float: left
+      padding-top: 16px
+      padding-bottom: 16px
+    input
+      float: left
+      display: inline-block
+      vertical-align: middle
+      color: $dark-gray
+      font-size: 15px
+      padding-left: 16px
+      border: 0
+      margin: 0
+      width: 88%
+      padding-top: 16px
+      padding-bottom: 16px
+      line-height: 18px
+      height: initial
+
+  .modal-privacy--selected
+    background-color: $whisper
+    box-shadow: 0 -2px 4px 0 rgba($solitude-5, 0.4)
+    border-bottom: solid 1px $solitude-5
+    padding-top: 10px
+    padding-left: 26px
+    padding-right: 26px
+    padding-bottom: 6px
+    .title
+      line-height: 1.47
+      letter-spacing: 0.1px
+      color: $tangaroa
+      padding-bottom: 10px
+      span
+        line-height: 1.47
+      .count
+        color: $aluminium
+    .user-list
+      list-style: none
+      li
+        margin-bottom: 16px
+        padding-right: 28px
+        padding-top: 8px
+        position: relative
+        &.not_verified
+          .type
+            font-style: italic
+          img
+            opacity: 0.56
+        &:hover
+          .user-info
+            i
+              display: block
+        img
+          width: 48px
+          height: 48px
+          border-radius: 50%
+          object-fit: cover
+          display: inline-block
+          vertical-align: top
+          margin-right: 4px
+        .user-info
+          display: inline-block
+          vertical-align: top
+          width: 93px
+          i
+            position: absolute
+            color: $mischka-2
+            font-size: 8px
+            display: none
+            top: 5px
+            right: 10px
+            cursor: pointer
+            &:hover
+              color: $color-black
+          .name
+            font-size: 15px
+            letter-spacing: 0.1px
+            color: $tangaroa
+            margin-bottom: 4px
+            height: 40px
+            overflow: hidden
+            a
+              color: $tangaroa
+          .type
+            font-size: 15px
+            letter-spacing: 0.1px
+            color: $aluminium
+            font-weight: lighter
+            height: 18px
+            overflow: hidden
+            a
+              text-overflow: ellipsis
+              white-space: nowrap
+              overflow: hidden
+              display: block
+              font-size: 15px
+              font-weight: 300
+              letter-spacing: 0.1px
+              text-align: left
+              color: #85888e
+  .modal-privacy--users
+    box-shadow: 0 -2px 4px 0 rgba($titan-white, 0.1)
+    border-bottom: solid 1px $solitude-10
+    .no-user-list-add-email
+      text-align: center
+      padding-top: 15px
+      padding-bottom: 13px
+      border-top: solid 1px #f0eff4
+      span
+        color: #0c111d
+      a
+        color: #167efb
+    ul
+      list-style: none
+      padding-left: 26px
+      padding-right: 26px
+      li
+        cursor: pointer
+        .select-user--wrap
+          text-align: right
+        &.selected
+          .select-user
+            border: solid 1px $crimson
+            i
+              display: block
+        .select-user
+          float: right
+          border-radius: 50%
+          text-align: center
+          width: 24px
+          height: 24px
+          border: solid 1px $link-water
+          i
+            font-size: 10px
+            text-align: center
+            line-height: 24px
+            color: $crimson
+            display: none
+        padding-top: 16px
+        padding-bottom: 18px
+        &:not(:last-child)
+          border-bottom: solid 1px $solitude-5
+        img
+          width: 38px
+          height: 38px
+          border-radius: 50%
+          object-fit: cover
+          display: inline-block
+          vertical-align: top
+          margin-right: 6px
+        .user-info
+          display: inline-block
+          vertical-align: top
+          max-width: 451px
+          .name
+            font-size: 15px
+            letter-spacing: 0.1px
+            color: $tangaroa
+            margin-bottom: 2px
+          .type
+            font-size: 15px
+            letter-spacing: 0.1px
+            color: $aluminium
+            font-weight: lighter
+            overflow: hidden
+            text-overflow: ellipsis
+            white-space: nowrap
+.modal-message
+  &.selected
+    .button
+      &:hover
+        color: #FFF !important
+  .files-message
+    margin-top: -26px
+    border-bottom: 1px solid  $solitude-9
+    border-top: 1px solid  $solitude-9
+    margin-bottom: 16px
+    .files
+      padding-right: 25px
+      padding-top: 10px
+      margin-bottom: 10px
+      &:hover
+        .icon-close2
+          display: block
+          &:hover
+            color: $color-black
+      .icon-close2
+        display: none
+        position: absolute
+        color: $gray-light
+        font-size: 6px
+        top: 5px
+        right: 15px
+  .button:hover
+    color: $torch-red !important
+.modal-confirm-phone
+  .confirm-text
+    font-size: 15px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: 1.47
+    letter-spacing: 0.1px
+    color: $aluminium
+    margin: 0 40px
+    text-align: center
+    margin-top: 14px
+    margin-bottom: 40px
+    span
+      font-weight: bold
+  .form-group
+    width: 178px
+    margin: 0 auto
+    &.confirm-code
+      margin-top: 24px
+      input
+        text-align: center !important
+        padding-left: 0
+        letter-spacing: 4px
+        color: $tangaroa
+        font-size: 15px
+    label
+      margin-bottom: 8px
+      font-weight: bold
+      font-size: 15px
+      line-height: 1.47
+      letter-spacing: 0.1px
+      color: $tangaroa
+      display: block
+    input
+      border: solid 1px rgba($heather-3, 0.6)
+      margin-bottom: 8px
+      &.error
+        border-color: $crimson
+    .action-phone
+      font-size: 15px
+      letter-spacing: 0.1px
+      text-align: center
+      color: $mischka-2
+      &:hover
+        color: $torch-red
+  .button
+    color: $aluminium
+    width: 160px
+    background: transparent
+    border: solid 1px $mischka-2
+    border-radius: 29px
+    -webkit-transition: all .4s
+    transition: all .4s
+    margin: 0 auto
+    margin-top: 40px
+    margin-bottom: 34px
+    &:hover
+      border-color: $torch-red
+      color: $torch-red
+.modal-upload-attach-audio
+  .audio--item ~ div
+    display: inline-block
+    max-width: 22%
+    vertical-align: top
+    margin-top: 5px
+.modal-upload-attach-audio
+  .audio--item
+    .audio-item-volume-wrapper
+      display: none !important
+    & ~ div
+      margin-top: 0
+.modal-upload-attach-photo, .modal-upload-attach-video
+  .profile__worksheet
+    .nav
+      margin-left: 0
+.modal-upload-attach-video
+  .video--items-big
+    .video--item-big
+      &.select > div, &:hover > div
+        &:after
+          content: ''
+          display: block
+          position: absolute
+          width: 100%
+          height: 100%
+          top: 0
+          left: 0
+          background-color: rgba($tangaroa, 0.8)
+          z-index: 1
+        &:before
+          font-family: 'icomoon' !important
+          display: block
+          width: 100%
+          height: 100%
+          text-align: center
+          line-height: 180px
+          content: '\e93a'
+          font-size: 32px
+          position: absolute
+          z-index: 2
+          color: $zircon
+    .video--item-big-play, .video--item-big-counts
+      display: none !important
+    .video--item-big-title
+      bottom: 12px !important
+.modal-callback-users
+  z-index: 99998
+  .modal-dialog
+    width: 636px
+    .users--list
+      padding-left: 26px
+      padding-right: 26px
+      padding-top: 24px
+      .users--item
+        text-align: center
+        margin-bottom: 24px
+        height: 132px
+        &.not_verified
+          .type
+            font-style: italic
+          img
+            opacity: 0.54
+        &.users--item-hide
+          .users--item-hide-avatar
+            width: 80px
+            height: 80px
+            position: relative
+            border-radius: 50%
+            margin: 0 auto
+            background-color: $solitude-13
+            margin-bottom: 8px
+          .user-hide-name
+            font-size: 15px
+            text-align: center
+            color: $aluminium
+            display: block
+            max-height: 44px
+            overflow: hidden
+            line-height: 22px
+        .quickview--wrap
+          width: 80px
+          height: 80px
+          position: relative
+          margin: 0 auto
+          cursor: pointer
+          margin-bottom: 8px
+          &:hover
+            span
+              opacity: 1
+            &:before
+              opacity: 1
+          &:before
+            opacity: 0
+            position: absolute
+            transition: .3s all
+            top: 0
+            content: ''
+            display: block
+            left: 0
+            width: 80px
+            height: 80px
+            border-radius: 50%
+            background-color: rgba($color-black, 0.49)
+          span
+            position: absolute
+            opacity: 0
+            transition: .3s all
+            font-size: 14px
+            line-height: 1.43
+            letter-spacing: 0
+            text-align: center
+            color: $white
+            left: 0
+            top: 23px
+        img
+          width: 80px
+          height: 80px
+          object-fit: cover
+          border-radius: 50%
+          display: block
+          margin: 0 auto
+
+        .name
+          font-size: 15px
+          max-height: 22px
+          line-height: 1.47
+          letter-spacing: 0.1px
+          text-align: center
+          color: $tangaroa
+          overflow: hidden
+          display: block
+        .type
+          display: block
+          font-size: 15px
+          max-height: 22px
+          line-height: 1.47
+          letter-spacing: 0
+          color: $storm-grey
+          overflow: hidden
+          font-weight: lighter
+    .read-more
+      box-shadow: 0 -2px 4px 0 rgba($titan-white, 0.1)
+      border-top: solid 1px $solitude-10
+      padding: 16px
+      display: block
+      text-align: center
+      font-size: 15px
+      text-align: center
+      color: $aluminium
+.confirm-modal
+  z-index: 1000001
+.modalChangeTop
+  .gallery_background
+    position: relative
+    .button
+      position: absolute
+      top: -40px
+      right: 0
+.modal__audio
+  min-width: 1136px
+  height: auto
+  overflow: hidden
+  .album_cover
+    &.blur
+      min-width: 1136px
+      filter: blur(1px)
+      object-fit: cover
+  .audio-player
+    z-index: 2
+    position: absolute
+    bottom: 0px
+    width: 100%
+    margin-bottom: 0
+    padding-bottom: 26px
+    left: 0
+    background-image: linear-gradient(to bottom, rgba($color-black, 0.0), $color-black)
+    padding-left: 26px
+    padding-right: 26px
+    padding-top: 20px
+    .audio-player--count-like, .audio-player--edit, .audio-player--remove
+      display: none !important
+    .audio--item
+      width: 100%
+      .audio--item-pause
+        font-size: 20px !important
+        line-height: 48px !important
+      .audio--item-play, .audio--item-pause
+        font-size: 48px
+        margin-right: 8px
+        width: 48px !important
+        height: 48px !important
+      .audio--item-timeline-handler
+        width: 12px
+        height: 12px
+        top: 0
+      .audio--item-timeline:before
+        top: 4px
+        border-radius: 2.5px
+      .audio--item-timeline-back
+        margin-top: 1px
+      .audio--item-hint
+        top: 3px !important
+      .audio--item-timeline
+        height: 12px
+      .audio-item-volume-wrapper
+        vertical-align: middle
+        margin-top: 4px
+        .audio--item-volume-hint
+          top: -23px
+        .audio-item-volume
+          margin-top: 5px
+          height: 13px
+          padding-top: 2px
+          padding-bottom: 2px
+          .audio--item-volume-handler
+            width: 12px
+            height: 12px
+            top: 1px
+            background-color: $whisper
+            box-shadow: 1px 2px 5px 0 rgba($color-black, 0.5)
+          .audio--item-volume-back
+            background-color: $solitude-5
+            top: 3px
+          &:before
+            background-color: $manatee-2
+            top: 5px
+            border-radius: 2.5px
+      .audio--item-info
+        vertical-align: top
+        width: 85%
+        .audio--item-time
+          color: $link-water
+        .audio--item-timeline
+          margin-top: 10px
+          &:before
+            background-color: $manatee-2
+        .audio--item-timeline-handler
+          background-color: $whisper
+        .audio--item-title
+          color: $pattensblue
+
+.modal_casting
+  .form-group
+    margin-bottom: 0
+  input, .select2, .tags, input[type='checkbox'] + label, .select2 ~ .lists:not(:empty)
+    margin-bottom: 16px
+  .radios
+    input[type="radio"]
+      display: none
+      &:checked
+        &:disabled
+          + label
+            &:after
+              border: 1px solid $link-water
+            &:before
+              background: $link-water
+        + label
+          &:before
+            content: ''
+            display: block
+            position: absolute
+            width: 9px
+            height: 9px
+            border-radius: 50%
+            background: $mariner
+            left: 4px
+            top: 4px
+            z-index: 1
+      & + label
+        padding-left: 25px
+        position: relative
+        font-size: 15px
+        font-weight: normal
+        font-style: normal
+        margin-bottom: 16px
+        font-stretch: normal
+        line-height: normal
+        letter-spacing: normal
+        color: $lm-gray-3
+        &:hover
+          &:after
+            border: solid 1px $mariner
+          cursor: pointer
+        &:after
+          content: ''
+          display: block
+          width: 17px
+          height: 17px
+          border-radius: 50%
+          position: absolute
+          top: 0
+          left: 0
+          background-color: $white
+          border: solid 1px $mariner
+  .adding-info-user
+    .demands--head
+      cursor: pointer
+    .icon-right-arrow
+      font-size: 12px
+      color: $tangaroa
+      line-height: 22px
+      margin-left: 10px
+      -webkit-transition: all .3s
+      transition: all .3s
+      display: inline-block
+    &.open
+      .icon-right-arrow
+        transform: rotate(90deg)
+
+.portfolio-modal
+  .modal-dialog
+    width: 1139px
+    border: 0
+    .modal-content
+      background-color: #fdfcfd
+      border: 0
+      .modal-body
+        position: relative
+        .icon-left-arrow, .icon-right-arrow
+          color: $gray-light
+          font-size: 34px
+          top: calc(50% - 16px)
+          position: absolute
+          cursor: pointer
+        .icon-left-arrow
+          left: -50px
+          cursor: pointer
+        .icon-right-arrow
+          right: -50px
+          cursor: pointer
+        .portfolio-template
+          padding: 0
+          padding-right: 28px
+          padding-bottom: 16px
+          margin: 0
+          display: flex
+          justify-content: space-between
+          .portfolio-music
+            padding-top: 0
+            .audio-image
+              &:before
+                background-size: 50px
+            .portfolio-music-wrap
+              background-color: #fdfcfd
+              .portfolio-music-bottom
+                overflow: hidden
+                height: 230px
+                .select-photo.image
+                  width: 200px
+                  height: 230px
+                  border: 0
+                  .photo
+                    width: 100%
+                    height: 100%
+                .select-video
+                  padding: 0
+                  width: 413px
+                  border: 0
+                  a.video
+                    width: 100%
+                    height: 100%
+                    &:after
+                      background-size: 50px
+              .portfolio-music-top
+                .music-item
+                  width: 155px
+                  &.select:after
+                    height: 147px
+                    background-size: 50px
+                  img
+                    height: 147px
+                  .name-music, .name-artist
+                    font-size: 14px
+                    line-height: 1.42
+                    letter-spacing: 0.1px
+                    text-align: left
+          .portfolio-model
+            .portfolio-model-wrap
+              height: 540px
+              .portfolio-model-right
+                width: 439px
+                //padding-right: 16px
+                .portfolio-model-right-top
+                  height: 257px
+                  a.video:after
+                    background-size: 57px
+                    height: 57px
+                    width: 57px
+                .portfolio-model-right-bottom
+                  > div
+                    width: 215px
+                  height: 274px
+              .portfolio-model-left
+                width: 379px
+                height: 540px
+        .close-modal
+          width: 13px
+          display: block
+          height: 13px
+          position: absolute
+          right: 0
+          top: -40px
+          padding: 10px
+          padding-bottom: 30px
+          background-repeat: no-repeat
+          background-position: top center
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">  <path fill="%23AFB0B5" fill-rule="evenodd" d="M12.734 11.417l-5.12-5.12L12.52 1.39a.63.63 0 1 0-.89-.89L6.724 5.406 1.604.286a.63.63 0 0 0-.892.892l5.12 5.12L.48 11.65a.63.63 0 1 0 .89.89l5.351-5.35 5.12 5.12a.63.63 0 0 0 .892-.892z"/></svg>')
+        .portfolio-left
+          width: 265px
+          margin-top: 3px
+          margin-right: 16px
+          margin-left: 16px
+          border-right: solid 1px #eaedf0
+          padding-right: 10px
+          position: relative
+          height: 554px
+          display: flex
+          flex-direction: column
+          .portfolio-left-center
+            overflow-y: auto
+            flex: 1 1 auto
+            height: 100%
+            width: 100%
+            position: relative
+            .portfolio-left-center-wrap
+              height: 100%
+          .lists
+            margin-top: 12px
+            margin-bottom: 12px
+            span
+              display: inline-block
+              vertical-align: middle
+              padding: 7px 12px
+              line-height: 16px
+              font-size: 14px
+              letter-spacing: 0
+              text-align: center
+              color: #5d697f
+              height: 30px
+              opacity: 0.95
+              border-radius: 40px
+              background-color: #f0eff4
+              margin-bottom: 10px
+              margin-right: 10px
+          .to-profile-in-modal
+            display: block
+            padding-top: 16px
+            text-align: center
+            a
+              font-size: 15px
+              letter-spacing: 0.2px
+              text-align: center
+              color: $lm-main
+          .user-info-separator
+            font-size: 15px
+            line-height: 1.47
+            letter-spacing: 0
+            text-align: left
+            color: #b5b9c0
+            margin: 12px 0
+            position: relative
+            overflow: hidden
+            span
+              position: relative
+              padding-right: 20px
+              &:before
+                position: absolute
+                background: #fdfcfd
+                z-index: 1
+            &:after
+              z-index: 1
+              content: ''
+              display: inline-block
+              background-color: #f0eff4
+              height: 1px
+              width: 100%
+              position: absolute
+              top: 0
+              bottom: 0
+              margin: auto
+
+          .user-info-list
+           ul
+             list-style: none
+             li
+               align-items: flex-end
+               display: flex
+               justify-content: space-between
+               //margin: 0 10px
+               margin-bottom: 12px
+               &.skills
+                 display: block
+               .header-lists
+                  font-size: 15px
+                  line-height: 1.47
+                  letter-spacing: 0
+                  text-align: left
+                  color: #5d697f
+                  display: block
+               .left
+                  font-size: 15px
+                  line-height: 1.47
+                  letter-spacing: 0
+                  text-align: left
+                  color: #5d697f
+                  max-width: 175px
+               .right
+                  font-size: 15px
+                  line-height: 1.47
+                  letter-spacing: 0
+                  text-align: right
+                  color: #b5b9c0
+          .user-info-actions
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            margin-bottom: 23px
+            > div
+              height: 42px
+            .button-follow-loader
+              height: 42px
+              width: auto
+            a
+              margin: 0 auto
+              display: block
+              font-size: 15px
+              line-height: 1.47
+              letter-spacing: 0
+              text-align: left
+              &:not(.button)
+                color: $lm-main !important
+            //> *
+            //  display: inline-block
+            //  vertical-align: middle
+            //  float: left
+            .button
+              width: 136px
+              height: 40px
+              border-radius: 33px
+              background-color: $lm-main
+              font-size: 15px
+              line-height: 38px
+              letter-spacing: 0.2px
+              text-align: center
+              color: #ffffff
+              margin: initial
+            .plus-button
+              margin-left: 9px
+              width: 42px
+              height: 42px
+              margin-right: 0
+              background-position: center
+              background-repeat: no-repeat
+              background-size: contain
+              background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="42" viewBox="0 0 42 42"><defs><rect id="b" width="1136" height="830" x="163" y="77" rx="2"/><filter id="a" width="101.1%" height="101.4%" x="-.5%" y="-.6%" filterUnits="objectBoundingBox"><feMorphology in="SourceAlpha" operator="dilate" radius="1" result="shadowSpreadOuter1"/><feOffset dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/><feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/><feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/><feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.174479167 0"/></filter><path id="c" d="M178 375h356v80H178z"/><path id="d" d="M0 0h1443v1575H0z"/></defs><g fill="none" fill-rule="evenodd"><path fill="%23FDFCFD" d="M-216-123.931H923v572H-216z"/><circle cx="20" cy="20" r="20" stroke="%230E70E5" transform="translate(1 1)"/><path fill="%23006DF0" d="M27.481 20.222H21.52V14.52a.518.518 0 1 0-1.038 0v5.703H14.52a.518.518 0 1 0 0 1.037h5.962v6.222a.518.518 0 1 0 1.038 0V21.26h5.962a.518.518 0 1 0 0-1.037z"/></g></svg>')
+              margin-left: 9px
+            .folder-button
+              margin-left: 9px
+              background-position: center
+              background-repeat: no-repeat
+              background-size: contain
+              width: 42px
+              height: 42px
+              background-size: cover
+              background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"><g fill="none" fill-rule="evenodd" transform="translate(1 1.27)"><path fill="%230E70E5" fill-rule="nonzero" d="M29.247 16.833H28.2v-1.886a.822.822 0 0 0-.82-.821h-7.425l-1.5-2.106H12.82a.822.822 0 0 0-.82.821v13.144h.002a.767.767 0 0 0 .768.776h13.427a.762.762 0 0 0 .735-.545L30 17.78v-.054c0-.518-.317-.894-.753-.894zM12.6 12.841a.22.22 0 0 1 .22-.22h5.325l1.5 2.106h7.735a.22.22 0 0 1 .22.22v1.886H15.82a.756.756 0 0 0-.735.545L12.6 24.174V12.84zm13.76 13.193a.17.17 0 0 1-.163.125H12.77a.166.166 0 0 1-.135-.066c-.019-.025-.048-.077-.037-.123l3.057-8.41a.17.17 0 0 1 .164-.125h13.428c.114 0 .143.164.15.246l-3.036 8.353z"/><ellipse cx="20" cy="20.033" stroke="%230E70E5" rx="20" ry="20.033"/></g></svg>')
+              position: relative
+              span
+                position: absolute
+                right: 0
+                bottom: 0
+                font-size: 13px
+                letter-spacing: 0.2px
+                text-align: center
+                color: #fbfbfb
+                width: 20px
+                line-height: 18px
+                height: 20px
+                background-color: #0e70e5
+                border: solid 1px #ffffff
+                border-radius: 50%
+          .close-button
+            width: 42px
+            margin-right: 0 !important
+            height: 42px
+            background-size: cover
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"><g fill="none" fill-rule="evenodd">  <circle cx="21" cy="21" r="20" stroke="%23B5B9C0"/><path fill="%23B5B9C0" d="M26.133 25.033l-4.216-4.216 4.033-4.033a.518.518 0 1 0-.734-.734l-4.033 4.033-4.216-4.216a.518.518 0 1 0-.733.733l4.216 4.217-4.4 4.4a.518.518 0 1 0 .734.733l4.4-4.4 4.216 4.216a.518.518 0 1 0 .733-.733z"/></g></svg>')
+        .portfolio-right
+          width: 867px
+          margin-top: 16px
+          .music
+            display: flex
+            height: 100%
+            align-items: center
+
+  .user--info-wrap
+    margin: 20px 0
+    .user--info-bottom
+      //display: flex
+      i
+        color: #5d697f
+        padding-right: 8px
+        font-size: 13px
+      .place
+        height: auto !important
+      span
+        //max-width: 228px
+        text-overflow: ellipsis
+        overflow: hidden
+        height: 22px
+        //max-width: 160px
+        font-size: 15px
+        //display: flex
+        //align-items: center
+      .user--info--info
+        color: #b5b9c0
+        line-height: 1.47
+        display: inline-block
+        vertical-align: middle
+        i.point
+          padding: 0px
+          margin-right: 8px
+          width: 10px
+          height: 14px !important
+          display: inline-block
+          vertical-align: middle
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 10 14"><g fill="%235D697F" fill-rule="evenodd"><path d="M5.041 7.163A2.274 2.274 0 0 1 2.77 4.891 2.274 2.274 0 0 1 5.04 2.62a2.274 2.274 0 0 1 2.272 2.272A2.274 2.274 0 0 1 5.04 7.163zm0-4.143c-1.032 0-1.871.84-1.871 1.872s.84 1.872 1.871 1.872c1.032 0 1.872-.84 1.872-1.872 0-1.033-.84-1.872-1.872-1.872z"/><path d="M5.041 13.282a.199.199 0 0 1-.153-.072C4.694 12.98.15 7.524.15 4.892A4.897 4.897 0 0 1 5.041 0a4.897 4.897 0 0 1 4.891 4.892c0 2.633-4.544 8.088-4.737 8.319a.202.202 0 0 1-.154.071zM5.041.4a4.496 4.496 0 0 0-4.49 4.492c0 2.228 3.686 6.886 4.49 7.875.804-.99 4.491-5.647 4.491-7.875A4.497 4.497 0 0 0 5.042.4z"/>  </g></svg>')
+          font-size: 15px
+          line-height: 1.47
+          letter-spacing: 0
+          text-align: left
+          color: #b5b9c0
+          margin-right: 10px
+        i.year
+          padding: 0px
+          margin-right: 8px
+          width: 10px
+          height: 14px !important
+          display: inline-block
+          vertical-align: middle
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 10 14"><path fill="%235D697F" fill-rule="nonzero" d="M8.916 9.324L6.84 8.285a.572.572 0 0 1-.317-.514v-.735A4.975 4.975 0 0 0 7.32 5.57a.863.863 0 0 0 .506-.786v-.87a.867.867 0 0 0-.217-.57V2.185c.012-.12.06-.831-.455-1.418C6.707.258 5.983 0 5 0c-.983 0-1.707.258-2.154.767-.515.588-.467 1.3-.455 1.42v1.155a.867.867 0 0 0-.217.571v.87c0 .264.12.51.325.675.2.789.616 1.383.762 1.574v.72c0 .21-.115.403-.3.503L1.023 9.313A1.96 1.96 0 0 0 0 11.035v.704c0 1.032 3.27 1.304 5 1.304s5-.272 5-1.304v-.661a1.95 1.95 0 0 0-1.084-1.754zm.65 2.415c0 .295-1.612.87-4.566.87-2.954 0-4.565-.575-4.565-.87v-.704c0-.559.305-1.072.795-1.34l1.94-1.058a1.01 1.01 0 0 0 .526-.886v-.874l-.051-.06a4.104 4.104 0 0 1-.741-1.536l-.02-.086-.074-.048a.434.434 0 0 1-.201-.364v-.87a.43.43 0 0 1 .145-.32l.072-.065V2.174l-.002-.029c0-.005-.074-.608.349-1.091.36-.411.975-.62 1.827-.62.849 0 1.462.208 1.823.616.423.478.353 1.09.353 1.095l-.002 1.383.072.065a.428.428 0 0 1 .145.32v.87c0 .19-.124.355-.309.412l-.108.034-.035.107a4.55 4.55 0 0 1-.616 1.242 2.86 2.86 0 0 1-.182.235l-.054.062v.896c0 .385.214.731.558.903l2.077 1.038c.52.26.843.784.843 1.366v.661z"/></svg>')
+          font-size: 15px
+          line-height: 1.47
+          letter-spacing: 0.1px
+          text-align: left
+          color: #b5b9c0
+    .user-info-header
+      margin-bottom: 13px
+      display: block
+      img
+        width: 48px
+        height: 48px
+        display: inline-block
+        vertical-align: middle
+        margin-right: 10px
+        object-fit: cover
+        border-radius: 50%
+        overflow: hidden
+      .user--info--info
+        display: inline-block
+        width: 179px
+        vertical-align: middle
+        > *
+          display: block
+          height: 21px
+          overflow: hidden
+          text-overflow: ellipsis
+          white-space: nowrap
+        .user--info--name
+          display: block
+          font-size: 17px
+          line-height: 1.29
+          letter-spacing: 0.1px
+          text-align: left
+          color: #0c111d
+          margin-bottom: 2px
+        .user--info--type
+          display: block
+          font-size: 15px
+          line-height: 1.47
+          letter-spacing: 0
+          text-align: left
+          color: #5d697f
+
+.modal-create-project
+  border: 0
+  .modal-content
+    border: 0
+    padding-bottom: 64px
+  .modal-create-project--title
+    padding-top: 26px
+    padding-bottom: 26px
+    font-size: 24px
+    font-weight: 500
+    line-height: 1.0
+    text-align: center
+    color: #2d2e41
+  .button
+    &.save
+      border-radius: 29px
+      background-color: #1575e8
+      padding: 0 39px
+      font-size: 15px
+      line-height: 44px
+      border: 0
+      font-weight: 300
+      color: #ffffff
+      text-align: center
+  .modal-create-project-content
+    width: 400px
+    margin: 0 auto
+    margin-bottom: 24px
+    border-bottom: 1px solid #e6e7e8
+    .files-modal
+      width: 100%
+      .fix
+        width: 126px
+        height: 1px
+      .file-wrap
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+      flex-wrap: wrap
+      margin-bottom: 20px
+      .file
+        width: 126px
+        border-radius: 2px
+        position: relative
+        display: block
+        &:hover
+          .remove
+            display: block
+        .remove
+          display: none
+          background-image: url('/dist/img/icon/cancel.svg')
+          background-size: cover
+          background-repeat: no-repeat
+          background-position: center
+          width: 16px
+          height: 16px
+          top: -6px
+          right: -5px
+          position: absolute
+          cursor: pointer
+        &.types
+          .file-wrap
+            width: 126px
+            height: 126px
+            border: solid 1px #bcbdc1
+            display: flex
+            align-items: center
+            justify-content: center
+            .file-type
+              width: 40px
+              height: 40px
+        img
+          object-fit: cover
+          width: 126px
+          height: 126px
+        .file-type-text
+          margin-top: 8px
+          font-size: 13px
+          font-weight: 300
+          text-align: left
+          color: #0c111d
+          display: block
+          margin-bottom: 4px
+          word-wrap: break-word
+        .files--size
+          font-size: 12px
+          font-weight: 300
+          text-align: left
+          display: block
+          color: #afb0b5
+    .uploading-wrap
+
+      text-align: center
+      margin-bottom: 48px
+      .uploading-text
+        text-align: center
+        display: block
+        font-size: 13px
+        color: #afb0b5
+      .uploading
+        line-height: 42px
+        display: inline-block
+        height: 44px
+        padding: 0 70px
+        font-size: 15px
+        text-align: left
+        color: #167efb
+        margin-bottom: 17px
+        border-radius: 100px
+        background-color: #ffffff
+        border: solid 1px #167efb
+        cursor: pointer
+    textarea
+      height: 70px
+      margin-bottom: 36px
+      padding: 11px 16px
+      border-radius: 3px
+      border: solid 1px #cfd5de
+    .form-group
+      margin-bottom: 0
+    label
+      font-size: 15px
+      font-weight: 500
+      text-align: left
+      margin-bottom: 10px
+      display: block
+  .modal-create-project-background
+    height: 164px
+    cursor: pointer
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: center
+    border-radius: 2px
+    background-color: #f0eff4
+    border: dashed 1px #b5b9c0
+    margin-bottom: 39px
+    &.error
+      border: dashed 1px #fc2e5f
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+    i.photo
+      width: 43px
+      height: 43px
+      background-image: url('/dist/img/icon/photo.svg')
+      background-position: center
+      background-repeat: no-repeat
+      background-size: cover
+      margin-bottom: 21px
+      border-radius: 50%
+      display: block
+    .modal-create-project-background-span
+      font-size: 17px
+      display: block
+      line-height: 1.29
+      letter-spacing: 0.1px
+      text-align: center
+      color: #0e70e5
+
+.modal-redirect-point
+  .modal-dialog
+    width: 820px
+  .modal-content
+    border-radius: 0
+    border: 0
+    .modal-body
+      height: 514px
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+      .modal-redirect-point-left
+        display: inline-block
+        vertical-align: top
+        position: relative
+        .logo
+          position: absolute
+          width: 150px
+          height: 33px
+          object-fit: cover
+          top: 24px
+          left: 24px
+      .modal-redirect-point-right
+        padding-left: 36px
+        padding-right: 36px
+        padding-top: 36px
+        padding-bottom: 36px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        height: 100%
+        .btn.next
+          border-radius: 22px
+          background-color: #0063da
+          padding: 0 24px
+          line-height: 44px
+          font-size: 12px
+          text-align: center
+          font-weight: 500
+          color: #ffffff
+        .desc-down
+          font-size: 12px
+          line-height: 18px
+          text-align: left
+          color: #282a36
+          margin-bottom: 48px
+          a
+            font-weight: 600
+            color: #0062d8
+        .desc
+          font-size: 15px
+          line-height: 24px
+          text-align: left
+          color: #282a36
+          margin-bottom: 24px
+        h1
+          width: 250px
+          display: block
+          margin: 0
+          margin-bottom: 24px
+          font-size: 24px
+          font-weight: 600
+          line-height: 29px
+          letter-spacing: normal
+          text-align: left
+          color: #282a36
+
+.modal-create-project.modal-create-project-casting
+  .modal-content
+    padding-bottom: 40px
+  .modal-privacy--users
+    border-bottom: 0
+  ul
+    li
+      &.default_project
+        .name, .type
+          font-size: 15px !important
+          font-weight: 300 !important
+          line-height: 1.33 !important
+          text-align: left !important
+          color: #6c7482 !important
+        .plus-icon
+          width: 42px
+          display: inline-block
+          vertical-align: top
+          color: #fff
+          line-height: 42px
+          text-align: center
+          height: 42px
+          margin-right: 6px
+          border-radius: 3px
+          background-color: #d8d8d8
+          background-size: 20px
+          background-position: center
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path fill="%23ffffff" fill-rule="evenodd" d="M48 22.5H25.5V0h-2.998v22.5H0v3h22.502V48H25.5V25.5H48z" opacity=""/></svg>')
+      img
+        width: 42px !important
+        height: 42px !important
+        border-radius: 2px !important
+.modal-abuse
+  .modal-abuse-content
+    padding: 24px
+    .title
+      body
+  .modal-access
+    z-index: 99999999999
+    .selected-role-auth-modal
+      text-align: center
+      margin-top: 26px
+      direction: rtl
+      a
+        width: 170px
+        height: 44px
+        border-radius: 23px
+        letter-spacing: 0.1px
+        text-align: center
+        color: $tangaroa
+        display: inline-block
+        vertical-align: middle
+        font-size: 17px
+        line-height: 42px
+        transition: all 0.5s ease-in-out
+        &.talents
+          background-color: $fire-engine-red-1
+          border: 1px solid transparent
+          color: $white
+          &:hover
+            color: $white
+        &.customer
+          border: solid 1px $tangaroa
+          &:hover
+            border: 1px solid transparent
+            background-color: $fire-engine-red-1
+            color: $white
+            ~ .talents
+              border: solid 1px $tangaroa
+              background: transparent
+              color: $tangaroa
+    &.modal-access--profile
+      img
+        margin-top: 8px
+        margin-bottom: 47px
+      .button
+        margin-top: 32px
+        margin-bottom: 44px
+    &.modal-access--project
+      img
+        margin-right: 7px
+        margin-top: 25px
+      .button
+        margin-top: 30px
+        margin-bottom: 30px
+    .modal-dialog
+      width: 420px
+      @media screen and (max-width: 992px)
+        width: 320px
+    img
+      height: 211px
+      margin: 0 auto
+      margin-bottom: 36px
+      display: block
+      margin-right: 9px
+      max-width: 100%
+      object-fit: cover
+    span
+      text-align: center
+      font-size: 16px
+      line-height: 1.38
+      letter-spacing: 0
+      color: $mischka-2
+      display: block
+    .button
+      height: 44px !important
+      line-height: 44px !important
+      width: 206px !important
+      font-size: 15px
+      margin-top: 16px
+    a.link-account
+      margin: 0 auto
+      margin-top: 26px
+      margin-bottom: 8px
+      display: block
+      font-size: 15px
+      text-align: center
+      color: $mischka-2
+//body
+//  .modal-user-info
+//    .modal-content, .modal-body
+//      min-height: 480px
+//.modal-folders
+//  z-index: 100000
+//  .modal-dialog
+//    width: 600px
+//    .add-cart
+//      min-height: 419px
+//      #container-carts
+//        max-height: 358px !important
+//        min-height: 358px
+//        .casting-list-invite-modal
+//          li
+//            padding: 18px 0
+//            padding-left: 26px
+//            padding-right: 46px
+//            i.remove
+//              &:hover
+//                .removed
+//                  display: block !important
+//                  & + span
+//                    display: none !important
+//            .view:not(.remove)
+//              span
+//                display: block
+//            i, .view
+//              margin: auto
+//              height: 18px
+//              top: 0
+//              bottom: 0
+//              span
+//
+//                line-height: 18px
+//            .name-casting
+//              max-width: 353px
+//              text-overflow: ellipsis
+//              display: block
+//              overflow: hidden
+//              line-height: 24px
+//            //white-space: nowrap
+//            &.disabled
+//              .name-casting
+//                color: #d0d0d0
+//.modal-center
+//  .vertical-alignment-helper
+//    display: table
+//    height: 100%
+//    width: 100%
+//  .modal-content
+//    width: inherit
+//    height: inherit
+//    margin: 0 auto
+//  .modal-dialog
+//    display: table-cell
+//    vertical-align: middle
+//.modal_casting_invite
+//  .modal-dialog
+//    width: auto !important
+//.modal_casting_invite, .modal-user-info, .modal-access
+//  .vertical-alignment-helper
+//    display: table
+//    height: 100%
+//    width: 100%
+//  .modal-content
+//    width: inherit
+//    height: inherit
+//    margin: 0 auto
+//  .modal-dialog
+//    display: table-cell
+//    vertical-align: middle
+//    width: 656px
+//    .selected-user-date
+//      margin-top: 40px
+//      .text
+//        font-size: 16px
+//        line-height: 1.5
+//        letter-spacing: 0.1px
+//        text-align: left
+//        color: #0c111d
+//        margin-bottom: 16px
+//      .date
+//        font-size: 16px
+//        line-height: 1.5
+//        letter-spacing: 0.1px
+//        text-align: left
+//        color: #0e70e5
+//    .modal-body
+//      .icon-left-arrow, .icon-right-arrow
+//        color: $gray-light
+//        font-size: 34px
+//        top: calc(50% - 16px)
+//        position: absolute
+//        cursor: pointer
+//      .icon-left-arrow
+//        left: -50px
+//        cursor: pointer
+//      .icon-right-arrow
+//        right: -50px
+//        cursor: pointer
+//      .icon-close2
+//        position: absolute
+//        font-size: 10px
+//        color: $gray-light
+//        right: 16px
+//        top: 16px
+//        cursor: pointer
+//        z-index: 1
+//        &:hover
+//          color: $color-black
+//      .modal_casting_invite--left
+//        padding-top: 26px
+//        padding-bottom: 20px
+//        float: left
+//        border-right: solid 1px $solitude-7
+//        width: 410px
+//        padding-left: 26px
+//        padding-right: 26px
+//        min-height: 500px
+//        .calendar-date
+//          margin-top: 40px
+//          ul
+//            list-style: none
+//          .date-title--calendar
+//            border-bottom: 0
+//            padding-bottom: 0px
+//            .day
+//              margin: 0 -15px
+//              li
+//                width: 14.2893%
+//                text-align: center
+//              span
+//                font-size: 10px
+//          .date-title
+//            border-bottom: 1px solid $crimson
+//            padding-bottom: 10px
+//            .month
+//              padding-bottom: 10px
+//            .active
+//              span
+//                color: $tangaroa
+//            span
+//              color: $ghost-2
+//              font-size: 14px
+//              line-height: 22px
+//          .date-content
+//            margin-top: 20px
+//            margin-left: -10px
+//            margin-right: -10px
+//            &.date-content--calendar
+//              li
+//                width: 14.2893%
+//                &.no-month
+//                  span
+//                    opacity: 0.4
+//            .disabled
+//              span
+//                color: rgba($ghost-2,0.7)
+//            .active
+//              span
+//                color: #0e70e5
+//            li
+//              margin-bottom: 36px
+//              text-align: center
+//              display: block
+//              &:not(.disabled)
+//                span
+//                  cursor: pointer
+//              &:hover:not(.disabled)
+//                span
+//                  color: #0e70e5
+//              span
+//                color: $tangaroa
+//                font-size: 15px
+//                line-height: 18px
+//                text-align: center
+//        .casting-link
+//          font-size: 20px
+//          line-height: 1.5
+//          letter-spacing: 0.1px
+//          color: $tangaroa
+//          display: block
+//          margin-bottom: 18px
+//        .about
+//          font-size: 16px
+//          line-height: 1.38
+//          letter-spacing: 0
+//          color: $storm-grey
+//          display: block
+//          margin-bottom: 9px
+//        .desc
+//          font-size: 15px
+//          line-height: 1.47
+//          letter-spacing: 0.1px
+//          color: $tangaroa
+//          display: block
+//          margin-bottom: 30px
+//          height: 52px
+//          overflow: hidden
+//        .casting-info
+//          .casting-info-item
+//            margin-bottom: 15px
+//            .casting-info-left
+//              width: 125px
+//              display: inline-block
+//              vertical-align: top
+//              span
+//                font-size: 16px
+//                line-height: 1.38
+//                letter-spacing: 0
+//                color: $storm-grey
+//            .casting-info-right
+//              width: 200px
+//              display: inline-block
+//              vertical-align: top
+//              span
+//                font-size: 16px
+//                line-height: 1.38
+//                letter-spacing: 0
+//                color: $tangaroa
+//        .title
+//          font-size: 18px
+//          color: #0e70e5
+//          display: block
+//          margin-bottom: 26px
+//        .sub_title
+//          margin-top: -16px
+//          font-size: 15px
+//          line-height: 1.47
+//          letter-spacing: 0.1px
+//          color: $storm-grey
+//          display: block
+//        .casting--type
+//          position: relative
+//          padding-bottom: 9px
+//          .status
+//            border: 0
+//            box-shadow: inherit
+//            left: 0
+//            top: 0
+//            width: 8px
+//            height: 8px
+//            position: relative
+//            display: inline-block
+//            vertical-align: middle
+//          span
+//            font-size: 15px
+//            line-height: 1.47
+//            letter-spacing: 0.1px
+//            color: $storm-grey
+//            padding-left: 7px
+//            display: inline-block
+//            vertical-align: middle
+//      .modal_casting_invite--right
+//        position: absolute
+//        right: 0
+//        top: 0
+//        height: 100%
+//        width: 244px
+//        padding-top: 35px
+//        padding-bottom: 20px
+//        padding-left: 16px
+//        padding-right: 26px
+//        display: -ms-flexbox
+//        display: -webkit-flex
+//        display: flex
+//        -webkit-flex-direction: column
+//        -ms-flex-direction: column
+//        flex-direction: column
+//        -webkit-flex-wrap: wrap
+//        -ms-flex-wrap: wrap
+//        flex-wrap: wrap
+//        -webkit-justify-content: space-between
+//        -ms-flex-pack: justify
+//        justify-content: space-between
+//        -webkit-align-content: space-between
+//        -ms-flex-line-pack: justify
+//        align-content: space-between
+//        -webkit-align-items: center
+//        -ms-flex-align: center
+//        align-items: center
+//      .title
+//        font-size: 16px
+//        line-height: 1.38
+//        letter-spacing: 0
+//        color: $storm-grey
+//        display: block
+//        margin-bottom: 17px
+//      .button
+//        width: 172px
+//        height: 40px
+//        line-height: 38px
+//        margin-bottom: 12px
+//      .cancel
+//        display: block
+//        text-align: center
+//        font-size: 16px
+//        line-height: 1.38
+//        letter-spacing: 0
+//        color: $gray-light
+//      .profile--user--lists
+//        a
+//          img, span
+//            width: 39px
+//            height: 39px
+//            font-size: 13px
+//            line-height: 38px
+//      .modal-user--info--header--right
+//        .icon-folders
+//          position: relative
+//          span
+//            position: absolute
+//            right: -3px
+//            bottom: -3px
+//            font-size: 13px
+//            letter-spacing: 0.2px
+//            text-align: center
+//            color: #fbfbfb
+//            width: 20px
+//            line-height: 18px
+//            height: 20px
+//            background-color: #0e70e5
+//            border: solid 1px #ffffff
+//            border-radius: 50%
+//      .project-user
+//        margin-bottom: 26px
+//        img
+//          width: 42px
+//          height: 42px
+//          border-radius: 50%
+//          object-fit: cover
+//          display: inline-block
+//          vertical-align: top
+//          margin-right: 4px
+//        .project-user--info
+//          width: 151px
+//          display: inline-block
+//          vertical-align: top
+//          .project-user--name
+//            font-size: 16px
+//            line-height: 1.38
+//            letter-spacing: 0.1px
+//            color: $tangaroa
+//            margin-bottom: 0
+//            word-wrap: break-word
+//          .project-user--type
+//            font-size: 16px
+//            line-height: 1.38
+//            letter-spacing: 0.1px
+//            color: $gray-light
+//            font-weight: lighter
+//.modal-auth
+//  .modal-dialog
+//    width: 370px
+//
+//  .modal-body
+//    padding-right: 32px
+//    padding-top: 32px
+//    padding-left: 32px
+//    padding-bottom: 26px
+//    .icon-close2
+//      position: absolute
+//      font-size: 10px
+//      color: $gray-light
+//      right: 16px
+//      top: 16px
+//      cursor: pointer
+//      z-index: 1
+//      &:hover
+//        color: $color-black
+//    h2
+//      margin: 0
+//      font-size: 23px
+//      margin-bottom: 32px
+//      text-align: center
+//      color: $nero
+//    label
+//      display: block
+//      font-size: 15px
+//      margin-bottom: 11px
+//    input
+//      height: 36.2px
+//      border-radius: 3px
+//      background-color: $white
+//      border: solid 1px $link-water
+//      margin-bottom: 26px
+//    .button
+//      margin-top: 6px
+//      font-size: 15px
+//      height: 44px
+//      line-height: 44px
+//      text-align: center
+//      color: $aluminium
+//      border-radius: 67px
+//      margin-bottom: 20px
+//      border: solid 1px $solitude-7
+//    .remember
+//      display: block
+//      margin: 0 auto
+//      font-size: 15px
+//      text-align: center
+//      margin-bottom: 22px
+//      color: $mischka-2
+//    .form-group
+//      margin-bottom: 0
+//    .social-register
+//      border-top: solid 1px $zircon
+//      padding-top: 32px
+//      padding-bottom: 36px
+//      span
+//        font-size: 15px
+//        text-align: center
+//        color: $tangaroa
+//        display: block
+//        margin-bottom: 32px
+//      div
+//        text-align: center
+//        a
+//          &:hover
+//            box-shadow: 2px 3px 12px 0 rgba($midnight-express, 0.2)
+//          transition: all .4s
+//          width: 38px
+//          height: 38px
+//          display: inline-block
+//          vertical-align: middle
+//          line-height: 40px
+//          margin: 0 13px
+//          border-radius: 50%
+//          color: $white
+//          font-size: 30px
+//          cursor: pointer
+//          &.icon-vk-normal
+//            background: $san-marino
+//          &.icon-facebook-normal
+//            background: $mariner-1
+//          &.icon-google-plus-normal
+//            background: $flamingo
+//    .footer-text
+//      display: block
+//      text-align: center
+//      span, a
+//        font-size: 14px
+//        line-height: 1.57
+//        text-align: center
+//        color: $mischka-2
+//
+//.modal-users-privacy
+//  .modal-privacy--head
+//    &.modal-privacy--head-back
+//      padding: 16px 38px
+//    .icon-left-arrow
+//      display: block
+//      cursor: pointer
+//      width: 16px
+//      height: 55px
+//      line-height: 55px
+//      left: 12px !important
+//      font-size: 17px !important
+//      top: 0 !important
+//      bottom: 0
+//      margin: auto
+//  .step-3-invited-user
+//    .add-email-wrap-scroll
+//      max-height: 40vh
+//      overflow-y: scroll
+//  .step-2-invited-user
+//    padding-top: 26px
+//    padding-left: 38px
+//    padding-right: 38px
+//    padding-bottom: 26px
+//    .step-2-invited-user-footer
+//      padding-top: 14px
+//      margin-left: -26px
+//      margin-right: -38px
+//      border-top: 1px solid #f0eff4
+//      .button.send
+//        width: 257px
+//        height: 40px
+//        border-radius: 19.5px
+//        background-color: #167efb
+//        font-size: 15px
+//        color: #fdfcfd
+//        display: block
+//        margin: 0 auto
+//        line-height: 40px
+//        text-align: center
+//        border: 0
+//    .title-upload-all
+//      font-size: 18px
+//      margin-bottom: 32px
+//      text-align: left
+//      color: #0c111d
+//    .upload-all-wrap
+//      .upload-all-line
+//        display: flex
+//        align-items: flex-start
+//        justify-content: flex-start
+//        &:last-child
+//          margin-bottom: 124px
+//          margin-top: 18px
+//        &:first-child
+//          .right
+//            padding-bottom: 12px
+//            border-bottom: solid 1px #e6e7e8
+//        .right
+//          a.uploading
+//            text-decoration: underline
+//            &:hover
+//              color: #167efb
+//          span.uploading
+//            font-size: 15px
+//            text-align: left
+//            color: #7a7c83
+//            line-height: 22px
+//          a.no-uploading
+//            display: inline-block
+//            font-size: 15px
+//            text-align: left
+//            color: #167efb
+//          span.no-uploading
+//            font-size: 15px
+//            text-align: left
+//            color: #7a7c83
+//            display: block
+//            margin-bottom: 5px
+//        .left
+//          margin-right: 23px
+//          i.ok-icon
+//            background-image: url('/dist/img/ok.svg')
+//            width: 20px
+//            height: 20px
+//            padding-top: 5px
+//            display: block
+//          span
+//            padding-top: 5px
+//            font-size: 22px
+//            display: block
+//            width: 20px
+//            text-align: left
+//            color: #7a7c83
+//    .add-more-wrap
+//      padding-bottom: 32px
+//      margin-top: 5px
+//      margin-bottom: 25px
+//      border-bottom: solid 1px #f0eff4
+//      .add-more
+//        font-size: 15px
+//        font-weight: 300
+//        text-align: left
+//        color: #a0a0a0
+//        display: inline-block
+//    .title
+//      font-size: 18px
+//      text-align: left
+//      color: #0c111d
+//      margin-bottom: 22px
+//    .add-email-wrap
+//      margin-bottom: 16px
+//      position: relative
+//      &.error
+//        .tooltip
+//          width: 170px
+//        .add-email
+//          background-image: url('/dist/img/mail-error.svg')
+//        .has-error
+//          position: absolute
+//          color: #fc2e5f
+//          font-size: 15px
+//          cursor: pointer
+//          right: 15px
+//          top: 12px
+//          height: 20px
+//          bottom: 0
+//          width: 20px
+//          text-align: center
+//        input
+//          color: #fc2e5f !important
+//          border-color: #fc2e5f !important
+//      i.ok-icon
+//        background-image: url('/dist/img/ok.svg')
+//        width: 20px
+//        height: 20px
+//        position: absolute
+//        top: 0
+//        right: 19px
+//        margin: auto
+//        bottom: 0
+//      i.icon-close2
+//        position: absolute
+//        color: #afb0b5
+//        font-size: 11px
+//        top: 0
+//        bottom: 0
+//        right: -25px
+//        line-height: 40px
+//        cursor: pointer
+//      .add-email
+//        background-image: url('/dist/img/mail.svg')
+//        background-size: 20px
+//        background-position: 10px center
+//        background-repeat: no-repeat
+//        margin-bottom: 0
+//        font-size: 15px
+//        font-weight: 300
+//        text-align: left
+//        color: #a0a0a0
+//        height: 44px
+//        border-radius: 3px
+//        border: solid 1px #b5b9c0
+//        padding-left: 44px
+//        line-height: 40px
+//        width: 100%
+//  .modal-dialog
+//    width: 600px
+//    .icon-left-arrow, .icon-right-arrow
+//      color: $gray-light
+//      font-size: 34px
+//      top: calc(50% - 16px)
+//      position: absolute
+//      cursor: pointer
+//    .icon-left-arrow
+//      left: -81px
+//      cursor: pointer
+//    .icon-right-arrow
+//      right: -81px
+//      cursor: pointer
+//  .modal-privacy--head
+//    position: relative
+//    padding: 16px 26px
+//    border-bottom: 1px solid $solitude-5
+//    i.icon-close2
+//      position: absolute
+//      right: 17px
+//      top: 22px
+//      color: $gray-light
+//      font-size: 11px
+//      cursor: pointer
+//      &:hover
+//        color: $color-black
+//    span
+//      font-size: 15px
+//      line-height: 1.47
+//      letter-spacing: 0.1px
+//      color: $tangaroa
+//  .modal-privacy--search
+//    position: relative
+//    border-bottom: solid 1px $solitude-10
+//    label
+//      display: inline-block
+//      vertical-align: middle
+//      color: $dark-gray
+//      font-size: 18px
+//      margin-left: 32px
+//      float: left
+//      padding-top: 16px
+//      padding-bottom: 16px
+//    input
+//      float: left
+//      display: inline-block
+//      vertical-align: middle
+//      color: $dark-gray
+//      font-size: 15px
+//      padding-left: 16px
+//      border: 0
+//      margin: 0
+//      width: 88%
+//      padding-top: 16px
+//      padding-bottom: 16px
+//      line-height: 18px
+//      height: initial
+//
+//  .modal-privacy--selected
+//    background-color: $whisper
+//    box-shadow: 0 -2px 4px 0 rgba($solitude-5, 0.4)
+//    border-bottom: solid 1px $solitude-5
+//    padding-top: 10px
+//    padding-left: 26px
+//    padding-right: 26px
+//    padding-bottom: 6px
+//    .title
+//      line-height: 1.47
+//      letter-spacing: 0.1px
+//      color: $tangaroa
+//      padding-bottom: 10px
+//      span
+//        line-height: 1.47
+//      .count
+//        color: $aluminium
+//    .user-list
+//      list-style: none
+//      li
+//        margin-bottom: 16px
+//        padding-right: 28px
+//        padding-top: 8px
+//        position: relative
+//        &.not_verified
+//          .type
+//            font-style: italic
+//          img
+//            opacity: 0.56
+//        &:hover
+//          .user-info
+//            i
+//              display: block
+//        img
+//          width: 48px
+//          height: 48px
+//          border-radius: 50%
+//          object-fit: cover
+//          display: inline-block
+//          vertical-align: top
+//          margin-right: 4px
+//        .user-info
+//          display: inline-block
+//          vertical-align: top
+//          width: 93px
+//          i
+//            position: absolute
+//            color: $mischka-2
+//            font-size: 8px
+//            display: none
+//            top: 5px
+//            right: 10px
+//            cursor: pointer
+//            &:hover
+//              color: $color-black
+//          .name
+//            font-size: 15px
+//            letter-spacing: 0.1px
+//            color: $tangaroa
+//            margin-bottom: 4px
+//            height: 40px
+//            overflow: hidden
+//            a
+//              color: $tangaroa
+//          .type
+//            font-size: 15px
+//            letter-spacing: 0.1px
+//            color: $aluminium
+//            font-weight: lighter
+//            height: 18px
+//            overflow: hidden
+//            a
+//              text-overflow: ellipsis
+//              white-space: nowrap
+//              overflow: hidden
+//              display: block
+//              font-size: 15px
+//              font-weight: 300
+//              letter-spacing: 0.1px
+//              text-align: left
+//              color: #85888e
+//  .modal-privacy--users
+//    box-shadow: 0 -2px 4px 0 rgba($titan-white, 0.1)
+//    border-bottom: solid 1px $solitude-10
+//    .no-user-list-add-email
+//      text-align: center
+//      padding-top: 15px
+//      padding-bottom: 13px
+//      border-top: solid 1px #f0eff4
+//      span
+//        color: #0c111d
+//      a
+//        color: #167efb
+//    ul
+//      list-style: none
+//      padding-left: 26px
+//      padding-right: 26px
+//      li
+//        cursor: pointer
+//        .select-user--wrap
+//          text-align: right
+//        &.selected
+//          .select-user
+//            border: solid 1px $crimson
+//            i
+//              display: block
+//        .select-user
+//          float: right
+//          border-radius: 50%
+//          text-align: center
+//          width: 24px
+//          height: 24px
+//          border: solid 1px $link-water
+//          i
+//            font-size: 10px
+//            text-align: center
+//            line-height: 24px
+//            color: $crimson
+//            display: none
+//        padding-top: 16px
+//        padding-bottom: 18px
+//        &:not(:last-child)
+//          border-bottom: solid 1px $solitude-5
+//        img
+//          width: 38px
+//          height: 38px
+//          border-radius: 50%
+//          object-fit: cover
+//          display: inline-block
+//          vertical-align: top
+//          margin-right: 6px
+//        .user-info
+//          display: inline-block
+//          vertical-align: top
+//          max-width: 451px
+//          .name
+//            font-size: 15px
+//            letter-spacing: 0.1px
+//            color: $tangaroa
+//            margin-bottom: 2px
+//          .type
+//            font-size: 15px
+//            letter-spacing: 0.1px
+//            color: $aluminium
+//            font-weight: lighter
+//            overflow: hidden
+//            text-overflow: ellipsis
+//            white-space: nowrap
+//  .modal-privacy--action
+//    padding: 13px
+//    a
+//      &.write
+//        border: solid 1px #167efb
+//        background-color: transparent
+//        color: #167efb
+//        line-height: 38px
+//        &:hover
+//          border: solid 1px #167efb
+//          background-color: transparent
+//          color: #167efb
+//      width: 178px
+//      height: 40px
+//      line-height: 38px
+//      color: $mischka-2
+//      border-radius: 8px
+//      border: solid 1px $solitude-1
+//      &:hover
+//        border: solid 1px rgba($crimson, 0.32)
+//        color: $crimson
+//.modal-message
+//  &.selected
+//    .button
+//      &:hover
+//        color: #FFF !important
+//  .files-message
+//    margin-top: -26px
+//    border-bottom: 1px solid  $solitude-9
+//    border-top: 1px solid  $solitude-9
+//    margin-bottom: 16px
+//    .files
+//      padding-right: 25px
+//      padding-top: 10px
+//      margin-bottom: 10px
+//      &:hover
+//        .icon-close2
+//          display: block
+//          &:hover
+//            color: $color-black
+//      .icon-close2
+//        display: none
+//        position: absolute
+//        color: $gray-light
+//        font-size: 6px
+//        top: 5px
+//        right: 15px
+//  .button:hover
+//    color: $torch-red !important
+//.modal-confirm-phone
+//  .confirm-text
+//    font-size: 15px
+//    font-weight: normal
+//    font-style: normal
+//    font-stretch: normal
+//    line-height: 1.47
+//    letter-spacing: 0.1px
+//    color: $aluminium
+//    margin: 0 40px
+//    text-align: center
+//    margin-top: 14px
+//    margin-bottom: 40px
+//    span
+//      font-weight: bold
+//  .form-group
+//    width: 178px
+//    margin: 0 auto
+//    &.confirm-code
+//      margin-top: 24px
+//      input
+//        text-align: center !important
+//        padding-left: 0
+//        letter-spacing: 4px
+//        color: $tangaroa
+//        font-size: 15px
+//    label
+//      margin-bottom: 8px
+//      font-weight: bold
+//      font-size: 15px
+//      line-height: 1.47
+//      letter-spacing: 0.1px
+//      color: $tangaroa
+//      display: block
+//    input
+//      border: solid 1px rgba($heather-3, 0.6)
+//      margin-bottom: 8px
+//      &.error
+//        border-color: $crimson
+//    .action-phone
+//      font-size: 15px
+//      letter-spacing: 0.1px
+//      text-align: center
+//      color: $mischka-2
+//      &:hover
+//        color: $torch-red
+//  .button
+//    color: $aluminium
+//    width: 160px
+//    background: transparent
+//    border: solid 1px $mischka-2
+//    border-radius: 29px
+//    -webkit-transition: all .4s
+//    transition: all .4s
+//    margin: 0 auto
+//    margin-top: 40px
+//    margin-bottom: 34px
+//    &:hover
+//      border-color: $torch-red
+//      color: $torch-red
+//.modal-upload-attach-audio
+//  .audio--item ~ div
+//    display: inline-block
+//    max-width: 22%
+//    vertical-align: top
+//    margin-top: 5px
+//.modal-upload-attach-audio
+//  .audio--item
+//    .audio-item-volume-wrapper
+//      display: none !important
+//    & ~ div
+//      margin-top: 0
+//.modal-upload-attach-photo, .modal-upload-attach-video
+//  .profile__worksheet
+//    .nav
+//      margin-left: 0
+//.modal-upload-attach-video
+//  .video--items-big
+//    .video--item-big
+//      &.select > div, &:hover > div
+//        &:after
+//          content: ''
+//          display: block
+//          position: absolute
+//          width: 100%
+//          height: 100%
+//          top: 0
+//          left: 0
+//          background-color: rgba($tangaroa, 0.8)
+//          z-index: 1
+//        &:before
+//          font-family: 'icomoon' !important
+//          display: block
+//          width: 100%
+//          height: 100%
+//          text-align: center
+//          line-height: 180px
+//          content: '\e93a'
+//          font-size: 32px
+//          position: absolute
+//          z-index: 2
+//          color: $zircon
+//    .video--item-big-play, .video--item-big-counts
+//      display: none !important
+//    .video--item-big-title
+//      bottom: 12px !important
+//.modal-callback-users
+//  z-index: 99998
+//  .modal-dialog
+//    width: 636px
+//    .users--list
+//      padding-left: 26px
+//      padding-right: 26px
+//      padding-top: 24px
+//      .users--item
+//        text-align: center
+//        margin-bottom: 24px
+//        height: 132px
+//        &.not_verified
+//          .type
+//            font-style: italic
+//          img
+//            opacity: 0.54
+//        &.users--item-hide
+//          .users--item-hide-avatar
+//            width: 80px
+//            height: 80px
+//            position: relative
+//            border-radius: 50%
+//            margin: 0 auto
+//            background-color: $solitude-13
+//            margin-bottom: 8px
+//          .user-hide-name
+//            font-size: 15px
+//            text-align: center
+//            color: $aluminium
+//            display: block
+//            max-height: 44px
+//            overflow: hidden
+//            line-height: 22px
+//        .quickview--wrap
+//          width: 80px
+//          height: 80px
+//          position: relative
+//          margin: 0 auto
+//          cursor: pointer
+//          margin-bottom: 8px
+//          &:hover
+//            span
+//              opacity: 1
+//            &:before
+//              opacity: 1
+//          &:before
+//            opacity: 0
+//            position: absolute
+//            transition: .3s all
+//            top: 0
+//            content: ''
+//            display: block
+//            left: 0
+//            width: 80px
+//            height: 80px
+//            border-radius: 50%
+//            background-color: rgba($color-black, 0.49)
+//          span
+//            position: absolute
+//            opacity: 0
+//            transition: .3s all
+//            font-size: 14px
+//            line-height: 1.43
+//            letter-spacing: 0
+//            text-align: center
+//            color: $white
+//            left: 0
+//            top: 23px
+//        img
+//          width: 80px
+//          height: 80px
+//          object-fit: cover
+//          border-radius: 50%
+//          display: block
+//          margin: 0 auto
+//
+//        .name
+//          font-size: 15px
+//          max-height: 22px
+//          line-height: 1.47
+//          letter-spacing: 0.1px
+//          text-align: center
+//          color: $tangaroa
+//          overflow: hidden
+//          display: block
+//        .type
+//          display: block
+//          font-size: 15px
+//          max-height: 22px
+//          line-height: 1.47
+//          letter-spacing: 0
+//          color: $storm-grey
+//          overflow: hidden
+//          font-weight: lighter
+//    .read-more
+//      box-shadow: 0 -2px 4px 0 rgba($titan-white, 0.1)
+//      border-top: solid 1px $solitude-10
+//      padding: 16px
+//      display: block
+//      text-align: center
+//      font-size: 15px
+//      text-align: center
+//      color: $aluminium
+//.confirm-modal
+//  z-index: 1000001
+//.modalChangeTop
+//  .gallery_background
+//    position: relative
+//    .button
+//      position: absolute
+//      top: -40px
+//      right: 0
+//.modal__audio
+//  min-width: 1136px
+//  height: auto
+//  overflow: hidden
+//  .album_cover
+//    &.blur
+//      min-width: 1136px
+//      filter: blur(1px)
+//      object-fit: cover
+//  .audio-player
+//    z-index: 2
+//    position: absolute
+//    bottom: 0px
+//    width: 100%
+//    margin-bottom: 0
+//    padding-bottom: 26px
+//    left: 0
+//    background-image: linear-gradient(to bottom, rgba($color-black, 0.0), $color-black)
+//    padding-left: 26px
+//    padding-right: 26px
+//    padding-top: 20px
+//    .audio-player--count-like, .audio-player--edit, .audio-player--remove
+//      display: none !important
+//    .audio--item
+//      width: 100%
+//      .audio--item-pause
+//        font-size: 20px !important
+//        line-height: 48px !important
+//      .audio--item-play, .audio--item-pause
+//        font-size: 48px
+//        margin-right: 8px
+//        width: 48px !important
+//        height: 48px !important
+//      .audio--item-timeline-handler
+//        width: 12px
+//        height: 12px
+//        top: 0
+//      .audio--item-timeline:before
+//        top: 4px
+//        border-radius: 2.5px
+//      .audio--item-timeline-back
+//        margin-top: 1px
+//      .audio--item-hint
+//        top: 3px !important
+//      .audio--item-timeline
+//        height: 12px
+//      .audio-item-volume-wrapper
+//        vertical-align: middle
+//        margin-top: 4px
+//        .audio--item-volume-hint
+//          top: -23px
+//        .audio-item-volume
+//          margin-top: 5px
+//          height: 13px
+//          padding-top: 2px
+//          padding-bottom: 2px
+//          .audio--item-volume-handler
+//            width: 12px
+//            height: 12px
+//            top: 1px
+//            background-color: $whisper
+//            box-shadow: 1px 2px 5px 0 rgba($color-black, 0.5)
+//          .audio--item-volume-back
+//            background-color: $solitude-5
+//            top: 3px
+//          &:before
+//            background-color: $manatee-2
+//            top: 5px
+//            border-radius: 2.5px
+//      .audio--item-info
+//        vertical-align: top
+//        width: 85%
+//        .audio--item-time
+//          color: $link-water
+//        .audio--item-timeline
+//          margin-top: 10px
+//          &:before
+//            background-color: $manatee-2
+//        .audio--item-timeline-handler
+//          background-color: $whisper
+//        .audio--item-title
+//          color: $pattensblue
+//
+//.modal_casting
+//  .form-group
+//    margin-bottom: 0
+//  input, .select2, .tags, input[type='checkbox'] + label, .select2 ~ .lists:not(:empty)
+//    margin-bottom: 16px
+//  .radios
+//    input[type="radio"]
+//      display: none
+//      &:checked
+//        &:disabled
+//          + label
+//            &:after
+//              border: 1px solid $link-water
+//            &:before
+//              background: $link-water
+//        + label
+//          &:before
+//            content: ''
+//            display: block
+//            position: absolute
+//            width: 9px
+//            height: 9px
+//            border-radius: 50%
+//            background: $mariner
+//            left: 4px
+//            top: 4px
+//            z-index: 1
+//      & + label
+//        padding-left: 25px
+//        position: relative
+//        font-size: 15px
+//        font-weight: normal
+//        font-style: normal
+//        margin-bottom: 16px
+//        font-stretch: normal
+//        line-height: normal
+//        letter-spacing: normal
+//        color: $lm-gray-3
+//        &:hover
+//          &:after
+//            border: solid 1px $mariner
+//          cursor: pointer
+//        &:after
+//          content: ''
+//          display: block
+//          width: 17px
+//          height: 17px
+//          border-radius: 50%
+//          position: absolute
+//          top: 0
+//          left: 0
+//          background-color: $white
+//          border: solid 1px $mariner
+//  .adding-info-user
+//    .demands--head
+//      cursor: pointer
+//    .icon-right-arrow
+//      font-size: 12px
+//      color: $tangaroa
+//      line-height: 22px
+//      margin-left: 10px
+//      -webkit-transition: all .3s
+//      transition: all .3s
+//      display: inline-block
+//    &.open
+//      .icon-right-arrow
+//        transform: rotate(90deg)
+//
+//.portfolio-modal
+//  .modal-dialog
+//    width: 1139px
+//    border: 0
+//    .modal-content
+//      background-color: #fdfcfd
+//      border: 0
+//      .modal-body
+//        position: relative
+//        .icon-left-arrow, .icon-right-arrow
+//          color: $gray-light
+//          font-size: 34px
+//          top: calc(50% - 16px)
+//          position: absolute
+//          cursor: pointer
+//        .icon-left-arrow
+//          left: -50px
+//          cursor: pointer
+//        .icon-right-arrow
+//          right: -50px
+//          cursor: pointer
+//        .portfolio-template
+//          padding: 0
+//          padding-right: 28px
+//          padding-bottom: 16px
+//          margin: 0
+//          display: flex
+//          justify-content: space-between
+//          .portfolio-music
+//            padding-top: 0
+//            .audio-image
+//              &:before
+//                background-size: 50px
+//            .portfolio-music-wrap
+//              background-color: #fdfcfd
+//              .portfolio-music-bottom
+//                overflow: hidden
+//                height: 230px
+//                .select-photo.image
+//                  width: 200px
+//                  height: 230px
+//                  border: 0
+//                  .photo
+//                    width: 100%
+//                    height: 100%
+//                .select-video
+//                  padding: 0
+//                  width: 413px
+//                  border: 0
+//                  a.video
+//                    width: 100%
+//                    height: 100%
+//                    &:after
+//                      background-size: 50px
+//              .portfolio-music-top
+//                .music-item
+//                  width: 155px
+//                  &.select:after
+//                    height: 147px
+//                    background-size: 50px
+//                  img
+//                    height: 147px
+//                  .name-music, .name-artist
+//                    font-size: 14px
+//                    line-height: 1.42
+//                    letter-spacing: 0.1px
+//                    text-align: left
+//          .portfolio-model
+//            .portfolio-model-wrap
+//              height: 540px
+//              .portfolio-model-right
+//                width: 439px
+//                //padding-right: 16px
+//                .portfolio-model-right-top
+//                  height: 257px
+//                  a.video:after
+//                    background-size: 57px
+//                    height: 57px
+//                    width: 57px
+//                .portfolio-model-right-bottom
+//                  > div
+//                    width: 215px
+//                  height: 274px
+//              .portfolio-model-left
+//                width: 379px
+//                height: 540px
+//        .close-modal
+//          width: 13px
+//          display: block
+//          height: 13px
+//          position: absolute
+//          right: 0
+//          top: -40px
+//          padding: 10px
+//          padding-bottom: 30px
+//          background-repeat: no-repeat
+//          background-position: top center
+//          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">  <path fill="%23AFB0B5" fill-rule="evenodd" d="M12.734 11.417l-5.12-5.12L12.52 1.39a.63.63 0 1 0-.89-.89L6.724 5.406 1.604.286a.63.63 0 0 0-.892.892l5.12 5.12L.48 11.65a.63.63 0 1 0 .89.89l5.351-5.35 5.12 5.12a.63.63 0 0 0 .892-.892z"/></svg>')
+//        .portfolio-left
+//          width: 265px
+//          margin-top: 3px
+//          margin-right: 16px
+//          margin-left: 16px
+//          border-right: solid 1px #eaedf0
+//          padding-right: 10px
+//          position: relative
+//          height: 554px
+//          display: flex
+//          flex-direction: column
+//          .portfolio-left-center
+//            overflow-y: auto
+//            flex: 1 1 auto
+//            height: 100%
+//            width: 100%
+//            position: relative
+//            .portfolio-left-center-wrap
+//              height: 100%
+//          .lists
+//            margin-top: 12px
+//            margin-bottom: 12px
+//            span
+//              display: inline-block
+//              vertical-align: middle
+//              padding: 7px 12px
+//              line-height: 16px
+//              font-size: 14px
+//              letter-spacing: 0
+//              text-align: center
+//              color: #5d697f
+//              height: 30px
+//              opacity: 0.95
+//              border-radius: 40px
+//              background-color: #f0eff4
+//              margin-bottom: 10px
+//              margin-right: 10px
+//          .to-profile-in-modal
+//            display: block
+//            padding-top: 16px
+//            text-align: center
+//            a
+//              font-size: 15px
+//              letter-spacing: 0.2px
+//              text-align: center
+//              color: $lm-main
+//          .user-info-separator
+//            font-size: 15px
+//            line-height: 1.47
+//            letter-spacing: 0
+//            text-align: left
+//            color: #b5b9c0
+//            margin: 12px 0
+//            position: relative
+//            overflow: hidden
+//            span
+//              position: relative
+//              padding-right: 20px
+//              &:before
+//                position: absolute
+//                background: #fdfcfd
+//                z-index: 1
+//            &:after
+//              z-index: 1
+//              content: ''
+//              display: inline-block
+//              background-color: #f0eff4
+//              height: 1px
+//              width: 100%
+//              position: absolute
+//              top: 0
+//              bottom: 0
+//              margin: auto
+//
+//          .user-info-list
+//            ul
+//              list-style: none
+//              li
+//                align-items: flex-end
+//                display: flex
+//                justify-content: space-between
+//                //margin: 0 10px
+//                margin-bottom: 12px
+//                &.skills
+//                  display: block
+//                .header-lists
+//                  font-size: 15px
+//                  line-height: 1.47
+//                  letter-spacing: 0
+//                  text-align: left
+//                  color: #5d697f
+//                  display: block
+//                .left
+//                  font-size: 15px
+//                  line-height: 1.47
+//                  letter-spacing: 0
+//                  text-align: left
+//                  color: #5d697f
+//                  max-width: 175px
+//                .right
+//                  font-size: 15px
+//                  line-height: 1.47
+//                  letter-spacing: 0
+//                  text-align: right
+//                  color: #b5b9c0
+//          .user-info-actions
+//            display: flex
+//            align-items: center
+//            justify-content: flex-end
+//            margin-bottom: 23px
+//            > div
+//              height: 42px
+//            .button-follow-loader
+//              height: 42px
+//              width: auto
+//            a
+//              margin: 0 auto
+//              display: block
+//              font-size: 15px
+//              line-height: 1.47
+//              letter-spacing: 0
+//              text-align: left
+//              &:not(.button)
+//                color: $lm-main !important
+//            //> *
+//            //  display: inline-block
+//            //  vertical-align: middle
+//            //  float: left
+//            .button
+//              width: 136px
+//              height: 40px
+//              border-radius: 33px
+//              background-color: $lm-main
+//              font-size: 15px
+//              line-height: 38px
+//              letter-spacing: 0.2px
+//              text-align: center
+//              color: #ffffff
+//              margin: initial
+//            .plus-button
+//              margin-left: 9px
+//              width: 42px
+//              height: 42px
+//              margin-right: 0
+//              background-position: center
+//              background-repeat: no-repeat
+//              background-size: contain
+//              background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="42" viewBox="0 0 42 42"><defs><rect id="b" width="1136" height="830" x="163" y="77" rx="2"/><filter id="a" width="101.1%" height="101.4%" x="-.5%" y="-.6%" filterUnits="objectBoundingBox"><feMorphology in="SourceAlpha" operator="dilate" radius="1" result="shadowSpreadOuter1"/><feOffset dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/><feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/><feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/><feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.174479167 0"/></filter><path id="c" d="M178 375h356v80H178z"/><path id="d" d="M0 0h1443v1575H0z"/></defs><g fill="none" fill-rule="evenodd"><path fill="%23FDFCFD" d="M-216-123.931H923v572H-216z"/><circle cx="20" cy="20" r="20" stroke="%230E70E5" transform="translate(1 1)"/><path fill="%23006DF0" d="M27.481 20.222H21.52V14.52a.518.518 0 1 0-1.038 0v5.703H14.52a.518.518 0 1 0 0 1.037h5.962v6.222a.518.518 0 1 0 1.038 0V21.26h5.962a.518.518 0 1 0 0-1.037z"/></g></svg>')
+//              margin-left: 9px
+//            .folder-button
+//              margin-left: 9px
+//              background-position: center
+//              background-repeat: no-repeat
+//              background-size: contain
+//              width: 42px
+//              height: 42px
+//              background-size: cover
+//              background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"><g fill="none" fill-rule="evenodd" transform="translate(1 1.27)"><path fill="%230E70E5" fill-rule="nonzero" d="M29.247 16.833H28.2v-1.886a.822.822 0 0 0-.82-.821h-7.425l-1.5-2.106H12.82a.822.822 0 0 0-.82.821v13.144h.002a.767.767 0 0 0 .768.776h13.427a.762.762 0 0 0 .735-.545L30 17.78v-.054c0-.518-.317-.894-.753-.894zM12.6 12.841a.22.22 0 0 1 .22-.22h5.325l1.5 2.106h7.735a.22.22 0 0 1 .22.22v1.886H15.82a.756.756 0 0 0-.735.545L12.6 24.174V12.84zm13.76 13.193a.17.17 0 0 1-.163.125H12.77a.166.166 0 0 1-.135-.066c-.019-.025-.048-.077-.037-.123l3.057-8.41a.17.17 0 0 1 .164-.125h13.428c.114 0 .143.164.15.246l-3.036 8.353z"/><ellipse cx="20" cy="20.033" stroke="%230E70E5" rx="20" ry="20.033"/></g></svg>')
+//              position: relative
+//              span
+//                position: absolute
+//                right: 0
+//                bottom: 0
+//                font-size: 13px
+//                letter-spacing: 0.2px
+//                text-align: center
+//                color: #fbfbfb
+//                width: 20px
+//                line-height: 18px
+//                height: 20px
+//                background-color: #0e70e5
+//                border: solid 1px #ffffff
+//                border-radius: 50%
+//          .close-button
+//            width: 42px
+//            margin-right: 0 !important
+//            height: 42px
+//            background-size: cover
+//            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"><g fill="none" fill-rule="evenodd">  <circle cx="21" cy="21" r="20" stroke="%23B5B9C0"/><path fill="%23B5B9C0" d="M26.133 25.033l-4.216-4.216 4.033-4.033a.518.518 0 1 0-.734-.734l-4.033 4.033-4.216-4.216a.518.518 0 1 0-.733.733l4.216 4.217-4.4 4.4a.518.518 0 1 0 .734.733l4.4-4.4 4.216 4.216a.518.518 0 1 0 .733-.733z"/></g></svg>')
+//        .portfolio-right
+//          width: 867px
+//          margin-top: 16px
+//          .music
+//            display: flex
+//            height: 100%
+//            align-items: center
+//
+//  .user--info-wrap
+//    margin: 20px 0
+//    .user--info-bottom
+//      //display: flex
+//      i
+//        color: #5d697f
+//        padding-right: 8px
+//        font-size: 13px
+//      .place
+//        height: auto !important
+//      span
+//        //max-width: 228px
+//        text-overflow: ellipsis
+//        overflow: hidden
+//        height: 22px
+//        //max-width: 160px
+//        font-size: 15px
+//      //display: flex
+//      //align-items: center
+//      .user--info--info
+//        color: #b5b9c0
+//        line-height: 1.47
+//        display: inline-block
+//        vertical-align: middle
+//        i.point
+//          padding: 0px
+//          margin-right: 8px
+//          width: 10px
+//          height: 14px !important
+//          display: inline-block
+//          vertical-align: middle
+//          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 10 14"><g fill="%235D697F" fill-rule="evenodd"><path d="M5.041 7.163A2.274 2.274 0 0 1 2.77 4.891 2.274 2.274 0 0 1 5.04 2.62a2.274 2.274 0 0 1 2.272 2.272A2.274 2.274 0 0 1 5.04 7.163zm0-4.143c-1.032 0-1.871.84-1.871 1.872s.84 1.872 1.871 1.872c1.032 0 1.872-.84 1.872-1.872 0-1.033-.84-1.872-1.872-1.872z"/><path d="M5.041 13.282a.199.199 0 0 1-.153-.072C4.694 12.98.15 7.524.15 4.892A4.897 4.897 0 0 1 5.041 0a4.897 4.897 0 0 1 4.891 4.892c0 2.633-4.544 8.088-4.737 8.319a.202.202 0 0 1-.154.071zM5.041.4a4.496 4.496 0 0 0-4.49 4.492c0 2.228 3.686 6.886 4.49 7.875.804-.99 4.491-5.647 4.491-7.875A4.497 4.497 0 0 0 5.042.4z"/>  </g></svg>')
+//          font-size: 15px
+//          line-height: 1.47
+//          letter-spacing: 0
+//          text-align: left
+//          color: #b5b9c0
+//          margin-right: 10px
+//        i.year
+//          padding: 0px
+//          margin-right: 8px
+//          width: 10px
+//          height: 14px !important
+//          display: inline-block
+//          vertical-align: middle
+//          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 10 14"><path fill="%235D697F" fill-rule="nonzero" d="M8.916 9.324L6.84 8.285a.572.572 0 0 1-.317-.514v-.735A4.975 4.975 0 0 0 7.32 5.57a.863.863 0 0 0 .506-.786v-.87a.867.867 0 0 0-.217-.57V2.185c.012-.12.06-.831-.455-1.418C6.707.258 5.983 0 5 0c-.983 0-1.707.258-2.154.767-.515.588-.467 1.3-.455 1.42v1.155a.867.867 0 0 0-.217.571v.87c0 .264.12.51.325.675.2.789.616 1.383.762 1.574v.72c0 .21-.115.403-.3.503L1.023 9.313A1.96 1.96 0 0 0 0 11.035v.704c0 1.032 3.27 1.304 5 1.304s5-.272 5-1.304v-.661a1.95 1.95 0 0 0-1.084-1.754zm.65 2.415c0 .295-1.612.87-4.566.87-2.954 0-4.565-.575-4.565-.87v-.704c0-.559.305-1.072.795-1.34l1.94-1.058a1.01 1.01 0 0 0 .526-.886v-.874l-.051-.06a4.104 4.104 0 0 1-.741-1.536l-.02-.086-.074-.048a.434.434 0 0 1-.201-.364v-.87a.43.43 0 0 1 .145-.32l.072-.065V2.174l-.002-.029c0-.005-.074-.608.349-1.091.36-.411.975-.62 1.827-.62.849 0 1.462.208 1.823.616.423.478.353 1.09.353 1.095l-.002 1.383.072.065a.428.428 0 0 1 .145.32v.87c0 .19-.124.355-.309.412l-.108.034-.035.107a4.55 4.55 0 0 1-.616 1.242 2.86 2.86 0 0 1-.182.235l-.054.062v.896c0 .385.214.731.558.903l2.077 1.038c.52.26.843.784.843 1.366v.661z"/></svg>')
+//          font-size: 15px
+//          line-height: 1.47
+//          letter-spacing: 0.1px
+//          text-align: left
+//          color: #b5b9c0
+//    .user-info-header
+//      margin-bottom: 13px
+//      display: block
+//      img
+//        width: 48px
+//        height: 48px
+//        display: inline-block
+//        vertical-align: middle
+//        margin-right: 10px
+//        object-fit: cover
+//        border-radius: 50%
+//        overflow: hidden
+//      .user--info--info
+//        display: inline-block
+//        width: 179px
+//        vertical-align: middle
+//        > *
+//          display: block
+//          height: 21px
+//          overflow: hidden
+//          text-overflow: ellipsis
+//          white-space: nowrap
+//        .user--info--name
+//          display: block
+//          font-size: 17px
+//          line-height: 1.29
+//          letter-spacing: 0.1px
+//          text-align: left
+//          color: #0c111d
+//          margin-bottom: 2px
+//        .user--info--type
+//          display: block
+//          font-size: 15px
+//          line-height: 1.47
+//          letter-spacing: 0
+//          text-align: left
+//          color: #5d697f
+//
+//.modal-create-project
+//  border: 0
+//  .modal-content
+//    border: 0
+//    padding-bottom: 64px
+//  .modal-create-project--title
+//    padding-top: 26px
+//    padding-bottom: 26px
+//    font-size: 24px
+//    font-weight: 500
+//    line-height: 1.0
+//    text-align: center
+//    color: #2d2e41
+//  .button
+//    &.save
+//      border-radius: 29px
+//      background-color: #1575e8
+//      padding: 0 39px
+//      font-size: 15px
+//      line-height: 44px
+//      border: 0
+//      font-weight: 300
+//      color: #ffffff
+//      text-align: center
+//  .modal-create-project-content
+//    width: 400px
+//    margin: 0 auto
+//    margin-bottom: 24px
+//    border-bottom: 1px solid #e6e7e8
+//    .files-modal
+//      width: 100%
+//      .fix
+//        width: 126px
+//        height: 1px
+//      .file-wrap
+//      display: flex
+//      align-items: flex-start
+//      justify-content: space-between
+//      flex-wrap: wrap
+//      margin-bottom: 20px
+//      .file
+//        width: 126px
+//        border-radius: 2px
+//        position: relative
+//        display: block
+//        &:hover
+//          .remove
+//            display: block
+//        .remove
+//          display: none
+//          background-image: url('/dist/img/icon/cancel.svg')
+//          background-size: cover
+//          background-repeat: no-repeat
+//          background-position: center
+//          width: 16px
+//          height: 16px
+//          top: -6px
+//          right: -5px
+//          position: absolute
+//          cursor: pointer
+//        &.types
+//          .file-wrap
+//            width: 126px
+//            height: 126px
+//            border: solid 1px #bcbdc1
+//            display: flex
+//            align-items: center
+//            justify-content: center
+//            .file-type
+//              width: 40px
+//              height: 40px
+//        img
+//          object-fit: cover
+//          width: 126px
+//          height: 126px
+//        .file-type-text
+//          margin-top: 8px
+//          font-size: 13px
+//          font-weight: 300
+//          text-align: left
+//          color: #0c111d
+//          display: block
+//          margin-bottom: 4px
+//          word-wrap: break-word
+//        .files--size
+//          font-size: 12px
+//          font-weight: 300
+//          text-align: left
+//          display: block
+//          color: #afb0b5
+//    .uploading-wrap
+//
+//      text-align: center
+//      margin-bottom: 48px
+//      .uploading-text
+//        text-align: center
+//        display: block
+//        font-size: 13px
+//        color: #afb0b5
+//      .uploading
+//        line-height: 42px
+//        display: inline-block
+//        height: 44px
+//        padding: 0 70px
+//        font-size: 15px
+//        text-align: left
+//        color: #167efb
+//        margin-bottom: 17px
+//        border-radius: 100px
+//        background-color: #ffffff
+//        border: solid 1px #167efb
+//        cursor: pointer
+//    textarea
+//      height: 70px
+//      margin-bottom: 36px
+//      padding: 11px 16px
+//      border-radius: 3px
+//      border: solid 1px #cfd5de
+//    .form-group
+//      margin-bottom: 0
+//    label
+//      font-size: 15px
+//      font-weight: 500
+//      text-align: left
+//      margin-bottom: 10px
+//      display: block
+//  .modal-create-project-background
+//    height: 164px
+//    cursor: pointer
+//    display: flex
+//    align-items: center
+//    flex-direction: column
+//    justify-content: center
+//    border-radius: 2px
+//    background-color: #f0eff4
+//    border: dashed 1px #b5b9c0
+//    margin-bottom: 39px
+//    &.error
+//      border: dashed 1px #fc2e5f
+//    img
+//      width: 100%
+//      height: 100%
+//      object-fit: cover
+//    i.photo
+//      width: 43px
+//      height: 43px
+//      background-image: url('/dist/img/icon/photo.svg')
+//      background-position: center
+//      background-repeat: no-repeat
+//      background-size: cover
+//      margin-bottom: 21px
+//      border-radius: 50%
+//      display: block
+//    .modal-create-project-background-span
+//      font-size: 17px
+//      display: block
+//      line-height: 1.29
+//      letter-spacing: 0.1px
+//      text-align: center
+//      color: #0e70e5
+//
+//.modal-redirect-point
+//  .modal-dialog
+//    width: 820px
+//  .modal-content
+//    border-radius: 0
+//    border: 0
+//    .modal-body
+//      height: 514px
+//      display: flex
+//      align-items: flex-start
+//      justify-content: space-between
+//      .modal-redirect-point-left
+//        display: inline-block
+//        vertical-align: top
+//        position: relative
+//        .logo
+//          position: absolute
+//          width: 150px
+//          height: 33px
+//          object-fit: cover
+//          top: 24px
+//          left: 24px
+//      .modal-redirect-point-right
+//        padding-left: 36px
+//        padding-right: 36px
+//        padding-top: 36px
+//        padding-bottom: 36px
+//        display: flex
+//        flex-direction: column
+//        justify-content: space-between
+//        height: 100%
+//        .btn.next
+//          border-radius: 22px
+//          background-color: #0063da
+//          padding: 0 24px
+//          line-height: 44px
+//          font-size: 12px
+//          text-align: center
+//          font-weight: 500
+//          color: #ffffff
+//        .desc-down
+//          font-size: 12px
+//          line-height: 18px
+//          text-align: left
+//          color: #282a36
+//          margin-bottom: 48px
+//          a
+//            font-weight: 600
+//            color: #0062d8
+//        .desc
+//          font-size: 15px
+//          line-height: 24px
+//          text-align: left
+//          color: #282a36
+//          margin-bottom: 24px
+//        h1
+//          width: 250px
+//          display: block
+//          margin: 0
+//          margin-bottom: 24px
+//          font-size: 24px
+//          font-weight: 600
+//          line-height: 29px
+//          letter-spacing: normal
+//          text-align: left
+//          color: #282a36
+//
+//.modal-create-project.modal-create-project-casting
+//  .modal-content
+//    padding-bottom: 40px
+//  .modal-privacy--users
+//    border-bottom: 0
+//  ul
+//    li
+//      &.default_project
+//        .name, .type
+//          font-size: 15px !important
+//          font-weight: 300 !important
+//          line-height: 1.33 !important
+//          text-align: left !important
+//          color: #6c7482 !important
+//        .plus-icon
+//          width: 42px
+//          display: inline-block
+//          vertical-align: top
+//          color: #fff
+//          line-height: 42px
+//          text-align: center
+//          height: 42px
+//          margin-right: 6px
+//          border-radius: 3px
+//          background-color: #d8d8d8
+//          background-size: 20px
+//          background-position: center
+//          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path fill="%23ffffff" fill-rule="evenodd" d="M48 22.5H25.5V0h-2.998v22.5H0v3h22.502V48H25.5V25.5H48z" opacity=""/></svg>')
+//      img
+//        width: 42px !important
+//        height: 42px !important
+//        border-radius: 2px !important
+//.modal-second-account
+//  .modal-content
+//    width: 470px
+//    border-radius: 16px
+//    box-shadow: 0 2px 8px 0 rgba(40, 42, 54, 0.04)
+//    background-color: #fff
+//    .close
+//      right: -17px
+//      top: - 17px
+//      span
+//        &:before
+//          color: #fff
+//    .modal-second-account-content
+//      padding: 32px
+//      .title
+//        color: #282a36
+//        font-size: 18px
+//        font-weight: 600
+//        font-style: normal
+//        font-stretch: normal
+//        line-height: 1.33
+//        letter-spacing: normal
+//        text-align: center
+//      p
+//        font-size: 14px
+//        font-weight: normal
+//        font-style: normal
+//        font-stretch: normal
+//        line-height: 1.29
+//        letter-spacing: normal
+//        color: $lm-gray-2
+//        text-align: center
+//        display: block
+//      .lm-second-account-actions
+//        .lm-primary-button
+//          width: 166px
+//          display: block
+//          margin: 0 auto
+//        margin-top: 24px
+//.modal-abuse
+//    .modal-title
+//        color: #282a36
+//        font-size: 18px
+//        font-weight: 600
+//    button.close
+//        top: 25px
+//        right: 12px
+//        &:hover
+//            span:before
+//                color: #0C111D
+//    .modal-dialog
+//        width: 488px
+//        .modal-abuse-content
+//            padding: 24px
+//            .title
+//                font-size: 14px
+//                font-weight: 600
+//                text-align: left
+//                color: #515562
+//                margin-bottom: 4px
+//            .radio-btn
+//                margin-bottom: 30px
+//                div
+//                    margin: 16px 0
+//            label
+//                font-size: 14px
+//                color: #515562
+//            .modal-abuse-comments
+//                label
+//                    font-size: 14px
+//                    color: #515562
+//                    margin-bottom: 8px
+//                    display: block
+//                textarea
+//                    margin-bottom: 30px
+//                    width: 100%
+//                    height: 128px
+//                    padding: 16px 12px
+//                    font-size: 14px
+//                    line-height: 1.71
+//                    text-align: left
+//                    &::placeholder
+//                        color: #808792
+//            .center
+//                text-align: center
+//                .add-screenshot
+//                    cursor: pointer
+//                    display: inline-block
+//                    margin-bottom: 40px
+//                    text-align: center
+//                    font-size: 12px
+//                    text-transform: uppercase
+//                    font-weight: 600
+//                    color: #0063da
+//                    padding-left: 24px
+//                    background-position: left center
+//                    background-size: contain
+//                    background-repeat: no-repeat
+//                    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16"><defs><path id="a" d="M9 4H7v3H4v2h3v3h2V9h3V7H9V4zM8 0c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8zm0 14c3.3 0 6-2.7 6-6s-2.7-6-6-6-6 2.7-6 6 2.7 6 6 6z"/></defs><g fill="none" fill-rule="evenodd"><mask id="b" fill="%230063da"><use xlink:href="%23a"/></mask><use fill="%230063da" fill-rule="nonzero" xlink:href="%23a"/><g fill="%230063da" mask="url(#b)"><path d="M0 0h16v16H0z"/></g></g></svg>')
+//                .btn.write
+//                    background: #0063da
+//                    color: #fff
+//                    padding: 0 20px
+//                    height: 44px
+//                    line-height: 44px
+//                    border: 0
+//                    border-radius: 22px
+//
+//
+.modal-locations
+  .modal-dialog
+    width: 252px
+    box-shadow: $panes__box-shadow
+    .close-modal
+      position: absolute
+      display: block
+      background-position: center
+      background-repeat: no-repeat
+      width: 14px
+      height: 14px
+      @include lm-close('%23ffffff')
+      right: -17px
+      top: -17px
+    .modal-content
+      border-radius: 8px
+      border: 0
+      padding: 32px 36px
+      text-align: center
+      position: relative
+      .modal-body
+        position: static
+        .title
+          color: $lm-gray-1
+          font-size: 14px
+          font-weight: 600
+          line-height: 18px
+          letter-spacing: 0.5px
+        h2
+          margin: 0
+          font-size: 18px
+          font-weight: 600
+          line-height: 24px
+          letter-spacing: 0.25px
+          color: $lm-gray-1
+        .actions
+          margin-top: 24px
+          #city
+            margin-bottom: 4px
+          .select2
+            margin-bottom: 8px !important
+            .select2-selection
+              border-radius: 16px
+          a
+            display: block
+            width: 100%
+            & + a
+              margin-top: 12px

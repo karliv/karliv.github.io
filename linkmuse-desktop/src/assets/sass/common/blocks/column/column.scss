@@ -1,0 +1,10 @@
+.column {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+  &.reverse {
+    flex-direction: column-reverse;
+  }
+}
+@import '__item/_column__item.scss';
+

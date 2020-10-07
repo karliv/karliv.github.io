@@ -1,0 +1,10 @@
+.page__body_feed {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 1136px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-bottom: $multiplicity*4;
+}
+

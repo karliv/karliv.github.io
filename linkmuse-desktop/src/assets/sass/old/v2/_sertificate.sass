@@ -1,0 +1,2461 @@
+.ss-dispute-sertificate, .ss-orders--item
+    border-radius: 2px
+    background-color: #ffffff
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.03)
+    padding-top: 20px
+    padding-bottom: 20px
+    margin-bottom: 20px
+    &.job
+        border-left: 2px solid #20dba9
+        .ss-orders--item-status
+            &:after
+                background-color: #20dba9
+        .ss-dispute-sertificate-head
+            .type
+                &:after
+                    background-color: #20dba9
+    &.meeting
+        border-left: 2px solid #0063da
+        .ss-orders--item-status
+            &:after
+                background-color: #0063da
+        .ss-dispute-sertificate-head
+            .type
+                &:after
+                    background-color: #0063da
+    &.canceled
+        border-left: 2px solid #fc2e5f
+        .ss-orders--item-status
+            &:after
+                background-color: #fc2e5f
+        .ss-dispute-sertificate-head
+            .type
+                &:after
+                    background-color: #fc2e5f
+    &.dispute
+        border-left: 2px solid #5c3396
+        .ss-orders--item-status
+            &:after
+                background-color: #5c3396
+        .ss-dispute-sertificate-head
+            .type
+                &:after
+                    background-color: #5c3396
+    &.untreated, &.not_paid
+        border-left: 2px solid #f5a623
+        .ss-orders--item-status
+            &:after
+                background-color: #f5a623
+        .ss-dispute-sertificate-head
+            .type
+                &:after
+                    background-color: #f5a623
+    &.finished
+        border-left: 2px solid $lm-gray-1
+        .ss-orders--item-status
+            &:after
+                background-color: $lm-gray-1
+        .ss-dispute-sertificate-head
+            .type
+                &:after
+                    background-color: $lm-gray-1
+    .ss-dispute-sertificate-head
+        padding-left: 24px
+        padding-right: 24px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-top: -20px
+        padding-top: 20px
+        padding-bottom: 15px
+        margin-bottom: 15px
+        border-bottom: 1px solid #f3f4f6
+        h3
+            margin: 0 !important
+            font-size: 18px
+            font-weight: 600
+            line-height: 24px
+            text-align: left
+            color: #282a36
+        .type
+            font-size: 12px
+            font-weight: 600
+            line-height: 15px
+            text-align: left
+            color: #808792
+            padding-left: 16px
+            position: relative
+            text-transform: uppercase
+            &:after
+                display: block
+                content: ''
+                position: absolute
+                width: 8px
+                height: 8px
+                border-radius: 50%
+                overflow: hidden
+                background-color: #fc2e5f
+                left: 0
+                top: 0
+                bottom: 0
+                margin: auto
+    .ss-dispute-sertificate-content
+        padding-left: 24px
+        padding-right: 24px
+        .ss-dispute-sertificate-content-top
+            display: flex
+            align-items: flex-start
+            justify-content: space-between
+            margin-bottom: 24px
+        .ss-sertificate-price-block
+            .text
+                font-size: 14px
+                text-transform: uppercase
+                color: #282a36
+                font-weight: 600
+            .price
+                font-size: 14px
+                color: #282a36
+                font-weight: 600
+        .ss-dispute-sertificate-content-info
+            text-align: left
+            display: flex
+            align-items: flex-start
+            justify-content: flex-start
+            &.beetwen
+                justify-content: space-between
+                .right
+                    flex: 1 auto
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    flex-wrap: wrap
+            .left
+                display: inline-block
+                vertical-align: top
+                font-size: 14px
+                text-align: left
+                color: #515562
+                line-height: 16px
+            .right
+                .lm-primary-button
+                    display: inline-block
+                    vertical-align: middle
+                .lm-checkbox-buttons
+                    display: inline-block
+                    vertical-align: top
+                    padding-left: 27px
+                .text
+                    font-size: 14px
+                    display: block
+                    text-align: left
+                    color: #515562
+                    line-height: 16px
+                    & + .text
+                        margin-top: 12px
+                .date
+                    display: block
+                    margin-bottom: 16px
+                    font-size: 14px
+                    text-align: left
+                    color: #808792
+                    padding-left: 22px
+                    @include calendar-icon('%23808792')
+                    background-size: 15px
+                    background-position: left center
+                    background-repeat: no-repeat
+                .point
+                    padding-left: 22px
+                    display: block
+                    font-size: 14px
+                    color: #0063da
+                    @include compas-icon('%230063da')
+                    background-size: 15px
+                    background-position: left center
+                    background-repeat: no-repeat
+.content-select-time
+    .content-select-time--line
+        text-align: left
+        & + .content-select-time--line
+            margin-top: 24px
+        .day
+            font-size: 14px
+            display: block
+            margin-bottom: 8px
+            text-align: left
+            color: #515562
+        .times.lm-flex
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+            div
+                position: relative
+                margin-right: 8px
+                margin-bottom: 8px
+                .remove-time
+                    width: 8px
+                    height: 8px
+                    @include lm-close()
+                    background-repeat: no-repeat
+                    background-position: center
+                    background-size: 8px
+                    right: 12px
+                    top: 0
+                    bottom: 0
+                    position: absolute
+                    margin: auto
+                    cursor: pointer
+        .times-item
+            width: auto
+            height: 44px
+            border-radius: 18px
+            text-align: center
+            cursor: pointer
+            line-height: 42px
+            font-size: 14px
+            display: block
+            padding: 0 16px
+            padding-right: 30px
+            margin-right: 0px !important
+            font-weight: 600
+            margin-bottom: 0
+            width: 95px !important
+            &.executor
+                width: 80px !important
+                padding-right: 16px
+            &.border
+                border: solid 1px #B5B9C0
+            &.error
+                border: solid 1px $lm-support-1 !important
+                color: $lm-support-1 !important
+                &::placeholder
+                    color: $lm-support-1 !important
+            &.selected, &:hover, &:focus
+                border: solid 1px #0063da
+                color: #282a36
+        .add-time
+            margin-bottom: 8px
+            display: inline-block
+            vertical-align: middle
+            width: 36px
+            height: 36px
+            background-size: 13px
+            background-position: center
+            border-radius: 50%
+            transition: all .3s ease
+            border: 1px solid $navy-blue-1
+            background-repeat: no-repeat
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><path fill="%230063da" fill-rule="evenodd" d="M6.037 6.037l-.031-4.52a1.023 1.023 0 0 1 .95-1.015.894.894 0 0 1 .962.894L7.95 6.05l4.654.032a.894.894 0 0 1 .894.963 1.023 1.023 0 0 1-1.015.95l-4.52-.032.031 4.52c.004.528-.421.982-.95 1.015a.894.894 0 0 1-.962-.894L6.05 7.95l-4.654-.032a.894.894 0 0 1-.894-.963 1.023 1.023 0 0 1 1.015-.95l4.52.032z"/></svg>')
+            &.disabled
+                transform: rotate(45deg)
+                border: 1px solid #cbd0d8
+                border: 1px solid $lm-gray-4
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><path fill="%23CBD0D8" fill-rule="evenodd" d="M6.037 6.037l-.031-4.52a1.023 1.023 0 0 1 .95-1.015.894.894 0 0 1 .962.894L7.95 6.05l4.654.032a.894.894 0 0 1 .894.963 1.023 1.023 0 0 1-1.015.95l-4.52-.032.031 4.52c.004.528-.421.982-.95 1.015a.894.894 0 0 1-.962-.894L6.05 7.95l-4.654-.032a.894.894 0 0 1-.894-.963 1.023 1.023 0 0 1 1.015-.95l4.52.032z"/></svg>')
+.ss-dispute-status
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.03)
+    .lm-primary-button.full
+        display: block
+        width: 100%
+        border-radius: 0
+        border-bottom-left-radius: 2px
+        border-bottom-right-radius: 2px
+        text-transform: uppercase
+        margin-top: -1px
+    &.meeting
+        .ss-dispute-warning-head
+            background-color: #0063da
+        .lm-tabs-header
+            height: 55px
+            border-bottom: solid 1px #cbd0d8
+            display: flex
+            align-items: center
+            justify-content: flex-start
+            padding-left: 24px
+            padding-right: 24px
+            background-color: #fbfbfb
+            li
+                a
+                    font-size: 14px
+                    line-height: 55px
+                    text-align: left
+                    color: #808792
+                    position: relative
+                    padding: 0 20px
+                    text-align: center
+                    &.active
+                        color: #282a36
+                        &:before
+                            content: ''
+                            display: block
+                            position: absolute
+
+                            left: 0
+                            bottom: 0
+                            width: 100%
+                            height: 2px
+                            background-color: #0063da
+
+    .ss-dispute-warning-content
+        background-color: #ffffff
+        border: solid 1px #cce0f8
+        border-top: 0
+        padding: 32px 24px
+        text-align: left
+        .ss-dispute-warning-content-params
+            & + .ss-dispute-warning-content-params
+                margin-top: 32px
+            .title
+                font-size: 18px
+                font-weight: 600
+                line-height: 24px
+                margin-bottom: 16px
+                display: block
+                text-align: left
+                color: #282a36
+            .text-desc
+                font-size: 14px
+                text-align: left
+                color: #808792
+            .inputs
+                display: flex
+                align-items: center
+                justify-content: flex-start
+                div
+                    & + div
+                        margin-left: 40px
+                    width: 120px
+                    input
+                        margin-bottom: 24px
+                    label
+                        color: #515562
+                        text-align: left
+                        margin-bottom: 8px
+                        font-size: 14px
+                        display: block
+                        &:before
+                            width: 12px
+                            height: 12px
+                            content: ''
+                            padding-left: 20px
+                            display: inline-block
+                            background-size: 12px
+                            background-position: left center
+                            vertical-align: middle
+                            background-repeat: no-repeat
+                        &.height
+                            &:before
+                                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14"><g fill="none" fill-rule="evenodd" stroke="%23808792" transform="translate(1 1)">  <ellipse cx="2.2" cy="1.636" rx="1.65" ry="1.636"/><path d="M7.15 0H11v12H7.15zM7.425 2.455H9.37M7.425 6.818H9.37M7.425 4.636h1.402M7.425 9h1.402M.037 4.967h4.316V8.16L3.33 9.68v2.278H1.112V9.68L.037 8.463z"/></g></svg>')
+                        &.weight
+                            &:before
+                                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><g fill="none" fill-rule="evenodd" stroke="%23808792">  <path d="M7.818 5.09L6.455 7M1 1h12v12H1z"/>  <path d="M10.818 7a3.818 3.818 0 0 0-7.636 0c4.917.031 3.216.04 7.636 0z"/></g></svg>')
+                        &.chest
+                            &:before
+                                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12"><g fill="%23808792" fill-rule="evenodd">  <path d="M0 0h11v2H0zM2 5h7v2H2zM2 10h7v2H2z"/>  </g></svg>')
+                        &.waist
+                            &:before
+                                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12"><g fill="%23808792" fill-rule="evenodd">  <path d="M0 5h11v2H0zM2 0h7v2H2zM2 10h7v2H2z"/>  </g></svg>')
+                        &.byrd
+                            &:before
+                                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12"><g fill="%23808792" fill-rule="evenodd">  <path d="M0 10h11v2H0zM2 0h7v2H2zM2 5h7v2H2z"/>  </g></svg>')
+
+        .actions
+            text-align: center
+            padding-bottom: 30px
+            a
+                display: inline-block
+        h2
+            margin: 0
+            font-size: 28px
+            font-weight: bold
+            text-align: left
+            color: #282a36
+            margin-bottom: 22px
+        h3
+            font-size: 24px
+            font-weight: 600
+            line-height: 24px
+            text-align: left
+            color: #282a36
+        .ss-dispute-warning-desc
+            font-size: 14px
+            line-height: 24px
+            text-align: left
+            color: #282a36
+            margin-bottom: 22px
+            i.calendar-fill-icon
+                line-height: 24px
+                vertical-align: middle
+                display: inline-block
+                width: 16px
+                height: 16px
+                background-size: contain
+                background-position: center
+                background-repeat: no-repeat
+                @include calendar-fill-icon('%230063da')
+            a
+                font-size: 12px
+                font-weight: 600
+                color: #0063da
+            b
+                font-weight: 600
+    .ss-dispute-warning-head
+        padding: 0 24px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        height: 64px
+        border-radius: 2px
+        background-color: #fc2e5f
+        .left
+            font-size: 18px
+            font-weight: 600
+            line-height: 24px
+            text-align: left
+            color: #ffffff
+        .icon-more
+            transform: rotate(-90deg)
+            color: #ffffff
+            font-size: 5px
+            .actions-item
+                text-align: left
+                transform: rotate(90deg)
+                top: -15px
+                left: -18px
+
+.ss-dispute-warning-content-params-wrap
+    .item
+        display: inline-block
+        width: 128px
+        height: 88px
+        border-radius: 12px
+        border: solid 1px #cbd0d8
+        padding: 16px
+        margin-bottom: 16px
+        &:not(:nth-child(3n))
+            margin-right: 16px
+        &.height
+            span
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14"><g fill="none" fill-rule="evenodd" stroke="%23808792" transform="translate(1 1)">  <ellipse cx="2.2" cy="1.636" rx="1.65" ry="1.636"/><path d="M7.15 0H11v12H7.15zM7.425 2.455H9.37M7.425 6.818H9.37M7.425 4.636h1.402M7.425 9h1.402M.037 4.967h4.316V8.16L3.33 9.68v2.278H1.112V9.68L.037 8.463z"/></g></svg>')
+        &.weight
+            span
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><g fill="none" fill-rule="evenodd" stroke="%23808792">  <path d="M7.818 5.09L6.455 7M1 1h12v12H1z"/>  <path d="M10.818 7a3.818 3.818 0 0 0-7.636 0c4.917.031 3.216.04 7.636 0z"/></g></svg>')
+        &.chest
+            span
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12"><g fill="%23808792" fill-rule="evenodd">  <path d="M0 0h11v2H0zM2 5h7v2H2zM2 10h7v2H2z"/>  </g></svg>')
+        &.waist
+            span
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12"><g fill="%23808792" fill-rule="evenodd">  <path d="M0 5h11v2H0zM2 0h7v2H2zM2 10h7v2H2z"/>  </g></svg>')
+        &.byrd
+            span
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12"><g fill="%23808792" fill-rule="evenodd">  <path d="M0 10h11v2H0zM2 0h7v2H2zM2 5h7v2H2z"/>  </g></svg>')
+        span
+            display: block
+            margin-bottom: 8px
+            font-size: 12px
+            font-weight: 600
+            text-transform: uppercase
+            letter-spacing: 0.4px
+            color: #808792
+            padding-left: 20px
+            background-repeat: no-repeat
+            background-position: left center
+            background-size: 12px
+        b
+            font-size: 28px
+            font-weight: 600
+            text-align: left
+            color: #282a36
+            font
+                font-size: 18px
+
+.ss-dialog-wrap
+    border-radius: 2px
+    background-color: #ffffff
+    min-height: 500px
+    height: calc(100vh - 100px)
+    max-height: calc(100vh - 100px)
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.03)
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    .ss-dialog-head
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-left: 32px
+        padding-right: 32px
+        height: 60px
+        min-height: 60px
+        max-height: 60px
+        border-bottom: solid 1px #f3f4f6
+        flex: 1 auto
+        .lm-input-wrap
+            margin: 0
+            width: 100%
+            margin-right: 12px
+        b
+            font-size: 18px
+            font-weight: 600
+            line-height: 24px
+            text-align: left
+            color: #282a36
+            margin-right: 16px
+        span
+            font-size: 14px
+            text-align: left
+            color: #808792
+        i.icon-search_L2
+            color: #cbd0d8
+            font-size: 18px
+            cursor: pointer
+            font-weight: bold
+    .ss-dialog-messages
+        text-align: left
+        padding-left: 26px
+        padding-right: 26px
+        flex: 1 auto
+        overflow-y: scroll
+        .date-message
+            letter-spacing: 0.1px
+            color: $dark-gray-1
+            font-size: 14px
+            text-align: center
+            margin: 36px 0
+            &:before, &:after
+                content: ''
+                display: inline-block
+                vertical-align: middle
+                background: $gainsboro-1
+                margin: 0 12px
+                height: 1px
+                width: 160px
+        .ss-dialog-messages-item
+            margin-bottom: 14px
+            .lm-user-block-info
+                width: 359px
+            .info-text
+                background-color: rgba(0, 99, 218, 0.05)
+                border-left: solid 2px #0063da
+                padding-left: 12px
+                padding-right: 10px
+                padding-top: 8px
+                padding-bottom: 8px
+                font-size: 14px
+                line-height: 24px
+                text-align: left
+                color: #282a36
+                a
+                    color: #0063da
+    .ss-dialog-text-write
+        border-top: solid 1px #f3f4f6
+        position: relative
+        .im_editable
+            text-align: left
+            border: 0
+            padding: 10px 24px
+            padding-right: 100px
+        .send
+            background-repeat: no-repeat
+            background-position: center
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19"><path fill="%23CBD0D8" fill-rule="nonzero" d="M.05 17.655l2.1-6.297c.115-.346.41-.602.77-.668l7.98-1.204L2.92 8.28a1.004 1.004 0 0 1-.77-.668L.05 1.317A1.002 1.002 0 0 1 1.419.092L4.9 1.7l14.904 6.879a1 1 0 1 1 0 1.816L1.418 18.879a.998.998 0 0 1-1.085-.163c-.307-.304-.403-.7-.282-1.061z"/></svg>')
+.ss-cart-block
+    .ss-cart-block-pay-card
+        padding-left: 0px
+        padding-right: 0px
+        padding-top: 32px
+        padding-bottom: 50px
+        position: relative
+        height: 477px
+        input
+            margin-bottom: 0
+        .ss-cart-block-text-bottom
+            position: absolute
+            bottom: 22px
+            width: 100%
+            left: 24px
+            text-align: left
+            color: #808792
+            font-size: 14px
+            a
+                color: #0063da
+        .ss-cart-block-pay-card-front
+            width: 341px
+            height: 215px
+            border-radius: 10px
+            background-color: #f3f4f6
+            border: solid 1px #a9aaba
+            position: absolute
+            top: 32px
+            left: 40px
+            padding: 30px 24px
+            z-index: 2
+            .expdate
+                margin-top: 16px
+                text-align: left
+                label
+                    font-size: 12px
+                    text-transform: uppercase
+                    font-weight: 600
+                    letter-spacing: 0.4px
+                    color: #282a36
+                    display: block
+                    margin-bottom: 4px
+                .mount-year
+                    .separator-pay
+                        padding: 0 8px
+                        font-size: 14px
+                        display: inline-block
+                        vertical-align: middle
+                        text-align: center
+                        color: #808792
+                    input
+                        padding: 0
+                        width: 56px
+                        text-align: center !important
+                        display: inline-block
+                        vertical-align: middle
+                        border-radius: 3px
+                        background-color: #ffffff
+                        border: solid 1px #dddddd
+            .payment-logos
+                text-align: right
+                margin-bottom: 24px
+                img
+                    margin-left: 5px
+                    display: inline-block
+                    vertical-align: middle
+        .ss-cart-block-pay-card-back
+            z-index: 1
+            width: 341px
+            height: 215px
+            border-radius: 10px
+            background-color: #cbd0d8
+            border: solid 0.8px #808792
+            position: absolute
+            top: 66px
+            right: 38px
+            .black-line
+                height: 51px
+                width: 100%
+                position: absolute
+                top: 30px
+                left: 0
+                background-color: #808792
+            .cvc-wrap
+                position: absolute
+                width: 96px
+                left: 200px
+                height: auto
+                top: 98px
+                text-align: left
+                input
+                    width: 76px
+                    height: 36px
+                    line-height: 36px
+                    border-radius: 3px
+                    background-color: #ffffff
+                    border: solid 1px #dddddd
+                    padding-left: 16px
+                    padding-right: 19px
+                    font-size: 14px
+                    text-align: left
+                    color: #808792
+                    margin-bottom: 4px
+                label
+                    display: block
+                    font-size: 12px
+                    text-align: left
+                    color: #515562
+
+    .ss-cart-block-head, .ss-cart-block-bottom
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-left: 24px
+        padding-right: 24px
+        height: 60px
+        &:not(.ss-cart-block-top)
+            border-top: solid 1px #f3f4f6
+        &:not(.ss-cart-block-bottom)
+
+            border-bottom: solid 1px #f3f4f6
+        h3
+            margin: 0
+            font-size: 18px
+            font-weight: 600
+            line-height: 24px
+            text-align: left
+            color: #282a36
+        a.edit-link
+            font-size: 12px
+            font-weight: 600
+            color: #808792
+            text-transform: uppercase
+        .total
+            font-size: 28px
+            font-weight: bold
+            color: #282a36
+    .ss-cart-block-info
+        padding-left: 24px
+        padding-top: 22px
+        padding-right: 24px
+        padding-bottom: 24px
+        text-align: left
+        .ss-cart-block-info-line + .ss-cart-block-info-line
+            margin-top: 24px
+        .left
+            width: 97px
+            margin-right: 24px
+            display: inline-block
+            vertical-align: top
+            font-size: 14px
+            text-align: left
+            color: #808792
+        .right
+            display: inline-block
+            vertical-align: top
+            width: 230px
+            .lm-user-block.small
+                img
+                    vertical-align: middle
+                .lm-user-block-info
+                    vertical-align: middle
+                .lm-user-block-info-name
+                    margin-bottom: 0
+                    font-size: 18px
+            .place
+                font-size: 14px
+                line-height: 18px
+                text-align: left
+                color: #282a36
+            ul
+                list-style: none
+                li
+                    display: block
+                    a
+                        font-size: 14px
+                        line-height: 24px
+                        text-align: left
+                        color: #282a36
+    .ss-cart-block-left
+        width: 575px
+        float: left
+        border-radius: 2px
+        background-color: #ffffff
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.03)
+        .lm-primary-button.full
+            width: 100%
+            display: block
+            height: 64px
+            line-height: 64px
+            border-radius: 0
+            text-transform: uppercase
+    .ss-cart-block-right
+        float: right
+        width: 404px
+        border-radius: 2px
+        background-color: #ffffff
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.03)
+
+.ss-sertificate-photos
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+
+    &:after
+        content: ''
+        display: block
+        height: 1px
+        width: 144px
+    &.edited
+        &.videos
+            .ss-sertificate-photo.video
+                position: relative
+                &:after
+                    content: ''
+                    display: block
+                    position: absolute
+                    top: 0
+                    bottom: 0
+                    margin: auto
+                    left: 0
+                    right: 0
+                    opacity: 0.7
+                    width: 12.5px
+                    height: 11.5px
+                    background-position: center
+                    background-size: 12.5px 11.5px
+                    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14"><path fill="%23FFFFFF" fill-rule="evenodd" d="M11.053 7.884l-8.97 5.074a1 1 0 0 1-1.492-.87V1.94a1 1 0 0 1 1.493-.87l8.969 5.073a1 1 0 0 1 0 1.74z"/></svg>')
+                &:before
+                    border-radius: 50%
+                    width: 32px
+                    height: 32px
+                    content: ''
+                    display: block
+                    position: absolute
+                    top: 0
+                    bottom: 0
+                    margin: auto
+                    left: 0
+                    right: 0
+                    opacity: 0.7
+                    background-color: #282a36
+        .ss-sertificate-photo
+            &:hover
+                i.icon-remove
+                    display: block
+            i.icon-remove
+                z-index: 3
+                position: absolute
+                width: 16px
+                height: 16px
+                background-size: 16px
+                background-repeat: no-repeat
+                background-position: center
+                top: 8px
+                right: 8px
+                display: none
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="%23ffffff" d="M10.1 4.5L8 6.6 5.9 4.5 4.5 5.9 6.6 8l-2.1 2.1 1.4 1.4L8 9.4l2.1 2.1 1.4-1.4L9.4 8l2.1-2.1-1.4-1.4z"/></svg>')
+                cursor: pointer
+    .ss-sertificate-photo-upload
+        width: 144px
+        cursor: pointer
+        margin-bottom: 4px
+        height: 100px
+        position: relative
+        background-position: center
+        background-repeat: no-repeat
+        background-size: 16px
+        @include icon-download-top('%23111111')
+        border-radius: 3px
+        background-color: #fbfbfb
+        border: dashed 0.5px #cad1d9
+        .ss-sertificate-photo-upload--label
+            margin-top: 24px
+            width: 100%
+            display: block
+            font-size: 12px
+            font-weight: 600
+            font-style: normal
+            font-stretch: normal
+            line-height: normal
+            letter-spacing: 0.4px
+            text-transform: none
+            color: #808792
+            text-align: center
+            top: 50%
+            position: absolute
+        &.loading
+            background-color: transparent
+            background-size: 40px
+            background-image: url('data:image/svg+xml;utf8,<svg class="lds-default" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"><circle cx="72" cy="50" fill="undefined" r="3"><animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.875s"></animate><animate attributeName="fill" values="%23ffffff;%23ffffff;fff;%23ffffff;%23ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.875s"></animate></circle><circle cx="65.556" cy="65.556" fill="undefined" r="3"><animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.75s"></animate><animate attributeName="fill" values="%23ffffff;%23ffffff;fff;%23ffffff;%23ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.75s"></animate></circle><circle cx="50" cy="72" fill="undefined" r="3"><animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.625s"></animate><animate attributeName="fill" values="%23ffffff;%23ffffff;fff;%23ffffff;%23ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.625s"></animate></circle><circle cx="34.444" cy="65.556" fill="undefined" r="3"><animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.5s"></animate><animate attributeName="fill" values="%23ffffff;%23ffffff;fff;%23ffffff;%23ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.5s"></animate></circle><circle cx="28" cy="50" fill="undefined" r="3.20715"><animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.375s"></animate><animate attributeName="fill" values="%23ffffff;%23ffffff;fff;%23ffffff;%23ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.375s"></animate></circle><circle cx="34.444" cy="34.444" fill="undefined" r="4.20715"><animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.25s"></animate><animate attributeName="fill" values="%23ffffff;%23ffffff;fff;%23ffffff;%23ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.25s"></animate></circle><circle cx="50" cy="28" fill="undefined" r="4.79285"><animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.125s"></animate><animate attributeName="fill" values="%23ffffff;%23ffffff;fff;%23ffffff;%23ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.125s"></animate></circle><circle cx="65.556" cy="34.444" fill="undefined" r="3.79285"><animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="0s"></animate><animate attributeName="fill" values="%23ffffff;%23ffffff;fff;%23ffffff;%23ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="0s"></animate></circle></svg>')
+        input
+            display: none
+    .ss-sertificate-photo-error
+        width: 144px
+        margin-bottom: 4px
+        height: 100px
+        cursor: pointer
+        position: relative
+        &:before
+            background-repeat: no-repeat
+            background-color: transparent
+            content: ''
+            display: block
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            z-index: 11
+            bottom: 0
+            margin: auto
+            width: 16px
+            height: 16px
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="%23FC2E5F" fill-rule="evenodd" d="M0 8c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8zm2 0c0 3.3 2.7 6 6 6s6-2.7 6-6-2.7-6-6-6-6 2.7-6 6z" clip-rule="evenodd"/><path fill="%23FC2E5F" d="M7 4h2v5H7V4zM8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>')
+            background-position: center
+    .ss-sertificate-photo
+        width: 144px
+        margin-bottom: 4px
+        height: 100px
+        display: block
+        cursor: pointer
+        position: relative
+        &.loading
+            &:after
+                display: none !important
+            .icon-remove
+                display: block !important
+            &:before
+                opacity: 1
+                background-color: rgba(40, 42, 54, 0.5)
+                background-image: url('data:image/svg+xml;utf8,<svg class="lds-default" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"><circle cx="72" cy="50" fill="undefined" r="3"><animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.875s"></animate><animate attributeName="fill" values="%23ffffff;%23ffffff;fff;%23ffffff;%23ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.875s"></animate></circle><circle cx="65.556" cy="65.556" fill="undefined" r="3"><animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.75s"></animate><animate attributeName="fill" values="%23ffffff;%23ffffff;fff;%23ffffff;%23ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.75s"></animate></circle><circle cx="50" cy="72" fill="undefined" r="3"><animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.625s"></animate><animate attributeName="fill" values="%23ffffff;%23ffffff;fff;%23ffffff;%23ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.625s"></animate></circle><circle cx="34.444" cy="65.556" fill="undefined" r="3"><animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.5s"></animate><animate attributeName="fill" values="%23ffffff;%23ffffff;fff;%23ffffff;%23ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.5s"></animate></circle><circle cx="28" cy="50" fill="undefined" r="3.20715"><animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.375s"></animate><animate attributeName="fill" values="%23ffffff;%23ffffff;fff;%23ffffff;%23ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.375s"></animate></circle><circle cx="34.444" cy="34.444" fill="undefined" r="4.20715"><animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.25s"></animate><animate attributeName="fill" values="%23ffffff;%23ffffff;fff;%23ffffff;%23ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.25s"></animate></circle><circle cx="50" cy="28" fill="undefined" r="4.79285"><animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.125s"></animate><animate attributeName="fill" values="%23ffffff;%23ffffff;fff;%23ffffff;%23ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.125s"></animate></circle><circle cx="65.556" cy="34.444" fill="undefined" r="3.79285"><animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="0s"></animate><animate attributeName="fill" values="%23ffffff;%23ffffff;fff;%23ffffff;%23ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="0s"></animate></circle></svg>')
+                background-position: center
+                background-repeat: no-repeat
+                background-size: 40px
+                content: ''
+                left: 0
+                top: 0
+                display: block
+                position: absolute
+                width: 100% !important
+                height: 100% !important
+        &:hover
+            i.icon-share
+                display: block
+            &:after
+                display: block
+                content: ''
+                position: absolute
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                background-color: rgba(40, 42, 54, 0.5)
+                z-index: 2
+        i.icon-share
+            z-index: 3
+            position: absolute
+            width: 24px
+            height: 24px
+            display: none
+            color: #ffffff
+            right: 8px
+            bottom: 8px
+            font-size: 12px
+            cursor: pointer
+            line-height: 24px
+            text-align: center
+        .number-ss-sertificate-photo
+            z-index: 3
+            position: absolute
+            width: 16px
+            height: 16px
+            color: #282a36
+            right: 8px
+            bottom: 8px
+            font-size: 9px
+            cursor: pointer
+            text-align: center
+            background: #fff
+            border-radius: 50%
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+.ss-sertificate-photos-text
+    font-size: 12px
+    line-height: 1.5
+    text-align: left
+    color: #808792
+    i.icon-share
+        color: #515562
+        font-size: 10px
+    .number-ss-sertificate-photo
+        display: inline-block
+        width: 16px
+        height: 16px
+        color: #fff
+        right: 8px
+        bottom: 8px
+        font-size: 9px
+        text-align: center
+        background: #808792
+        border-radius: 50%
+
+.ss-sertificate-raiting
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 66px
+    .ss-sertificate-raiting-item
+        background-repeat: no-repeat
+        background-size: 20px
+        background-position: center
+        display: block
+        width: 20px
+        height: 20px
+        cursor: pointer
+        & + .ss-sertificate-raiting-item
+            margin-left: 14px
+        @include like-icon('%23cbd0d8')
+        &:hover, &.active
+            @include like-icon('%230063da')
+
+.ss-orders
+    &.ss-orders--list
+        .ss-orders-head
+            border: 0
+        .ss-orders--list-wrap
+            margin-top: 0
+            display: flex
+            align-items: flex-start
+            justify-content: space-between
+            .ss-orders-list--left
+                width: 745px
+                .ss-orders--item
+                    width: 100%
+                    display: flex
+                    padding: 0
+                    align-items: flex-start
+                    justify-content: flex-start
+                    border-radius: 2px
+                    background-color: $lm-white
+                    box-shadow: 0 2px 8px 0 rgba(40, 42, 54, 0.03)
+                    margin-bottom: 20px
+                    .ss-orders--item--left
+                        padding: 24px
+                        border-right: 1px solid rgba(40, 42, 54, 0.03)
+                        width: 232px
+                        flex: 1 0 auto
+                        .ss-orders--item--name
+                            margin-top: 8px
+                            margin-bottom: 30px
+                            display: inline-block
+                            vertical-align: middle
+                            font-size: 14px
+                            font-weight: 600
+                            line-height: 24px
+                            color: $lm-main
+                        .ss-orders--item-status
+                            text-transform: uppercase
+                            font-size: 12px
+                            font-weight: 600
+                            color: $lm-gray-3
+                            padding-left: 20px
+                            position: relative
+                            &:after
+                                display: inline-block
+                                vertical-align: middle
+                                width: 8px
+                                height: 8px
+                                content: ''
+                                border-radius: 50%
+                                position: absolute
+                                left: 0
+                                top: 0
+                                bottom: 0
+                                margin: auto
+                    .ss-orders--item--right
+                        padding: 24px
+                        width: 511px
+                        .ss-orders--item--info-top
+                            display: flex
+                            align-items: flex-start
+                            justify-content: space-between
+                            margin-bottom: 24px
+                            .title
+                                font-size: 12px
+                                font-weight: 600
+                                line-height: 24px
+                                color: $lm-gray-3
+                                text-transform: uppercase
+                            .desc
+                                font-size: 14px
+                                font-weight: normal
+                                line-height: 24px
+                                color: $lm-gray-1
+                                &.gray
+                                    color: $lm-gray-3
+                            .price
+                                font-size: 18px
+                                font-weight: 600
+                                line-height: 24px
+                                color: $lm-gray-1
+                        .ss-orders--item--info-bottom
+                            display: flex
+                            align-items: center
+                            justify-content: space-between
+                            .ss-orders--item--info-bottom--left
+                                .moderate-wait
+                                    font-size: 14px
+                                    line-height: 24px
+                                    color: $lm-support-1
+                            .ss-orders--item--info-bottom--right
+                                display: flex
+                                align-items: center
+                                justify-content: flex-end
+                                a
+                                    &.pay
+                                        @include lm-wallet('%23FFFFFF')
+                                    & + a
+                                        margin-left: 8px
+        .ss-orders-list--right
+            margin-left: 21px
+            width: 234px
+            .orders-filter
+                background-color: $lm-white
+                padding-top: 10px
+                padding-bottom: 10px
+                box-shadow: 0 2px 8px 0 rgba(40, 42, 54, 0.03)
+                border-radius: 2px
+                position: relative
+                &.loading
+                    &:after
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        background: #fff;
+                        top: 0;
+                        opacity: 0.3;
+                ul
+                    list-style: none
+                    li
+                        display: block
+                        height: 44px
+                        line-height: 44px
+                        padding-left: 44px
+                        padding-right: 24px
+                        &.active
+                            position: relative
+                            background-color: rgba(0, 99, 218, 0.05)
+                            &:before
+                                content: ''
+                                display: block
+                                background-color: $lm-main
+                                width: 2px
+                                height: 100%
+                                position: absolute
+                                top: 0
+                                left: 0
+                            .name
+                                font-weight: 600
+                        &:hover
+                            background-color: rgba(0, 99, 218, 0.02)
+                        a
+                            height: 100%
+                            width: 100%
+                            display: flex
+                            align-items: center
+                            line-height: 44px
+                            justify-content: space-between
+                            .name
+                                font-size: 14px
+                                color: $lm-gray-1
+                                position: relative
+                                &.all
+                                    &:after
+                                        background-color: $lm-gray-4
+                                &.not-pay
+                                    &:after
+                                        background-color: $lm-support-3
+                                &.payed
+                                    &:after
+                                        background-color: $lm-support-2
+                                &.dispute
+                                    &:after
+                                        background-color: $lm-support-4
+                                &.canceled
+                                    &:after
+                                        background-color: $lm-support-1
+                                &.finished
+                                    &:after
+                                        background-color: $lm-gray-2
+                                &:after
+                                    width: 8px
+                                    height: 8px
+                                    content: ''
+                                    display: block
+                                    position: absolute
+                                    top: 0
+                                    bottom: 0
+                                    left: -20px
+                                    border-radius: 50%
+                                    margin: auto
+                            .count
+                                font-size: 12px
+                                font-weight: 600
+                                text-align: right
+                                color: $lm-gray-3
+    .ss-orders-head
+        margin-left: -32px
+        padding-left: 32px
+        padding-bottom: 32px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        border-bottom: 2px solid rgba(40, 42, 54, 0.05)
+        h1
+            font-size: 28px
+            font-weight: bold
+            text-align: left
+            color: #282a36
+            margin: 0 !important
+        .right
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            .balance
+                display: flex
+                align-items: center
+                i
+                    display: inline-block
+                    vertical-align: middle
+                    background-size: 16px
+                    height: 16px
+                    width: 16px
+                    margin-right: 8px
+                    @include lm-wallet('%230063da')
+                    background-repeat: no-repeat
+                    background-position: center
+                span.text
+                    margin-right: 4px
+                    vertical-align: middle
+                    text-transform: uppercase
+                    font-size: 12px
+                    font-weight: 500
+                    text-align: left
+                    font-weight: 500
+                    color: $lm-main
+                a
+                    vertical-align: middle
+                    text-decoration: underline
+                    color: #282a36
+                    font-size: 12px
+            .ss-settings-button, .lm-link-button
+                margin-left: 36px
+                font-size: 12px
+            .ss-settings-button
+                i,span
+                    display: inline-block
+                    vertical-align: middle
+                    font-weight: 600
+                i
+                    margin-right: 4px
+                    width: 16px
+                    height: 16px
+                    background-repeat: no-repeat
+                    background-size: 16px
+                    @include lm-settings-gear('%23515562')
+    .ss-orders-content
+        margin-top: 22px
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        &.full
+            display: block
+            .ss-orders-content-filter
+                display: flex
+                align-items: center
+                justify-content: space-between
+                .left
+                    ul
+                        display: flex
+                        align-items: center
+                        justify-content: flex-start
+                        list-style: none
+                        margin-bottom: 20px
+                        li
+                            margin-right: 24px
+                            a
+                                font-size: 12px
+                                font-weight: 600
+                                line-height: 15px
+                                text-align: left
+                                color: #808792
+                                text-transform: uppercase
+                                &.disabled
+                                    color: #cbd0d8
+                                    &:before
+                                        background-color: #cbd0d8 !important
+                                &:before
+                                    content: ''
+                                    display: inline-block
+                                    border-radius: 50%
+                                    height: 8px
+                                    width: 8px
+                                    margin-right: 8px
+                                &.cancel
+                                    &:before
+                                        background-color: #20dba9
+                                &.success
+                                    &:before
+                                        background-color: #fc2e5f
+            .ss-orders-list--item
+                padding-top: 16px
+                padding-bottom: 16px !important
+                padding-right: 16px
+                .ss-orders-list--item-content
+                    margin-top: 0
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    .left-content
+                        flex: none
+                        width: 218px
+                    .right-content
+                        padding-left: 84px
+
+                        flex: 1 auto
+                        .photos
+                            display: flex
+                            align-items: center
+                            justify-content: flex-start
+                            .photos-item
+                                & + .photos-item
+                                    margin-left: 4px
+                                img
+                                    width: 128px
+                                    height: 128px
+                                    object-fit: cover
+                        .no-photos
+                            font-size: 14px
+                            text-align: center
+                            color: #808792
+        .ss-orders-list
+            .ss-orders-list--item
+                padding-bottom: 32px
+                border-radius: 2px
+                margin-bottom: 12px
+                background-color: #ffffff
+                box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.03)
+                padding-left: 24px
+                &.dispute
+                    border-left: 2px solid #fc2e5f
+                    .ss-orders-list--item-head
+                        .left
+                            .type
+                                background-color: #fc2e5f
+                &.agreement
+                    border-left: 2px solid #808792
+                    .ss-orders-list--item-head
+                        .left
+                            .type
+                                background-color: #808792
+                &.meeting
+                    border-left: 2px solid #0063da
+                    .ss-orders-list--item-head
+                        .left
+                            .type
+                                background-color: #0063da
+                &.job
+                    border-left: 2px solid #20dba9
+                    .ss-orders-list--item-head
+                        .left
+                            .type
+                                background-color: #20dba9
+
+                &.untreated, &.not_paid
+                    border-left: 2px solid #f5a623
+                    .ss-orders-list--item-head
+                        .left
+                            .type
+                                background-color: #f5a623
+                .ss-orders-list--item-head
+                    border-bottom: 1px solid #f3f4f6
+                    height: 48px
+                    margin-left: -24px
+                    padding-left: 24px
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    .right
+                        .calendar-icon
+                            cursor: pointer
+                            @include calendar-icon('%23cbd0d8')
+                            width: 16px
+                            height: 16px
+                            display: block
+                            background-size: 16px
+                            margin-right: 16px
+                            background-repeat: no-repeat
+                            background-position: center
+                    .left
+                        .type
+                            display: inline-block
+                            width: 8px
+                            height: 8px
+                            margin-right: 4px
+                            vertical-align: middle
+                            background-color: #fff
+                            border-radius: 50%
+                            overflow: hidden
+                        span
+                            display: inline-block
+                            vertical-align: middle
+                            font-size: 12px
+                            font-weight: 600
+                            line-height: 15px
+                            text-align: left
+                            color: #808792
+                            text-transform: uppercase
+                .ss-orders-list--item-content
+                    margin-top: 15px
+                    .lm-user-block
+                        display: block
+                        margin-bottom: 24px
+                    .ss-orders-list--item-params
+                        display: flex
+                        align-items: flex-start
+                        justify-content: flex-start
+
+                        .left
+                            margin-right: 24px
+                            font-size: 14px
+                            text-align: left
+                            color: #808792
+                        .right
+                            flex: 1 auto
+                            ul
+                                list-style-position: inside
+                                li
+                                    font-size: 14px
+                                    font-weight: 600
+                                    text-align: left
+                                    color: #282a36
+                                    margin-bottom: 12px
+                                    label
+                                        font-weight: 600
+                                        color: #282a36
+        .ss-orders-column
+            width: 319px
+        .ss-orders-column-head
+            margin-bottom: 14px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            .select2.select2-container
+                margin-bottom: 0 !important
+            .ss-orders-column-title
+                font-size: 24px
+                font-weight: 600
+                text-align: left
+                color: #515562
+.ss-popup
+    z-index: 99999
+    background-color: rgba(40, 42, 54, 0.5)
+    position: absolute
+    width: auto
+    height: 100%
+    top: 0
+    right: 0
+    min-height: 600px
+    .ss-popup-wrap
+        display: flex
+        justify-content: flex-end
+        height: 100%
+        min-width: 1024px
+        .ss-popup-right
+            display: flex
+            justify-content: space-between
+            flex-direction: column
+            .ss-popup-right-top
+                flex: 1 auto
+                overflow: scroll
+                .lm-tabs-header
+                    padding: 0
+            .ss-popup-right-bottom
+                .actions
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    padding: 12px 24px
+                    .lm-primary-button, .lm-link-button
+                        padding: 0 24px
+                        font-size: 12px
+                        height: 40px
+                        line-height: 40px
+                        font-weight: 600
+                        letter-spacing: 1px
+                        box-sizing: content-box
+                        min-width: 96px
+                        text-align: center
+                .service
+                    padding: 20px 24px
+                    border-top: solid 1px #cbd0d8
+                    border-bottom: solid 1px #cbd0d8
+                    .service-top
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        margin-bottom: 8px
+                        .left
+                            display: flex
+                            align-items: center
+                            .number
+                                font-size: 18px
+                                font-weight: 600
+                                line-height: 24px
+                                text-align: left
+                                color: #282a36
+                                margin-right: 16px
+                            .edit-service
+                                @include lm-pencil('%23cbd0d8')
+                                background-position: center
+                                background-size: 16px
+                                background-repeat: no-repeat
+                                width: 16px
+                                height: 16px
+                                display: block
+                                min-width: 16px
+                        .right
+                            margin-left: 50px
+                            .price-text
+                                font-size: 12px
+                                font-weight: 600
+                                line-height: 16px
+                                letter-spacing: 1px
+                                color: #808792
+                                text-transform: uppercase
+                    .service-bottom
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        .left
+                            span
+                                display: block
+                                font-size: 8px
+                                font-weight: 600
+                                line-height: 12px
+                                letter-spacing: 1px
+                                color: #808792
+                                text-transform: uppercase
+                        .right
+                            .price
+                                font-size: 18px
+                                font-weight: 600
+                                font-style: normal
+                                font-stretch: normal
+                                line-height: 1.33
+                                letter-spacing: normal
+                                color: #282a36
+
+            .ss-popup-info-user-content
+                .sertificate-items
+                    .sertificate-item-head
+                        display: flex
+                        align-items: center
+                        padding: 0 24px
+                        padding-top: 15px
+                        padding-bottom: 8px
+                        margin: 0 -24px
+                        padding-right: 16px
+                        border-bottom: solid 1px #f3f4f6
+                        span
+                            font-size: 12px
+                            text-align: left
+                            color: #808792
+                            &.left
+                                width: 210px
+                                padding-right: 24px
+                                flex: none
+                            &.center
+                                width: 141px
+                                padding-right: 16px
+                                flex: none
+                            &.right
+                                flex: 1 auto
+                    .sertificate-item
+                        display: flex
+                        align-items: flex-start
+                        justify-content: space-between
+                        padding: 16px 24px
+                        padding-right: 16px
+                        margin: 0 -24px
+                        & + .sertificate-item
+                                border-top: solid 1px #f3f4f6
+                        div
+                            &.left
+                                width: 210px
+                                padding-right: 24px
+                                flex: none
+                                .lm-user-block
+                                    .lm-user-block-info
+                                        width: 133px
+                                        .lm-user-block-info-name, .lm-user-block-info-type
+                                            overflow: hidden
+                                            text-overflow: ellipsis
+                                            white-space: nowrap
+
+                            &.center
+                                width: 141px
+                                padding-right: 16px
+                                flex: none
+                                span.type
+                                    font-size: 14px
+                                    line-height: 24px
+                                    text-align: left
+                                    color: #808792
+
+                            &.right
+                                flex: 1 auto
+                                span
+                                    font-size: 14px
+                                    font-weight: 600
+                                    text-align: center
+                                    color: #282a36
+
+                .service-items
+                    .service-item-head
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        padding: 0 24px
+                        padding-top: 15px
+                        padding-bottom: 8px
+                        margin: 0 -24px
+                        border-bottom: solid 1px #f3f4f6
+                        span
+                            width: 50%
+                            font-size: 12px
+                            text-align: left
+                            color: #808792
+                    .service-item
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        padding: 16px 24px
+                        padding-right: 16px
+                        margin: 0 -24px
+                        .service-item-left
+                            width: 50%
+                            display: flex
+                            align-items: center
+                            justify-content: flex-start
+                            flex-wrap: wrap
+                        .service-item-right
+                            width: 50%
+                            display: flex
+                            align-items: center
+                            justify-content: space-between
+                            .price
+                                font-size: 18px
+                                font-weight: 600
+                                line-height: 24px
+                                text-align: left
+                                color: #282a36
+                            .lm-primary-button
+                                text-transform: uppercase
+                        & + .service-item
+                            border-top: solid 1px #f3f4f6
+                        .name
+                            span
+                                font-size: 14px
+                                font-weight: 600
+                                line-height: 24px
+                                text-align: left
+                                color: #282a36
+                            .questions-icon
+                                margin-left: 4px
+                                display: inline-block
+                                vertical-align: middle
+                                width: 20px
+                                height: 20px
+                                cursor: pointer
+                        .type
+                            margin-left: 4px
+                            font-size: 14px
+                            line-height: 24px
+                            text-align: left
+                            color: #808792
+
+                .info-items
+                    .info-item
+                        & + .info-item
+                            margin-top: 26px
+                        display: flex
+                        align-items: flex-start
+                        justify-content: flex-start
+                        .left
+                            flex: none
+                            width: 100px
+                            margin-right: 24px
+                            text-align: left
+                            color: #808792
+                            font-size: 14px
+                        .right
+                            flex: 1 auto
+                            font-size: 14px
+                            text-align: left
+                            color: #282a36
+                            a
+                                color: #0063da
+                                text-decoration: underline
+                                white-space: nowrap
+                                overflow: hidden
+                                text-overflow: ellipsis
+                                display: block
+                                width: 80%
+
+            position: relative
+            .icon-close2
+                color: #282a36
+                font-size: 10px
+                font-weight: bold
+                position: absolute
+                top: 32px
+                right: 32px
+            width: 436px
+            background-color: #ffffff
+            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.03)
+            padding-top: 48px
+            .lm-user-vertical
+                margin-bottom: 36px
+            .ss-popup-info-user
+                .ss-popup-info-user-head
+                    border-bottom: solid 1px #f3f4f6
+                    height: 36px
+                    ul
+                        list-style: none
+                        display: flex
+                        align-items: center
+                        justify-content: flex-start
+                        padding: 0 24px
+                        li
+                            & + li
+                                margin-left: 12px
+                            &.active
+                                a
+                                    color: #282a36
+                                    &:before
+                                        content: ''
+                                        display: block
+                                        position: absolute
+                                        bottom: 0
+                                        left: 0
+                                        width: 100%
+                                        height: 2px
+                                        border-radius: 5px
+                                        background-color: #0063da
+                            a
+                                padding: 0 12px
+                                padding-bottom: 20px
+                                position: relative
+                                font-size: 12px
+                                text-transform: uppercase
+                                font-weight: 600
+                                color: #808792
+        .ss-popup-left
+            width: 594px
+            padding-top: 48px
+            padding-bottom: 48px
+            background-color: #282a36
+            .ss-popup-content
+                height: 100%
+                .save-button
+                    height: 36px
+                    display: block
+                    line-height: 34px
+                    color: #fff
+                    border-color: #fff
+                    margin-bottom: 36px
+                    margin-top: -24px
+                    &:hover
+                        background-color: transparent
+                        border-color: #CBD0D8
+                        color: #CBD0D8
+                .ss-popup-upload-wrap
+                    border-radius: 2px
+                    background-color: #282a36
+                    min-height: 100px
+                    border: 1px dashed #515562
+                    margin-top: 12px
+                    margin-bottom: 36px
+                    &.center
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        .ss-upload-wrap-text
+                            font-size: 12px
+                            font-weight: 600
+                            line-height: 16px
+                            letter-spacing: 1px
+                            color: #515562
+                            text-transform: uppercase
+                .ss-popup-content-media-wrap
+                    position: relative
+                    height: 100%
+                    display: flex
+                    flex-direction: column
+                    .ss-popup-content-media-arrow
+                        position: absolute
+                        opacity: 0.5
+                        @include icon-prev-next('%23f3f4f6')
+                        top: 0
+                        bottom: 0
+                        margin: auto
+                        height: 100%
+                        width: 12px
+                        background-position: center
+                        background-repeat: no-repeat
+                        background-size: 13px
+                        &:hover
+                            opacity: 1
+                        &.prev
+                            padding-left: 60px
+                            left: 0
+                        &.next
+                            right: 0
+                            transform: scale(-1,1)
+                            padding-right: 60px
+                    .ss-popup-content-media-wrap-head
+                        padding: 0 30px
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        .back
+                            display: block
+                            width: 13px
+                            height: 12px
+                            @include icon-arrow('%23FFFFFF')
+                            background-repeat: no-repeat
+                            background-position: center
+                            background-size: 13px 12px
+                        .icon-more
+                            color: #fff
+                            font-size: 5px
+                    .ss-popup-content-media-wrap-content
+                        display: flex
+                        flex: 1 auto
+                        align-items: center
+                        justify-content: center
+                        height: 100%
+                        overflow: hidden
+                        .icon-play-video
+                            @include icon-play-video
+                            background-position: center
+                            background-size: 48px
+                            height: 48px
+                            width: 48px
+                            position: absolute
+                            margin: auto
+                            top: 0
+                            bottom: 0
+                            left: 0
+                            right: 0
+                        img
+                            max-width: 100%
+                            max-height: 100%
+                            object-fit: cover
+                    .ss-popup-content-media-wrap-bottom
+                        padding-left: 48px
+                        display: flex
+                        align-items: center
+                        justify-content: flex-start
+                        .count, .text
+                            font-size: 14px
+                            line-height: 24px
+                            text-align: left
+                            color: #cbd0d8
+                            margin-right: 8px
+                        .name
+                            line-height: 24px
+                            text-align: left
+                            font-size: 14px
+                            text-decoration: underline
+                            color: #fff
+            .ss-popup-content-head
+                margin-bottom: 25px
+                border-bottom: solid 1px #515562
+                height: 37px
+                ul
+                    list-style: none
+                    display: flex
+                    align-items: center
+                    justify-content: flex-start
+                    padding: 0 35px
+                    li
+                        & + li
+                            margin-left: 24px
+                        &.active
+                            a
+                                color: #ffffff
+                                &:before
+                                    content: ''
+                                    display: block
+                                    position: absolute
+                                    bottom: 0
+                                    left: 0
+                                    width: 100%
+                                    height: 2px
+                                    border-radius: 5px
+                                    background-color: #fbfbfb
+                        a
+                            padding: 0 24px
+                            padding-bottom: 20px
+                            position: relative
+                            font-size: 12px
+                            text-transform: uppercase
+                            font-weight: 600
+                            color: #808792
+
+            .ss-popup-content-photos
+                display: flex
+                align-items: flex-start
+                justify-content: flex-start
+                flex-wrap: wrap
+                a
+                    margin-bottom: 4px
+                    margin-right: 4px
+                    &:nth-child(4n)
+                        margin-right: 0
+                    img
+                        display: block
+                        object-fit: cover
+                        width: 128px
+                        height: 128px
+            .ss-popup-content-photos, .ss-popup-content-videos
+                    a
+                        position: relative
+                        .lm-remove-item
+                            display: block
+                            position: absolute
+                            width: 16px
+                            height: 16px
+                            top: 4px
+                            right: 4px
+                            background-repeat: no-repeat
+                            background-position: center
+                            background-size: cover
+                            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="%23ffffff" d="M10.1 4.5L8 6.6 5.9 4.5 4.5 5.9 6.6 8l-2.1 2.1 1.4 1.4L8 9.4l2.1 2.1 1.4-1.4L9.4 8l2.1-2.1-1.4-1.4z"/></svg>')
+            .ss-popup-content-videos
+                display: flex
+                align-items: flex-start
+                justify-content: flex-start
+                flex-wrap: wrap
+                a
+                    margin-bottom: 4px
+                    margin-right: 4px
+                    width: calc(50% - 2px)
+                    position: relative
+                    .lm-play-button
+                        position: absolute
+                        top: 0
+                        left: 0
+                        right: 0
+                        bottom: 0
+                        margin: auto
+                    &:nth-child(2n)
+                        margin-right: 0
+                    img
+                        display: block
+                        object-fit: cover
+                        height: 195px
+                        width: 100%
+.ss-modal-welcome
+    .lm-popups-content
+        text-align: center
+        p
+            text-align: center
+            line-height: 24px
+.ss-modal-success, .ss-modal-new-order
+    .modal-dialog
+        width: 400px
+        .modal-header
+            padding: 20px 24px
+            position: relative
+            .close
+                margin-top: 0
+                position: absolute !important
+                margin: auto
+                right: 24px
+                top: 0
+                bottom: 0
+                span:before
+                    color: #282a36
+            .modal-title
+                padding: 0
+                font-size: 18px
+                font-weight: 600
+                line-height: 24px
+                text-align: left
+                color: #282a36
+        .modal-content
+            border-top: 0
+            border-radius: 2px
+            text-align: center
+.ss-modal-new-order
+    .ss-modal-new-order-wrap
+        padding-top: 32px
+        .lm-primary-button
+            display: inline-block
+            text-transform: uppercase
+            margin-top: 48px
+            margin-bottom: 54px
+        .from
+            font-size: 14px
+            line-height: 24px
+            text-align: center
+            display: block
+            color: #282a36
+            padding-bottom: 16px
+        .lm-user-vertical
+            .lm-user-vertical-info
+                .lm-user-vertical-info-name
+                    margin-bottom: 4px
+                .lm-user-block-vertical-type
+                    .type
+                        padding-right: 0
+            .lm-user-vertical-avatar
+                width: 96px
+                height: 96px
+                margin-bottom: 16px
+
+.ss-modal-success
+    .ss-modal-success-wrap
+        text-align: center
+        padding-top: 32px
+        .desc
+            font-size: 14px
+            line-height: 24px
+            display: block
+            text-align: center
+            color: #282a36
+            width: 210px
+            margin: 0 auto
+        .icon-sertification
+            @include icon-sertification('%23F5A623')
+            background-size: 54px 62px
+            background-position: center
+            background-repeat: no-repeat
+            display: block
+            width: 54px
+            margin: 0 auto
+            height: 62px
+            margin-bottom: 24px
+        .lm-primary-button
+            display: inline-block
+            text-transform: uppercase
+            margin-top: 40px
+            margin-bottom: 46px
+
+.lm-ss-list
+    .ss-list-info
+        padding-top: 32px
+        padding-bottom: 32px
+        position: relative
+        background-color: $lm-white
+        margin-bottom: 20px
+        box-shadow: 0 2px 8px 0 rgba(40, 42, 54, 0.03)
+        .ss-list-info--wrap
+            text-align: center
+            margin: auto
+            p
+                text-align: center
+                margin-bottom: 16px
+            h1
+                font-weight: bold
+                text-align: center
+                margin: 0 !important
+                margin-bottom: 16px !important
+            .lm-primary-button.lm-icon-button
+                @include lm-favourite('%23FFFFFF')
+            .ss-list-info--close
+                position: absolute
+                right: 15px
+                top: 15px
+                @include lm-close()
+                width: 16px
+                cursor: pointer
+                height: 16px
+                background-position: center
+                background-size: 14px
+                background-repeat: no-repeat
+    .ss-list--wrap
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        .ss-list-left
+            width: 745px
+            .ss-list-left--filter
+                box-shadow: 0 2px 8px 0 rgba(40, 42, 54, 0.03)
+                background-color: $lm-white
+                display: flex
+                align-items: center
+                justify-content: space-between
+                padding: 0 24px
+                height: 64px
+                margin-bottom: 20px
+            .ss-list-left--users
+                .ss-item
+                    border-radius: 2px
+                    background-color: $lm-white
+                    margin-bottom: 16px
+                    padding: 16px
+                    display: flex
+                    align-items: flex-start
+                    justify-content: space-between
+                    .ss-item-right
+                        width: 468px
+                        &.empty
+                            height: 128px
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            font-size: 14px
+                            color: #808792
+                        .ss-item-images
+                            display: flex
+                            justify-content: space-between
+                            > div
+                                &.video-wait
+                                    border-radius: 2px
+                                    background-color: $lm-gray-5
+                                    display: flex
+                                    cursor: pointer
+                                    align-items: center
+                                    text-align: center
+                                    text-transform: uppercase
+                                    justify-content: center
+                                    padding: 25px
+                                    width: 114px
+                                    height: 114px
+                                    font-size: 8px
+                                    font-weight: 600
+                                    line-height: 12px
+                                    letter-spacing: 1px
+                                    color: $lm-gray-3
+                                & + div
+                                    margin-left: 4px
+                            a
+                                width: 114px
+                                height: 114px
+                                display: inline-block
+                                vertical-align: middle
+                                &.video
+                                    position: relative
+                                    &:after
+                                        position: absolute
+                                        width: 36px
+                                        content: ''
+                                        height: 36px
+                                        left: 0
+                                        top: 0
+                                        right: 0
+                                        bottom: 0
+                                        margin: auto
+                                        z-index: 2
+                                        border-radius: 16px
+                                        background-color: rgba(40, 42, 54, 0.16)
+                                        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="%23ffffff" fill-rule="evenodd" d="M15.106 6.419c1.192.706 1.192 2.456 0 3.162L4.711 15.748C3.509 16.46 2 15.58 2 14.165V1.834C2 .42 3.51-.46 4.71.253l10.396 6.166z" clip-rule="evenodd"/></svg>')
+                                        background-repeat: no-repeat
+                                        background-position: center
+                                        background-size: 16px
+                                &.read-more
+                                    position: relative
+                                    &:before
+                                        position: absolute
+                                        width: 100%
+                                        content: ''
+                                        height: 100%
+                                        left: 0
+                                        top: 0
+                                        z-index: 1
+                                        background-color: rgba(40, 42, 54, 0.64)
+                                    span
+                                        z-index: 2
+                                        position: absolute
+                                        text-align: center
+                                        left: 0
+                                        font-size: 8px
+                                        font-weight: 600
+                                        letter-spacing: 1px
+                                        color: $lm-white
+                                        right: 0
+                                        top: 0
+                                        bottom: 0
+                                        width: 100%
+                                        height: 100%
+                                        line-height: 114px
+                                        text-transform: uppercase
+                                img
+                                    object-fit: cover
+                                    width: 114px
+                                    height: 114px
+                    .ss-item-left
+                        display: inline-block
+                        position: relative
+                        vertical-align: top
+                        .user-info
+                            display: inline-block
+                            vertical-align: top
+                            width: 192px
+                            .read-more
+                                font-size: 12px
+                                font-weight: 600
+                                line-height: 16px
+                                letter-spacing: 1px
+                                color: $lm-main
+                                text-transform: uppercase
+                            .links-ss
+                                margin-top: 12px
+                                margin-bottom: 16px
+                                a
+                                    display: block
+                                    margin-bottom: 2px
+                                    font-size: 12px
+                                    line-height: 16px
+                                    color: $lm-gray-2
+                            .ss-item-name
+                                font-size: 14px
+                                font-weight: 600
+                                line-height: 20px
+                                text-align: left
+                                color: $lm-gray-1
+                                margin-bottom: 2px
+                            .ss-item-point
+                                font-size: 12px
+                                line-height: 16px
+                                color: $lm-main
+                                margin-bottom: 12px
+                        .center
+                            width: 40px
+                            text-align: center
+                            display: inline-block
+                            vertical-align: top
+                            margin-right: 8px
+                            img
+                                width: 40px
+                                height: 40px
+                                border-radius: 8px
+                                object-fit: cover
+                                overflow: hidden
+                                display: block
+                                margin: 0 auto
+                                margin-bottom: 9px
+                            .rate
+                                padding: 0 5px
+                                height: 16px
+                                display: inline-block
+                                line-height: 16px
+                                border-radius: 4px
+                                background-color: #fc2e5f
+                                font-size: 12px
+                                font-weight: 600
+                                text-align: center
+                                color: #fff
+        .ss-list-right
+            margin-left: 21px
+            width: 234px
+            .service-filter
+                background-color: $lm-white
+                padding-top: 10px
+                padding-bottom: 10px
+                box-shadow: 0 2px 8px 0 rgba(40, 42, 54, 0.03)
+                border-radius: 2px
+                position: relative
+                &.loading
+                    &:after
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        background: #fff;
+                        top: 0;
+                        opacity: 0.3;
+                .more
+                    color: $lm-gray-3
+                    margin-top: 16px
+                    display: inline-block
+                    font-size: 14px
+                    margin-left: 24px
+                ul
+                    list-style: none
+                    li
+                        display: block
+                        height: 44px
+                        line-height: 44px
+                        padding-left: 24px
+                        padding-right: 24px
+                        &.active
+                            position: relative
+                            background-color: rgba(0, 99, 218, 0.05)
+                            &:before
+                                content: ''
+                                display: block
+                                background-color: $lm-main
+                                width: 2px
+                                height: 100%
+                                position: absolute
+                                top: 0
+                                left: 0
+                            .name
+                                font-weight: 600
+                        &:hover
+                            background-color: rgba(0, 99, 218, 0.02)
+                        a
+                            height: 100%
+                            width: 100%
+                            display: flex
+                            align-items: center
+                            line-height: 44px
+                            justify-content: space-between
+                            .name
+                                font-size: 14px
+                                color: $lm-gray-1
+
+                            .count
+                                font-size: 12px
+                                font-weight: 600
+                                text-align: right
+                                color: $lm-gray-3
+.ss-modal-balance
+    .modal-dialog
+        width: 490px
+        .modal-title
+            font-weight: 600
+        .ss-modal-balance-wrap
+            .ss-modal-balance-head
+                padding: 37px 0
+                height: 200px
+                border-bottom: solid 1px #cbd0d8
+                background-color: #fbfbfb
+                display: flex
+                align-items: center
+                justify-content: space-between
+                flex-direction: column
+                .balance-sending
+                    text-align: center
+                    font-size: 14px
+                    line-height: 24px
+                    span
+                        color: #515562
+                        padding-right: 8px
+                    a
+                        color: #0063da
+                .price
+                    text-align: center
+                    color: #282a36
+                    margin-bottom: 8px
+                    span
+                        font-size: 36px
+                    font
+                        font-size: 24px
+                .desc
+                    font-size: 12px
+                    font-weight: 600
+                    line-height: 15px
+                    margin-bottom: 24px
+                    text-align: center
+                    text-transform: uppercase
+                    color: #808792
+            .list-of-operations
+                .list-of-operations--head
+                    padding: 16px 24px
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    border-bottom: solid 1px #f3f4f6
+                    .text
+                        font-size: 14px
+                        font-weight: 600
+                        line-height: 24px
+                        text-align: left
+                        color: #282a36
+                    .download-list
+                        background-position: left center
+                        background-repeat: no-repeat
+                        background-size: 16px
+                        padding-left: 22px
+                        font-size: 12px
+                        font-weight: 600
+                        line-height: 24px
+                        text-align: left
+                        color: #808792
+                        @include  lm-square-download('%23808792')
+                .list-of-operations--list
+                    max-height: 400px
+                    overflow-y: scroll
+                    .list-of-operations--item
+                        padding: 16px 24px
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        & + .list-of-operations--item
+                            border-top: solid 1px #f3f4f6
+                        .date
+                            font-size: 13px
+                            font-weight: 600
+                            font-style: normal
+                            font-stretch: normal
+                            line-height: 1.85
+                            letter-spacing: normal
+                            text-align: left
+                            color: #282a36
+                            margin-right: 24px
+                        &.error
+                            .order
+                                span
+                                    color: #fc2e5f
+                            .price
+                                span
+                                    background-position: right center
+                                    background-repeat: no-repeat
+                                    background-size: 12px
+                                    padding-right: 20px
+                                    @include lm-error()
+                                    color: #fc2e5f
+                        .order
+                            font-size: 14px
+                            line-height: 24px
+                            text-align: left
+                            flex: 1 auto
+                            span
+                                color: #808792
+                                padding-right: 8px
+                            a
+                                color: #0063da
+                        .price
+                            margin-left: 12px
+                            min-width: 50px
+                            text-align: right
+                            span
+                                font-size: 12px
+                                font-weight: 600
+                                line-height: 15px
+                                text-align: right
+                            &.wait
+                                span
+                                    color: #808792
+                                    background-position: right center
+                                    background-repeat: no-repeat
+                                    background-size: 12px
+                                    padding-right: 20px
+                                    @include lm-wait()
+                            &.credit
+                                span
+                                    color: #808792
+                            &.complite
+                                span
+                                    color: #20dba9
+
+
+
+
+.sertificate-item--review
+    position: relative
+    padding: 16px 24px
+    border-bottom: solid 1px #f3f4f6
+    margin: 0 -24px
+    &.clickable
+        cursor: pointer
+    .arrow-review
+        width: 16px
+        display: block
+        position: absolute
+        height: 16px
+        right: 24px
+        top: 30px
+        background-repeat: no-repeat
+        cursor: pointer
+        background-position: center
+        @include lm-dropdown-icon()
+        background-size: 20px
+        &.open
+            transform: rotate(180deg)
+    .title
+        font-size: 12px
+        margin-bottom: 8px
+        color: $lm-gray-3
+        display: block
+        text-align: left
+    .text
+        color: $lm-gray-1
+        line-height: 24px
+        font-size: 14px
+        display: block
+        text-align: left

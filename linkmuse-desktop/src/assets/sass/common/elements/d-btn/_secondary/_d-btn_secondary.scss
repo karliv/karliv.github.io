@@ -1,0 +1,21 @@
+.d-btn_secondary {
+	color: $lm-gray-2;
+	background-color: transparent;
+	fill: $lm-gray-2;
+	&:hover {
+		transition: all 0.15s ease;
+		color: $lm-main-dark;
+	}	
+	&:active {
+		transition: all 0.15s ease;
+		color: $lm-main-light;
+	}	
+	&:disabled {
+		transition: all 0.15s ease;
+		color: $lm-gray-opacity-32;
+		pointer-events: none;
+		cursor: default;
+	}
+}
+
+@import '_filled/_d-btn_secondary_filled.scss';

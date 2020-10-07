@@ -1,0 +1,12 @@
+.section__container_upload_img_setup_studios {
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 8px;
+	border: 1px dashed $lm-gray-4;
+	min-height: 168px;
+	border-radius: 16px;
+	background-color: $lm-gray-6;
+	position: relative;
+}
+

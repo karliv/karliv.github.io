@@ -1,0 +1,9 @@
+.upload-zone {}
+
+.lm-dropzone--item--wrap {
+  min-height: 130px;
+}
+
+@import '__field/_upload-zone__field.scss';
+@import '__snap/_upload-zone__snap.scss';
+

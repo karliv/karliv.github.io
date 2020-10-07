@@ -1,0 +1,9 @@
+.d-tooltip_declaration {
+  display: flex;
+  .tooltip-inner {
+    max-width: 223px !important;
+    line-height: 12px !important;
+    padding: 8px !important;
+  }
+}
+

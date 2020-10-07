@@ -1,0 +1,8 @@
+.d-btn_favorites {
+	fill: $lm-gray-3;
+	color: $lm-gray-3;
+	background-color: $lm-gray-5;
+	transition: all 0.25s ease-in-out;
+}
+
+@import '_active/_d-btn_favorites_active.scss';

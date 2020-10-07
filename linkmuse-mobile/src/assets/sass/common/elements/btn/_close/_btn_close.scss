@@ -1,0 +1,41 @@
+.btn_close {
+	box-sizing: border-box;
+	display: block;
+	width: 16px;
+	height: 16px;
+	min-height: auto;
+	background-color: $lm-gray-opacity-32;
+	border-radius: 50%;
+	z-index: 10;
+	min-width: 16px;
+	padding: 0;
+	&::before {
+		box-sizing: border-box;
+		content: '';
+		display: block;
+		position: relative;
+		top: 0.06rem;
+		left: 0.24rem;
+		border-radius: 2px;
+		width: 8px;
+		height: 2px;
+		background-color: $lm-white;
+		transform: rotate(45deg);
+	}
+	
+	&::after {
+		box-sizing: border-box;
+		content: '';
+		display: block;
+		position: relative;
+		bottom: 0.06rem;
+		left: 0.24rem;
+		
+		border-radius: 2px;
+		width: 8px;
+		height: 2px;
+		background-color: $lm-white;
+		transform: rotate(-45deg);
+	}
+}
+

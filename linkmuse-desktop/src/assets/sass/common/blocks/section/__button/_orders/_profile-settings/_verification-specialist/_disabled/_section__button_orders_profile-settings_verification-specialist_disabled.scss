@@ -1,0 +1,12 @@
+.section__button_orders_profile-settings_verification-specialist_disabled {
+	@include button;
+	min-width: 140px;
+	background-color: transparent;
+	color: $lm-gray-3;
+	border: 1px solid $lm-gray-4;
+	&:hover {
+		transition: none;
+		background-color: transparent;
+	}
+}
+

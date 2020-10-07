@@ -1,0 +1,10 @@
+.form__group_declaration {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 24px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+@import '_checkbox/_form__group_declaration_checkbox.scss';

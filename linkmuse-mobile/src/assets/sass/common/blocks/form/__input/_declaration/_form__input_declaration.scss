@@ -1,0 +1,21 @@
+.form__input_declaration {
+	box-sizing: border-box;
+	border: 1px solid $lm-gray-4;
+	border-radius: 16px;
+	min-height: 40px;
+	padding: 12px 16px;
+	width: 100%;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.29;
+	letter-spacing: 0.3px;
+	color: $lm-gray-1;
+	@include placeholder_color_lm-gray-3()
+}
+
+@import '_from/_form__input_declaration_from.scss';
+@import '_gender/_form__input_declaration_gender.scss';
+@import '_to/_form__input_declaration_to.scss';
+@import '_required/_form__input_declaration_required.scss';

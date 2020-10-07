@@ -1,0 +1,14 @@
+.textarea {
+	outline: none;
+	display: inline-block;
+	vertical-align: top;
+	resize: vertical;
+	transition: all 0.15s ease-in-out;
+}
+@import '__field/_textarea__field.scss';
+@import '__icon/_textarea__icon.scss';
+@import '__label/_textarea__label.scss';
+@import '__notification/_textarea__notification.scss';
+
+@import '_error/_textarea_error.scss';
+@import '_info/_textarea_info.scss';

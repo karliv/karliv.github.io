@@ -1,0 +1,22 @@
+.form__select_declaration {
+	box-sizing: border-box;
+	border: 1px solid $lm-gray-4;
+	border-radius: 16px;
+	min-height: 40px;
+	padding: 10px 16px;
+	background-color: transparent;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.29;
+	letter-spacing: 0.3px;
+	color: $lm-gray-1;
+	width: 100%;
+	min-width: 72px;
+	@include placeholder_color_lm-gray-3()
+}
+
+@import '_required/_form__select_declaration_required.scss';
+@import '_disabled/_form__select_declaration_disabled.scss';

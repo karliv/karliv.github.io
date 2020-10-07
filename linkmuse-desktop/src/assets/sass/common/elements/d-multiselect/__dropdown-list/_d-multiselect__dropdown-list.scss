@@ -1,0 +1,47 @@
+.d-multiselect__dropdown-list {
+	.list__item {
+		.lm-w-dropdown-menu--item {
+			display: flex !important;
+			&::before {
+				content: '';
+				display: flex;
+				box-sizing: border-box;
+				justify-content: center;
+				align-items: center;
+				width: 16px;
+				height: 16px;
+				border-radius: $multiplicity/2;
+				border: 1px solid;
+				border-color: $lm-gray-4;
+				margin: 1px 12px 0 0;
+				/*padding-top: 1.5px;*/
+				background-color: transparent;
+				transition: all 0.15s ease-in-out;
+			}
+		}
+		.lm-w-dropdown-menu--item_active {
+			&::before {
+				content: '';
+				display: flex;
+				box-sizing: border-box;
+				justify-content: center;
+				align-items: center;
+				width: 16px;
+				height: 16px;
+				border-radius: $multiplicity/2;
+				border: 1px solid;
+				border-color: $lm-gray-4;
+				margin-right: $multiplicity*2;
+				background-position: center center;
+				background-repeat: no-repeat;
+				-webkit-background-size: 100%;
+				background-size: 100%;
+				transition: all 0.15s ease;
+				border-color: $lm-main;
+				background-color: $lm-main;
+				background-image: url(/dist/web/img/icons/svg/checkbox__mark.svg);
+			}
+		}
+	}
+}
+

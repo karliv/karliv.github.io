@@ -1,0 +1,14 @@
+.modal__content_filters {
+	width: 100%;
+	max-width: 376px;
+	@media screen and (min-width: $sm-breakpoint) {
+		margin-top: 82px;
+	}
+	.heading_h4 {
+		margin-bottom: 0;
+		@media screen and (min-width: $sm-breakpoint) {
+			font-size: 18px;
+		}
+	}
+}
+

@@ -1,0 +1,17 @@
+.section__body_gallery_studio_verification-specialist {
+	padding: 12px 0 20px;
+	min-width: 374px;
+	display: flex;
+	flex-wrap: wrap;
+	a {
+		margin-right: 8px;
+		margin-top: 8px;
+		&:nth-child(-n + 4) {
+			margin-top: 0;
+		}
+		&:nth-child(4n) {
+			margin-right: 0;
+		}
+	}
+}
+

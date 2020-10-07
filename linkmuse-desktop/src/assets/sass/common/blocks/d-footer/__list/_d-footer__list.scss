@@ -1,0 +1,19 @@
+.d-footer__list {
+	margin-top: $multiplicity*2;
+	.list__item {
+		font-size: 12px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.33;
+		letter-spacing: 0.5px;
+		margin-top: $multiplicity*2;
+		&:first-child {
+			margin-top: 0;
+		}
+		&:only-child {
+			margin-top: 0;
+		}
+	}
+}
+

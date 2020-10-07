@@ -1,0 +1,16 @@
+.block_declaration {
+	word-wrap: break-word;
+	word-break: normal;
+	box-sizing: border-box;
+	display: block;
+	padding: 24px 0;
+	border-top: 1px solid rgba(40, 42, 54, 0.08);
+	&:only-child {
+		border-top: none;
+	}
+	> div {
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}

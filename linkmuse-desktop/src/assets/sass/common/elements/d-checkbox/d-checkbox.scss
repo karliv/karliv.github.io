@@ -1,0 +1,18 @@
+.d-checkbox {
+	&:hover {
+		transition: all 0.15s ease;
+		
+		.d-checkbox__label {
+			color: $lm-main;
+			&::before {
+				border-color: $lm-main;
+			}
+		}
+	}
+}
+@import '__label/_d-checkbox__label.scss';
+@import '__mark/_d-checkbox__mark.scss';
+
+@import '_multiple/_d-checkbox_multiple.scss';
+@import '_vs-rules/_d-checkbox_vs-rules.scss';
+@import '_button/_d-checkbox_button.scss';

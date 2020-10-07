@@ -1,0 +1,16 @@
+.section__hint {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $lm-main_08;
+  border-radius: 8px;
+  padding: 16px 20px;
+  box-sizing: border-box;
+  &.in_moderation {
+    background-color: $lm-support-3_08;
+  }
+  &.failed_moderation {
+    background-color: $lm-support-1_08;
+  }
+}

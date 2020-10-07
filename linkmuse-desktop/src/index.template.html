@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="{{ lang || 'ru' }}" class="lm-v2 lm-v3">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=1280">
+  <link rel="apple-touch-icon" sizes="57x57" href="/dist/web/img/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/dist/web/img/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/dist/web/img/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/dist/web/img/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/dist/web/img/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/dist/web/img/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/dist/web/img/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/dist/web/img/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/dist/web/img/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/dist/web/img/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/dist/web/img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/dist/web/img/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/dist/web/img/icons/favicon-16x16.png">
+  <meta name="msapplication-TileImage" content="/dist/web/img/icons/ms-icon-144x144.png">
+  <link rel="icon" href="/dist/web/img/icons/favicon.ico" type="image/x-icon">
+
+  <link rel='dns-prefetch' href='//www.googletagmanager.com' />
+  <link rel='dns-prefetch' href='//connect.facebook.net' />
+  <link rel='dns-prefetch' href='//www.facebook.com' />
+  <link rel='dns-prefetch' href='//i.linkmuse.com' />
+  <link rel='dns-prefetch' href='//js.intercomcdn.com' />
+  <link rel='dns-prefetch' href='//linkmuse.s3.eu-central-1.amazonaws.com' />
+  <link rel='dns-prefetch' href='//mc.yandex.ru' />
+  <link rel='dns-prefetch' href='//player.vimeo.com' />
+  <link rel='dns-prefetch' href='//widget.intercom.io' />
+  <link rel='dns-prefetch' href='//www.google-analytics.com' />
+  <link rel='dns-prefetch' href='//maps.googleapis.com' />
+  <link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+  <link rel='dns-prefetch' href='//stats.pusher.com' />
+
+  <link rel="preconnect" href="//www.googletagmanager.com/">
+  <link rel="preconnect" href="//connect.facebook.net/">
+  <link rel="preconnect" href="//www.facebook.com/">
+  <link rel="preconnect" href="//i.linkmuse.com/">
+  <link rel="preconnect" href="//js.intercomcdn.com/">
+  <link rel="preconnect" href="//linkmuse.s3.eu-central-1.amazonaws.com/">
+  <link rel="preconnect" href="//mc.yandex.ru/">
+  <link rel="preconnect" href="//player.vimeo.com/">
+  <link rel="preconnect" href="//widget.intercom.io/">
+  <link rel="preconnect" href="//www.google-analytics.com/">
+  <link rel="preconnect" href="//maps.googleapis.com/">
+  <link rel="preconnect" href="//maxcdn.bootstrapcdn.com/">
+  <link rel="preconnect" href="//stats.pusher.com/">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=all' rel='stylesheet' type='text/css'>
+
+  {{{ meta.inject().title.text() }}}
+  {{{ meta.inject().meta.text() }}}
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window,document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '805956533095556');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1"
+         src="https://www.facebook.com/tr?id=805956533095556&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+
+  <script src="https://widget.cloudpayments.ru/bundles/cloudpayments"></script>
+
+  <!-- Matomo -->
+  <script type="text/javascript">
+    var _paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://linkmuse.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src='//cdn.matomo.cloud/linkmuse.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <noscript><p><img src="https://linkmuse.matomo.cloud/matomo.php?idsite=1&rec=1" style="border:0;" alt="" /></p></noscript>
+  <!-- End Matomo Code -->
+</head>
+<body>
+    <!--vue-ssr-outlet-->
+</body>
+</html>

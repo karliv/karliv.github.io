@@ -1,0 +1,8 @@
+.page__container {
+	display: flex;
+	width: 100%;
+	max-width: 1180px;
+}
+
+@import '_error/_page__container_error.scss';
+@import '_mailing/_page__container_mailing.scss';

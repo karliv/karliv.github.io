@@ -1,0 +1,17 @@
+.link {
+	color: $lm-main;
+	transition: all 0.15s ease-in-out;
+	text-decoration: none;
+	&:active {
+		color: $lm-main-dark;
+		transition: all 0.15s ease;
+	}
+	&:visited {
+		color: $lm-main-dark;
+		transition: all 0.15s ease;
+	}
+}
+@import '__decoration/_link__decoration.scss';
+
+@import '_attachments/_link_attachments.scss';
+@import '_vs-rules/_link_vs-rules.scss';

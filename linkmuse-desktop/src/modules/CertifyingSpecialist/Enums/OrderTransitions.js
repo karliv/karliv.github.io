@@ -1,0 +1,8 @@
+export const PAYMENT = 'payment'
+export const CONFIRM_MEETING_SPECIALIST = 'confirm_meeting_specialist'
+export const CONFIRM_MEETING_CLIENT = 'confirm_meeting_client'
+export const START_WORK = 'start_work'
+export const STOP_WORK = 'stop_work'
+export const ON_FINALIZING = 'on_finalizing'
+export const FINISH = 'finish'
+export const CANCEL = 'cancel'

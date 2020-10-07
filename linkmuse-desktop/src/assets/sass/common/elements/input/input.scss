@@ -1,0 +1,10 @@
+.input {
+	&:disabled {
+		cursor: not-allowed;
+	}
+}
+@import '__label/_input__label.scss';
+
+@import '_tab/_input_tab.scss';
+@import '_verification-step/_input_verification-step.scss';
+@import '_setup/_input_setup.scss';

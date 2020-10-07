@@ -1,0 +1,17 @@
+.page_error {
+	box-sizing: border-box;
+	background-color: $lm-white;
+	height: calc(100vh - 48px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 48px;
+	@media screen and (max-width: 767px) {
+		padding: 28px;
+	} 
+}
+
+@import '_404/_page_error_404.scss';
+@import '_502/_page_error_502.scss';
